@@ -3,11 +3,11 @@
 <html>
     <base href="/" />
     <head>
+        <link rel='stylesheet' type='text/CSS' href='/custom.css'>
         <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-        <link rel='stylesheet' type='text/CSS' href='/styleIndex.css'>
     </head>
 
-    <body ng-app="app" class="bodyLogin">
+    <body ng-app="business" class="bodyLogin">
         <div class="pure-g" id="grandContainerLogin">
             <div id="containerLogin" class="pure-u-1-1" ng-controller="loginController">
                 <!-- Login form -->
@@ -23,12 +23,14 @@
             </div>
         </div>
 
-        <!-- Scripts à charger (chargement plus rapide si positionnement en bas de page) -->
+        <!-- Scripts à charger (chargement page plus rapide si positionnement en bas de page) -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-route.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
-        <script src="/services/authService.js"></script>
         <script src="/controllers/loginController.js"></script>
-        <script src="/app.js"></script>
+        <script src="/controllers/transcriptController.js"></script>
+        <script src="/services/authService.js"></script>
+        <script src="/services/transcriptService.js"></script>
+        <script src="/business.js"></script>
     </body>
 </html>

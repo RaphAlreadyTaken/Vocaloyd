@@ -1,0 +1,12 @@
+.align-cell
+{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.thin
+{
+    height: 25px;
+    width: 90%;
+}

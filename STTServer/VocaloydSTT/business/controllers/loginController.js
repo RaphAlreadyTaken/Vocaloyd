@@ -5,21 +5,16 @@
  */
 function loginController($scope, auth)
 {
-    var login = null;
-    var password = null;
+    $scope.login = null;
+    $scope.password = null;
 
     $scope.formLogin = function()
     {
-        auth.logIn(login, password)
-        .then(function()
-        {
-            $scope.logged = auth.isLoggedIn();
-        })
+        auth.logIn($scope.login, $scope.password);
     };
 
     $scope.logOut = function()
     {
-        auth.logOut($scope);
-        $scope.logged = auth.isLoggedIn();
+        auth.logOut();
     };
 };
