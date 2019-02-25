@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "vocaloyd-stt",
+  "private_key_id": "a8ef2024d1d4fac3f36b5b983229c00e8173b75c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9XUbP38ayK5oU\nyJzZbDlh4yYVer3D8onR8QIqbIha43C0Pnf3CXuaMM6A4dMF0T9t3GOdWkeiJtFD\n3URgfkU5EUK0kAmC7buA62FuwWNWMPdmq3KUDCEt+lmSG7HJHOq6QczP4IUiTswC\ngmhMSPEOmu3p7c8s1pSswvklyc64/p1Ln078WEib2N8Hfk5UMfUkhAtKPhUgavoM\nbdVDFKlaD8EkA1wTp9URXfw1r2oDE2e3Q2V90HtMGzJO4z+J8T33OdvJOvZJIN62\n4rxRbo1uhQnP0zF1FH47f+zeaDISwid6bI1/gRF7lFtOGqOJ3pmNX/XCJOX2R1/Q\nOvJOgJ5VAgMBAAECggEAGTLdZnIfzbvRoCxl+uTU6frBKaCQug9/WYmZwS16I6Ya\nbFHXwu7nHMib4jiqzR5gM21dcCYAXEqQFFjQbYrACW0LlF2KdnrONcSczZE8d87C\nTU5JS/wlOioTW0cGLH4Fmk2BRLRa4wrbSQYzfNtEAK6LNFLp+8x+MlMrtmSZdrJo\ndw2CtZ/wBgQFd/+hgJ30n+67s+NN7auQzhiM2b93LdrjbchyDyjgrHp5aYMFU+IL\nLalsUIZVODCB6Pi0ghivJ7tht1SKKizqnvVuyRqp3G+7E6/W4a8lekSbgkge0oyW\n9LE6KGApFVZiGMBJsrkY3OHHYEQ2kC+SLoDtVnEJIQKBgQDkTKo2i9mURFwSLAuU\nWSRSanumSWSJEQlhdJeU3SRwaySlP0Ufc51bIzAqu4YG/ujWdjTjR/J773cP5s3w\nE6cTUIgSCP3cSf9r7DBRmxBUoxTJKbSLZ8m2nj5myz9ID1oCDCUQVSkV0bv2jj1D\nc7yUX2HiYqhd5xn1nf5GQ6b0OQKBgQDUVzoV2i5mq9nPaRSSdluYC4KblZanXEZ8\n6/xTaT8DB3TrcGLF5egE4kG5SiAHBbYOz8okkkGEO+tB3EeFkW/Zre3kj1slXXkx\n3Qq49J2ZXin2hEbJ7+DONPUIWmJyHDL/91vsjDs7SgxPDXdxjVFhjwT3ZZqu+Lei\nUdk5UH9S/QKBgHQ/oXCS96CqymMqcF8CoR8iP4Il3v54YVlxf/n6PSLNO+S0+eKR\nAXA108H+qLmJNVB28mlE6nE3N14ufXCg4TNRj2f3kiSIvXnb06LKHZ+rRttD1D4k\nBC9sFoRLPBbaUk+2lWzioEAPAvIB7aoaFc1LYFFhQTBHjA1ofOCUdD/pAoGAU9UE\nN7Bl9V8PpRVla9WSn9qbe/V4/yYtJhC9E+lPWVDOVk2OkXcNPTBeplqffmZA1GQw\n+HNNrnlBjkT7b75VnGlQrJX0dDINMSSFoTPiLLTCeHMMx5kO9hpuSxf0Gf0MHYZ5\nIlDS6bt4VJWKfKhAYvXmDg5tHXtQdKM/0aL4QbkCgYEA3VxMHdmXLN7wVf01I/+O\nebBMCeN9fZnop8yVPiR/9YAPUO7dVaMlPiOXgnYx6a7Bur8CtuF2bAKAnBUZhXOs\n9ZdJ65UvQgijwdqmb8MkETaFNqfI/fKhCL1Tys+zqLnFFE20uIo0S111conES8LF\npm6MNDP8JOPDYr0aeBhUU4o=\n-----END PRIVATE KEY-----\n",
+  "client_email": "stt-admin@vocaloyd-stt.iam.gserviceaccount.com",
+  "client_id": "107440434490003160276",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/stt-admin%40vocaloyd-stt.iam.gserviceaccount.com"
+}

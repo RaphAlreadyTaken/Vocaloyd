@@ -9,19 +9,52 @@ const speech = require('@google-cloud/speech');
 /******** Variables
  *
  ********/
-var router = express.Router();
-var dsnMongoDB = "mongodb://localhost:27017/";
+const router = express.Router();
+const dsnMongoDB = "mongodb://127.0.0.1:27017/";
 
 //POST request. Route: /transcribe/newTranscript. Allows to convert an audio file to text
 router.post('/newTranscript', function (request, response)
 {
-    var audio = request.files.inputAudio;
+    const client = new speech.SpeechClient();
+    const audioFile = request.files.inputAudio;
+    const audio64 = audioFile.toString('base64');
+    var transcription = ""; //Construct from available data (origin / input / output / date / processTime)
+    
+    const audio = 
+    {
+        content: audioFile,
+    };
 
+    const config =
+    {
+        encoding: 'LINEAR16',
+        sampleRateHertz: 44100,
+        languageCode: 'fr-FR',
+    };
 
+    const req =
+    {
+        audio: audio,
+        config: config,
+    };
 
-    response.send();
+    client
+        .recognize(req)
+        .then(data = function()
+        {
+            const response = data[0];
+            transcription = response.results
+                .map(result => result.alternatives[0].transcript)
+                .join('\n');
+            console.log(`Transcription : ${transcription}`);
+        })
+        .catch(err = function()
+        {
+            console.error('ERROR : ', err);
+        })
 
-    var transcript = ""; //Construct from available data (origin / input / output / date / processTime)
+    response.send(transcription);
+
 
     //MongoDB connection
     // MongoClient.connect(dsnMongoDB, { useNewUrlParser: true }, function(err, mongoClient) 
