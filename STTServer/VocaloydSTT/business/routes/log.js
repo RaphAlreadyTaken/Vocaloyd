@@ -13,8 +13,8 @@ var dsnMongoDB = "mongodb://127.0.0.1:27017/";
 //POST request. Route: /log/login. Allows a user to log in
 router.post('/login', function (request, response)
 {
-    var log = request.body.login;   //Login
-    var pass = request.body.password;   //Password
+    var log = request.fields.login;   //Login
+    var pass = request.fields.password;   //Password
 
     //MongoDB connection
     MongoClient.connect(dsnMongoDB, { useNewUrlParser: true }, function(err, mongoClient) 

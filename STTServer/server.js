@@ -1,7 +1,6 @@
 /******** Middleware
 *
 ********/
-const bodyParser = require('body-parser');
 const express = require('express');
 const formidable = require('express-formidable');
 var fs = require('fs');
@@ -44,8 +43,6 @@ app.use(session(
 
 app.use(express.static(path.join(__dirname, './VocaloydSTT/business'))); //Ajout répertoire business dans "path" de l'app
 app.use(express.static(path.join(__dirname, './VocaloydSTT/scss'))); //Ajout répertoire scss dans "path" de l'app
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json({limit: '10mb'}));
 app.use(formidable());
 app.use('/', index);    //index.js import
 app.use('/log', log);    //log.js import

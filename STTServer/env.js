@@ -1,0 +1,1 @@
+process.env.GOOGLE_APPLICATION_CREDENTIALS="/mnt/c/Users/Raph/Desktop/Vocaloyd/STTServer/vocaloyd-stt-a8ef2024d1d4.json"

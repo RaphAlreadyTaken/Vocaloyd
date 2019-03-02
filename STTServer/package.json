@@ -12,7 +12,6 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@google-cloud/speech": "^2.3.0",
-    "@google-cloud/storage": "^2.4.2",
     "express": "^4.16.3",
     "express-formidable": "^1.2.0",
     "express-session": "^1.15.6",
@@ -21,7 +20,6 @@
     "socket.io": "^2.1.1"
   },
   "devDependencies": {
-    "body-parser": "^1.18.3",
     "connect-mongodb-session": "^2.1.1",
     "nodemon": "^1.18.10"
   }
