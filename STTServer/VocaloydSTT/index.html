@@ -3,12 +3,12 @@
 <html>
     <base href="/" />
     <head>
-        <link rel='stylesheet' type='text/CSS' href='custom.scss'>
+        <link rel='stylesheet' type='text/CSS' href='custom.css'>
         <link rel='stylesheet' type='text/CSS' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
     </head>
 
-    <body ng-app="business">
-        <div class="container">
+    <body ng-app="business" ng-cloak>
+        <div class="container-fluid p-5">
             <div ng-controller="transcriptController">
                 <div class="bg-primary mt-3 p-3 rounded-top row">
                     <div class="mx-auto">
@@ -23,18 +23,22 @@
                 </div>
                 <div ng-show="showTranscripts == true">
                     <div class="bg-info mt-3 row text-light">
-                            <div class="col text-center">Origine</div>
+                            <div class="col text-center"><a class="pointer" ng-click="toggleOrder(); property = order + 'origin'">Origine</a></div>
                             <div class="col text-center">Audio (input)</div>
-                            <div class="col text-center">Texte (output)</div>
-                            <div class="col text-center">Date/heure</div>
-                            <div class="col text-center">Temps de traitement</div>
+                            <div class="col text-center"><a class="pointer" ng-click="toggleOrder(); property = order + 'output'">Texte (output)</a></div>
+                            <div class="col text-center"><a class="pointer" ng-click="toggleOrder(); property = order + 'date'">Date/heure</a></div>
+                            <div class="col text-center"><a class="pointer" ng-click="toggleOrder(); property = order + 'processTime'">Temps de traitement</a></div>
+                            <div class="col text-center"><a class="pointer" ng-click="toggleOrder(); property = order + 'confidence'">Certitude</a></div>
                     </div>
-                    <div class="border row" ng-repeat="transcript in transcriptS.transcripts">
-                        <div class="align-cell border-bottom col">{{transcript.origin}}</div>
-                        <div class="align-cell border-bottom col"><audio class="thin" controls></audio></div>
-                        <div class="align-cell border-bottom col">{{transcript.output}}</div>
-                        <div class="align-cell border-bottom col">{{transcript.date}}</div>
-                        <div class="align-cell border-bottom col">{{transcript.processTime}}</div>
+                    <div class="border row" ng-repeat="transcript in transcriptS.transcripts | orderBy: property">
+                        <div class="align-cell col">{{transcript.origin}}</div>
+                        <div class="align-cell col">
+                            <audio class="thin" controls src="{{transcript.file}}"></audio>
+                        </div>
+                        <div class="align-cell col">{{transcript.output}}</div>
+                        <div class="align-cell col">{{transcript.date}}</div>
+                        <div class="align-cell col">{{transcript.processTime}}ms</div>
+                        <div class="align-cell col" ng-class="confidLvl(transcript.confidence)">{{transcript.confidence}}</div>
                     </div>
                     <div class="row">
                         <div class="align-cell col">{{exportStatus}}</div>
@@ -43,7 +47,7 @@
             </div>
         </div>
 
-        <!-- Scripts à charger (chargement page plus rapide si positionnement en bas de page) -->
+        <!-- Scripts à charger (chargement page plus rapide si positionnement en bas) -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-route.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>

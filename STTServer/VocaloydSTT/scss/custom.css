@@ -1,3 +1,9 @@
+/* Avoid angular tag display on page load */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak
+{
+    display: none !important;
+}
+
 .align-cell
 {
     margin: auto;
@@ -5,8 +11,13 @@
     text-align: center;
 }
 
+.pointer
+{
+    cursor: pointer;
+}
+
 .thin
 {
     height: 25px;
-    width: 90%;
+    width: 100%;
 }

@@ -3,27 +3,38 @@
 <html>
     <base href="/" />
     <head>
-        <link rel='stylesheet' type='text/CSS' href='custom.scss'>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        <link rel='stylesheet' type='text/CSS' href='custom.css'>
+        <link rel='stylesheet' type='text/CSS' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
     </head>
 
     <body ng-app="business" class="bodyLogin">
-        <div class="pure-g" id="grandContainerLogin">
-            <div id="containerLogin" class="pure-u-1-1" ng-controller="loginController">
+        <div class="col-sm-3 container mt-5">
+        <!-- <div class="align-items-center container d-flex justify-content-center"> -->
+            <div ng-controller="loginController">
                 <!-- Login form -->
-                <form class="pure-form" name="form" ng-submit="formLogin()">
-                    <fieldset class="pure-group">
-                        <label for="login">Login</label>
-                        <input class="pure-input-rounded" ng-model="login" placeholder="Login" required type="text">
-                        <label for="password">Password</label>
-                        <input class="pure-input-rounded" ng-model="password" placeholder="Password" required type="password">
-                    </fieldset>
-                    <button class="pure-button pure-input-1 pure-button-primary" type="submit">Sign in</button>
+                <form class="bg-secondary form-horizontal p-3 rounded text-center" name="form" ng-submit="formLogin()">
+                    <div class="form-group justify-content-center row">
+                        <label class="col-sm-2 control-label mt-2 mr-2 text-white" for="login">Login</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" ng-model="login" placeholder="Login" required type="text">
+                        </div>
+                    </div>
+                    <div class="form-group justify-content-center row">
+                        <label class="col-sm-2 control-label mt-2 mr-2 text-white" for="password">Password</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" ng-model="password" placeholder="Password" required type="password">
+                        </div>
+                    </div>
+                    <div class="form-group justify-content-center row">
+                        <div class="col-sm-offset-2 col-sm-10 mt-3">
+                            <button class="btn btn-info" type="submit">Sign in</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
 
-        <!-- Scripts à charger (chargement page plus rapide si positionnement en bas de page) -->
+        <!-- Scripts à charger (chargement page plus rapide si positionnement en bas) -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-route.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>

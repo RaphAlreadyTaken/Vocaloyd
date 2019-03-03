@@ -1,11 +1,14 @@
+/******** Environment
+*
+********/
+require('./env');   //Removing this breaks Google Speech to Text (credentials)
+
 /******** Middleware
 *
 ********/
 const express = require('express');
 const formidable = require('express-formidable');
-var fs = require('fs');
 var http = require('http');
-const MongoClient = require('mongodb').MongoClient;
 const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
 const path = require('path');
@@ -43,7 +46,13 @@ app.use(session(
 
 app.use(express.static(path.join(__dirname, './VocaloydSTT/business'))); //Ajout répertoire business dans "path" de l'app
 app.use(express.static(path.join(__dirname, './VocaloydSTT/scss'))); //Ajout répertoire scss dans "path" de l'app
-app.use(formidable());
+app.use(express.static(path.join(__dirname, './VocaloydSTT/upload'))); //Ajout répertoire scss dans "path" de l'app
+
+app.use(formidable(
+{
+    uploadDir: './VocaloydSTT/upload',
+}));
+
 app.use('/', index);    //index.js import
 app.use('/log', log);    //log.js import
 app.use('/transcribe', transcribe); //transcribe.js import
