@@ -3,8 +3,6 @@ package src;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map.Entry;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Analyzer class, designed to provide analysis of incoming text and associate commands to it (Regex)
@@ -55,6 +53,6 @@ public class Analyzer
             }
         }
 
-        return output;
+        return null;  //Null if command not found -> bad request
     }
 }

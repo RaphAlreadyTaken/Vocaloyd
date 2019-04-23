@@ -1,18 +1,18 @@
 
-all: clean javaClient run
-
-#Client
+#Compile
 .ONESHELL:
-javaClient:
-	@echo "Compiling client..."
+analyzer:
+	@echo "Compiling..."
 	javac -d ./build/ ./src/*.java
-	javac -d ./build/ -proc:none Analyze.java
+	javac -d ./build/ -proc:none Client.java
+
+all: clean analyzer run
 
 #Run client
 .ONESHELL:
 run:
 	cd ./build
-	java Analyze $(arg1)
+	java Client
 
 clean:
 	@echo "Cleaning previously generated files..."
