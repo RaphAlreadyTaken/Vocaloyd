@@ -14,6 +14,8 @@ const dsnMongoDB = "mongodb://127.0.0.1:27017/";
 //POST request. Route: /transcribe/newTranscript. Allows to convert an audio file to text
 router.post('/newTranscript', function (request, response)
 {
+    console.log("Transcription request");
+
     start = Date.now();
 
     var result = util.transcribe(request.files.inputAudio); //Transcription (Promise)
@@ -26,6 +28,7 @@ router.post('/newTranscript', function (request, response)
         transcription = resp.results
             .map(result => result.alternatives[0].transcript)
             .join('\n');
+
         response.send(transcription);   //Earliest reponse
             
         confidence = resp.results
