@@ -8,7 +8,7 @@ const express = require('express');
  *
  ********/
 var router = express.Router();
-var dsnMongoDB = "mongodb://127.0.0.1:27017/";
+var dsnMongoDB = "mongodb://192.168.1.15:27017/";
 
 //POST request. Route: /log/login. Allows a user to log in
 router.post('/login', function (request, response)

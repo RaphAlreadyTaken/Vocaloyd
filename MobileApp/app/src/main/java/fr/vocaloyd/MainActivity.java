@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void record(View view)
     {
-        File audioFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/command");
+        File audioFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/command.amr");
 
         if (recording == false)
         {

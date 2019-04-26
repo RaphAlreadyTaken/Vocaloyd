@@ -3,13 +3,14 @@
 ********/
 const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
-const util = require('vocaloyd-util');
+const vocaloyd = require('vocaloyd-util');
+const amrToMp3 = require('amrToMp3');
 
 /******** Variables
  *
  ********/
 const router = express.Router();
-const dsnMongoDB = "mongodb://127.0.0.1:27017/";
+const dsnMongoDB = "mongodb://192.168.1.15:27017/";
 
 //POST request. Route: /transcribe/newTranscript. Allows to convert an audio file to text
 router.post('/newTranscript', function (request, response)
@@ -18,7 +19,7 @@ router.post('/newTranscript', function (request, response)
 
     start = Date.now();
 
-    var result = util.transcribe(request.files.inputAudio); //Transcription (Promise)
+    var result = vocaloyd.transcribe(request.files.inputAudio); //Transcription (Promise)
 
     result
     .then(data =>
@@ -36,9 +37,23 @@ router.post('/newTranscript', function (request, response)
             .join('\n');
 
         var res = {"transcription": transcription, "confidence": confidence};
-    
+
+        var file = request.files.inputAudio.path.substring(request.files.inputAudio.path.lastIndexOf("/") + 1);
+
+        amrToMp3(request.files.inputAudio.path, './VocaloydSTT/upload')
+            .then(function (data)
+            {
+                console.log(data);
+                vocaloyd.deleteAfterConversion(request.files.inputAudio.path);
+            })
+            .catch(function (err)
+            {
+                console.log(err);
+            });
+
+        file = file.substring(0, file.lastIndexOf(".")) + ".mp3";
+
         const origin = request.fields.device;
-        const file = request.files.inputAudio.path.substring(request.files.inputAudio.path.lastIndexOf("/") + 1);
         var date = new Date();
         date = date.toLocaleString("fr-FR", {hour12: false});
         const processTime = (end - start);

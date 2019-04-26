@@ -63,10 +63,14 @@ public class TranscribeTask extends AsyncTask<File, Void, String>
 
     protected void onPostExecute(String result)
     {
-        if (result != null)
+        if (result != null && result.length() > 0)
         {
             AnalyzeTask task = new AnalyzeTask();
             task.execute(result);
+        }
+        else
+        {
+            System.out.println("Empty message");
         }
     }
 }

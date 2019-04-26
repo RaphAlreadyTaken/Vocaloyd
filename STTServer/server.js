@@ -37,7 +37,7 @@ app.use(session(
     resave: false,
     store: new MongoDBStore(
     {
-        uri: "mongodb://localhost:27017/db",
+        uri: "mongodb://192.168.1.15:27017/db",
         collection: 'vocaloydSessions',
         touchAfter: 24 * 3600
     }),
@@ -51,6 +51,7 @@ app.use(express.static(path.join(__dirname, './VocaloydSTT/upload'))); //Ajout r
 app.use(formidable(
 {
     uploadDir: './VocaloydSTT/upload',
+    keepExtensions: true
 }));
 
 app.use('/', index);    //index.js import
