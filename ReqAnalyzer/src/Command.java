@@ -12,23 +12,21 @@ public class Command
 {
     private HashMap<String, ArrayList<String>> commands;
 
-    private ArrayList<String> keys = new ArrayList<String>(Arrays.asList("play", "pause", "previous", "next", "up", "down"));
+    private ArrayList<String> keys = new ArrayList<String>(Arrays.asList("playMusic", "playAlbum", "playArtist", "playGenre", "playDuration"));
     
-    private ArrayList<String> playValues = new ArrayList<String>(Arrays.asList("play", "jou"));
-    private ArrayList<String> pauseValues = new ArrayList<String>(Arrays.asList("pause", "stop", "wait", "arr"));
-    private ArrayList<String> previousValues = new ArrayList<String>(Arrays.asList("previous", "précédent", "avant"));
-    private ArrayList<String> nextValues = new ArrayList<String>(Arrays.asList("next", "suivant", "après"));
-    private ArrayList<String> upValues = new ArrayList<String>(Arrays.asList("up", "volume up", "plus fort", "loud", "haut"));
-    private ArrayList<String> downValues = new ArrayList<String>(Arrays.asList("down", "volume down", "moins fort", "quiet", "bas"));
+    private ArrayList<String> playMusicValues = new ArrayList<String>(Arrays.asList("play", "play musi", "play tit", "play track", "joue", "joue musi", "joue tit", "joue track"));
+    private ArrayList<String> playAlbumValues = new ArrayList<String>(Arrays.asList("play_al", "stop", "wait", "arr"));
+    private ArrayList<String> playArtistValues = new ArrayList<String>(Arrays.asList("previous", "précédent", "avant"));
+    private ArrayList<String> playGenreValues = new ArrayList<String>(Arrays.asList("next", "suivant", "après"));
+    private ArrayList<String> playDurationValues = new ArrayList<String>(Arrays.asList("up", "volume up", "plus fort", "loud", "haut"));
     
     private ArrayList<ArrayList<String>> values = new ArrayList<ArrayList<String>>(Arrays.asList
     (
-        playValues,
-        pauseValues,
-        previousValues,
-        nextValues,
-        upValues,
-        downValues
+        playMusicValues,
+        playAlbumValues,
+        playArtistValues,
+        playGenreValues,
+        playDurationValues
     ));
     
     /**
@@ -53,7 +51,7 @@ public class Command
 
     /**
      * Getter commands
-     * @return HashMap<String, ArrayList<String>> : <list, synonyms> of supported commands
+     * @return HashMap<String, ArrayList<String>> : <name, synonyms> of supported commands
      */
     HashMap<String, ArrayList<String>> getCommands()
     {

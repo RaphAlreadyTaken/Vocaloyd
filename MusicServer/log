@@ -1,0 +1,607 @@
+-! 04/07/19 12:15:51.144 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python2.7/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 14, in ajout
+       song.audio = Binary(song.audio)
+   NameError: global name 'Binary' is not defined
+   
+   identity: SimpleManager
+   facet: 
+   operation: ajout
+   remote host: ::ffff:127.0.0.1 remote port: 55867
+-! 04/07/19 12:30:47.339 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python2.7/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 14, in ajout
+       song.audio = pymongo.Binary(song.audio)
+   AttributeError: 'module' object has no attribute 'Binary'
+   
+   identity: SimpleManager
+   facet: 
+   operation: ajout
+   remote host: ::ffff:127.0.0.1 remote port: 56363
+-! 04/07/19 12:40:08.453 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   exceptions.ValueError: invalid value for element 0 of sequence<byte>
+   identity: SimpleManager
+   facet: 
+   operation: recupTitres
+   remote host: ::ffff:127.0.0.1 remote port: 56700
+-! 04/07/19 12:42:47.317 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   exceptions.ValueError: invalid value for element 0 of sequence<byte>
+   identity: SimpleManager
+   facet: 
+   operation: recupTitres
+   remote host: ::ffff:127.0.0.1 remote port: 56775
+-! 04/07/19 12:43:01.887 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python2.7/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 27, in recupTitres
+       track = discotheque.Morceau(musique['artiste'], musique['album'], musique['titre'], musique['audio'])
+   KeyError: 'audio'
+   
+   identity: SimpleManager
+   facet: 
+   operation: recupTitres
+   remote host: ::ffff:127.0.0.1 remote port: 56795
+-! 04/07/19 14:45:28.022 discotheque/server/server.py: warning: connection exception:
+   src/Ice/StreamSocket.cpp:243: ::Ice::ConnectionLostException:
+   connection lost: recv() returned zero
+   local address = ::ffff:127.0.0.1:10000
+   remote address = ::ffff:127.0.0.1:53325
+-! 04/10/19 15:13:18.786 discotheque/server/server.py: warning: connection exception:
+   src/Ice/StreamSocket.cpp:243: ::Ice::ConnectionLostException:
+   connection lost: recv() returned zero
+   local address = ::ffff:127.0.0.1:10000
+   remote address = ::ffff:127.0.0.1:63732
+-! 04/10/19 15:14:20.303 discotheque/server/server.py: warning: connection exception:
+   src/Ice/StreamSocket.cpp:243: ::Ice::ConnectionLostException:
+   connection lost: recv() returned zero
+   local address = ::ffff:127.0.0.1:10000
+   remote address = ::ffff:127.0.0.1:63759
+-! 04/10/19 15:21:24.374 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 79, in jouerTitres
+       musiques = rechercheParTitre(title)
+   NameError: name 'rechercheParTitre' is not defined
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 64051
+-! 04/10/19 15:22:17.843 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 85, in jouerTitres
+       localTracks += localPath + title
+   NameError: name 'localPath' is not defined
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 64080
+-! 04/10/19 15:23:01.987 discotheque/server/server.py: warning: connection exception:
+   src/Ice/StreamSocket.cpp:243: ::Ice::ConnectionLostException:
+   connection lost: recv() returned zero
+   local address = ::ffff:127.0.0.1:10000
+   remote address = ::ffff:127.0.0.1:64104
+-! 04/10/19 15:59:53.246 discotheque/server/server.py: warning: connection exception:
+   src/Ice/StreamSocket.cpp:243: ::Ice::ConnectionLostException:
+   connection lost: recv() returned zero
+   local address = ::ffff:127.0.0.1:10000
+   remote address = ::ffff:127.0.0.1:65410
+-! 04/10/19 16:01:58.350 discotheque/server/server.py: warning: connection exception:
+   src/Ice/StreamSocket.cpp:243: ::Ice::ConnectionLostException:
+   connection lost: recv() returned zero
+   local address = ::ffff:127.0.0.1:10000
+   remote address = ::ffff:127.0.0.1:65490
+-! 04/10/19 17:12:59.778 discotheque/server/server.py: warning: connection exception:
+   src/Ice/StreamSocket.cpp:243: ::Ice::ConnectionLostException:
+   connection lost: recv() returned zero
+   local address = ::ffff:127.0.0.1:10000
+   remote address = ::ffff:127.0.0.1:55289
+-! 04/10/19 17:13:20.367 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 77, in jouerTitres
+       musiques = self.rechercheParTitre(title)
+     File "discotheque/server/server.py", line 39, in rechercheParTitre
+       track = discotheque.Morceau(musique['artiste'], musique['album'], musique['titre'], musique['file'])
+   KeyError: 'file'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 55337
+-! 04/10/19 17:15:11.429 discotheque/server/server.py: warning: connection exception:
+   src/Ice/StreamSocket.cpp:243: ::Ice::ConnectionLostException:
+   connection lost: recv() returned zero
+   local address = ::ffff:127.0.0.1:10000
+   remote address = ::ffff:127.0.0.1:55366
+-! 04/10/19 17:16:02.883 discotheque/server/server.py: warning: connection exception:
+   src/Ice/StreamSocket.cpp:243: ::Ice::ConnectionLostException:
+   connection lost: recv() returned zero
+   local address = ::ffff:127.0.0.1:10000
+   remote address = ::ffff:127.0.0.1:55438
+-! 04/10/19 17:39:19.149 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 83, in jouerTitres
+       localTracks += self.localPath + musique['file']
+   TypeError: 'Morceau' object is not subscriptable
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 56244
+-! 04/10/19 17:40:03.751 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 83, in jouerTitres
+       localTracks += self.localPath + str(musique['file'])
+   TypeError: 'Morceau' object is not subscriptable
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 56272
+-! 04/10/19 18:07:48.398 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 83, in jouerTitres
+       localTracks += self.localPath + str(musique['file'])
+   TypeError: 'Morceau' object is not subscriptable
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 57042
+-! 04/10/19 18:08:01.568 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 83, in jouerTitres
+       localTracks += self.localPath + str(musique.file)
+   TypeError: 'Morceau' object is not subscriptable
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 57058
+-! 04/10/19 18:09:36.246 discotheque/server/server.py: warning: connection exception:
+   src/Ice/StreamSocket.cpp:243: ::Ice::ConnectionLostException:
+   connection lost: recv() returned zero
+   local address = ::ffff:127.0.0.1:10000
+   remote address = ::ffff:127.0.0.1:57113
+-! 04/10/19 19:56:54.903 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       vlc = libvlc_new(0, None)
+   NameError: name 'libvlc_new' is not defined
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 60500
+-! 04/10/19 20:00:05.803 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       vlc = libvlc_new(0, None)
+   NameError: name 'libvlc_new' is not defined
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 60673
+-! 04/10/19 20:16:05.058 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       vlc = vlc.libvlc_new(0, None)
+   UnboundLocalError: local variable 'vlc' referenced before assignment
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 61262
+-! 04/10/19 20:16:45.556 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       vlcInst = vlc.libvlc_new(0, None)
+     File "/home/raph/.local/lib/python3.6/site-packages/vlc.py", line 4619, in libvlc_new
+       return f(argc, argv)
+   ctypes.ArgumentError: argument 2: <class 'TypeError'>: Don't know how to convert parameter 2
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 61288
+-! 04/10/19 20:18:27.521 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       vlcInst = vlc.libvlc_new(0, None)
+     File "/home/raph/.local/lib/python3.6/site-packages/vlc.py", line 4619, in libvlc_new
+       return f(argc, argv)
+   ctypes.ArgumentError: argument 2: <class 'TypeError'>: Don't know how to convert parameter 2
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 61351
+-! 04/10/19 20:26:37.192 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       vlcInst = vlc.libvlc_new(0, c_char_p(''))
+   NameError: name 'c_char_p' is not defined
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 61647
+-! 04/10/19 20:35:56.056 discotheque/server/server.py: warning: connection exception:
+   src/Ice/StreamSocket.cpp:243: ::Ice::ConnectionLostException:
+   connection lost: recv() returned zero
+   local address = ::ffff:127.0.0.1:10000
+   remote address = ::ffff:127.0.0.1:61929
+-! 04/10/19 20:36:10.869 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 87, in jouerTitres
+       localTracks[0].open('r')
+   AttributeError: 'str' object has no attribute 'open'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 61982
+-! 04/10/19 20:37:09.000 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 87, in jouerTitres
+       file = open(localTracks[0], 'r')
+   IsADirectoryError: [Errno 21] Is a directory: '.'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 62065
+-! 04/10/19 20:38:05.554 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 87, in jouerTitres
+       file = open(localTracks[0], 'r')
+   FileNotFoundError: [Errno 2] No such file or directory: 't'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 62096
+-! 04/10/19 20:40:44.767 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       file = open(localTracks[0], 'r')
+   FileNotFoundError: [Errno 2] No such file or directory: 'd'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 62191
+-! 04/10/19 20:41:16.116 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       file = open(str(localTracks[0]), 'r')
+   IndexError: list index out of range
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 62212
+-! 04/10/19 20:41:37.017 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       file = open(str(localTracks[0]), 'r')
+   FileNotFoundError: [Errno 2] No such file or directory: 'd'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 62227
+-! 04/10/19 20:43:56.680 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       file = open(localTracks[0], 'r')
+   FileNotFoundError: [Errno 2] No such file or directory: 'd'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 62297
+-! 04/10/19 20:49:18.307 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       file = open(localTracks[0], 'r')
+   IsADirectoryError: [Errno 21] Is a directory: '/'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 62445
+-! 04/10/19 20:50:50.281 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       file = open("/discotheque/server/tracks/Through Glass.mp3", 'r')
+   FileNotFoundError: [Errno 2] No such file or directory: '/discotheque/server/tracks/Through Glass.mp3'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 62498
+-! 04/10/19 20:51:09.392 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 90, in jouerTitres
+       for line in file:
+     File "/usr/lib/python3.6/codecs.py", line 321, in decode
+       (result, consumed) = self._buffer_decode(data, self.errors, final)
+   UnicodeDecodeError: 'utf-8' codec can't decode byte 0xbd in position 226: invalid start byte
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 62517
+-! 04/10/19 21:02:17.037 discotheque/server/server.py: warning: connection exception:
+   src/Ice/StreamSocket.cpp:243: ::Ice::ConnectionLostException:
+   connection lost: recv() returned zero
+   local address = ::ffff:127.0.0.1:10000
+   remote address = ::ffff:127.0.0.1:62960
+-! 04/10/19 21:02:27.013 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       file = open(localTracks[0], 'r')
+   IsADirectoryError: [Errno 21] Is a directory: '/'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 63005
+-! 04/10/19 21:04:46.025 discotheque/server/server.py: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "discotheque/server/server.py", line 88, in jouerTitres
+       file = open(localTracks[0], 'r')
+   FileNotFoundError: [Errno 2] No such file or directory: 'd'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 63082
+-! 04/11/19 14:58:43.070 ./discotheque/server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "./discotheque/server/server.py", line 90, in jouerTitres
+       media = vlcInst.media_list_new(localTracks, stream)
+   TypeError: media_list_new() takes from 1 to 2 positional arguments but 3 were given
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 57985
+-! 04/11/19 14:59:37.823 ./discotheque/server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 1038, in _get_socket_no_auth
+       sock_info = self.sockets.pop()
+   KeyError: 'pop from an empty set'
+   
+   During handling of the above exception, another exception occurred:
+   
+   Traceback (most recent call last):
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 968, in connect
+       sock = _configured_socket(self.address, self.opts)
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 843, in _configured_socket
+       sock = _create_connection(address, options)
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 796, in _create_connection
+       for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+     File "C:\Python37\lib\socket.py", line 748, in getaddrinfo
+       for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+   socket.gaierror: [Errno 11001] getaddrinfo failed
+   
+   During handling of the above exception, another exception occurred:
+   
+   Traceback (most recent call last):
+     File "C:\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "./discotheque/server/server.py", line 79, in jouerTitres
+       musiques = self.rechercheParTitre(title)
+     File "./discotheque/server/server.py", line 39, in rechercheParTitre
+       queryCount = query.count()
+     File "C:\Python37\lib\site-packages\pymongo\cursor.py", line 769, in count
+       cmd, self.__collation, session=self.__session)
+     File "C:\Python37\lib\site-packages\pymongo\collection.py", line 1563, in _count
+       with self._socket_for_reads(session) as (sock_info, slave_ok):
+     File "C:\Python37\lib\contextlib.py", line 112, in __enter__
+       return next(self.gen)
+     File "C:\Python37\lib\site-packages\pymongo\mongo_client.py", line 1101, in _socket_for_reads
+       with self._get_socket(server) as sock_info:
+     File "C:\Python37\lib\contextlib.py", line 112, in __enter__
+       return next(self.gen)
+     File "C:\Python37\lib\site-packages\pymongo\mongo_client.py", line 1058, in _get_socket
+       with server.get_socket(self.__all_credentials) as sock_info:
+     File "C:\Python37\lib\contextlib.py", line 112, in __enter__
+       return next(self.gen)
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 1004, in get_socket
+       sock_info = self._get_socket_no_auth()
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 1041, in _get_socket_no_auth
+       sock_info = self.connect()
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 972, in connect
+       _raise_connection_failure(self.address, error)
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 283, in _raise_connection_failure
+       raise AutoReconnect(msg)
+   pymongo.errors.AutoReconnect: cluster0-shard-00-01-guvid.gcp.mongodb.net:27017: [Errno 11001] getaddrinfo failed
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 58023
+-! 04/11/19 15:43:16.359 ./discotheque/server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 1038, in _get_socket_no_auth
+       sock_info = self.sockets.pop()
+   KeyError: 'pop from an empty set'
+   
+   During handling of the above exception, another exception occurred:
+   
+   Traceback (most recent call last):
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 968, in connect
+       sock = _configured_socket(self.address, self.opts)
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 843, in _configured_socket
+       sock = _create_connection(address, options)
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 796, in _create_connection
+       for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+     File "C:\Python37\lib\socket.py", line 748, in getaddrinfo
+       for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+   socket.gaierror: [Errno 11001] getaddrinfo failed
+   
+   During handling of the above exception, another exception occurred:
+   
+   Traceback (most recent call last):
+     File "C:\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "./discotheque/server/server.py", line 79, in jouerTitres
+       musiques = self.rechercheParTitre(title)
+     File "./discotheque/server/server.py", line 39, in rechercheParTitre
+       queryCount = query.count()
+     File "C:\Python37\lib\site-packages\pymongo\cursor.py", line 769, in count
+       cmd, self.__collation, session=self.__session)
+     File "C:\Python37\lib\site-packages\pymongo\collection.py", line 1563, in _count
+       with self._socket_for_reads(session) as (sock_info, slave_ok):
+     File "C:\Python37\lib\contextlib.py", line 112, in __enter__
+       return next(self.gen)
+     File "C:\Python37\lib\site-packages\pymongo\mongo_client.py", line 1101, in _socket_for_reads
+       with self._get_socket(server) as sock_info:
+     File "C:\Python37\lib\contextlib.py", line 112, in __enter__
+       return next(self.gen)
+     File "C:\Python37\lib\site-packages\pymongo\mongo_client.py", line 1058, in _get_socket
+       with server.get_socket(self.__all_credentials) as sock_info:
+     File "C:\Python37\lib\contextlib.py", line 112, in __enter__
+       return next(self.gen)
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 1004, in get_socket
+       sock_info = self._get_socket_no_auth()
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 1041, in _get_socket_no_auth
+       sock_info = self.connect()
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 972, in connect
+       _raise_connection_failure(self.address, error)
+     File "C:\Python37\lib\site-packages\pymongo\pool.py", line 283, in _raise_connection_failure
+       raise AutoReconnect(msg)
+   pymongo.errors.AutoReconnect: cluster0-shard-00-01-guvid.gcp.mongodb.net:27017: [Errno 11001] getaddrinfo failed
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 59573
+-! 04/11/19 15:44:27.596 ./discotheque/server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "./discotheque/server/server.py", line 79, in jouerTitres
+       musiques = self.rechercheParTitre(title)
+     File "./discotheque/server/server.py", line 39, in rechercheParTitre
+       queryCount = query.count()
+     File "C:\Python37\lib\site-packages\pymongo\cursor.py", line 769, in count
+       cmd, self.__collation, session=self.__session)
+     File "C:\Python37\lib\site-packages\pymongo\collection.py", line 1563, in _count
+       with self._socket_for_reads(session) as (sock_info, slave_ok):
+     File "C:\Python37\lib\contextlib.py", line 112, in __enter__
+       return next(self.gen)
+     File "C:\Python37\lib\site-packages\pymongo\mongo_client.py", line 1099, in _socket_for_reads
+       server = topology.select_server(read_preference)
+     File "C:\Python37\lib\site-packages\pymongo\topology.py", line 224, in select_server
+       address))
+     File "C:\Python37\lib\site-packages\pymongo\topology.py", line 183, in select_servers
+       selector, server_timeout, address)
+     File "C:\Python37\lib\site-packages\pymongo\topology.py", line 199, in _select_servers_loop
+       self._error_message(selector))
+   pymongo.errors.ServerSelectionTimeoutError: cluster0-shard-00-00-guvid.gcp.mongodb.net:27017: [Errno 11001] getaddrinfo failed,cluster0-shard-00-02-guvid.gcp.mongodb.net:27017: [Errno 11001] getaddrinfo failed,cluster0-shard-00-01-guvid.gcp.mongodb.net:27017: [Errno 11001] getaddrinfo failed
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerTitres
+   remote host: ::ffff:127.0.0.1 remote port: 59600
+-! 04/27/19 16:03:05.944 discotheque/server/server.py: warning: connection exception:
+   src/Ice/StreamSocket.cpp:243: ::Ice::ConnectionLostException:
+   connection lost: recv() returned zero
+   local address = 192.168.1.15:10000
+   remote address = 192.168.1.37:44680
