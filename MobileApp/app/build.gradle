@@ -1,39 +1,80 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.zeroc.gradle.ice-builder.slice'
 
-android {
+slice.output = file("${project.buildDir}/generated/source/ice")
+
+android
+{
     compileSdkVersion 28
-    defaultConfig {
+    defaultConfig
+    {
         applicationId "fr.vocaloyd"
         minSdkVersion 27
-        targetSdkVersion 28
+        targetSdkVersion 27
         versionCode 1
     }
-    packagingOptions {
+
+    packagingOptions
+    {
         exclude 'META-INF/DEPENDENCIES'
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/LICENSE.md'
         exclude 'META-INF/NOTICE'
         exclude 'META-INF/NOTICE.md'
     }
-    lintOptions {
+
+    lintOptions
+    {
         abortOnError false
     }
 
-    buildTypes {
-        release {
+    buildTypes
+    {
+        release
+        {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions
+    {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
 }
 
-dependencies {
+buildscript
+{
+    repositories
+    {
+        mavenCentral()
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+
+    dependencies
+    {
+        classpath "gradle.plugin.com.zeroc.gradle.ice-builder:slice:1.4.7"
+    }
+}
+
+slice
+{
+    java
+    {
+        files = [file("./src/Discotheque.ice")]
+    }
+}
+
+dependencies
+{
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha4'
     implementation 'com.android.support:design:28.0.0'
-    implementation 'cz.msebera.android:httpclient:4.4.1.2'
     implementation 'com.kaazing:enterprise.android.client.all:4.1.0'
+    implementation 'cz.msebera.android:httpclient:4.4.1.2'
+    implementation 'com.zeroc:ice:3.7.2'
     implementation 'org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1'
     testImplementation 'junit:junit:4.13-beta-2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

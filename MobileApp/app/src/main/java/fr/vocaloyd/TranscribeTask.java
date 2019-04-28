@@ -32,11 +32,11 @@ public class TranscribeTask extends AsyncTask<File, Void, String>
         try
         {
             URI uri = new URIBuilder()
-                    .setScheme("http")
-                    .setHost("192.168.1.15")
-                    .setPort(3131)
-                    .setPath("/transcribe/newTranscript")
-                    .build();
+                .setScheme("http")
+                .setHost("192.168.1.15")
+                .setPort(3131)
+                .setPath("/transcribe/newTranscript")
+                .build();
 
             HttpEntity entity = MultipartEntityBuilder
                 .create()
