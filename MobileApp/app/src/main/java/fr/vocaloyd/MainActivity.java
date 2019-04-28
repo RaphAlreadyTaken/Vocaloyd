@@ -115,8 +115,8 @@ public class MainActivity extends AppCompatActivity
     public void streamTest(View view) throws IllegalArgumentException, IOException
     {
         System.out.println("This is the stream");
-        MusicTask task = new MusicTask();
-        task.execute();
+//        MusicTask task = new MusicTask();
+//        task.execute();
 
         String uri = "http://192.168.1.15:10000/stream";
         MediaPlayer player = new MediaPlayer();
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity
             .setUsage(AudioAttributes.USAGE_MEDIA)
             .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
             .build());
-        player.setDataSource(this, Uri.parse(uri));
+        player.setDataSource(uri);
         player.prepare();
         player.start();
     }

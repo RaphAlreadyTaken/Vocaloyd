@@ -1,0 +1,14 @@
+<state>
+  <timestamp value='1556372835798' />
+  <sourceSet name='default'>
+    <source name='/mnt/c/Users/Raph/Google Drive/Cours/M1/S2/Middleware/TP/TPICE/Discotheque.ice'>
+      <file name='/mnt/c/Users/Raph/Google Drive/Cours/M1/S2/Middleware/TP/TPICE/discotheque/client/build/generated-src/discotheque/Morceau.java' />
+      <file name='/mnt/c/Users/Raph/Google Drive/Cours/M1/S2/Middleware/TP/TPICE/discotheque/client/build/generated-src/discotheque/trackManagement.java' />
+      <file name='/mnt/c/Users/Raph/Google Drive/Cours/M1/S2/Middleware/TP/TPICE/discotheque/client/build/generated-src/discotheque/MorceauxHelper.java' />
+      <file name='/mnt/c/Users/Raph/Google Drive/Cours/M1/S2/Middleware/TP/TPICE/discotheque/client/build/generated-src/discotheque/trackManagementPrx.java' />
+      <file name='/mnt/c/Users/Raph/Google Drive/Cours/M1/S2/Middleware/TP/TPICE/discotheque/client/build/generated-src/discotheque/_trackManagementPrxI.java' />
+    </source>
+    <arg value='/usr/bin/slice2java' />
+    <arg value='-I/usr/share/ice/slice' />
+  </sourceSet>
+</state>
