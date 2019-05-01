@@ -5,44 +5,44 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /**
- * Command class, designed to hold commands and compatible values
+ * Command class, designed to hold commands and compatible values (synonyms)
  * WARNING : keys and values need to be the same length
  */
 public class Command
 {
     private HashMap<String, ArrayList<String>> commands;
 
-    private ArrayList<String> keys = new ArrayList<String>(Arrays.asList("play", "pause", "previous", "next", "up", "down"));
-    
-    private ArrayList<String> playValues = new ArrayList<>(Arrays.asList("play", "jou"));
-    private ArrayList<String> pauseValues = new ArrayList<>(Arrays.asList("pause", "stop", "wait", "arr"));
-    private ArrayList<String> previousValues = new ArrayList<>(Arrays.asList("previous", "précédent", "avant"));
-    private ArrayList<String> nextValues = new ArrayList<>(Arrays.asList("next", "suivant", "après"));
-    private ArrayList<String> upValues = new ArrayList<>(Arrays.asList("up", "volume up", "plus fort", "loud", "haut"));
-    private ArrayList<String> downValues = new ArrayList<>(Arrays.asList("down", "volume down", "moins fort", "quiet", "bas"));
-    
+    private ArrayList<String> keys = new ArrayList<String>(Arrays.asList("play", "playTrack", "playAlbum", "playArtist", "playGenre", "playDuration"));
+
+    private ArrayList<String> playValues = new ArrayList<>(Arrays.asList("jou", "plai", "play"));
+    private ArrayList<String> playTrackValues = new ArrayList<>(Arrays.asList("musi", "piste", "tit", "track"));
+    private ArrayList<String> playAlbumValues = new ArrayList<>(Arrays.asList("album"));
+    private ArrayList<String> playArtistValues = new ArrayList<>(Arrays.asList("artist", "band", "chanteu", "group", "singer"));
+    private ArrayList<String> playGenreValues = new ArrayList<>(Arrays.asList("genre", "style"));
+    private ArrayList<String> playDurationValues = new ArrayList<>(Arrays.asList("pendant", "for"));
+
     private ArrayList<ArrayList<String>> values = new ArrayList<>(Arrays.asList
-    (
-        playValues,
-        pauseValues,
-        previousValues,
-        nextValues,
-        upValues,
-        downValues
-    ));
-    
+            (
+                    playValues,
+                    playTrackValues,
+                    playAlbumValues,
+                    playArtistValues,
+                    playGenreValues,
+                    playDurationValues
+            ));
+
     /**
      * Constructor
      * @throws Exception if incompatible sizes
      */
     public Command() throws Exception
-    {  
+    {
         if (keys.size() != values.size())
         {
             throw new Exception("Incompatible size between keys and values collections");
         }
-        
-        commands = new HashMap<String, ArrayList<String>>();
+
+        commands = new HashMap<>();
         int nbCommands = keys.size();
 
         for (int i = 0; i < nbCommands; ++i)
@@ -53,10 +53,11 @@ public class Command
 
     /**
      * Getter commands
-     * @return HashMap<String, ArrayList<String>> : <list, synonyms> of supported commands
+     * @return HashMap<String, ArrayList<String>> : <name, synonyms> of supported commands
      */
     HashMap<String, ArrayList<String>> getCommands()
     {
         return commands;
     }
 }
+

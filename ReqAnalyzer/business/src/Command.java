@@ -12,17 +12,19 @@ public class Command
 {
     private HashMap<String, ArrayList<String>> commands;
 
-    private ArrayList<String> keys = new ArrayList<String>(Arrays.asList("playMusic", "playAlbum", "playArtist", "playGenre", "playDuration"));
+    private ArrayList<String> keys = new ArrayList<String>(Arrays.asList("play", "playTrack", "playAlbum", "playArtist", "playGenre", "playDuration"));
     
-    private ArrayList<String> playMusicValues = new ArrayList<String>(Arrays.asList("play", "play musi", "play tit", "play track", "joue", "joue musi", "joue tit", "joue track"));
-    private ArrayList<String> playAlbumValues = new ArrayList<String>(Arrays.asList("play_al", "stop", "wait", "arr"));
-    private ArrayList<String> playArtistValues = new ArrayList<String>(Arrays.asList("previous", "précédent", "avant"));
-    private ArrayList<String> playGenreValues = new ArrayList<String>(Arrays.asList("next", "suivant", "après"));
-    private ArrayList<String> playDurationValues = new ArrayList<String>(Arrays.asList("up", "volume up", "plus fort", "loud", "haut"));
+    private ArrayList<String> playValues = new ArrayList<String>(Arrays.asList("jou", "plai", "play"));
+    private ArrayList<String> playTrackValues = new ArrayList<String>(Arrays.asList("musi", "piste", "tit", "track"));
+    private ArrayList<String> playAlbumValues = new ArrayList<String>(Arrays.asList("album"));
+    private ArrayList<String> playArtistValues = new ArrayList<String>(Arrays.asList("artist", "band", "chanteu", "group", "singer"));
+    private ArrayList<String> playGenreValues = new ArrayList<String>(Arrays.asList("genre", "style"));
+    private ArrayList<String> playDurationValues = new ArrayList<String>(Arrays.asList("pendant", "for"));
     
     private ArrayList<ArrayList<String>> values = new ArrayList<ArrayList<String>>(Arrays.asList
     (
-        playMusicValues,
+        playValues,
+        playTrackValues,
         playAlbumValues,
         playArtistValues,
         playGenreValues,

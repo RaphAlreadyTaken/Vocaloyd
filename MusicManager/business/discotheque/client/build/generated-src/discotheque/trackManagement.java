@@ -17,19 +17,27 @@ package discotheque;
 
 public interface trackManagement extends com.zeroc.Ice.Object
 {
-    void ajout(Morceau song, com.zeroc.Ice.Current current);
+    void ajouterTitre(Morceau song, com.zeroc.Ice.Current current);
 
-    Morceau[] recupTitres(com.zeroc.Ice.Current current);
+    Morceau[] recupererTitres(com.zeroc.Ice.Current current);
 
-    Morceau[] rechercheParTitre(String title, com.zeroc.Ice.Current current);
+    Morceau[] rechercherParTitre(String title, com.zeroc.Ice.Current current);
 
-    Morceau[] rechercheParArtiste(String artist, com.zeroc.Ice.Current current);
+    Morceau[] rechercherParArtiste(String artist, com.zeroc.Ice.Current current);
 
-    boolean suppressionTitre(String title, String artist, com.zeroc.Ice.Current current);
+    Morceau[] rechercherParAlbum(String album, com.zeroc.Ice.Current current);
 
-    boolean suppressionAlbum(String artist, String album, com.zeroc.Ice.Current current);
+    Morceau[] rechercherParGenre(String genre, com.zeroc.Ice.Current current);
 
-    void jouerTitres(String title, com.zeroc.Ice.Current current);
+    Morceau[] rechercherParDuree(String duration, com.zeroc.Ice.Current current);
+
+    boolean supprimerTitre(String title, String artist, com.zeroc.Ice.Current current);
+
+    boolean supprimerAlbum(String artist, String album, com.zeroc.Ice.Current current);
+
+    boolean supprimerArtiste(String artist, com.zeroc.Ice.Current current);
+
+    String jouerMorceaux(Morceau[] morceaux, com.zeroc.Ice.Current current);
 
     /** @hidden */
     static final String[] _iceIds =
@@ -62,14 +70,14 @@ public interface trackManagement extends com.zeroc.Ice.Object
      * @param current -
      * @return -
     **/
-    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_ajout(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_ajouterTitre(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
     {
         com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
         com.zeroc.Ice.InputStream istr = inS.startReadParams();
         Morceau iceP_song;
         iceP_song = Morceau.ice_read(istr);
         inS.endReadParams();
-        obj.ajout(iceP_song, current);
+        obj.ajouterTitre(iceP_song, current);
         return inS.setResult(inS.writeEmptyParams());
     }
 
@@ -80,11 +88,11 @@ public interface trackManagement extends com.zeroc.Ice.Object
      * @param current -
      * @return -
     **/
-    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_recupTitres(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_recupererTitres(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
     {
         com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
         inS.readEmptyParams();
-        Morceau[] ret = obj.recupTitres(current);
+        Morceau[] ret = obj.recupererTitres(current);
         com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
         MorceauxHelper.write(ostr, ret);
         inS.endWriteParams(ostr);
@@ -98,14 +106,14 @@ public interface trackManagement extends com.zeroc.Ice.Object
      * @param current -
      * @return -
     **/
-    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_rechercheParTitre(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_rechercherParTitre(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
     {
         com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
         com.zeroc.Ice.InputStream istr = inS.startReadParams();
         String iceP_title;
         iceP_title = istr.readString();
         inS.endReadParams();
-        Morceau[] ret = obj.rechercheParTitre(iceP_title, current);
+        Morceau[] ret = obj.rechercherParTitre(iceP_title, current);
         com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
         MorceauxHelper.write(ostr, ret);
         inS.endWriteParams(ostr);
@@ -119,14 +127,14 @@ public interface trackManagement extends com.zeroc.Ice.Object
      * @param current -
      * @return -
     **/
-    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_rechercheParArtiste(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_rechercherParArtiste(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
     {
         com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
         com.zeroc.Ice.InputStream istr = inS.startReadParams();
         String iceP_artist;
         iceP_artist = istr.readString();
         inS.endReadParams();
-        Morceau[] ret = obj.rechercheParArtiste(iceP_artist, current);
+        Morceau[] ret = obj.rechercherParArtiste(iceP_artist, current);
         com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
         MorceauxHelper.write(ostr, ret);
         inS.endWriteParams(ostr);
@@ -140,7 +148,70 @@ public interface trackManagement extends com.zeroc.Ice.Object
      * @param current -
      * @return -
     **/
-    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_suppressionTitre(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_rechercherParAlbum(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    {
+        com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
+        com.zeroc.Ice.InputStream istr = inS.startReadParams();
+        String iceP_album;
+        iceP_album = istr.readString();
+        inS.endReadParams();
+        Morceau[] ret = obj.rechercherParAlbum(iceP_album, current);
+        com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
+        MorceauxHelper.write(ostr, ret);
+        inS.endWriteParams(ostr);
+        return inS.setResult(ostr);
+    }
+
+    /**
+     * @hidden
+     * @param obj -
+     * @param inS -
+     * @param current -
+     * @return -
+    **/
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_rechercherParGenre(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    {
+        com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
+        com.zeroc.Ice.InputStream istr = inS.startReadParams();
+        String iceP_genre;
+        iceP_genre = istr.readString();
+        inS.endReadParams();
+        Morceau[] ret = obj.rechercherParGenre(iceP_genre, current);
+        com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
+        MorceauxHelper.write(ostr, ret);
+        inS.endWriteParams(ostr);
+        return inS.setResult(ostr);
+    }
+
+    /**
+     * @hidden
+     * @param obj -
+     * @param inS -
+     * @param current -
+     * @return -
+    **/
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_rechercherParDuree(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    {
+        com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
+        com.zeroc.Ice.InputStream istr = inS.startReadParams();
+        String iceP_duration;
+        iceP_duration = istr.readString();
+        inS.endReadParams();
+        Morceau[] ret = obj.rechercherParDuree(iceP_duration, current);
+        com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
+        MorceauxHelper.write(ostr, ret);
+        inS.endWriteParams(ostr);
+        return inS.setResult(ostr);
+    }
+
+    /**
+     * @hidden
+     * @param obj -
+     * @param inS -
+     * @param current -
+     * @return -
+    **/
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_supprimerTitre(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
     {
         com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
         com.zeroc.Ice.InputStream istr = inS.startReadParams();
@@ -149,7 +220,7 @@ public interface trackManagement extends com.zeroc.Ice.Object
         iceP_title = istr.readString();
         iceP_artist = istr.readString();
         inS.endReadParams();
-        boolean ret = obj.suppressionTitre(iceP_title, iceP_artist, current);
+        boolean ret = obj.supprimerTitre(iceP_title, iceP_artist, current);
         com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
         ostr.writeBool(ret);
         inS.endWriteParams(ostr);
@@ -163,7 +234,7 @@ public interface trackManagement extends com.zeroc.Ice.Object
      * @param current -
      * @return -
     **/
-    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_suppressionAlbum(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_supprimerAlbum(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
     {
         com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
         com.zeroc.Ice.InputStream istr = inS.startReadParams();
@@ -172,7 +243,7 @@ public interface trackManagement extends com.zeroc.Ice.Object
         iceP_artist = istr.readString();
         iceP_album = istr.readString();
         inS.endReadParams();
-        boolean ret = obj.suppressionAlbum(iceP_artist, iceP_album, current);
+        boolean ret = obj.supprimerAlbum(iceP_artist, iceP_album, current);
         com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
         ostr.writeBool(ret);
         inS.endWriteParams(ostr);
@@ -186,31 +257,59 @@ public interface trackManagement extends com.zeroc.Ice.Object
      * @param current -
      * @return -
     **/
-    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_jouerTitres(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_supprimerArtiste(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
     {
         com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
         com.zeroc.Ice.InputStream istr = inS.startReadParams();
-        String iceP_title;
-        iceP_title = istr.readString();
+        String iceP_artist;
+        iceP_artist = istr.readString();
         inS.endReadParams();
-        obj.jouerTitres(iceP_title, current);
-        return inS.setResult(inS.writeEmptyParams());
+        boolean ret = obj.supprimerArtiste(iceP_artist, current);
+        com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
+        ostr.writeBool(ret);
+        inS.endWriteParams(ostr);
+        return inS.setResult(ostr);
+    }
+
+    /**
+     * @hidden
+     * @param obj -
+     * @param inS -
+     * @param current -
+     * @return -
+    **/
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_jouerMorceaux(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    {
+        com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
+        com.zeroc.Ice.InputStream istr = inS.startReadParams();
+        Morceau[] iceP_morceaux;
+        iceP_morceaux = MorceauxHelper.read(istr);
+        inS.endReadParams();
+        String ret = obj.jouerMorceaux(iceP_morceaux, current);
+        com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
+        ostr.writeString(ret);
+        inS.endWriteParams(ostr);
+        return inS.setResult(ostr);
     }
 
     /** @hidden */
     final static String[] _iceOps =
     {
-        "ajout",
+        "ajouterTitre",
         "ice_id",
         "ice_ids",
         "ice_isA",
         "ice_ping",
-        "jouerTitres",
-        "rechercheParArtiste",
-        "rechercheParTitre",
-        "recupTitres",
-        "suppressionAlbum",
-        "suppressionTitre"
+        "jouerMorceaux",
+        "rechercherParAlbum",
+        "rechercherParArtiste",
+        "rechercherParDuree",
+        "rechercherParGenre",
+        "rechercherParTitre",
+        "recupererTitres",
+        "supprimerAlbum",
+        "supprimerArtiste",
+        "supprimerTitre"
     };
 
     /** @hidden */
@@ -228,7 +327,7 @@ public interface trackManagement extends com.zeroc.Ice.Object
         {
             case 0:
             {
-                return _iceD_ajout(this, in, current);
+                return _iceD_ajouterTitre(this, in, current);
             }
             case 1:
             {
@@ -248,27 +347,43 @@ public interface trackManagement extends com.zeroc.Ice.Object
             }
             case 5:
             {
-                return _iceD_jouerTitres(this, in, current);
+                return _iceD_jouerMorceaux(this, in, current);
             }
             case 6:
             {
-                return _iceD_rechercheParArtiste(this, in, current);
+                return _iceD_rechercherParAlbum(this, in, current);
             }
             case 7:
             {
-                return _iceD_rechercheParTitre(this, in, current);
+                return _iceD_rechercherParArtiste(this, in, current);
             }
             case 8:
             {
-                return _iceD_recupTitres(this, in, current);
+                return _iceD_rechercherParDuree(this, in, current);
             }
             case 9:
             {
-                return _iceD_suppressionAlbum(this, in, current);
+                return _iceD_rechercherParGenre(this, in, current);
             }
             case 10:
             {
-                return _iceD_suppressionTitre(this, in, current);
+                return _iceD_rechercherParTitre(this, in, current);
+            }
+            case 11:
+            {
+                return _iceD_recupererTitres(this, in, current);
+            }
+            case 12:
+            {
+                return _iceD_supprimerAlbum(this, in, current);
+            }
+            case 13:
+            {
+                return _iceD_supprimerArtiste(this, in, current);
+            }
+            case 14:
+            {
+                return _iceD_supprimerTitre(this, in, current);
             }
         }
 

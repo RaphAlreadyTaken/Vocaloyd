@@ -6073,3 +6073,291 @@ Caused by: java.net.SocketException: Connection reset
 2019-04-26 21:42:35,154 [Thread-0] INFO    ws://192.168.1.15:8000/jms
 2019-04-26 21:42:35,155 [Thread-0] INFO  Stopped services
 2019-04-26 21:42:35,156 [Thread-0] INFO  Stopped server successfully in 0,046 secs at 2019-04-26 21:42:35
+2019-04-30 23:25:25,159 [main] DEBUG The jar file enterprise.gateway.amqp.spi with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,161 [main] DEBUG The jar file enterprise.gateway.jms.driver.mq with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,161 [main] DEBUG The jar file enterprise.gateway.jms.driver.redis with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,161 [main] DEBUG The jar file enterprise.gateway.resource.address.mux with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,162 [main] DEBUG The jar file enterprise.gateway.resource.address.proxy with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,162 [main] DEBUG The jar file enterprise.gateway.resource.address.socks with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,163 [main] DEBUG The jar file enterprise.gateway.security with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,163 [main] DEBUG The jar file enterprise.gateway.server with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,164 [main] DEBUG The jar file enterprise.gateway.server.spi with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,167 [main] DEBUG The jar file enterprise.gateway.service.amqp.extension with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,168 [main] DEBUG The jar file enterprise.gateway.service.http.kerberos5 with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,169 [main] DEBUG The jar file enterprise.gateway.service.ibmmq with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,169 [main] DEBUG The jar file enterprise.gateway.service.jms.ems with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,170 [main] DEBUG The jar file enterprise.gateway.service.jms.tests with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,170 [main] DEBUG The jar file enterprise.gateway.service.jms.spi with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,170 [main] DEBUG The jar file enterprise.gateway.service.proxy.extension with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,171 [main] DEBUG The jar file enterprise.gateway.service.turn.proxy with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,171 [main] DEBUG The jar file enterprise.gateway.transport.mux with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,172 [main] DEBUG The jar file enterprise.gateway.transport.nio.extension.bandwidth with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,172 [main] DEBUG The jar file enterprise.gateway.transport.nio.extension.security with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,172 [main] DEBUG The jar file enterprise.gateway.transport.proxy with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,173 [main] DEBUG The jar file enterprise.gateway.transport.socks with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,173 [main] DEBUG The jar file enterprise.gateway.transport.ws.extension.revalidate with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,174 [main] DEBUG The jar file org.kaazing:gateway.check.update with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,175 [main] DEBUG The jar file org.kaazing:gateway.management with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,179 [main] DEBUG The jar file org.kaazing:gateway.resource.address.http with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,180 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpx with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,180 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpxdraft with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,180 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpxe with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,181 [main] DEBUG The jar file org.kaazing:gateway.resource.address with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,181 [main] DEBUG The jar file org.kaazing:gateway.resource.address.pipe with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,181 [main] DEBUG The jar file org.kaazing:gateway.resource.address.rtmp with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,182 [main] DEBUG The jar file org.kaazing:gateway.resource.address.sse with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,182 [main] DEBUG The jar file org.kaazing:gateway.resource.address.ssl with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,182 [main] DEBUG The jar file org.kaazing:gateway.resource.address.tcp with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,183 [main] DEBUG The jar file org.kaazing:gateway.resource.address.udp with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,183 [main] DEBUG The jar file org.kaazing:gateway.resource.address.ws with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,183 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsdraft with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,184 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wse with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,184 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsn with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,185 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsx with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,185 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsxdraft with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,186 [main] DEBUG The jar file org.kaazing:gateway.security with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,186 [main] DEBUG The jar file org.kaazing:gateway.server.api with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,187 [main] DEBUG The jar file gateway.server.config with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,187 [main] DEBUG The jar file org.kaazing:gateway.server with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,187 [main] DEBUG The jar file org.kaazing:gateway.server.spi with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,188 [main] DEBUG The jar file org.kaazing:gateway.service.amqp with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,191 [main] DEBUG The jar file org.kaazing:gateway.service.broadcast with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,192 [main] DEBUG The jar file org.kaazing:gateway.service.echo with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,193 [main] DEBUG The jar file org.kaazing:gateway.service.http.balancer with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,194 [main] DEBUG The jar file org.kaazing:gateway.service.http.directory with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,195 [main] DEBUG The jar file org.kaazing:gateway.service.http.proxy with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,195 [main] DEBUG The jar file org.kaazing:gateway.service.http.redirect with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,196 [main] DEBUG The jar file org.kaazing:gateway.service with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,196 [main] DEBUG The jar file org.kaazing:gateway.service.proxy with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,197 [main] DEBUG The jar file org.kaazing:gateway.service.turn.rest with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,197 [main] DEBUG The jar file org.kaazing:gateway.service.update.check with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,198 [main] DEBUG The jar file org.kaazing:gateway.service.update.check.management with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,199 [main] DEBUG The jar file org.kaazing:gateway.transport.bio with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,202 [main] DEBUG The jar file org.kaazing:gateway.transport.http with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,203 [main] DEBUG The jar file org.kaazing:gateway.transport with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,203 [main] DEBUG The jar file org.kaazing:gateway.transport.nio with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,204 [main] DEBUG The jar file org.kaazing:gateway.transport.pipe with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,205 [main] DEBUG The jar file org.kaazing:gateway.transport.sse with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,205 [main] DEBUG The jar file org.kaazing:gateway.transport.ssl with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,206 [main] DEBUG The jar file org.kaazing:gateway.transport.ws with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,207 [main] DEBUG The jar file org.kaazing:gateway.transport.wseb with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,208 [main] DEBUG The jar file org.kaazing:gateway.transport.wsn with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,208 [main] DEBUG The jar file org.kaazing:gateway.util with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,266 [main] DEBUG The jar file org.kaazing:mina.netty with the version 5.8.0 was loaded.
+2019-04-30 23:25:25,274 [main] INFO  Kaazing Gateway (5.8.0)
+2019-04-30 23:25:25,275 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
+2019-04-30 23:25:26,630 [main] DEBUG parsed  gateway config file 'gateway-config.xml' in [1344 ms]
+2019-04-30 23:25:26,638 [main] INFO  Checking license information
+2019-04-30 23:25:26,689 [main] INFO    No valid Kaazing license found
+2019-04-30 23:25:26,689 [main] INFO  Using Kaazing developer license, maximum 100 connections
+2019-04-30 23:25:28,508 [gtwy_bg_tasks-1] DEBUG Checking for newer version on URL: https://version.kaazing.com/KaazingGateway/1.0/latest?x-sessionuuid=027ef19d-0d3d-4684-8db0-64e4f46b6977&x-osname=Windows+10&x-osversion=10.0&x-productname=KaazingGateway&x-machash=9de39dfc2fd8727978ce297c21ff80eccd65ff0d&x-licenseid=Developer+License&x-event=START&x-productversion=5.8.0
+2019-04-30 23:25:28,529 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@26df6e3a: maximum.pending.bytes=64000, using resume threshold 32000
+2019-04-30 23:25:28,529 [main] DEBUG Proxy handler org.kaazing.gateway.service.proxy.ProxyServiceHandler$ConnectHandler@4a3631f8: maximum.pending.bytes=64000, using resume threshold 32000
+2019-04-30 23:25:28,530 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@26df6e3a: maximum.transferred.bytes=-1.
+2019-04-30 23:25:28,530 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@26df6e3a: maximum.recovery.interval=0.
+2019-04-30 23:25:28,531 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@26df6e3a: connect.strategy=IMMEDIATE.
+2019-04-30 23:25:28,531 [main] DEBUG amqp.proxy service with thread alignment, using prepared.connection.count=0
+2019-04-30 23:25:28,639 [main] DEBUG connectionFactory = org.apache.activemq.ActiveMQConnectionFactory
+2019-04-30 23:25:28,639 [main] DEBUG topicFormat = dynamicTopics/%s
+2019-04-30 23:25:28,639 [main] DEBUG queueFormat = dynamicQueues/%s
+2019-04-30 23:25:28,639 [main] DEBUG topicSessionCount = 1
+2019-04-30 23:25:28,640 [main] DEBUG sendSessionCount = 1
+2019-04-30 23:25:28,640 [main] DEBUG durableAcknowledgeMode = AcknowledgeMode{value=4, scope=message}
+2019-04-30 23:25:28,640 [main] DEBUG queueAcknowledgeMode = AcknowledgeMode{value=4, scope=message}
+2019-04-30 23:25:28,640 [main] DEBUG anonymous.clientid.pattern
+2019-04-30 23:25:28,640 [main] DEBUG workarounds = [RETRY_CREATE_DURABLE]
+2019-04-30 23:25:28,877 [main] DEBUG TCP acceptor: worker count = 4
+2019-04-30 23:25:28,970 [main] DEBUG Exit Bind
+2019-04-30 23:25:28,998 [main] DEBUG Exit Bind
+2019-04-30 23:25:29,040 [main] DEBUG Exit Bind
+2019-04-30 23:25:29,103 [main] DEBUG Exit Bind
+2019-04-30 23:25:29,117 [main] INFO  Starting server
+2019-04-30 23:25:29,122 [main] INFO  Starting services
+2019-04-30 23:25:29,122 [main] INFO    http://192.168.1.15:8000/
+2019-04-30 23:25:29,123 [main] INFO    ws://192.168.1.15:8000/amqp
+2019-04-30 23:25:29,124 [main] INFO    ws://192.168.1.15:8000/echo
+2019-04-30 23:25:29,132 [main] INFO    ws://192.168.1.15:8000/jms
+2019-04-30 23:25:29,133 [main] INFO  Started services
+2019-04-30 23:25:29,135 [main] INFO  Started server successfully in 0,596 secs at 2019-04-30 23:25:28
+2019-04-30 23:25:29,136 [main] DEBUG Exit Gateway launcher initInternal
+2019-04-30 23:25:29,833 [gtwy_bg_tasks-1] DEBUG Received status: 200
+2019-04-30 23:25:30,284 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: 
+javax.jms.JMSException: Could not connect to broker URL: tcp://192.168.1.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:374)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:304)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:244)
+	at com.kaazing.gateway.jms.server.service.jms.handler.JmsConnectionFactoryImpl$1.call(JmsConnectionFactoryImpl.java:78)
+	at com.kaazing.gateway.jms.server.service.jms.handler.JmsConnectionFactoryImpl.createConnection(JmsConnectionFactoryImpl.java:85)
+	at com.kaazing.gateway.jms.server.service.jms.handler.JmsConnectionFactoryImpl.createConnection(JmsConnectionFactoryImpl.java:28)
+	at com.kaazing.gateway.jms.server.service.jms.handler.StompJmsHandler.messageReceived(StompJmsHandler.java:131)
+	at com.kaazing.gateway.jms.server.service.jms.handler.StompJmsHandler.messageReceived(StompJmsHandler.java:68)
+	at com.kaazing.gateway.jms.server.message.JmsConnectMessage.messageReceived(JmsConnectMessage.java:95)
+	at com.kaazing.gateway.jms.server.util.JmsHandler$Adapter.messageReceived(JmsHandler.java:78)
+	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:748)
+	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:462)
+	at org.kaazing.mina.core.filterchain.DefaultIoFilterChainEx.callNextMessageReceived(DefaultIoFilterChainEx.java:102)
+	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:834)
+	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:103)
+	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:462)
+	at org.kaazing.mina.core.filterchain.DefaultIoFilterChainEx.callNextMessageReceived(DefaultIoFilterChainEx.java:102)
+	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:454)
+	at com.kaazing.gateway.jms.server.service.handler.ConnectionProcessor.add(ConnectionProcessor.java:417)
+	at com.kaazing.gateway.jms.server.service.handler.ConnectionProcessor$ConnectTask.run(ConnectionProcessor.java:849)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:525)
+	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:488)
+	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
+	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:168)
+	at org.apache.activemq.transport.InactivityMonitor.start(InactivityMonitor.java:52)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64)
+	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64)
+	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:354)
+	... 26 more
+2019-04-30 23:25:30,290 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-04-30 23:25:30,290 [EagerCP_0-1] DEBUG AligningConnectionProcessor@8c7b44a (kind=INNER): Server connection disconnected with keep-alive=false
+2019-04-30 23:25:34,326 [Thread-4] DEBUG Checking for newer version on URL: https://version.kaazing.com/KaazingGateway/1.0/latest?x-sessionuuid=027ef19d-0d3d-4684-8db0-64e4f46b6977&x-osname=Windows+10&x-osversion=10.0&x-productname=KaazingGateway&x-machash=9de39dfc2fd8727978ce297c21ff80eccd65ff0d&x-licenseid=Developer+License&x-event=SHUTDOWN&x-productversion=5.8.0
+2019-04-30 23:25:34,339 [Thread-0] INFO  Stopping server
+2019-04-30 23:25:34,339 [Thread-0] INFO  Stopping services
+2019-04-30 23:25:34,340 [Thread-0] INFO    http://192.168.1.15:8000/
+2019-04-30 23:25:34,340 [Thread-0] INFO    ws://192.168.1.15:8000/amqp
+2019-04-30 23:25:34,340 [Thread-0] INFO    ws://192.168.1.15:8000/echo
+2019-04-30 23:25:34,341 [Thread-0] INFO    ws://192.168.1.15:8000/jms
+2019-04-30 23:25:34,341 [Thread-0] INFO  Stopped services
+2019-04-30 23:25:34,342 [Thread-0] INFO  Stopped server successfully in 0,037 secs at 2019-04-30 23:25:34
+2019-04-30 23:25:48,951 [main] DEBUG The jar file enterprise.gateway.amqp.spi with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,953 [main] DEBUG The jar file enterprise.gateway.jms.driver.mq with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,953 [main] DEBUG The jar file enterprise.gateway.jms.driver.redis with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,954 [main] DEBUG The jar file enterprise.gateway.resource.address.mux with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,954 [main] DEBUG The jar file enterprise.gateway.resource.address.proxy with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,955 [main] DEBUG The jar file enterprise.gateway.resource.address.socks with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,956 [main] DEBUG The jar file enterprise.gateway.security with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,956 [main] DEBUG The jar file enterprise.gateway.server with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,957 [main] DEBUG The jar file enterprise.gateway.server.spi with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,960 [main] DEBUG The jar file enterprise.gateway.service.amqp.extension with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,961 [main] DEBUG The jar file enterprise.gateway.service.http.kerberos5 with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,963 [main] DEBUG The jar file enterprise.gateway.service.ibmmq with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,963 [main] DEBUG The jar file enterprise.gateway.service.jms.ems with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,964 [main] DEBUG The jar file enterprise.gateway.service.jms.tests with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,965 [main] DEBUG The jar file enterprise.gateway.service.jms.spi with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,965 [main] DEBUG The jar file enterprise.gateway.service.proxy.extension with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,966 [main] DEBUG The jar file enterprise.gateway.service.turn.proxy with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,966 [main] DEBUG The jar file enterprise.gateway.transport.mux with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,967 [main] DEBUG The jar file enterprise.gateway.transport.nio.extension.bandwidth with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,967 [main] DEBUG The jar file enterprise.gateway.transport.nio.extension.security with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,968 [main] DEBUG The jar file enterprise.gateway.transport.proxy with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,968 [main] DEBUG The jar file enterprise.gateway.transport.socks with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,969 [main] DEBUG The jar file enterprise.gateway.transport.ws.extension.revalidate with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,970 [main] DEBUG The jar file org.kaazing:gateway.check.update with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,970 [main] DEBUG The jar file org.kaazing:gateway.management with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,975 [main] DEBUG The jar file org.kaazing:gateway.resource.address.http with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,975 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpx with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,976 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpxdraft with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,976 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpxe with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,977 [main] DEBUG The jar file org.kaazing:gateway.resource.address with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,977 [main] DEBUG The jar file org.kaazing:gateway.resource.address.pipe with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,978 [main] DEBUG The jar file org.kaazing:gateway.resource.address.rtmp with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,978 [main] DEBUG The jar file org.kaazing:gateway.resource.address.sse with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,979 [main] DEBUG The jar file org.kaazing:gateway.resource.address.ssl with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,979 [main] DEBUG The jar file org.kaazing:gateway.resource.address.tcp with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,980 [main] DEBUG The jar file org.kaazing:gateway.resource.address.udp with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,980 [main] DEBUG The jar file org.kaazing:gateway.resource.address.ws with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,981 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsdraft with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,981 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wse with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,982 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsn with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,983 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsx with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,986 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsxdraft with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,986 [main] DEBUG The jar file org.kaazing:gateway.security with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,996 [main] DEBUG The jar file org.kaazing:gateway.server.api with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,996 [main] DEBUG The jar file gateway.server.config with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,997 [main] DEBUG The jar file org.kaazing:gateway.server with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,997 [main] DEBUG The jar file org.kaazing:gateway.server.spi with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,998 [main] DEBUG The jar file org.kaazing:gateway.service.amqp with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,998 [main] DEBUG The jar file org.kaazing:gateway.service.broadcast with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,999 [main] DEBUG The jar file org.kaazing:gateway.service.echo with the version 5.8.0 was loaded.
+2019-04-30 23:25:48,999 [main] DEBUG The jar file org.kaazing:gateway.service.http.balancer with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,000 [main] DEBUG The jar file org.kaazing:gateway.service.http.directory with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,001 [main] DEBUG The jar file org.kaazing:gateway.service.http.proxy with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,001 [main] DEBUG The jar file org.kaazing:gateway.service.http.redirect with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,001 [main] DEBUG The jar file org.kaazing:gateway.service with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,002 [main] DEBUG The jar file org.kaazing:gateway.service.proxy with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,002 [main] DEBUG The jar file org.kaazing:gateway.service.turn.rest with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,003 [main] DEBUG The jar file org.kaazing:gateway.service.update.check with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,004 [main] DEBUG The jar file org.kaazing:gateway.service.update.check.management with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,006 [main] DEBUG The jar file org.kaazing:gateway.transport.bio with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,007 [main] DEBUG The jar file org.kaazing:gateway.transport.http with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,008 [main] DEBUG The jar file org.kaazing:gateway.transport with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,008 [main] DEBUG The jar file org.kaazing:gateway.transport.nio with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,010 [main] DEBUG The jar file org.kaazing:gateway.transport.pipe with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,011 [main] DEBUG The jar file org.kaazing:gateway.transport.sse with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,013 [main] DEBUG The jar file org.kaazing:gateway.transport.ssl with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,015 [main] DEBUG The jar file org.kaazing:gateway.transport.ws with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,018 [main] DEBUG The jar file org.kaazing:gateway.transport.wseb with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,019 [main] DEBUG The jar file org.kaazing:gateway.transport.wsn with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,020 [main] DEBUG The jar file org.kaazing:gateway.util with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,073 [main] DEBUG The jar file org.kaazing:mina.netty with the version 5.8.0 was loaded.
+2019-04-30 23:25:49,096 [main] INFO  Kaazing Gateway (5.8.0)
+2019-04-30 23:25:49,098 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
+2019-04-30 23:25:49,573 [main] DEBUG parsed  gateway config file 'gateway-config.xml' in [464 ms]
+2019-04-30 23:25:49,589 [main] INFO  Checking license information
+2019-04-30 23:25:49,643 [main] INFO    No valid Kaazing license found
+2019-04-30 23:25:49,648 [main] INFO  Using Kaazing developer license, maximum 100 connections
+2019-04-30 23:25:51,242 [gtwy_bg_tasks-1] DEBUG Checking for newer version on URL: https://version.kaazing.com/KaazingGateway/1.0/latest?x-sessionuuid=33f64104-b421-485c-b458-6979586a3ba1&x-osname=Windows+10&x-osversion=10.0&x-productname=KaazingGateway&x-machash=9de39dfc2fd8727978ce297c21ff80eccd65ff0d&x-licenseid=Developer+License&x-event=START&x-productversion=5.8.0
+2019-04-30 23:25:51,301 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@26df6e3a: maximum.pending.bytes=64000, using resume threshold 32000
+2019-04-30 23:25:51,301 [main] DEBUG Proxy handler org.kaazing.gateway.service.proxy.ProxyServiceHandler$ConnectHandler@4a3631f8: maximum.pending.bytes=64000, using resume threshold 32000
+2019-04-30 23:25:51,301 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@26df6e3a: maximum.transferred.bytes=-1.
+2019-04-30 23:25:51,301 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@26df6e3a: maximum.recovery.interval=0.
+2019-04-30 23:25:51,302 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@26df6e3a: connect.strategy=IMMEDIATE.
+2019-04-30 23:25:51,303 [main] DEBUG amqp.proxy service with thread alignment, using prepared.connection.count=0
+2019-04-30 23:25:51,378 [main] DEBUG connectionFactory = org.apache.activemq.ActiveMQConnectionFactory
+2019-04-30 23:25:51,378 [main] DEBUG topicFormat = dynamicTopics/%s
+2019-04-30 23:25:51,378 [main] DEBUG queueFormat = dynamicQueues/%s
+2019-04-30 23:25:51,378 [main] DEBUG topicSessionCount = 1
+2019-04-30 23:25:51,378 [main] DEBUG sendSessionCount = 1
+2019-04-30 23:25:51,378 [main] DEBUG durableAcknowledgeMode = AcknowledgeMode{value=4, scope=message}
+2019-04-30 23:25:51,378 [main] DEBUG queueAcknowledgeMode = AcknowledgeMode{value=4, scope=message}
+2019-04-30 23:25:51,378 [main] DEBUG anonymous.clientid.pattern
+2019-04-30 23:25:51,380 [main] DEBUG workarounds = [RETRY_CREATE_DURABLE]
+2019-04-30 23:25:51,993 [gtwy_bg_tasks-1] DEBUG Received status: 200
+2019-04-30 23:25:52,045 [main] DEBUG TCP acceptor: worker count = 4
+2019-04-30 23:25:52,157 [main] DEBUG Exit Bind
+2019-04-30 23:25:52,206 [main] DEBUG Exit Bind
+2019-04-30 23:25:52,242 [main] DEBUG Exit Bind
+2019-04-30 23:25:52,294 [main] DEBUG Exit Bind
+2019-04-30 23:25:52,298 [main] INFO  Starting server
+2019-04-30 23:25:52,299 [main] INFO  Starting services
+2019-04-30 23:25:52,299 [main] INFO    http://192.168.1.15:8000/
+2019-04-30 23:25:52,300 [main] INFO    ws://192.168.1.15:8000/amqp
+2019-04-30 23:25:52,300 [main] INFO    ws://192.168.1.15:8000/echo
+2019-04-30 23:25:52,301 [main] INFO    ws://192.168.1.15:8000/jms
+2019-04-30 23:25:52,303 [main] INFO  Started services
+2019-04-30 23:25:52,307 [main] INFO  Started server successfully in 1,041 secs at 2019-04-30 23:25:51
+2019-04-30 23:25:52,311 [main] DEBUG Exit Gateway launcher initInternal
+2019-04-30 23:25:52,575 [EagerCP_0-1] DEBUG AligningConnectionProcessor@52edcc37 (kind=INNER): Server connection has been established
+2019-04-30 23:25:52,576 [EagerCP_0-1] INFO  JMS Connection established using ConnectionFactory "org.apache.activemq.ActiveMQConnectionFactory@35f0685d"
+2019-04-30 23:41:37,583 [Thread-5] DEBUG Checking for newer version on URL: https://version.kaazing.com/KaazingGateway/1.0/latest?x-sessionuuid=33f64104-b421-485c-b458-6979586a3ba1&x-osname=Windows+10&x-osversion=10.0&x-productname=KaazingGateway&x-machash=9de39dfc2fd8727978ce297c21ff80eccd65ff0d&x-licenseid=Developer+License&x-event=SHUTDOWN&x-productversion=5.8.0
+2019-04-30 23:41:37,593 [Thread-0] INFO  Stopping server
+2019-04-30 23:41:37,595 [Thread-0] INFO  Stopping services
+2019-04-30 23:41:37,595 [Thread-0] INFO    http://192.168.1.15:8000/
+2019-04-30 23:41:37,596 [Thread-0] INFO    ws://192.168.1.15:8000/amqp
+2019-04-30 23:41:37,596 [Thread-0] INFO    ws://192.168.1.15:8000/echo
+2019-04-30 23:41:37,597 [Thread-0] INFO    ws://192.168.1.15:8000/jms
+2019-04-30 23:41:37,598 [Thread-0] INFO  Stopped services
+2019-04-30 23:41:37,599 [Thread-0] INFO  Stopped server successfully in 0,043 secs at 2019-04-30 23:41:37

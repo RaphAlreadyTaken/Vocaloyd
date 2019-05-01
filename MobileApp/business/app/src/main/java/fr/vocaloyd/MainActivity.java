@@ -1,10 +1,7 @@
 package fr.vocaloyd;
 
 import android.Manifest;
-import android.media.AudioAttributes;
-import android.media.MediaPlayer;
 import android.media.MediaRecorder;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
@@ -17,9 +14,6 @@ import android.view.MenuItem;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.IllformedLocaleException;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -103,29 +97,9 @@ public class MainActivity extends AppCompatActivity
     {
         System.out.println("Transcription");
 
-        ArrayList<File> fileList = new ArrayList<>();
-        fileList.add(file);
-
-        TranscribeTask task = new TranscribeTask();
+        TranscribeTask task = new TranscribeTask(this);
         task.execute(file);
 
         return null;
-    }
-
-    public void streamTest(View view) throws IllegalArgumentException, IOException
-    {
-        System.out.println("This is the stream");
-        MusicTask task = new MusicTask();
-        task.execute();
-
-        String uri = "http://192.168.1.15:10000/stream";
-        MediaPlayer player = new MediaPlayer();
-        player.setAudioAttributes(new AudioAttributes.Builder()
-            .setUsage(AudioAttributes.USAGE_MEDIA)
-            .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
-            .build());
-        player.setDataSource(this, Uri.parse(uri));
-        player.prepare();
-        player.start();
     }
 }

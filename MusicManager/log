@@ -1,0 +1,124 @@
+-! 05/01/19 17:30:57.275 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:55685
+-! 05/01/19 17:41:18.255 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 30, in recupTitres
+       queryCount = query.count_documents()
+   AttributeError: 'Cursor' object has no attribute 'count_documents'
+   
+   identity: SimpleManager
+   facet: 
+   operation: recupTitres
+   remote host: ::ffff:192.168.1.15 remote port: 56120
+-! 05/01/19 17:42:05.160 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 30, in recupTitres
+       queryCount = query.countDocuments()
+   AttributeError: 'Cursor' object has no attribute 'countDocuments'
+   
+   identity: SimpleManager
+   facet: 
+   operation: recupTitres
+   remote host: ::ffff:192.168.1.15 remote port: 56157
+-! 05/01/19 17:45:56.858 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 30, in recupTitres
+       queryCount = query.count_documents()
+   AttributeError: 'Cursor' object has no attribute 'count_documents'
+   
+   identity: SimpleManager
+   facet: 
+   operation: recupTitres
+   remote host: ::ffff:192.168.1.15 remote port: 56333
+-! 05/01/19 17:47:58.047 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 30, in recupTitres
+       queryCount = collecMusique.count_documents(query)
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\collection.py", line 1685, in count_documents
+       sock_info, slave_ok, cmd, collation, session)
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\collection.py", line 1587, in _aggregate_one_result
+       session=session)
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\collection.py", line 244, in _command
+       retryable_write=retryable_write)
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\pool.py", line 584, in command
+       self._raise_connection_failure(error)
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\pool.py", line 745, in _raise_connection_failure
+       raise error
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\pool.py", line 579, in command
+       unacknowledged=unacknowledged)
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\network.py", line 114, in command
+       codec_options, ctx=compression_ctx)
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\message.py", line 679, in _op_msg
+       flags, command, identifier, docs, check_keys, opts)
+   bson.errors.InvalidDocument: Cannot encode object: <pymongo.cursor.Cursor object at 0x000001C5ED557128>
+   
+   identity: SimpleManager
+   facet: 
+   operation: recupTitres
+   remote host: ::ffff:192.168.1.15 remote port: 56409
+-! 05/01/19 17:49:25.541 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 29, in recupTitres
+       queryCount = collecMusique.count_documents({}, {"_id": 0})
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\collection.py", line 1683, in count_documents
+       with self._socket_for_reads(session) as (sock_info, slave_ok):
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\collection.py", line 188, in _socket_for_reads
+       self._read_preference_for(session))
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\common.py", line 704, in _read_preference_for
+       return session._txn_read_preference() or self.__read_preference
+   AttributeError: 'dict' object has no attribute '_txn_read_preference'
+   
+   identity: SimpleManager
+   facet: 
+   operation: recupTitres
+   remote host: ::ffff:192.168.1.15 remote port: 56460
+-! 05/01/19 17:53:42.664 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 41, in rechercheParTitre
+       queryCount = collecMusique.count_documents({"titre": title}, Collation(locale = 'fr', strength = 2))
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\collection.py", line 1683, in count_documents
+       with self._socket_for_reads(session) as (sock_info, slave_ok):
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\collection.py", line 188, in _socket_for_reads
+       self._read_preference_for(session))
+     File "C:\Program Files\Python37\lib\site-packages\pymongo\common.py", line 704, in _read_preference_for
+       return session._txn_read_preference() or self.__read_preference
+   AttributeError: 'Collation' object has no attribute '_txn_read_preference'
+   
+   identity: SimpleManager
+   facet: 
+   operation: rechercheParTitre
+   remote host: ::ffff:192.168.1.15 remote port: 56619
+-! 05/01/19 23:00:51.538 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 92, in jouerMorceaux
+       target = self.port + "/stream"
+   AttributeError: 'trackManagementI' object has no attribute 'port'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.1.16 remote port: 46026

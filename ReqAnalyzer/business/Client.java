@@ -6,8 +6,6 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
-import src.Analyzer;
-
 /**
  * Client, designed to send a message (request) and get the command / content back
  * WARNING: this is supposed to be the mobile app

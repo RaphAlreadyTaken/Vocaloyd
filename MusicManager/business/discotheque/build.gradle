@@ -25,7 +25,7 @@ subprojects {
     //
     slice {
         java {
-            files = [file("../../Discotheque.ice")]
+            files = [file("../../../../shared/Discotheque.ice")]
         }
     }
  

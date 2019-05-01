@@ -34,7 +34,7 @@ public class Analyzer
      */
     public HashMap<String, String> analyzeText(String input)
     {
-        input = input.toLowerCase();    ///Standardizing output
+        // input = input.toLowerCase();    //Standardizing output (INFO: no longer needed)
 
         HashMap<String, ArrayList<String>> commands;
         commands = command.getCommands();
@@ -47,7 +47,7 @@ public class Analyzer
             {
                 if (input.matches("(?i).*" + str + ".*")) //Regex
                 {
-                    output.put(str, input.substring(input.indexOf(str) + str.length()));
+                    output.put(str, input.substring(input.indexOf(str) + 1 + str.length()));
                     return output;
                 }
             }

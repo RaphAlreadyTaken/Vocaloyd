@@ -44,8 +44,8 @@ public class Listener
             
             if (message == null)
             {
-                System.out.println("Closing connection...");
-                break;
+                System.out.println("Empty message. Skipping...");
+                continue;
             }
 
             ActiveMQTextMessage textMessage = (ActiveMQTextMessage) message;
@@ -56,14 +56,17 @@ public class Listener
             Analyzer analyzer = new Analyzer();
             HashMap<String, String> output;
             output = analyzer.analyzeText(request);
-            
-            MessageProducer sender = session.createProducer(null);
-            ActiveMQMapMessage msgRet = (ActiveMQMapMessage) session.createMapMessage();
 
-            Entry<String, String> entry = output.entrySet().iterator().next();
-            msgRet.setString(entry.getKey(), entry.getValue());
-
-            sender.send(message.getJMSReplyTo(), msgRet);
+            if (output != null)
+            {
+                MessageProducer sender = session.createProducer(null);
+                ActiveMQMapMessage msgRet = (ActiveMQMapMessage) session.createMapMessage();
+    
+                Entry<String, String> entry = output.entrySet().iterator().next();
+                msgRet.setString(entry.getKey(), entry.getValue());
+    
+                sender.send(message.getJMSReplyTo(), msgRet);
+            }            
         }
 
         connection.close();

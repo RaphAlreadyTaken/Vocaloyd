@@ -20,6 +20,6 @@ module discotheque
         Morceaux rechercheParArtiste(string artist);
         bool suppressionTitre(string title, string artist);
         bool suppressionAlbum(string artist, string album);
-        void jouerTitres(string title);
+        string jouerTitres(string title);
     };
 };

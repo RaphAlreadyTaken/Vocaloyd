@@ -1,5 +1,6 @@
 package fr.vocaloyd;
 
+import android.content.Context;
 import android.os.AsyncTask;
 
 import java.io.File;
@@ -17,7 +18,13 @@ import cz.msebera.android.httpclient.util.EntityUtils;
 
 public class TranscribeTask extends AsyncTask<File, Void, String>
 {
-    String command;
+    Context taskContext;
+
+    public TranscribeTask(Context ctx)
+    {
+        taskContext = ctx;
+    }
+
 
     /**
      * Inspired from https://stackoverflow.com/questions/2304663/apache-httpclient-making-multipart-form-post
@@ -65,7 +72,7 @@ public class TranscribeTask extends AsyncTask<File, Void, String>
     {
         if (result != null && result.length() > 0)
         {
-            AnalyzeTask task = new AnalyzeTask();
+            AnalyzeTask task = new AnalyzeTask(taskContext);
             task.execute(result);
         }
         else

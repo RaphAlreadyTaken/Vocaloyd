@@ -1,14 +1,14 @@
 <state>
-  <timestamp value='1556372835798' />
+  <timestamp value='1556744491964' />
   <sourceSet name='default'>
-    <source name='/mnt/c/Users/Raph/Google Drive/Cours/M1/S2/Middleware/TP/TPICE/Discotheque.ice'>
-      <file name='/mnt/c/Users/Raph/Google Drive/Cours/M1/S2/Middleware/TP/TPICE/discotheque/client/build/generated-src/discotheque/Morceau.java' />
-      <file name='/mnt/c/Users/Raph/Google Drive/Cours/M1/S2/Middleware/TP/TPICE/discotheque/client/build/generated-src/discotheque/trackManagement.java' />
-      <file name='/mnt/c/Users/Raph/Google Drive/Cours/M1/S2/Middleware/TP/TPICE/discotheque/client/build/generated-src/discotheque/MorceauxHelper.java' />
-      <file name='/mnt/c/Users/Raph/Google Drive/Cours/M1/S2/Middleware/TP/TPICE/discotheque/client/build/generated-src/discotheque/trackManagementPrx.java' />
-      <file name='/mnt/c/Users/Raph/Google Drive/Cours/M1/S2/Middleware/TP/TPICE/discotheque/client/build/generated-src/discotheque/_trackManagementPrxI.java' />
+    <source name='C:\Users\Raph\Desktop\Vocaloyd\shared\Discotheque.ice'>
+      <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\Morceau.java' />
+      <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\trackManagement.java' />
+      <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\MorceauxHelper.java' />
+      <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\trackManagementPrx.java' />
+      <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\_trackManagementPrxI.java' />
     </source>
-    <arg value='/usr/bin/slice2java' />
-    <arg value='-I/usr/share/ice/slice' />
+    <arg value='C:\Program Files\ZeroC\Ice-3.7.2\\bin\slice2java.exe' />
+    <arg value='-IC:\Program Files\ZeroC\Ice-3.7.2\\slice' />
   </sourceSet>
 </state>

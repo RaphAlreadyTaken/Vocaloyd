@@ -27,10 +27,12 @@ if '_t_data' not in _M_discotheque.__dict__:
 if 'Morceau' not in _M_discotheque.__dict__:
     _M_discotheque.Morceau = Ice.createTempClass()
     class Morceau(object):
-        def __init__(self, artiste='', album='', titre='', file=''):
+        def __init__(self, artiste='', album='', titre='', genre='', duree='', file=''):
             self.artiste = artiste
             self.album = album
             self.titre = titre
+            self.genre = genre
+            self.duree = duree
             self.file = file
 
         def __hash__(self):
@@ -38,6 +40,8 @@ if 'Morceau' not in _M_discotheque.__dict__:
             _h = 5 * _h + Ice.getHash(self.artiste)
             _h = 5 * _h + Ice.getHash(self.album)
             _h = 5 * _h + Ice.getHash(self.titre)
+            _h = 5 * _h + Ice.getHash(self.genre)
+            _h = 5 * _h + Ice.getHash(self.duree)
             _h = 5 * _h + Ice.getHash(self.file)
             return _h % 0x7fffffff
 
@@ -70,6 +74,22 @@ if 'Morceau' not in _M_discotheque.__dict__:
                     if self.titre < other.titre:
                         return -1
                     elif self.titre > other.titre:
+                        return 1
+                if self.genre is None or other.genre is None:
+                    if self.genre != other.genre:
+                        return (-1 if self.genre is None else 1)
+                else:
+                    if self.genre < other.genre:
+                        return -1
+                    elif self.genre > other.genre:
+                        return 1
+                if self.duree is None or other.duree is None:
+                    if self.duree != other.duree:
+                        return (-1 if self.duree is None else 1)
+                else:
+                    if self.duree < other.duree:
+                        return -1
+                    elif self.duree > other.duree:
                         return 1
                 if self.file is None or other.file is None:
                     if self.file != other.file:
@@ -132,6 +152,8 @@ if 'Morceau' not in _M_discotheque.__dict__:
         ('artiste', (), IcePy._t_string),
         ('album', (), IcePy._t_string),
         ('titre', (), IcePy._t_string),
+        ('genre', (), IcePy._t_string),
+        ('duree', (), IcePy._t_string),
         ('file', (), IcePy._t_string)
     ))
 
@@ -147,89 +169,137 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
     _M_discotheque.trackManagementPrx = Ice.createTempClass()
     class trackManagementPrx(Ice.ObjectPrx):
 
-        def ajout(self, song, context=None):
-            return _M_discotheque.trackManagement._op_ajout.invoke(self, ((song, ), context))
+        def ajouterTitre(self, song, context=None):
+            return _M_discotheque.trackManagement._op_ajouterTitre.invoke(self, ((song, ), context))
 
-        def ajoutAsync(self, song, context=None):
-            return _M_discotheque.trackManagement._op_ajout.invokeAsync(self, ((song, ), context))
+        def ajouterTitreAsync(self, song, context=None):
+            return _M_discotheque.trackManagement._op_ajouterTitre.invokeAsync(self, ((song, ), context))
 
-        def begin_ajout(self, song, _response=None, _ex=None, _sent=None, context=None):
-            return _M_discotheque.trackManagement._op_ajout.begin(self, ((song, ), _response, _ex, _sent, context))
+        def begin_ajouterTitre(self, song, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_ajouterTitre.begin(self, ((song, ), _response, _ex, _sent, context))
 
-        def end_ajout(self, _r):
-            return _M_discotheque.trackManagement._op_ajout.end(self, _r)
+        def end_ajouterTitre(self, _r):
+            return _M_discotheque.trackManagement._op_ajouterTitre.end(self, _r)
 
-        def recupTitres(self, context=None):
-            return _M_discotheque.trackManagement._op_recupTitres.invoke(self, ((), context))
+        def recupererTitres(self, context=None):
+            return _M_discotheque.trackManagement._op_recupererTitres.invoke(self, ((), context))
 
-        def recupTitresAsync(self, context=None):
-            return _M_discotheque.trackManagement._op_recupTitres.invokeAsync(self, ((), context))
+        def recupererTitresAsync(self, context=None):
+            return _M_discotheque.trackManagement._op_recupererTitres.invokeAsync(self, ((), context))
 
-        def begin_recupTitres(self, _response=None, _ex=None, _sent=None, context=None):
-            return _M_discotheque.trackManagement._op_recupTitres.begin(self, ((), _response, _ex, _sent, context))
+        def begin_recupererTitres(self, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_recupererTitres.begin(self, ((), _response, _ex, _sent, context))
 
-        def end_recupTitres(self, _r):
-            return _M_discotheque.trackManagement._op_recupTitres.end(self, _r)
+        def end_recupererTitres(self, _r):
+            return _M_discotheque.trackManagement._op_recupererTitres.end(self, _r)
 
-        def rechercheParTitre(self, title, context=None):
-            return _M_discotheque.trackManagement._op_rechercheParTitre.invoke(self, ((title, ), context))
+        def rechercherParTitre(self, title, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParTitre.invoke(self, ((title, ), context))
 
-        def rechercheParTitreAsync(self, title, context=None):
-            return _M_discotheque.trackManagement._op_rechercheParTitre.invokeAsync(self, ((title, ), context))
+        def rechercherParTitreAsync(self, title, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParTitre.invokeAsync(self, ((title, ), context))
 
-        def begin_rechercheParTitre(self, title, _response=None, _ex=None, _sent=None, context=None):
-            return _M_discotheque.trackManagement._op_rechercheParTitre.begin(self, ((title, ), _response, _ex, _sent, context))
+        def begin_rechercherParTitre(self, title, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParTitre.begin(self, ((title, ), _response, _ex, _sent, context))
 
-        def end_rechercheParTitre(self, _r):
-            return _M_discotheque.trackManagement._op_rechercheParTitre.end(self, _r)
+        def end_rechercherParTitre(self, _r):
+            return _M_discotheque.trackManagement._op_rechercherParTitre.end(self, _r)
 
-        def rechercheParArtiste(self, artist, context=None):
-            return _M_discotheque.trackManagement._op_rechercheParArtiste.invoke(self, ((artist, ), context))
+        def rechercherParArtiste(self, artist, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParArtiste.invoke(self, ((artist, ), context))
 
-        def rechercheParArtisteAsync(self, artist, context=None):
-            return _M_discotheque.trackManagement._op_rechercheParArtiste.invokeAsync(self, ((artist, ), context))
+        def rechercherParArtisteAsync(self, artist, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParArtiste.invokeAsync(self, ((artist, ), context))
 
-        def begin_rechercheParArtiste(self, artist, _response=None, _ex=None, _sent=None, context=None):
-            return _M_discotheque.trackManagement._op_rechercheParArtiste.begin(self, ((artist, ), _response, _ex, _sent, context))
+        def begin_rechercherParArtiste(self, artist, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParArtiste.begin(self, ((artist, ), _response, _ex, _sent, context))
 
-        def end_rechercheParArtiste(self, _r):
-            return _M_discotheque.trackManagement._op_rechercheParArtiste.end(self, _r)
+        def end_rechercherParArtiste(self, _r):
+            return _M_discotheque.trackManagement._op_rechercherParArtiste.end(self, _r)
 
-        def suppressionTitre(self, title, artist, context=None):
-            return _M_discotheque.trackManagement._op_suppressionTitre.invoke(self, ((title, artist), context))
+        def rechercherParAlbum(self, album, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParAlbum.invoke(self, ((album, ), context))
 
-        def suppressionTitreAsync(self, title, artist, context=None):
-            return _M_discotheque.trackManagement._op_suppressionTitre.invokeAsync(self, ((title, artist), context))
+        def rechercherParAlbumAsync(self, album, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParAlbum.invokeAsync(self, ((album, ), context))
 
-        def begin_suppressionTitre(self, title, artist, _response=None, _ex=None, _sent=None, context=None):
-            return _M_discotheque.trackManagement._op_suppressionTitre.begin(self, ((title, artist), _response, _ex, _sent, context))
+        def begin_rechercherParAlbum(self, album, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParAlbum.begin(self, ((album, ), _response, _ex, _sent, context))
 
-        def end_suppressionTitre(self, _r):
-            return _M_discotheque.trackManagement._op_suppressionTitre.end(self, _r)
+        def end_rechercherParAlbum(self, _r):
+            return _M_discotheque.trackManagement._op_rechercherParAlbum.end(self, _r)
 
-        def suppressionAlbum(self, artist, album, context=None):
-            return _M_discotheque.trackManagement._op_suppressionAlbum.invoke(self, ((artist, album), context))
+        def rechercherParGenre(self, genre, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParGenre.invoke(self, ((genre, ), context))
 
-        def suppressionAlbumAsync(self, artist, album, context=None):
-            return _M_discotheque.trackManagement._op_suppressionAlbum.invokeAsync(self, ((artist, album), context))
+        def rechercherParGenreAsync(self, genre, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParGenre.invokeAsync(self, ((genre, ), context))
 
-        def begin_suppressionAlbum(self, artist, album, _response=None, _ex=None, _sent=None, context=None):
-            return _M_discotheque.trackManagement._op_suppressionAlbum.begin(self, ((artist, album), _response, _ex, _sent, context))
+        def begin_rechercherParGenre(self, genre, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParGenre.begin(self, ((genre, ), _response, _ex, _sent, context))
 
-        def end_suppressionAlbum(self, _r):
-            return _M_discotheque.trackManagement._op_suppressionAlbum.end(self, _r)
+        def end_rechercherParGenre(self, _r):
+            return _M_discotheque.trackManagement._op_rechercherParGenre.end(self, _r)
 
-        def jouerTitres(self, title, context=None):
-            return _M_discotheque.trackManagement._op_jouerTitres.invoke(self, ((title, ), context))
+        def rechercherParDuree(self, duration, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParDuree.invoke(self, ((duration, ), context))
 
-        def jouerTitresAsync(self, title, context=None):
-            return _M_discotheque.trackManagement._op_jouerTitres.invokeAsync(self, ((title, ), context))
+        def rechercherParDureeAsync(self, duration, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParDuree.invokeAsync(self, ((duration, ), context))
 
-        def begin_jouerTitres(self, title, _response=None, _ex=None, _sent=None, context=None):
-            return _M_discotheque.trackManagement._op_jouerTitres.begin(self, ((title, ), _response, _ex, _sent, context))
+        def begin_rechercherParDuree(self, duration, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_rechercherParDuree.begin(self, ((duration, ), _response, _ex, _sent, context))
 
-        def end_jouerTitres(self, _r):
-            return _M_discotheque.trackManagement._op_jouerTitres.end(self, _r)
+        def end_rechercherParDuree(self, _r):
+            return _M_discotheque.trackManagement._op_rechercherParDuree.end(self, _r)
+
+        def supprimerTitre(self, title, artist, context=None):
+            return _M_discotheque.trackManagement._op_supprimerTitre.invoke(self, ((title, artist), context))
+
+        def supprimerTitreAsync(self, title, artist, context=None):
+            return _M_discotheque.trackManagement._op_supprimerTitre.invokeAsync(self, ((title, artist), context))
+
+        def begin_supprimerTitre(self, title, artist, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_supprimerTitre.begin(self, ((title, artist), _response, _ex, _sent, context))
+
+        def end_supprimerTitre(self, _r):
+            return _M_discotheque.trackManagement._op_supprimerTitre.end(self, _r)
+
+        def supprimerAlbum(self, artist, album, context=None):
+            return _M_discotheque.trackManagement._op_supprimerAlbum.invoke(self, ((artist, album), context))
+
+        def supprimerAlbumAsync(self, artist, album, context=None):
+            return _M_discotheque.trackManagement._op_supprimerAlbum.invokeAsync(self, ((artist, album), context))
+
+        def begin_supprimerAlbum(self, artist, album, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_supprimerAlbum.begin(self, ((artist, album), _response, _ex, _sent, context))
+
+        def end_supprimerAlbum(self, _r):
+            return _M_discotheque.trackManagement._op_supprimerAlbum.end(self, _r)
+
+        def supprimerArtiste(self, artist, context=None):
+            return _M_discotheque.trackManagement._op_supprimerArtiste.invoke(self, ((artist, ), context))
+
+        def supprimerArtisteAsync(self, artist, context=None):
+            return _M_discotheque.trackManagement._op_supprimerArtiste.invokeAsync(self, ((artist, ), context))
+
+        def begin_supprimerArtiste(self, artist, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_supprimerArtiste.begin(self, ((artist, ), _response, _ex, _sent, context))
+
+        def end_supprimerArtiste(self, _r):
+            return _M_discotheque.trackManagement._op_supprimerArtiste.end(self, _r)
+
+        def jouerMorceaux(self, morceaux, context=None):
+            return _M_discotheque.trackManagement._op_jouerMorceaux.invoke(self, ((morceaux, ), context))
+
+        def jouerMorceauxAsync(self, morceaux, context=None):
+            return _M_discotheque.trackManagement._op_jouerMorceaux.invokeAsync(self, ((morceaux, ), context))
+
+        def begin_jouerMorceaux(self, morceaux, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_jouerMorceaux.begin(self, ((morceaux, ), _response, _ex, _sent, context))
+
+        def end_jouerMorceaux(self, _r):
+            return _M_discotheque.trackManagement._op_jouerMorceaux.end(self, _r)
 
         @staticmethod
         def checkedCast(proxy, facetOrContext=None, context=None):
@@ -260,26 +330,38 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
         def ice_staticId():
             return '::discotheque::trackManagement'
 
-        def ajout(self, song, current=None):
-            raise NotImplementedError("servant method 'ajout' not implemented")
+        def ajouterTitre(self, song, current=None):
+            raise NotImplementedError("servant method 'ajouterTitre' not implemented")
 
-        def recupTitres(self, current=None):
-            raise NotImplementedError("servant method 'recupTitres' not implemented")
+        def recupererTitres(self, current=None):
+            raise NotImplementedError("servant method 'recupererTitres' not implemented")
 
-        def rechercheParTitre(self, title, current=None):
-            raise NotImplementedError("servant method 'rechercheParTitre' not implemented")
+        def rechercherParTitre(self, title, current=None):
+            raise NotImplementedError("servant method 'rechercherParTitre' not implemented")
 
-        def rechercheParArtiste(self, artist, current=None):
-            raise NotImplementedError("servant method 'rechercheParArtiste' not implemented")
+        def rechercherParArtiste(self, artist, current=None):
+            raise NotImplementedError("servant method 'rechercherParArtiste' not implemented")
 
-        def suppressionTitre(self, title, artist, current=None):
-            raise NotImplementedError("servant method 'suppressionTitre' not implemented")
+        def rechercherParAlbum(self, album, current=None):
+            raise NotImplementedError("servant method 'rechercherParAlbum' not implemented")
 
-        def suppressionAlbum(self, artist, album, current=None):
-            raise NotImplementedError("servant method 'suppressionAlbum' not implemented")
+        def rechercherParGenre(self, genre, current=None):
+            raise NotImplementedError("servant method 'rechercherParGenre' not implemented")
 
-        def jouerTitres(self, title, current=None):
-            raise NotImplementedError("servant method 'jouerTitres' not implemented")
+        def rechercherParDuree(self, duration, current=None):
+            raise NotImplementedError("servant method 'rechercherParDuree' not implemented")
+
+        def supprimerTitre(self, title, artist, current=None):
+            raise NotImplementedError("servant method 'supprimerTitre' not implemented")
+
+        def supprimerAlbum(self, artist, album, current=None):
+            raise NotImplementedError("servant method 'supprimerAlbum' not implemented")
+
+        def supprimerArtiste(self, artist, current=None):
+            raise NotImplementedError("servant method 'supprimerArtiste' not implemented")
+
+        def jouerMorceaux(self, morceaux, current=None):
+            raise NotImplementedError("servant method 'jouerMorceaux' not implemented")
 
         def __str__(self):
             return IcePy.stringify(self, _M_discotheque._t_trackManagementDisp)
@@ -289,13 +371,17 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
     _M_discotheque._t_trackManagementDisp = IcePy.defineClass('::discotheque::trackManagement', trackManagement, (), None, ())
     trackManagement._ice_type = _M_discotheque._t_trackManagementDisp
 
-    trackManagement._op_ajout = IcePy.Operation('ajout', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_discotheque._t_Morceau, False, 0),), (), None, ())
-    trackManagement._op_recupTitres = IcePy.Operation('recupTitres', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
-    trackManagement._op_rechercheParTitre = IcePy.Operation('rechercheParTitre', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
-    trackManagement._op_rechercheParArtiste = IcePy.Operation('rechercheParArtiste', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
-    trackManagement._op_suppressionTitre = IcePy.Operation('suppressionTitre', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_bool, False, 0), ())
-    trackManagement._op_suppressionAlbum = IcePy.Operation('suppressionAlbum', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_bool, False, 0), ())
-    trackManagement._op_jouerTitres = IcePy.Operation('jouerTitres', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), None, ())
+    trackManagement._op_ajouterTitre = IcePy.Operation('ajouterTitre', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_discotheque._t_Morceau, False, 0),), (), None, ())
+    trackManagement._op_recupererTitres = IcePy.Operation('recupererTitres', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
+    trackManagement._op_rechercherParTitre = IcePy.Operation('rechercherParTitre', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
+    trackManagement._op_rechercherParArtiste = IcePy.Operation('rechercherParArtiste', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
+    trackManagement._op_rechercherParAlbum = IcePy.Operation('rechercherParAlbum', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
+    trackManagement._op_rechercherParGenre = IcePy.Operation('rechercherParGenre', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
+    trackManagement._op_rechercherParDuree = IcePy.Operation('rechercherParDuree', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
+    trackManagement._op_supprimerTitre = IcePy.Operation('supprimerTitre', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_bool, False, 0), ())
+    trackManagement._op_supprimerAlbum = IcePy.Operation('supprimerAlbum', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_bool, False, 0), ())
+    trackManagement._op_supprimerArtiste = IcePy.Operation('supprimerArtiste', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), IcePy._t_bool, False, 0), ())
+    trackManagement._op_jouerMorceaux = IcePy.Operation('jouerMorceaux', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_discotheque._t_Morceaux, False, 0),), (), ((), IcePy._t_string, False, 0), ())
 
     _M_discotheque.trackManagement = trackManagement
     del trackManagement

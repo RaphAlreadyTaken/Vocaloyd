@@ -62,7 +62,7 @@ slice
 {
     java
     {
-        files = [file("./src/Discotheque.ice")]
+        files = [file("../../../shared/Discotheque.ice")]
     }
 }
 
@@ -76,6 +76,7 @@ dependencies
     implementation 'cz.msebera.android:httpclient:4.4.1.2'
     implementation 'com.zeroc:ice:3.7.2'
     implementation 'org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.6'
     testImplementation 'junit:junit:4.13-beta-2'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

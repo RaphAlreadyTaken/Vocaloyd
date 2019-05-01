@@ -1,5 +1,6 @@
 Manifest-Version: 1.0
-Class-Path: file:/home/raph/.gradle/caches/modules-2/files-2.1/com.zer
- oc/ice/3.7.2/33055ec870e5bfa055ba1489b76ee83639c0a28a/ice-3.7.2.jar
+Class-Path: file:/C:/Users/Raph/.gradle/caches/modules-2/files-2.1/com
+ .zeroc/ice/3.7.2/33055ec870e5bfa055ba1489b76ee83639c0a28a/ice-3.7.2.j
+ ar
 Main-Class: Client
 

@@ -12,6 +12,7 @@ import java.nio.file.Paths;
 
 public class Client
 {
+
     public static void main(String[] args) throws FileNotFoundException, IOException, InterruptedIOException
     {
         com.zeroc.Ice.Properties props = com.zeroc.Ice.Util.createProperties(args);
@@ -79,12 +80,12 @@ public class Client
                         choixStr = saisirString();
                         track.file = choixStr;
 
-                        manager.ajout(track);
+                        manager.ajouterTitre(track);
 
                         break;
 
                     case 2:
-                        tracks = manager.recupTitres();
+                        tracks = manager.recupererTitres();
                         displayTitles(tracks);
 
                         break;
@@ -92,7 +93,7 @@ public class Client
                     case 3:
                         System.out.print("Titre : ");
                         choixStr = saisirString();
-                        tracks = manager.rechercheParTitre(choixStr);
+                        tracks = manager.rechercherParTitre(choixStr);
                         displayTitles(tracks);
                         
                         break;
@@ -100,7 +101,7 @@ public class Client
                     case 4:
                         System.out.print("Artiste : ");
                         choixStr = saisirString();
-                        tracks = manager.rechercheParArtiste(choixStr);
+                        tracks = manager.rechercherParArtiste(choixStr);
                         displayTitles(tracks);
 
                         break;
@@ -112,7 +113,7 @@ public class Client
                         System.out.print("Artiste : ");
                         choixStr2 = saisirString();
                         
-                        retour = manager.suppressionTitre(choixStr, choixStr2);
+                        retour = manager.supprimerTitre(choixStr, choixStr2);
 
                         if (retour == true)
                         {
@@ -132,7 +133,7 @@ public class Client
                         System.out.print("Album : ");
                         choixStr2 = saisirString();
                         
-                        retour = manager.suppressionAlbum(choixStr, choixStr2);
+                        retour = manager.supprimerAlbum(choixStr, choixStr2);
 
                         if (retour == true)
                         {
@@ -148,9 +149,10 @@ public class Client
                     case 7:
                         System.out.print("Titre : ");
                         choixStr = saisirString();
-                        manager.jouerTitres(choixStr);
+                        Morceau[] trackPlay = manager.rechercherParTitre(choixStr);
+                        String streamTarget = manager.jouerMorceaux(trackPlay);
 
-                        Runtime.getRuntime().exec("vlc http://192.168.1.15:10000/stream");
+                        Runtime.getRuntime().exec("vlc http://192.168.1.15:" + streamTarget);
                         break;
 
                     case 8:

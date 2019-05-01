@@ -1,33 +1,32 @@
+shell=powershell
 
 all: clean slicePy javaClient
 
 #Server
 slicePy:
 	@echo "Generating skeleton..."
-	slice2py --output-dir discotheque/server Discotheque.ice
+	slice2py --output-dir server ../shared/Discotheque.ice
 
 #Client
-.ONESHELL:
 javaClient:
 	@echo "Generating proxy..."
 	@echo "Compiling client..."
-	cd discotheque
-	gradlew :client:build
+	${shell} cd business/discotheque ;\
+	./gradlew :client:build
 
 #Run server
 runServer:
-	# python discotheque/server/server.py
-	python3 discotheque/server/server.py
+	python server/server.py
 
 #Run client
 runClient:
-	java -jar discotheque/client/build/libs/client.jar
+	java -jar business/discotheque/client/build/libs/client.jar
 
 #Class and Ice files
 clean:
 	@echo "Cleaning previously generated files..."
-	rm -rf discotheque/server/__pycache__
-	rm -rf discotheque/server/discotheque
-	rm -rf discotheque/server/Discotheque_ice.*
-	rm -rf discotheque/client/build/*
-	rm -rf discotheque/client/bin/*
+	${shell} if (Test-Path __pycache__) {rmdir -r __pycache__}
+	${shell} if (Test-Path server/discotheque) { rmdir -r server/discotheque }
+	${shell} if (Test-Path server/Discotheque_ice) { rmdir -r server/Discotheque_ice }
+	${shell} if (Test-Path business/discotheque/client/build) { rmdir -r business/discotheque/client/build }
+	${shell} if (Test-Path business/discotheque/client/bin) { rmdir -r business/discotheque/client/bin }

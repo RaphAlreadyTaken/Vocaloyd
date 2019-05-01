@@ -23,9 +23,9 @@ const port = 3131;
 /******** Routes
  *
  ********/
-var index = require('./VocaloydSTT/business/routes/index');
-var log = require('./VocaloydSTT/business/routes/log');
-var transcribe = require('./VocaloydSTT/business/routes/transcribe');
+var index = require('./routes/index');
+var log = require('./routes/log');
+var transcribe = require('./routes/transcribe');
 
 /******** Includes
  *
@@ -44,13 +44,13 @@ app.use(session(
     cookie: {maxAge: 24 * 3600 * 1000}
 }));
 
-app.use(express.static(path.join(__dirname, './VocaloydSTT/business'))); //Ajout répertoire business dans "path" de l'app
-app.use(express.static(path.join(__dirname, './VocaloydSTT/scss'))); //Ajout répertoire scss dans "path" de l'app
-app.use(express.static(path.join(__dirname, './VocaloydSTT/upload'))); //Ajout répertoire upload dans "path" de l'app
+app.use(express.static(path.join(__dirname, '../business'))); //Ajout répertoire business dans "path" de l'app)
+app.use(express.static(path.join(__dirname, '../business/scss'))); //Ajout répertoire scss dans "path" de l'app
+app.use(express.static(path.join(__dirname, './upload'))); //Ajout répertoire upload dans "path" de l'app
 
 app.use(formidable(
 {
-    uploadDir: './VocaloydSTT/upload',
+    uploadDir: './upload',
     keepExtensions: true
 }));
 

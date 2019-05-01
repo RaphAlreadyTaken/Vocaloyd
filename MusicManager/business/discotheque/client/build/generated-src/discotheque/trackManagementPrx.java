@@ -17,24 +17,24 @@ package discotheque;
 
 public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
 {
-    default void ajout(Morceau song)
+    default void ajouterTitre(Morceau song)
     {
-        ajout(song, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+        ajouterTitre(song, com.zeroc.Ice.ObjectPrx.noExplicitContext);
     }
 
-    default void ajout(Morceau song, java.util.Map<String, String> context)
+    default void ajouterTitre(Morceau song, java.util.Map<String, String> context)
     {
-        _iceI_ajoutAsync(song, context, true).waitForResponse();
+        _iceI_ajouterTitreAsync(song, context, true).waitForResponse();
     }
 
-    default java.util.concurrent.CompletableFuture<Void> ajoutAsync(Morceau song)
+    default java.util.concurrent.CompletableFuture<Void> ajouterTitreAsync(Morceau song)
     {
-        return _iceI_ajoutAsync(song, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+        return _iceI_ajouterTitreAsync(song, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
     }
 
-    default java.util.concurrent.CompletableFuture<Void> ajoutAsync(Morceau song, java.util.Map<String, String> context)
+    default java.util.concurrent.CompletableFuture<Void> ajouterTitreAsync(Morceau song, java.util.Map<String, String> context)
     {
-        return _iceI_ajoutAsync(song, context, false);
+        return _iceI_ajouterTitreAsync(song, context, false);
     }
 
     /**
@@ -44,33 +44,33 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
      * @param sync -
      * @return -
      **/
-    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_ajoutAsync(Morceau iceP_song, java.util.Map<String, String> context, boolean sync)
+    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_ajouterTitreAsync(Morceau iceP_song, java.util.Map<String, String> context, boolean sync)
     {
-        com.zeroc.IceInternal.OutgoingAsync<Void> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "ajout", null, sync, null);
+        com.zeroc.IceInternal.OutgoingAsync<Void> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "ajouterTitre", null, sync, null);
         f.invoke(false, context, null, ostr -> {
                      Morceau.ice_write(ostr, iceP_song);
                  }, null);
         return f;
     }
 
-    default Morceau[] recupTitres()
+    default Morceau[] recupererTitres()
     {
-        return recupTitres(com.zeroc.Ice.ObjectPrx.noExplicitContext);
+        return recupererTitres(com.zeroc.Ice.ObjectPrx.noExplicitContext);
     }
 
-    default Morceau[] recupTitres(java.util.Map<String, String> context)
+    default Morceau[] recupererTitres(java.util.Map<String, String> context)
     {
-        return _iceI_recupTitresAsync(context, true).waitForResponse();
+        return _iceI_recupererTitresAsync(context, true).waitForResponse();
     }
 
-    default java.util.concurrent.CompletableFuture<Morceau[]> recupTitresAsync()
+    default java.util.concurrent.CompletableFuture<Morceau[]> recupererTitresAsync()
     {
-        return _iceI_recupTitresAsync(com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+        return _iceI_recupererTitresAsync(com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
     }
 
-    default java.util.concurrent.CompletableFuture<Morceau[]> recupTitresAsync(java.util.Map<String, String> context)
+    default java.util.concurrent.CompletableFuture<Morceau[]> recupererTitresAsync(java.util.Map<String, String> context)
     {
-        return _iceI_recupTitresAsync(context, false);
+        return _iceI_recupererTitresAsync(context, false);
     }
 
     /**
@@ -79,9 +79,9 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
      * @param sync -
      * @return -
      **/
-    default com.zeroc.IceInternal.OutgoingAsync<Morceau[]> _iceI_recupTitresAsync(java.util.Map<String, String> context, boolean sync)
+    default com.zeroc.IceInternal.OutgoingAsync<Morceau[]> _iceI_recupererTitresAsync(java.util.Map<String, String> context, boolean sync)
     {
-        com.zeroc.IceInternal.OutgoingAsync<Morceau[]> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "recupTitres", null, sync, null);
+        com.zeroc.IceInternal.OutgoingAsync<Morceau[]> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "recupererTitres", null, sync, null);
         f.invoke(true, context, null, null, istr -> {
                      Morceau[] ret;
                      ret = MorceauxHelper.read(istr);
@@ -90,24 +90,24 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
-    default Morceau[] rechercheParTitre(String title)
+    default Morceau[] rechercherParTitre(String title)
     {
-        return rechercheParTitre(title, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+        return rechercherParTitre(title, com.zeroc.Ice.ObjectPrx.noExplicitContext);
     }
 
-    default Morceau[] rechercheParTitre(String title, java.util.Map<String, String> context)
+    default Morceau[] rechercherParTitre(String title, java.util.Map<String, String> context)
     {
-        return _iceI_rechercheParTitreAsync(title, context, true).waitForResponse();
+        return _iceI_rechercherParTitreAsync(title, context, true).waitForResponse();
     }
 
-    default java.util.concurrent.CompletableFuture<Morceau[]> rechercheParTitreAsync(String title)
+    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherParTitreAsync(String title)
     {
-        return _iceI_rechercheParTitreAsync(title, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+        return _iceI_rechercherParTitreAsync(title, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
     }
 
-    default java.util.concurrent.CompletableFuture<Morceau[]> rechercheParTitreAsync(String title, java.util.Map<String, String> context)
+    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherParTitreAsync(String title, java.util.Map<String, String> context)
     {
-        return _iceI_rechercheParTitreAsync(title, context, false);
+        return _iceI_rechercherParTitreAsync(title, context, false);
     }
 
     /**
@@ -117,9 +117,9 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
      * @param sync -
      * @return -
      **/
-    default com.zeroc.IceInternal.OutgoingAsync<Morceau[]> _iceI_rechercheParTitreAsync(String iceP_title, java.util.Map<String, String> context, boolean sync)
+    default com.zeroc.IceInternal.OutgoingAsync<Morceau[]> _iceI_rechercherParTitreAsync(String iceP_title, java.util.Map<String, String> context, boolean sync)
     {
-        com.zeroc.IceInternal.OutgoingAsync<Morceau[]> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "rechercheParTitre", null, sync, null);
+        com.zeroc.IceInternal.OutgoingAsync<Morceau[]> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "rechercherParTitre", null, sync, null);
         f.invoke(true, context, null, ostr -> {
                      ostr.writeString(iceP_title);
                  }, istr -> {
@@ -130,24 +130,24 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
-    default Morceau[] rechercheParArtiste(String artist)
+    default Morceau[] rechercherParArtiste(String artist)
     {
-        return rechercheParArtiste(artist, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+        return rechercherParArtiste(artist, com.zeroc.Ice.ObjectPrx.noExplicitContext);
     }
 
-    default Morceau[] rechercheParArtiste(String artist, java.util.Map<String, String> context)
+    default Morceau[] rechercherParArtiste(String artist, java.util.Map<String, String> context)
     {
-        return _iceI_rechercheParArtisteAsync(artist, context, true).waitForResponse();
+        return _iceI_rechercherParArtisteAsync(artist, context, true).waitForResponse();
     }
 
-    default java.util.concurrent.CompletableFuture<Morceau[]> rechercheParArtisteAsync(String artist)
+    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherParArtisteAsync(String artist)
     {
-        return _iceI_rechercheParArtisteAsync(artist, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+        return _iceI_rechercherParArtisteAsync(artist, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
     }
 
-    default java.util.concurrent.CompletableFuture<Morceau[]> rechercheParArtisteAsync(String artist, java.util.Map<String, String> context)
+    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherParArtisteAsync(String artist, java.util.Map<String, String> context)
     {
-        return _iceI_rechercheParArtisteAsync(artist, context, false);
+        return _iceI_rechercherParArtisteAsync(artist, context, false);
     }
 
     /**
@@ -157,9 +157,9 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
      * @param sync -
      * @return -
      **/
-    default com.zeroc.IceInternal.OutgoingAsync<Morceau[]> _iceI_rechercheParArtisteAsync(String iceP_artist, java.util.Map<String, String> context, boolean sync)
+    default com.zeroc.IceInternal.OutgoingAsync<Morceau[]> _iceI_rechercherParArtisteAsync(String iceP_artist, java.util.Map<String, String> context, boolean sync)
     {
-        com.zeroc.IceInternal.OutgoingAsync<Morceau[]> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "rechercheParArtiste", null, sync, null);
+        com.zeroc.IceInternal.OutgoingAsync<Morceau[]> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "rechercherParArtiste", null, sync, null);
         f.invoke(true, context, null, ostr -> {
                      ostr.writeString(iceP_artist);
                  }, istr -> {
@@ -170,24 +170,144 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
-    default boolean suppressionTitre(String title, String artist)
+    default Morceau[] rechercherParAlbum(String album)
     {
-        return suppressionTitre(title, artist, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+        return rechercherParAlbum(album, com.zeroc.Ice.ObjectPrx.noExplicitContext);
     }
 
-    default boolean suppressionTitre(String title, String artist, java.util.Map<String, String> context)
+    default Morceau[] rechercherParAlbum(String album, java.util.Map<String, String> context)
     {
-        return _iceI_suppressionTitreAsync(title, artist, context, true).waitForResponse();
+        return _iceI_rechercherParAlbumAsync(album, context, true).waitForResponse();
     }
 
-    default java.util.concurrent.CompletableFuture<java.lang.Boolean> suppressionTitreAsync(String title, String artist)
+    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherParAlbumAsync(String album)
     {
-        return _iceI_suppressionTitreAsync(title, artist, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+        return _iceI_rechercherParAlbumAsync(album, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
     }
 
-    default java.util.concurrent.CompletableFuture<java.lang.Boolean> suppressionTitreAsync(String title, String artist, java.util.Map<String, String> context)
+    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherParAlbumAsync(String album, java.util.Map<String, String> context)
     {
-        return _iceI_suppressionTitreAsync(title, artist, context, false);
+        return _iceI_rechercherParAlbumAsync(album, context, false);
+    }
+
+    /**
+     * @hidden
+     * @param iceP_album -
+     * @param context -
+     * @param sync -
+     * @return -
+     **/
+    default com.zeroc.IceInternal.OutgoingAsync<Morceau[]> _iceI_rechercherParAlbumAsync(String iceP_album, java.util.Map<String, String> context, boolean sync)
+    {
+        com.zeroc.IceInternal.OutgoingAsync<Morceau[]> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "rechercherParAlbum", null, sync, null);
+        f.invoke(true, context, null, ostr -> {
+                     ostr.writeString(iceP_album);
+                 }, istr -> {
+                     Morceau[] ret;
+                     ret = MorceauxHelper.read(istr);
+                     return ret;
+                 });
+        return f;
+    }
+
+    default Morceau[] rechercherParGenre(String genre)
+    {
+        return rechercherParGenre(genre, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+    }
+
+    default Morceau[] rechercherParGenre(String genre, java.util.Map<String, String> context)
+    {
+        return _iceI_rechercherParGenreAsync(genre, context, true).waitForResponse();
+    }
+
+    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherParGenreAsync(String genre)
+    {
+        return _iceI_rechercherParGenreAsync(genre, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+    }
+
+    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherParGenreAsync(String genre, java.util.Map<String, String> context)
+    {
+        return _iceI_rechercherParGenreAsync(genre, context, false);
+    }
+
+    /**
+     * @hidden
+     * @param iceP_genre -
+     * @param context -
+     * @param sync -
+     * @return -
+     **/
+    default com.zeroc.IceInternal.OutgoingAsync<Morceau[]> _iceI_rechercherParGenreAsync(String iceP_genre, java.util.Map<String, String> context, boolean sync)
+    {
+        com.zeroc.IceInternal.OutgoingAsync<Morceau[]> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "rechercherParGenre", null, sync, null);
+        f.invoke(true, context, null, ostr -> {
+                     ostr.writeString(iceP_genre);
+                 }, istr -> {
+                     Morceau[] ret;
+                     ret = MorceauxHelper.read(istr);
+                     return ret;
+                 });
+        return f;
+    }
+
+    default Morceau[] rechercherParDuree(String duration)
+    {
+        return rechercherParDuree(duration, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+    }
+
+    default Morceau[] rechercherParDuree(String duration, java.util.Map<String, String> context)
+    {
+        return _iceI_rechercherParDureeAsync(duration, context, true).waitForResponse();
+    }
+
+    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherParDureeAsync(String duration)
+    {
+        return _iceI_rechercherParDureeAsync(duration, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+    }
+
+    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherParDureeAsync(String duration, java.util.Map<String, String> context)
+    {
+        return _iceI_rechercherParDureeAsync(duration, context, false);
+    }
+
+    /**
+     * @hidden
+     * @param iceP_duration -
+     * @param context -
+     * @param sync -
+     * @return -
+     **/
+    default com.zeroc.IceInternal.OutgoingAsync<Morceau[]> _iceI_rechercherParDureeAsync(String iceP_duration, java.util.Map<String, String> context, boolean sync)
+    {
+        com.zeroc.IceInternal.OutgoingAsync<Morceau[]> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "rechercherParDuree", null, sync, null);
+        f.invoke(true, context, null, ostr -> {
+                     ostr.writeString(iceP_duration);
+                 }, istr -> {
+                     Morceau[] ret;
+                     ret = MorceauxHelper.read(istr);
+                     return ret;
+                 });
+        return f;
+    }
+
+    default boolean supprimerTitre(String title, String artist)
+    {
+        return supprimerTitre(title, artist, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+    }
+
+    default boolean supprimerTitre(String title, String artist, java.util.Map<String, String> context)
+    {
+        return _iceI_supprimerTitreAsync(title, artist, context, true).waitForResponse();
+    }
+
+    default java.util.concurrent.CompletableFuture<java.lang.Boolean> supprimerTitreAsync(String title, String artist)
+    {
+        return _iceI_supprimerTitreAsync(title, artist, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+    }
+
+    default java.util.concurrent.CompletableFuture<java.lang.Boolean> supprimerTitreAsync(String title, String artist, java.util.Map<String, String> context)
+    {
+        return _iceI_supprimerTitreAsync(title, artist, context, false);
     }
 
     /**
@@ -198,9 +318,9 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
      * @param sync -
      * @return -
      **/
-    default com.zeroc.IceInternal.OutgoingAsync<java.lang.Boolean> _iceI_suppressionTitreAsync(String iceP_title, String iceP_artist, java.util.Map<String, String> context, boolean sync)
+    default com.zeroc.IceInternal.OutgoingAsync<java.lang.Boolean> _iceI_supprimerTitreAsync(String iceP_title, String iceP_artist, java.util.Map<String, String> context, boolean sync)
     {
-        com.zeroc.IceInternal.OutgoingAsync<java.lang.Boolean> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "suppressionTitre", null, sync, null);
+        com.zeroc.IceInternal.OutgoingAsync<java.lang.Boolean> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "supprimerTitre", null, sync, null);
         f.invoke(true, context, null, ostr -> {
                      ostr.writeString(iceP_title);
                      ostr.writeString(iceP_artist);
@@ -212,24 +332,24 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
-    default boolean suppressionAlbum(String artist, String album)
+    default boolean supprimerAlbum(String artist, String album)
     {
-        return suppressionAlbum(artist, album, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+        return supprimerAlbum(artist, album, com.zeroc.Ice.ObjectPrx.noExplicitContext);
     }
 
-    default boolean suppressionAlbum(String artist, String album, java.util.Map<String, String> context)
+    default boolean supprimerAlbum(String artist, String album, java.util.Map<String, String> context)
     {
-        return _iceI_suppressionAlbumAsync(artist, album, context, true).waitForResponse();
+        return _iceI_supprimerAlbumAsync(artist, album, context, true).waitForResponse();
     }
 
-    default java.util.concurrent.CompletableFuture<java.lang.Boolean> suppressionAlbumAsync(String artist, String album)
+    default java.util.concurrent.CompletableFuture<java.lang.Boolean> supprimerAlbumAsync(String artist, String album)
     {
-        return _iceI_suppressionAlbumAsync(artist, album, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+        return _iceI_supprimerAlbumAsync(artist, album, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
     }
 
-    default java.util.concurrent.CompletableFuture<java.lang.Boolean> suppressionAlbumAsync(String artist, String album, java.util.Map<String, String> context)
+    default java.util.concurrent.CompletableFuture<java.lang.Boolean> supprimerAlbumAsync(String artist, String album, java.util.Map<String, String> context)
     {
-        return _iceI_suppressionAlbumAsync(artist, album, context, false);
+        return _iceI_supprimerAlbumAsync(artist, album, context, false);
     }
 
     /**
@@ -240,9 +360,9 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
      * @param sync -
      * @return -
      **/
-    default com.zeroc.IceInternal.OutgoingAsync<java.lang.Boolean> _iceI_suppressionAlbumAsync(String iceP_artist, String iceP_album, java.util.Map<String, String> context, boolean sync)
+    default com.zeroc.IceInternal.OutgoingAsync<java.lang.Boolean> _iceI_supprimerAlbumAsync(String iceP_artist, String iceP_album, java.util.Map<String, String> context, boolean sync)
     {
-        com.zeroc.IceInternal.OutgoingAsync<java.lang.Boolean> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "suppressionAlbum", null, sync, null);
+        com.zeroc.IceInternal.OutgoingAsync<java.lang.Boolean> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "supprimerAlbum", null, sync, null);
         f.invoke(true, context, null, ostr -> {
                      ostr.writeString(iceP_artist);
                      ostr.writeString(iceP_album);
@@ -254,39 +374,83 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
-    default void jouerTitres(String title)
+    default boolean supprimerArtiste(String artist)
     {
-        jouerTitres(title, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+        return supprimerArtiste(artist, com.zeroc.Ice.ObjectPrx.noExplicitContext);
     }
 
-    default void jouerTitres(String title, java.util.Map<String, String> context)
+    default boolean supprimerArtiste(String artist, java.util.Map<String, String> context)
     {
-        _iceI_jouerTitresAsync(title, context, true).waitForResponse();
+        return _iceI_supprimerArtisteAsync(artist, context, true).waitForResponse();
     }
 
-    default java.util.concurrent.CompletableFuture<Void> jouerTitresAsync(String title)
+    default java.util.concurrent.CompletableFuture<java.lang.Boolean> supprimerArtisteAsync(String artist)
     {
-        return _iceI_jouerTitresAsync(title, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+        return _iceI_supprimerArtisteAsync(artist, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
     }
 
-    default java.util.concurrent.CompletableFuture<Void> jouerTitresAsync(String title, java.util.Map<String, String> context)
+    default java.util.concurrent.CompletableFuture<java.lang.Boolean> supprimerArtisteAsync(String artist, java.util.Map<String, String> context)
     {
-        return _iceI_jouerTitresAsync(title, context, false);
+        return _iceI_supprimerArtisteAsync(artist, context, false);
     }
 
     /**
      * @hidden
-     * @param iceP_title -
+     * @param iceP_artist -
      * @param context -
      * @param sync -
      * @return -
      **/
-    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_jouerTitresAsync(String iceP_title, java.util.Map<String, String> context, boolean sync)
+    default com.zeroc.IceInternal.OutgoingAsync<java.lang.Boolean> _iceI_supprimerArtisteAsync(String iceP_artist, java.util.Map<String, String> context, boolean sync)
     {
-        com.zeroc.IceInternal.OutgoingAsync<Void> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "jouerTitres", null, sync, null);
-        f.invoke(false, context, null, ostr -> {
-                     ostr.writeString(iceP_title);
-                 }, null);
+        com.zeroc.IceInternal.OutgoingAsync<java.lang.Boolean> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "supprimerArtiste", null, sync, null);
+        f.invoke(true, context, null, ostr -> {
+                     ostr.writeString(iceP_artist);
+                 }, istr -> {
+                     boolean ret;
+                     ret = istr.readBool();
+                     return ret;
+                 });
+        return f;
+    }
+
+    default String jouerMorceaux(Morceau[] morceaux)
+    {
+        return jouerMorceaux(morceaux, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+    }
+
+    default String jouerMorceaux(Morceau[] morceaux, java.util.Map<String, String> context)
+    {
+        return _iceI_jouerMorceauxAsync(morceaux, context, true).waitForResponse();
+    }
+
+    default java.util.concurrent.CompletableFuture<java.lang.String> jouerMorceauxAsync(Morceau[] morceaux)
+    {
+        return _iceI_jouerMorceauxAsync(morceaux, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+    }
+
+    default java.util.concurrent.CompletableFuture<java.lang.String> jouerMorceauxAsync(Morceau[] morceaux, java.util.Map<String, String> context)
+    {
+        return _iceI_jouerMorceauxAsync(morceaux, context, false);
+    }
+
+    /**
+     * @hidden
+     * @param iceP_morceaux -
+     * @param context -
+     * @param sync -
+     * @return -
+     **/
+    default com.zeroc.IceInternal.OutgoingAsync<java.lang.String> _iceI_jouerMorceauxAsync(Morceau[] iceP_morceaux, java.util.Map<String, String> context, boolean sync)
+    {
+        com.zeroc.IceInternal.OutgoingAsync<java.lang.String> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "jouerMorceaux", null, sync, null);
+        f.invoke(true, context, null, ostr -> {
+                     MorceauxHelper.write(ostr, iceP_morceaux);
+                 }, istr -> {
+                     String ret;
+                     ret = istr.readString();
+                     return ret;
+                 });
         return f;
     }
 

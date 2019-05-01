@@ -1,26 +1,35 @@
-
-#Compile
-.ONESHELL:
-analyzer:
-	@echo "Compiling..."
-	javac -d ./build/ -classpath "./lib/apache-activemq-4.1.1.jar:./lib/javax.jms-api.jar" ./src/*.java
-	javac -d ./build/ -proc:none Client.java
+shell=powershell
 
 all: clean analyzer
 
-#Run listener
+#Compile
+analyzer:
+	@echo "Compiling..."
+	${shell} cd ./business ;\
+	javac -d ./build/ ./src/*.java ;\
+	javac -d ./build/ -proc:none ./Client.java	
+
+#Run server
 .ONESHELL:
+runServer:
+	cd ./server/bin
+	gateway.start.bat --broker jms
+
+
+#Run listener
 runList:
-	cd ./build
-	java -classpath ".:../lib/apache-activemq-4.1.1.jar:../lib/javax.jms-api.jar" src.Listener
+	@echo "Running listener..."
+	${shell} cd ./business/build ;\
+	java src.Listener
 
 #Run client
 .ONESHELL:
 runClient:
-	cd ./build
+	@echo "Running client..."
+	${shell} cd ./business/build ;\
 	java Client
 
 clean:
 	@echo "Cleaning previously generated files..."
-	rm -r build/*
-	rm -f *.class
+	${shell} if (Test-Path business/build) {rm -r business/build/*}
+	${shell} if (Test-Path .) {rm *.class}
