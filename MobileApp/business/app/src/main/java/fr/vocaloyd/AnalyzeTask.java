@@ -92,8 +92,8 @@ public class AnalyzeTask extends AsyncTask<String, Void, HashMap<String, String>
                 Entry<String, String> entry = output.entrySet().iterator().next();
                 System.out.println("Command: " + entry.getKey() + ", Content: " + entry.getValue());
 
-                MusicTask task = new MusicTask(taskContext);
-                task.execute(entry);
+//                MusicTask task = new MusicTask(taskContext);
+//                task.execute(entry);
             }
 
         }

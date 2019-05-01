@@ -68,7 +68,5 @@ public class Listener
                 sender.send(message.getJMSReplyTo(), msgRet);
             }            
         }
-
-        connection.close();
     }
 }

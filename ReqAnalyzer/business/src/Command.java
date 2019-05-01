@@ -6,24 +6,30 @@ import java.util.HashMap;
 
 /**
  * Command class, designed to hold commands and compatible values
- * WARNING : keys and values need to be the same length
+ * WARNING : keys and values of respective attributes need to be the same length
  */
 public class Command
 {
-    private HashMap<String, ArrayList<String>> commands;
+    private HashMap<String, ArrayList<String>> baseCommands;
+    private HashMap<String, ArrayList<String>> specificCommands;
 
-    private ArrayList<String> keys = new ArrayList<String>(Arrays.asList("play", "playTrack", "playAlbum", "playArtist", "playGenre", "playDuration"));
-    
-    private ArrayList<String> playValues = new ArrayList<String>(Arrays.asList("jou", "plai", "play"));
-    private ArrayList<String> playTrackValues = new ArrayList<String>(Arrays.asList("musi", "piste", "tit", "track"));
-    private ArrayList<String> playAlbumValues = new ArrayList<String>(Arrays.asList("album"));
-    private ArrayList<String> playArtistValues = new ArrayList<String>(Arrays.asList("artist", "band", "chanteu", "group", "singer"));
-    private ArrayList<String> playGenreValues = new ArrayList<String>(Arrays.asList("genre", "style"));
-    private ArrayList<String> playDurationValues = new ArrayList<String>(Arrays.asList("pendant", "for"));
-    
-    private ArrayList<ArrayList<String>> values = new ArrayList<ArrayList<String>>(Arrays.asList
+    private ArrayList<String> baseKeys = new ArrayList<>(Arrays.asList("play"));
+    private ArrayList<String> playValues = new ArrayList<>(Arrays.asList("jou", "plai", "play"));
+
+    private ArrayList<ArrayList<String>> baseValues = new ArrayList<>(Arrays.asList
     (
-        playValues,
+        playValues
+    ));
+
+    private ArrayList<String> specificKeys = new ArrayList<>(Arrays.asList("playTrack", "playAlbum", "playArtist", "playGenre", "playDuration"));
+    private ArrayList<String> playTrackValues = new ArrayList<>(Arrays.asList("musi", "piste", "tit", "track"));
+    private ArrayList<String> playAlbumValues = new ArrayList<>(Arrays.asList("album"));
+    private ArrayList<String> playArtistValues = new ArrayList<>(Arrays.asList("artist", "band", "chanteu", "group", "singer"));
+    private ArrayList<String> playGenreValues = new ArrayList<>(Arrays.asList("genre", "style"));
+    private ArrayList<String> playDurationValues = new ArrayList<>(Arrays.asList("pendant", "for"));
+    
+    private ArrayList<ArrayList<String>> specificValues = new ArrayList<>(Arrays.asList
+    (
         playTrackValues,
         playAlbumValues,
         playArtistValues,
@@ -37,26 +43,43 @@ public class Command
      */
     public Command() throws Exception
     {  
-        if (keys.size() != values.size())
+        if (baseKeys.size() != baseValues.size() || specificKeys.size() != specificValues.size())
         {
             throw new Exception("Incompatible size between keys and values collections");
         }
         
-        commands = new HashMap<String, ArrayList<String>>();
-        int nbCommands = keys.size();
+        baseCommands = new HashMap<>();
+        specificCommands = new HashMap<>();
 
-        for (int i = 0; i < nbCommands; ++i)
+        int nbBaseCommands = baseKeys.size();
+        int nbSpecificCommands = specificKeys.size();
+
+        for (int i = 0; i < nbBaseCommands; ++i)
         {
-            commands.put(keys.get(i), values.get(i));
+            baseCommands.put(baseKeys.get(i), baseValues.get(i));
+        }
+
+        for (int i = 0; i < nbSpecificCommands; ++i)
+        {
+            specificCommands.put(specificKeys.get(i), specificValues.get(i));
         }
     }
 
     /**
-     * Getter commands
+     * Getter base commands
      * @return HashMap<String, ArrayList<String>> : <name, synonyms> of supported commands
      */
-    HashMap<String, ArrayList<String>> getCommands()
+    HashMap<String, ArrayList<String>> getBaseCommands()
     {
-        return commands;
+        return baseCommands;
+    }
+
+    /**
+     * Getter specific commands
+     * @return HashMap<String, ArrayList<String>> : <name, synonyms> of supported commands
+     */
+    HashMap<String, ArrayList<String>> getSpecificCommands()
+    {
+        return specificCommands;
     }
 }
