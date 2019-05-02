@@ -31,9 +31,6 @@ public class Analyzer
         }
     }
 
-    //TODO: Après identification commande, avancer jusqu'à l'espace suivant pour suite de la commande (substr group(2) par ex)
-    //Gérer également les articles le, le, l', the, a (définir comment)
-
     /**
      * Analyzes an input string to detect command and contentGroup
      * @param input : string to analyze
@@ -58,15 +55,13 @@ public class Analyzer
             {
                 for (String str : entry.getValue())
                 {
-                    basePat = Pattern.compile("(?i)(" + str + ")(.*)"); //Regex
+                    basePat = Pattern.compile("(?i)(" + str + "[^ ]*)\\s+(.*)"); //Regex (command, whitespace, content)
                     matcher = basePat.matcher(input);
         
                     if (matcher.matches())
                     {
                         commandGroup = matcher.group(1);
                         contentGroup = matcher.group(2);
-                        System.out.println("command: " + commandGroup); //TODO: output test, à virer
-                        System.out.println("content: " + contentGroup); //TODO: output test, à virer
                         foundBase = true;
                         break;
                     }
@@ -94,15 +89,13 @@ public class Analyzer
             {
                 for (String str : entry.getValue())
                 {
-                    basePat = Pattern.compile("(?i)(" + str + ")(.*)"); //Regex
+                    basePat = Pattern.compile("(?i)(?:l|t)?[aeh]{0,2}\\s?|'?(" + str + "[^ ]*)\\s+(.*)"); //Regex (definite article or nothing, command, whitespace, content)
                     matcher = basePat.matcher(contentGroup);
         
                     if (matcher.matches())
                     {
-                        commandGroup += matcher.group(1); //Full command
+                        commandGroup += " " + matcher.group(1); //Full command
                         contentGroup = matcher.group(2);
-                        System.out.println("command: " + commandGroup); //TODO: output test, à virer
-                        System.out.println("content: " + contentGroup); //TODO: output test, à virer
                         foundSpecific = true;
                         break;
                     }

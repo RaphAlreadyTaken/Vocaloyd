@@ -11,7 +11,6 @@ import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.util.Util;
 
-import java.util.ArrayList;
 import java.util.Map;
 
 import discotheque.Morceau;

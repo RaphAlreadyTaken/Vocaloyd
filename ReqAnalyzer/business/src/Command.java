@@ -22,7 +22,7 @@ public class Command
     ));
 
     private ArrayList<String> specificKeys = new ArrayList<>(Arrays.asList("playTrack", "playAlbum", "playArtist", "playGenre", "playDuration"));
-    private ArrayList<String> playTrackValues = new ArrayList<>(Arrays.asList("musi", "piste", "tit", "track"));
+    private ArrayList<String> playTrackValues = new ArrayList<>(Arrays.asList("chanson", "musi", "piste", "tit", "track"));
     private ArrayList<String> playAlbumValues = new ArrayList<>(Arrays.asList("album"));
     private ArrayList<String> playArtistValues = new ArrayList<>(Arrays.asList("artist", "band", "chanteu", "group", "singer"));
     private ArrayList<String> playGenreValues = new ArrayList<>(Arrays.asList("genre", "style"));
