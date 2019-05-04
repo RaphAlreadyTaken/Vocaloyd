@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity
             rec.reset();
             System.out.println("Stopping recording");
 
-            System.out.println(transcribeCommand(audioFile));
+            transcribeCommand(audioFile);
         }
     }
 

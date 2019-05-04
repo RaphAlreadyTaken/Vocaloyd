@@ -1,13 +1,17 @@
 package fr.vocaloyd;
 
+import android.app.Activity;
 import android.content.Context;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.view.View;
 
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ExoPlayerFactory;
+import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.source.ExtractorMediaSource;
 import com.google.android.exoplayer2.source.MediaSource;
+import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.util.Util;
 
@@ -53,12 +57,15 @@ public class MusicTask extends AsyncTask<Map.Entry<String, String>, Void, Void>
             String uri = "http://192.168.1.15:" + target;
 
             ExoPlayer player = ExoPlayerFactory.newSimpleInstance(taskContext);
-            String agent = Util.getUserAgent(taskContext, taskContext.getString(R.string.app_name));
+            PlayerView playView = ((Activity) taskContext).findViewById(R.id.playerView);
+            playView.setPlayer(player);
+            String agent = Util.getUserAgent(taskContext, "MobileApp");
             DefaultDataSourceFactory data = new DefaultDataSourceFactory(taskContext, agent);
             MediaSource source = new ExtractorMediaSource.Factory(data).createMediaSource(Uri.parse(uri));
             player.prepare(source);
             player.setPlayWhenReady(true);
         }
+
         return null;
     }
 }

@@ -2,6 +2,7 @@ package fr.vocaloyd;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.view.View;
 
 import java.net.PasswordAuthentication;
 import java.net.URI;
@@ -16,6 +17,7 @@ import javax.jms.Message;
 import javax.jms.MessageConsumer;
 import javax.jms.MessageProducer;
 import javax.jms.Session;
+import javax.jms.TextMessage;
 
 import com.kaazing.gateway.jms.client.JmsConnectionFactory;
 import com.kaazing.net.auth.BasicChallengeHandler;
@@ -92,8 +94,8 @@ public class AnalyzeTask extends AsyncTask<String, Void, HashMap<String, String>
                 Entry<String, String> entry = output.entrySet().iterator().next();
                 System.out.println("Command: " + entry.getKey() + ", Content: " + entry.getValue());
 
-//                MusicTask task = new MusicTask(taskContext);
-//                task.execute(entry);
+                MusicTask task = new MusicTask(taskContext);
+                task.execute(entry);
             }
 
         }

@@ -89,7 +89,7 @@ public class Analyzer
             {
                 for (String str : entry.getValue())
                 {
-                    basePat = Pattern.compile("(?i)(?:l|t)?[aeh]{0,2}\\s?|'?(" + str + "[^ ]*)\\s+(.*)"); //Regex (definite article or nothing, command, whitespace, content)
+                    basePat = Pattern.compile("(?i)(?:l|t)?[aeh]{0,2}(?:\\s?|')?(" + str + "[^ ]*)\\s+(.*)"); //Regex (definite article or nothing, command, whitespace, content)
                     matcher = basePat.matcher(contentGroup);
         
                     if (matcher.matches())
@@ -107,9 +107,7 @@ public class Analyzer
             }
         }
 
-        System.out.println("command: " + commandGroup);
-        System.out.println("content: " + contentGroup);
-
+        System.out.println("Commande : " + commandGroup + ", Contenu : " + contentGroup);
         output.put(commandGroup, contentGroup);
 
         return output;
