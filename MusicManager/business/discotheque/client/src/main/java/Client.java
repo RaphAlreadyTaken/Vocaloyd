@@ -12,7 +12,6 @@ import java.nio.file.Paths;
 
 public class Client
 {
-
     public static void main(String[] args) throws FileNotFoundException, IOException, InterruptedIOException
     {
         com.zeroc.Ice.Properties props = com.zeroc.Ice.Util.createProperties(args);
@@ -24,7 +23,7 @@ public class Client
         try (com.zeroc.Ice.Communicator communicator = com.zeroc.Ice.Util.initialize(initData))
         {
             com.zeroc.Ice.ObjectPrx base = communicator.stringToProxy("SimpleManager:default -h 192.168.1.15 -p 10000");
-            com.zeroc.Ice.ObjectPrx baseClient = communicator.stringToProxy("SimpleManager:default -h 192.168.1.15 -p 10000");
+            com.zeroc.Ice.ObjectPrx baseClient = communicator.stringToProxy("SimpleClientManager:default -h 192.168.1.15 -p 10000");
             discotheque.trackManagementPrx manager = discotheque.trackManagementPrx.checkedCast(base);
             discotheque.clientManagementPrx clientManager = discotheque.clientManagementPrx.checkedCast(baseClient);
 

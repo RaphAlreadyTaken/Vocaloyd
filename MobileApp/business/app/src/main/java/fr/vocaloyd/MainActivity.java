@@ -1,23 +1,35 @@
 package fr.vocaloyd;
 
 import android.Manifest;
+import android.content.Context;
 import android.media.MediaRecorder;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.exoplayer2.ExoPlayer;
+import com.google.android.exoplayer2.ExoPlayerFactory;
+import com.google.android.exoplayer2.source.ExtractorMediaSource;
+import com.google.android.exoplayer2.source.MediaSource;
+import com.google.android.exoplayer2.ui.PlayerView;
+import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
+import com.google.android.exoplayer2.util.Util;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
 import java.io.File;
 import java.io.IOException;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity
 {
-
     boolean recording = false;
     MediaRecorder rec = new MediaRecorder();
 
@@ -30,6 +42,8 @@ public class MainActivity extends AppCompatActivity
         String[] permissions = {Manifest.permission.INTERNET, Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
         ActivityCompat.requestPermissions(this, permissions, 10);
+
+        EventBus.getDefault().register(this);
     }
 
     @Override
@@ -55,6 +69,42 @@ public class MainActivity extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Subscribe
+    public void onTranscribeEvent(TranscribeEvent tEvent)
+    {
+        System.out.println("Transcription event received:");
+        System.out.println(tEvent.getResult());
+
+        analyzeCommand(tEvent.getResult());
+    }
+
+    @Subscribe
+    public void onAnalyzeEvent(AnalyzeEvent aEvent)
+    {
+        System.out.println("Analyze event received:");
+        System.out.println(aEvent.getResult());
+
+        musicCommand(aEvent.getResult());
+    }
+
+    //TODO Vérifier que la prépa du player ne bloque pas le thread
+    @Subscribe
+    public void onMusicEvent(MusicEvent mEvent)
+    {
+        System.out.println("Music event received:");
+        System.out.println(mEvent.getResult());
+
+        Context servContext = VocaloydApp.getAppContext();
+        ExoPlayer mainPlayer = ExoPlayerFactory.newSimpleInstance(servContext);
+        PlayerView view = findViewById(R.id.playerView);
+        view.setPlayer(mainPlayer);
+        String agent = Util.getUserAgent(servContext, servContext.getApplicationInfo().name);
+        DefaultDataSourceFactory data = new DefaultDataSourceFactory(servContext, agent);
+        MediaSource source = new ExtractorMediaSource.Factory(data).createMediaSource(mEvent.getResult());
+        mainPlayer.prepare(source);
+        mainPlayer.setPlayWhenReady(true);
     }
 
     public void record(View view) throws IOException
@@ -93,13 +143,27 @@ public class MainActivity extends AppCompatActivity
      * @param file : File to send
      * @return String : Transcribed audio
      */
-    public String transcribeCommand(File file)
+    public void transcribeCommand(File file)
     {
         System.out.println("Transcription");
 
-        TranscribeTask task = new TranscribeTask(this);
-        task.execute(file);
+        TranscribeService tServ = new TranscribeService();
+        tServ.execute(file);
+    }
 
-        return null;
+    public void analyzeCommand(String transcription)
+    {
+        System.out.println("Analysis");
+
+        AnalyzeService aServ = new AnalyzeService();
+        aServ.execute(transcription);
+    }
+
+    public void musicCommand(Map.Entry<String, String> command)
+    {
+        System.out.println("Streaming");
+
+        MusicService mServ = new MusicService();
+        mServ.execute(command.getKey(), command.getValue());
     }
 }

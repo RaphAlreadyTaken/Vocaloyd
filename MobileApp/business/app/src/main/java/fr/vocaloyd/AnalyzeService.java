@@ -1,13 +1,14 @@
 package fr.vocaloyd;
 
-import android.content.Context;
 import android.os.AsyncTask;
-import android.view.View;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.net.PasswordAuthentication;
 import java.net.URI;
 import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Map.Entry;
 
 import javax.jms.Connection;
@@ -17,7 +18,6 @@ import javax.jms.Message;
 import javax.jms.MessageConsumer;
 import javax.jms.MessageProducer;
 import javax.jms.Session;
-import javax.jms.TextMessage;
 
 import com.kaazing.gateway.jms.client.JmsConnectionFactory;
 import com.kaazing.net.auth.BasicChallengeHandler;
@@ -25,18 +25,13 @@ import com.kaazing.net.auth.LoginHandler;
 import com.kaazing.net.http.HttpRedirectPolicy;
 import com.kaazing.net.ws.WebSocketFactory;
 
-public class AnalyzeTask extends AsyncTask<String, Void, HashMap<String, String>>
+
+public class AnalyzeService extends AsyncTask<String, Void, Map.Entry<String, String>>
 {
-    Context taskContext;
-
-    public AnalyzeTask(Context ctx)
-    {
-        taskContext = ctx;
-    }
-
-    protected HashMap<String, String> doInBackground(String... command)
+    protected Map.Entry<String, String> doInBackground(String... command)
     {
         System.out.println("Analyzer source: " + command[0]);
+        Entry<String, String> entry = null;
 
         try
         {
@@ -91,11 +86,8 @@ public class AnalyzeTask extends AsyncTask<String, Void, HashMap<String, String>
                     output.put(key, value);
                 }
 
-                Entry<String, String> entry = output.entrySet().iterator().next();
+                entry = output.entrySet().iterator().next();
                 System.out.println("Command: " + entry.getKey() + ", Content: " + entry.getValue());
-
-                MusicTask task = new MusicTask(taskContext);
-                task.execute(entry);
             }
 
         }
@@ -104,6 +96,11 @@ public class AnalyzeTask extends AsyncTask<String, Void, HashMap<String, String>
             System.out.println(ex.getMessage());
         }
 
-        return null;
+        return entry;
+    }
+
+    protected void onPostExecute(Map.Entry<String, String> result)
+    {
+        EventBus.getDefault().post(new AnalyzeEvent(result));
     }
 }

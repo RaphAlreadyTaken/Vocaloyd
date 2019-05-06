@@ -1,7 +1,8 @@
 package fr.vocaloyd;
 
-import android.content.Context;
 import android.os.AsyncTask;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.io.File;
 import java.net.URI;
@@ -16,25 +17,17 @@ import cz.msebera.android.httpclient.impl.client.CloseableHttpClient;
 import cz.msebera.android.httpclient.impl.client.HttpClientBuilder;
 import cz.msebera.android.httpclient.util.EntityUtils;
 
-public class TranscribeTask extends AsyncTask<File, Void, String>
+public class TranscribeService extends AsyncTask<File, Void, String>
 {
-    Context taskContext;
-
-    public TranscribeTask(Context ctx)
-    {
-        taskContext = ctx;
-    }
-
-
     /**
      * Inspired from https://stackoverflow.com/questions/2304663/apache-httpclient-making-multipart-form-post
      * @param file
      * @return
      */
-    @Override
     protected String doInBackground(File... file)
     {
         CloseableHttpClient client = HttpClientBuilder.create().build();
+        String result = "";
 
         try
         {
@@ -55,29 +48,19 @@ public class TranscribeTask extends AsyncTask<File, Void, String>
             httpPost.setEntity(entity);
 
             CloseableHttpResponse res = client.execute(httpPost);
-            String result = EntityUtils.toString(res.getEntity());
+            result = EntityUtils.toString(res.getEntity());
             client.close();
-
-            return result;
         }
         catch (Exception ex)
         {
             System.out.println(ex.getMessage());
         }
 
-        return null;
+        return result;
     }
 
     protected void onPostExecute(String result)
     {
-        if (result != null && result.length() > 0)
-        {
-            AnalyzeTask task = new AnalyzeTask(taskContext);
-            task.execute(result);
-        }
-        else
-        {
-            System.out.println("Empty message");
-        }
+        EventBus.getDefault().post(new TranscribeEvent(result));
     }
 }

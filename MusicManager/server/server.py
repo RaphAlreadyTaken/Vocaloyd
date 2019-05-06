@@ -14,9 +14,8 @@ client = pymongo.MongoClient("mongodb+srv://raph:Multani55%2b@cluster0-guvid.gcp
 db = client.db
 collecMusique = db['musiquePath']
 
-#TODO : rajouter titres dans construction morceaux (recherches)
+#TODO : rajouter genres dans construction morceaux (recherches)
 class clientManagementI(discotheque.clientManagement):
-    
     nbClients = 0
     nbMaxClients = 101
     basePort = 10100

@@ -80,7 +80,7 @@ public class Analyzer
 
         HashMap<String, ArrayList<String>> specificCommands = command.getSpecificCommands();
         Boolean foundSpecific = false;
-        HashMap<String, String> output = new HashMap<String, String>();
+        HashMap<String, String> output = new HashMap<>();
 
         //Testing specific command
         for (Entry<String, ArrayList<String>> entry : specificCommands.entrySet())

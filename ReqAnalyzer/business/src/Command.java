@@ -6,7 +6,8 @@ import java.util.HashMap;
 
 /**
  * Command class, designed to hold commands and compatible values
- * WARNING : keys and values of respective attributes need to be the same length
+ * Using class attributes instead of temporary variables inside the constructor is designed to ease the setup of a modification client (visualizing values, changing them, adding new ones, ...)
+ * WARNING : keys and values of respective command collections need to be the same length
  */
 public class Command
 {
