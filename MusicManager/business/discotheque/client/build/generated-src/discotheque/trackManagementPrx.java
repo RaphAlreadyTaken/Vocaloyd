@@ -90,6 +90,46 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
+    default Morceau[] rechercher(String info)
+    {
+        return rechercher(info, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+    }
+
+    default Morceau[] rechercher(String info, java.util.Map<String, String> context)
+    {
+        return _iceI_rechercherAsync(info, context, true).waitForResponse();
+    }
+
+    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherAsync(String info)
+    {
+        return _iceI_rechercherAsync(info, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+    }
+
+    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherAsync(String info, java.util.Map<String, String> context)
+    {
+        return _iceI_rechercherAsync(info, context, false);
+    }
+
+    /**
+     * @hidden
+     * @param iceP_info -
+     * @param context -
+     * @param sync -
+     * @return -
+     **/
+    default com.zeroc.IceInternal.OutgoingAsync<Morceau[]> _iceI_rechercherAsync(String iceP_info, java.util.Map<String, String> context, boolean sync)
+    {
+        com.zeroc.IceInternal.OutgoingAsync<Morceau[]> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "rechercher", null, sync, null);
+        f.invoke(true, context, null, ostr -> {
+                     ostr.writeString(iceP_info);
+                 }, istr -> {
+                     Morceau[] ret;
+                     ret = MorceauxHelper.read(istr);
+                     return ret;
+                 });
+        return f;
+    }
+
     default Morceau[] rechercherParTitre(String title)
     {
         return rechercherParTitre(title, com.zeroc.Ice.ObjectPrx.noExplicitContext);
@@ -414,38 +454,40 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
-    default String jouerMorceaux(Morceau[] morceaux)
+    default String jouerMorceaux(Morceau[] morceaux, int port)
     {
-        return jouerMorceaux(morceaux, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+        return jouerMorceaux(morceaux, port, com.zeroc.Ice.ObjectPrx.noExplicitContext);
     }
 
-    default String jouerMorceaux(Morceau[] morceaux, java.util.Map<String, String> context)
+    default String jouerMorceaux(Morceau[] morceaux, int port, java.util.Map<String, String> context)
     {
-        return _iceI_jouerMorceauxAsync(morceaux, context, true).waitForResponse();
+        return _iceI_jouerMorceauxAsync(morceaux, port, context, true).waitForResponse();
     }
 
-    default java.util.concurrent.CompletableFuture<java.lang.String> jouerMorceauxAsync(Morceau[] morceaux)
+    default java.util.concurrent.CompletableFuture<java.lang.String> jouerMorceauxAsync(Morceau[] morceaux, int port)
     {
-        return _iceI_jouerMorceauxAsync(morceaux, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+        return _iceI_jouerMorceauxAsync(morceaux, port, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
     }
 
-    default java.util.concurrent.CompletableFuture<java.lang.String> jouerMorceauxAsync(Morceau[] morceaux, java.util.Map<String, String> context)
+    default java.util.concurrent.CompletableFuture<java.lang.String> jouerMorceauxAsync(Morceau[] morceaux, int port, java.util.Map<String, String> context)
     {
-        return _iceI_jouerMorceauxAsync(morceaux, context, false);
+        return _iceI_jouerMorceauxAsync(morceaux, port, context, false);
     }
 
     /**
      * @hidden
      * @param iceP_morceaux -
+     * @param iceP_port -
      * @param context -
      * @param sync -
      * @return -
      **/
-    default com.zeroc.IceInternal.OutgoingAsync<java.lang.String> _iceI_jouerMorceauxAsync(Morceau[] iceP_morceaux, java.util.Map<String, String> context, boolean sync)
+    default com.zeroc.IceInternal.OutgoingAsync<java.lang.String> _iceI_jouerMorceauxAsync(Morceau[] iceP_morceaux, int iceP_port, java.util.Map<String, String> context, boolean sync)
     {
         com.zeroc.IceInternal.OutgoingAsync<java.lang.String> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "jouerMorceaux", null, sync, null);
         f.invoke(true, context, null, ostr -> {
                      MorceauxHelper.write(ostr, iceP_morceaux);
+                     ostr.writeInt(iceP_port);
                  }, istr -> {
                      String ret;
                      ret = istr.readString();

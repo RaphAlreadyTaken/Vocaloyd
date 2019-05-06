@@ -18,36 +18,36 @@ package discotheque;
 public class Morceau implements java.lang.Cloneable,
                                 java.io.Serializable
 {
+    public String titre;
+
     public String artiste;
 
     public String album;
 
-    public String titre;
-
     public String genre;
-
-    public String duree;
 
     public String file;
 
+    public String duree;
+
     public Morceau()
     {
+        this.titre = "";
         this.artiste = "";
         this.album = "";
-        this.titre = "";
         this.genre = "";
-        this.duree = "";
         this.file = "";
+        this.duree = "";
     }
 
-    public Morceau(String artiste, String album, String titre, String genre, String duree, String file)
+    public Morceau(String titre, String artiste, String album, String genre, String file, String duree)
     {
+        this.titre = titre;
         this.artiste = artiste;
         this.album = album;
-        this.titre = titre;
         this.genre = genre;
-        this.duree = duree;
         this.file = file;
+        this.duree = duree;
     }
 
     public boolean equals(java.lang.Object rhs)
@@ -64,6 +64,13 @@ public class Morceau implements java.lang.Cloneable,
 
         if(r != null)
         {
+            if(this.titre != r.titre)
+            {
+                if(this.titre == null || r.titre == null || !this.titre.equals(r.titre))
+                {
+                    return false;
+                }
+            }
             if(this.artiste != r.artiste)
             {
                 if(this.artiste == null || r.artiste == null || !this.artiste.equals(r.artiste))
@@ -78,13 +85,6 @@ public class Morceau implements java.lang.Cloneable,
                     return false;
                 }
             }
-            if(this.titre != r.titre)
-            {
-                if(this.titre == null || r.titre == null || !this.titre.equals(r.titre))
-                {
-                    return false;
-                }
-            }
             if(this.genre != r.genre)
             {
                 if(this.genre == null || r.genre == null || !this.genre.equals(r.genre))
@@ -92,16 +92,16 @@ public class Morceau implements java.lang.Cloneable,
                     return false;
                 }
             }
-            if(this.duree != r.duree)
+            if(this.file != r.file)
             {
-                if(this.duree == null || r.duree == null || !this.duree.equals(r.duree))
+                if(this.file == null || r.file == null || !this.file.equals(r.file))
                 {
                     return false;
                 }
             }
-            if(this.file != r.file)
+            if(this.duree != r.duree)
             {
-                if(this.file == null || r.file == null || !this.file.equals(r.file))
+                if(this.duree == null || r.duree == null || !this.duree.equals(r.duree))
                 {
                     return false;
                 }
@@ -117,12 +117,12 @@ public class Morceau implements java.lang.Cloneable,
     {
         int h_ = 5381;
         h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, "::discotheque::Morceau");
+        h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, titre);
         h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, artiste);
         h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, album);
-        h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, titre);
         h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, genre);
-        h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, duree);
         h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, file);
+        h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, duree);
         return h_;
     }
 
@@ -142,22 +142,22 @@ public class Morceau implements java.lang.Cloneable,
 
     public void ice_writeMembers(com.zeroc.Ice.OutputStream ostr)
     {
+        ostr.writeString(this.titre);
         ostr.writeString(this.artiste);
         ostr.writeString(this.album);
-        ostr.writeString(this.titre);
         ostr.writeString(this.genre);
-        ostr.writeString(this.duree);
         ostr.writeString(this.file);
+        ostr.writeString(this.duree);
     }
 
     public void ice_readMembers(com.zeroc.Ice.InputStream istr)
     {
+        this.titre = istr.readString();
         this.artiste = istr.readString();
         this.album = istr.readString();
-        this.titre = istr.readString();
         this.genre = istr.readString();
-        this.duree = istr.readString();
         this.file = istr.readString();
+        this.duree = istr.readString();
     }
 
     static public void ice_write(com.zeroc.Ice.OutputStream ostr, Morceau v)
@@ -213,5 +213,5 @@ public class Morceau implements java.lang.Cloneable,
     private static final Morceau _nullMarshalValue = new Morceau();
 
     /** @hidden */
-    public static final long serialVersionUID = -983913480L;
+    public static final long serialVersionUID = -1348374152L;
 }

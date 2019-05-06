@@ -21,28 +21,25 @@ import Ice, IcePy
 _M_discotheque = Ice.openModule('discotheque')
 __name__ = 'discotheque'
 
-if '_t_data' not in _M_discotheque.__dict__:
-    _M_discotheque._t_data = IcePy.defineSequence('::discotheque::data', (), IcePy._t_byte)
-
 if 'Morceau' not in _M_discotheque.__dict__:
     _M_discotheque.Morceau = Ice.createTempClass()
     class Morceau(object):
-        def __init__(self, artiste='', album='', titre='', genre='', duree='', file=''):
+        def __init__(self, titre='', artiste='', album='', genre='', file='', duree=''):
+            self.titre = titre
             self.artiste = artiste
             self.album = album
-            self.titre = titre
             self.genre = genre
-            self.duree = duree
             self.file = file
+            self.duree = duree
 
         def __hash__(self):
             _h = 0
+            _h = 5 * _h + Ice.getHash(self.titre)
             _h = 5 * _h + Ice.getHash(self.artiste)
             _h = 5 * _h + Ice.getHash(self.album)
-            _h = 5 * _h + Ice.getHash(self.titre)
             _h = 5 * _h + Ice.getHash(self.genre)
-            _h = 5 * _h + Ice.getHash(self.duree)
             _h = 5 * _h + Ice.getHash(self.file)
+            _h = 5 * _h + Ice.getHash(self.duree)
             return _h % 0x7fffffff
 
         def __compare(self, other):
@@ -51,6 +48,14 @@ if 'Morceau' not in _M_discotheque.__dict__:
             elif not isinstance(other, _M_discotheque.Morceau):
                 return NotImplemented
             else:
+                if self.titre is None or other.titre is None:
+                    if self.titre != other.titre:
+                        return (-1 if self.titre is None else 1)
+                else:
+                    if self.titre < other.titre:
+                        return -1
+                    elif self.titre > other.titre:
+                        return 1
                 if self.artiste is None or other.artiste is None:
                     if self.artiste != other.artiste:
                         return (-1 if self.artiste is None else 1)
@@ -67,14 +72,6 @@ if 'Morceau' not in _M_discotheque.__dict__:
                         return -1
                     elif self.album > other.album:
                         return 1
-                if self.titre is None or other.titre is None:
-                    if self.titre != other.titre:
-                        return (-1 if self.titre is None else 1)
-                else:
-                    if self.titre < other.titre:
-                        return -1
-                    elif self.titre > other.titre:
-                        return 1
                 if self.genre is None or other.genre is None:
                     if self.genre != other.genre:
                         return (-1 if self.genre is None else 1)
@@ -83,14 +80,6 @@ if 'Morceau' not in _M_discotheque.__dict__:
                         return -1
                     elif self.genre > other.genre:
                         return 1
-                if self.duree is None or other.duree is None:
-                    if self.duree != other.duree:
-                        return (-1 if self.duree is None else 1)
-                else:
-                    if self.duree < other.duree:
-                        return -1
-                    elif self.duree > other.duree:
-                        return 1
                 if self.file is None or other.file is None:
                     if self.file != other.file:
                         return (-1 if self.file is None else 1)
@@ -98,6 +87,14 @@ if 'Morceau' not in _M_discotheque.__dict__:
                     if self.file < other.file:
                         return -1
                     elif self.file > other.file:
+                        return 1
+                if self.duree is None or other.duree is None:
+                    if self.duree != other.duree:
+                        return (-1 if self.duree is None else 1)
+                else:
+                    if self.duree < other.duree:
+                        return -1
+                    elif self.duree > other.duree:
                         return 1
                 return 0
 
@@ -149,12 +146,12 @@ if 'Morceau' not in _M_discotheque.__dict__:
         __repr__ = __str__
 
     _M_discotheque._t_Morceau = IcePy.defineStruct('::discotheque::Morceau', Morceau, (), (
+        ('titre', (), IcePy._t_string),
         ('artiste', (), IcePy._t_string),
         ('album', (), IcePy._t_string),
-        ('titre', (), IcePy._t_string),
         ('genre', (), IcePy._t_string),
-        ('duree', (), IcePy._t_string),
-        ('file', (), IcePy._t_string)
+        ('file', (), IcePy._t_string),
+        ('duree', (), IcePy._t_string)
     ))
 
     _M_discotheque.Morceau = Morceau
@@ -192,6 +189,18 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
 
         def end_recupererTitres(self, _r):
             return _M_discotheque.trackManagement._op_recupererTitres.end(self, _r)
+
+        def rechercher(self, info, context=None):
+            return _M_discotheque.trackManagement._op_rechercher.invoke(self, ((info, ), context))
+
+        def rechercherAsync(self, info, context=None):
+            return _M_discotheque.trackManagement._op_rechercher.invokeAsync(self, ((info, ), context))
+
+        def begin_rechercher(self, info, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_rechercher.begin(self, ((info, ), _response, _ex, _sent, context))
+
+        def end_rechercher(self, _r):
+            return _M_discotheque.trackManagement._op_rechercher.end(self, _r)
 
         def rechercherParTitre(self, title, context=None):
             return _M_discotheque.trackManagement._op_rechercherParTitre.invoke(self, ((title, ), context))
@@ -289,14 +298,14 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
         def end_supprimerArtiste(self, _r):
             return _M_discotheque.trackManagement._op_supprimerArtiste.end(self, _r)
 
-        def jouerMorceaux(self, morceaux, context=None):
-            return _M_discotheque.trackManagement._op_jouerMorceaux.invoke(self, ((morceaux, ), context))
+        def jouerMorceaux(self, morceaux, port, context=None):
+            return _M_discotheque.trackManagement._op_jouerMorceaux.invoke(self, ((morceaux, port), context))
 
-        def jouerMorceauxAsync(self, morceaux, context=None):
-            return _M_discotheque.trackManagement._op_jouerMorceaux.invokeAsync(self, ((morceaux, ), context))
+        def jouerMorceauxAsync(self, morceaux, port, context=None):
+            return _M_discotheque.trackManagement._op_jouerMorceaux.invokeAsync(self, ((morceaux, port), context))
 
-        def begin_jouerMorceaux(self, morceaux, _response=None, _ex=None, _sent=None, context=None):
-            return _M_discotheque.trackManagement._op_jouerMorceaux.begin(self, ((morceaux, ), _response, _ex, _sent, context))
+        def begin_jouerMorceaux(self, morceaux, port, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_jouerMorceaux.begin(self, ((morceaux, port), _response, _ex, _sent, context))
 
         def end_jouerMorceaux(self, _r):
             return _M_discotheque.trackManagement._op_jouerMorceaux.end(self, _r)
@@ -336,6 +345,9 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
         def recupererTitres(self, current=None):
             raise NotImplementedError("servant method 'recupererTitres' not implemented")
 
+        def rechercher(self, info, current=None):
+            raise NotImplementedError("servant method 'rechercher' not implemented")
+
         def rechercherParTitre(self, title, current=None):
             raise NotImplementedError("servant method 'rechercherParTitre' not implemented")
 
@@ -360,7 +372,7 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
         def supprimerArtiste(self, artist, current=None):
             raise NotImplementedError("servant method 'supprimerArtiste' not implemented")
 
-        def jouerMorceaux(self, morceaux, current=None):
+        def jouerMorceaux(self, morceaux, port, current=None):
             raise NotImplementedError("servant method 'jouerMorceaux' not implemented")
 
         def __str__(self):
@@ -373,6 +385,7 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
 
     trackManagement._op_ajouterTitre = IcePy.Operation('ajouterTitre', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_discotheque._t_Morceau, False, 0),), (), None, ())
     trackManagement._op_recupererTitres = IcePy.Operation('recupererTitres', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
+    trackManagement._op_rechercher = IcePy.Operation('rechercher', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
     trackManagement._op_rechercherParTitre = IcePy.Operation('rechercherParTitre', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
     trackManagement._op_rechercherParArtiste = IcePy.Operation('rechercherParArtiste', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
     trackManagement._op_rechercherParAlbum = IcePy.Operation('rechercherParAlbum', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
@@ -381,9 +394,88 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
     trackManagement._op_supprimerTitre = IcePy.Operation('supprimerTitre', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_bool, False, 0), ())
     trackManagement._op_supprimerAlbum = IcePy.Operation('supprimerAlbum', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_bool, False, 0), ())
     trackManagement._op_supprimerArtiste = IcePy.Operation('supprimerArtiste', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), IcePy._t_bool, False, 0), ())
-    trackManagement._op_jouerMorceaux = IcePy.Operation('jouerMorceaux', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_discotheque._t_Morceaux, False, 0),), (), ((), IcePy._t_string, False, 0), ())
+    trackManagement._op_jouerMorceaux = IcePy.Operation('jouerMorceaux', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_discotheque._t_Morceaux, False, 0), ((), IcePy._t_int, False, 0)), (), ((), IcePy._t_string, False, 0), ())
 
     _M_discotheque.trackManagement = trackManagement
     del trackManagement
+
+_M_discotheque._t_clientManagement = IcePy.defineValue('::discotheque::clientManagement', Ice.Value, -1, (), False, True, None, ())
+
+if 'clientManagementPrx' not in _M_discotheque.__dict__:
+    _M_discotheque.clientManagementPrx = Ice.createTempClass()
+    class clientManagementPrx(Ice.ObjectPrx):
+
+        def subscribe(self, context=None):
+            return _M_discotheque.clientManagement._op_subscribe.invoke(self, ((), context))
+
+        def subscribeAsync(self, context=None):
+            return _M_discotheque.clientManagement._op_subscribe.invokeAsync(self, ((), context))
+
+        def begin_subscribe(self, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.clientManagement._op_subscribe.begin(self, ((), _response, _ex, _sent, context))
+
+        def end_subscribe(self, _r):
+            return _M_discotheque.clientManagement._op_subscribe.end(self, _r)
+
+        def unsubscribe(self, port, context=None):
+            return _M_discotheque.clientManagement._op_unsubscribe.invoke(self, ((port, ), context))
+
+        def unsubscribeAsync(self, port, context=None):
+            return _M_discotheque.clientManagement._op_unsubscribe.invokeAsync(self, ((port, ), context))
+
+        def begin_unsubscribe(self, port, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.clientManagement._op_unsubscribe.begin(self, ((port, ), _response, _ex, _sent, context))
+
+        def end_unsubscribe(self, _r):
+            return _M_discotheque.clientManagement._op_unsubscribe.end(self, _r)
+
+        @staticmethod
+        def checkedCast(proxy, facetOrContext=None, context=None):
+            return _M_discotheque.clientManagementPrx.ice_checkedCast(proxy, '::discotheque::clientManagement', facetOrContext, context)
+
+        @staticmethod
+        def uncheckedCast(proxy, facet=None):
+            return _M_discotheque.clientManagementPrx.ice_uncheckedCast(proxy, facet)
+
+        @staticmethod
+        def ice_staticId():
+            return '::discotheque::clientManagement'
+    _M_discotheque._t_clientManagementPrx = IcePy.defineProxy('::discotheque::clientManagement', clientManagementPrx)
+
+    _M_discotheque.clientManagementPrx = clientManagementPrx
+    del clientManagementPrx
+
+    _M_discotheque.clientManagement = Ice.createTempClass()
+    class clientManagement(Ice.Object):
+
+        def ice_ids(self, current=None):
+            return ('::Ice::Object', '::discotheque::clientManagement')
+
+        def ice_id(self, current=None):
+            return '::discotheque::clientManagement'
+
+        @staticmethod
+        def ice_staticId():
+            return '::discotheque::clientManagement'
+
+        def subscribe(self, current=None):
+            raise NotImplementedError("servant method 'subscribe' not implemented")
+
+        def unsubscribe(self, port, current=None):
+            raise NotImplementedError("servant method 'unsubscribe' not implemented")
+
+        def __str__(self):
+            return IcePy.stringify(self, _M_discotheque._t_clientManagementDisp)
+
+        __repr__ = __str__
+
+    _M_discotheque._t_clientManagementDisp = IcePy.defineClass('::discotheque::clientManagement', clientManagement, (), None, ())
+    clientManagement._ice_type = _M_discotheque._t_clientManagementDisp
+
+    clientManagement._op_subscribe = IcePy.Operation('subscribe', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (), (), ((), IcePy._t_int, False, 0), ())
+    clientManagement._op_unsubscribe = IcePy.Operation('unsubscribe', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_int, False, 0),), (), None, ())
+
+    _M_discotheque.clientManagement = clientManagement
+    del clientManagement
 
 # End of module discotheque

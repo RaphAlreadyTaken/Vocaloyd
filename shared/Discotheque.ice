@@ -1,15 +1,13 @@
 module discotheque
 {
-    sequence<byte> data;
-
     struct Morceau
     {
+        string titre;
         string artiste;
         string album;
-        string titre;
         string genre;
-        string duree;
         string file;
+        string duree;
     };
 
     sequence<Morceau> Morceaux;
@@ -18,6 +16,7 @@ module discotheque
     {
         void ajouterTitre(Morceau song);
         Morceaux recupererTitres();
+        Morceaux rechercher(string info);
         Morceaux rechercherParTitre(string title);
         Morceaux rechercherParArtiste(string artist);
         Morceaux rechercherParAlbum(string album);
@@ -26,6 +25,12 @@ module discotheque
         bool supprimerTitre(string title, string artist);
         bool supprimerAlbum(string artist, string album);
         bool supprimerArtiste(string artist);
-        string jouerMorceaux(Morceaux morceaux);
+        string jouerMorceaux(Morceaux morceaux, int port);
+    };
+
+    interface clientManagement
+    {
+        int subscribe();
+        void unsubscribe(int port);
     };
 };

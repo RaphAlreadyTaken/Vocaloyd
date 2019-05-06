@@ -1,17 +1,13 @@
 package fr.vocaloyd;
 
-import android.app.Activity;
 import android.content.Context;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.view.View;
 
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ExoPlayerFactory;
-import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.source.ExtractorMediaSource;
 import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.util.Util;
 
@@ -49,21 +45,40 @@ public class MusicTask extends AsyncTask<Map.Entry<String, String>, Void, Void>
 
             System.out.print(entry[0].getKey());
 
-            //TODO: tester les clés passées -> adapter les méthodes/arguments (album, artiste, ...)
-
-            Morceau[] tracks = manager.rechercherParTitre(entry[0].getValue());
+            Morceau[] tracks = searchMethod(manager, entry[0]);
             String target = manager.jouerMorceaux(tracks);
 
             String uri = "http://192.168.1.15:" + target;
 
             ExoPlayer player = ExoPlayerFactory.newSimpleInstance(taskContext);
-            PlayerView playView = ((Activity) taskContext).findViewById(R.id.playerView);
-            playView.setPlayer(player);
             String agent = Util.getUserAgent(taskContext, "MobileApp");
             DefaultDataSourceFactory data = new DefaultDataSourceFactory(taskContext, agent);
             MediaSource source = new ExtractorMediaSource.Factory(data).createMediaSource(Uri.parse(uri));
             player.prepare(source);
             player.setPlayWhenReady(true);
+        }
+
+        return null;
+    }
+
+    Morceau[] searchMethod(discotheque.trackManagementPrx manager, Map.Entry<String, String> entry)
+    {
+        switch(entry.getKey())
+        {
+            case "play":
+                return manager.rechercher(entry.getValue());
+            case "playTrack":
+                return manager.rechercherParTitre(entry.getValue());
+            case "playAlbum":
+                return manager.rechercherParAlbum(entry.getValue());
+            case "playArtist":
+                return manager.rechercherParArtiste(entry.getValue());
+            case "playGenre":
+                return manager.rechercherParGenre(entry.getValue());
+            case "playDuration":
+                return manager.rechercherParDuree(entry.getValue());
+            default:
+                break;
         }
 
         return null;

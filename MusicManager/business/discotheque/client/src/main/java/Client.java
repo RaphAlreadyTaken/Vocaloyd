@@ -24,7 +24,13 @@ public class Client
         try (com.zeroc.Ice.Communicator communicator = com.zeroc.Ice.Util.initialize(initData))
         {
             com.zeroc.Ice.ObjectPrx base = communicator.stringToProxy("SimpleManager:default -h 192.168.1.15 -p 10000");
+            com.zeroc.Ice.ObjectPrx baseClient = communicator.stringToProxy("SimpleManager:default -h 192.168.1.15 -p 10000");
             discotheque.trackManagementPrx manager = discotheque.trackManagementPrx.checkedCast(base);
+            discotheque.clientManagementPrx clientManager = discotheque.clientManagementPrx.checkedCast(baseClient);
+
+            int port = clientManager.subscribe();
+
+            String target = "";
 
             if (manager == null)
             {
@@ -41,7 +47,7 @@ public class Client
                     "4- Rechercher par artiste",
                     "5- Supprimer une piste",
                     "6- Supprimer un album",
-                    "7- Jouer une piste",
+                    "7- Jouer",
                     "8- Quitter"
                 };
 
@@ -75,6 +81,10 @@ public class Client
                         System.out.print("Album : ");
                         choixStr = saisirString();
                         track.album = choixStr;
+
+                        System.out.print("Genre : ");
+                        choixStr = saisirString();
+                        track.genre = choixStr;
 
                         System.out.print("Fichier : ");
                         choixStr = saisirString();
@@ -147,12 +157,54 @@ public class Client
                         break;
 
                     case 7:
-                        System.out.print("Titre : ");
-                        choixStr = saisirString();
-                        Morceau[] trackPlay = manager.rechercherParTitre(choixStr);
-                        String streamTarget = manager.jouerMorceaux(trackPlay);
 
-                        Runtime.getRuntime().exec("vlc http://192.168.1.15:" + streamTarget);
+                        System.out.print("Type de recherche (entrer 'all' pour tous types): ");
+                        choixStr = saisirString();
+
+                        switch (choixStr)
+                        {
+                            case "all":
+                                System.out.print("Information : ");
+                                choixStr2 = saisirString();
+                                Morceau[] defaultResult = manager.rechercher(choixStr2);
+                                target = manager.jouerMorceaux(defaultResult, port);
+                                break;
+
+                            case "titre":
+                                System.out.print("Titre : ");
+                                choixStr2 = saisirString();
+                                System.out.println(choixStr2);
+                                tracks = manager.rechercherParTitre(choixStr2);
+                                target = manager.jouerMorceaux(tracks, port);
+                                break;
+
+                            case "artiste":
+                                System.out.print("Artiste : ");
+                                choixStr2 = saisirString();
+                                tracks = manager.rechercherParArtiste(choixStr2);
+                                target = manager.jouerMorceaux(tracks, port);
+                                break;
+
+                            case "album":
+                                System.out.print("Album : ");
+                                choixStr2 = saisirString();
+                                tracks = manager.rechercherParAlbum(choixStr2);
+                                target = manager.jouerMorceaux(tracks, port);
+                                break;
+
+                            case "genre":
+                                System.out.print("Genre : ");
+                                choixStr2 = saisirString();
+                                tracks = manager.rechercherParGenre(choixStr2);
+                                target = manager.jouerMorceaux(tracks, port);
+                                break;
+
+                            default:
+                            System.out.println("Input non reconnu");
+                                break;
+                        }
+
+                        Runtime.getRuntime().exec("vlc http://192.168.1.15:" + port + target);
                         break;
 
                     case 8:

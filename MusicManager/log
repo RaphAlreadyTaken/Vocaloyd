@@ -122,3 +122,593 @@
    facet: 
    operation: jouerMorceaux
    remote host: ::ffff:192.168.1.16 remote port: 46026
+-! 05/05/19 20:25:53.225 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 30, in subscribe
+       if nbClients == nbMaxClients:
+   UnboundLocalError: local variable 'nbClients' referenced before assignment
+   
+   identity: SimpleClientManager
+   facet: 
+   operation: subscribe
+   remote host: ::ffff:192.168.1.15 remote port: 53419
+-! 05/05/19 20:28:41.605 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 30, in subscribe
+   UnboundLocalError: local variable 'nbClients' referenced before assignment
+   
+   identity: SimpleClientManager
+   facet: 
+   operation: subscribe
+   remote host: ::ffff:192.168.1.15 remote port: 53495
+-! 05/05/19 20:31:52.717 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 31, in subscribe
+       if nbClients == nbMaxClients:
+   UnboundLocalError: local variable 'nbClients' referenced before assignment
+   
+   identity: SimpleClientManager
+   facet: 
+   operation: subscribe
+   remote host: ::ffff:192.168.1.15 remote port: 53617
+-! 05/05/19 20:32:48.008 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 35, in subscribe
+       numClient = 10000 + nbClients
+   NameError: name 'nbClients' is not defined
+   
+   identity: SimpleClientManager
+   facet: 
+   operation: subscribe
+   remote host: ::ffff:192.168.1.15 remote port: 53652
+-! 05/05/19 20:33:11.341 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 38, in subscribe
+       print("Port " + numClient + " given to client")
+   TypeError: can only concatenate str (not "int") to str
+   
+   identity: SimpleClientManager
+   facet: 
+   operation: subscribe
+   remote host: ::ffff:192.168.1.15 remote port: 53668
+-! 05/05/19 20:34:42.464 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 132, in jouerMorceaux
+       if clientManagementI.clients[port][1] == True:
+   AttributeError: type object 'clientManagementI' has no attribute 'clients'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.1.15 remote port: 53699
+-! 05/05/19 20:44:23.010 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 132, in jouerMorceaux
+       if clientManagementI.clients[port][1] == True:
+   TypeError: 'bool' object is not subscriptable
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.1.15 remote port: 50709
+-! 05/05/19 20:45:37.147 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 132, in jouerMorceaux
+       if clientManagementI.clients[port][1] is True:
+   TypeError: 'bool' object is not subscriptable
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.1.15 remote port: 50768
+-! 05/05/19 21:07:54.888 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 133, in jouerMorceaux
+       print(clientManagementI.clients[port][1])
+   TypeError: 'bool' object is not subscriptable
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.1.15 remote port: 51579
+-! 05/05/19 21:08:30.427 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 133, in jouerMorceaux
+       print(clientManagementI.clients[port][0])
+   TypeError: 'bool' object is not subscriptable
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.1.15 remote port: 51597
+-! 05/05/19 21:13:36.870 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:51778
+-! 05/05/19 21:27:12.068 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 133, in jouerMorceaux
+       print(clientManagementI.clients[str(port)])
+   KeyError: '10000'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.1.15 remote port: 52223
+-! 05/05/19 21:32:58.907 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:52432
+-! 05/05/19 21:33:01.152 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 36, in subscribe
+       self.clients[numClient][0] = False
+   TypeError: 'tuple' object does not support item assignment
+   
+   identity: SimpleClientManager
+   facet: 
+   operation: subscribe
+   remote host: ::ffff:192.168.1.15 remote port: 52446
+-! 05/05/19 21:35:48.310 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:52495
+-! 05/05/19 21:35:57.918 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 71, in rechercher
+       queryCount = collecMusique.count_documents({"$or": [{"titre": info}, {"artiste": info}, {"album": info}, {"genre": info}]}).collation(Collation(locale = 'fr', strength = 2))
+   AttributeError: 'int' object has no attribute 'collation'
+   
+   identity: SimpleManager
+   facet: 
+   operation: rechercher
+   remote host: ::ffff:192.168.1.15 remote port: 52538
+-! 05/05/19 21:40:53.684 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 71, in rechercher
+       queryCount = collecMusique.count_documents({"$or": [{"titre": info}, {"artiste": info}, {"album": info}, {"genre": info}]}, collation = Collation(locale = 'fr', strength = 2))
+   AttributeError: 'int' object has no attribute 'collation'
+   
+   identity: SimpleManager
+   facet: 
+   operation: rechercher
+   remote host: ::ffff:192.168.1.15 remote port: 52723
+-! 05/05/19 21:50:53.895 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 164, in jouerMorceaux
+       localTracks.append(localPath + str(track.file))
+   NameError: name 'localPath' is not defined
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.1.15 remote port: 53075
+-! 05/05/19 21:52:39.944 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 169, in jouerMorceaux
+       media.add_media(vlcInst.media_new(track, 'sout=#transcode{vcodec=none,acodec=mp3,ab=128,channels=2,samplerate=44100,scodec=none}:http{mux=mp3,dst=:' + port + target + '}', 'sout-all', 'sout-keep'))
+   TypeError: can only concatenate str (not "int") to str
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.1.15 remote port: 53128
+-! 05/05/19 22:20:01.233 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 175, in jouerMorceaux
+       threading.Thread(target=play(), args=player)
+   TypeError: play() missing 1 required positional argument: 'player'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.1.15 remote port: 54015
+-! 05/05/19 22:21:39.978 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 175, in jouerMorceaux
+       threading.Thread(target=play(), args=player,)
+   TypeError: play() missing 1 required positional argument: 'player'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.1.15 remote port: 54076
+-! 05/05/19 22:22:50.610 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 175, in jouerMorceaux
+       threading.Thread(target=play(), args=(player,))
+   TypeError: play() missing 1 required positional argument: 'player'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.1.15 remote port: 54117
+-! 05/05/19 22:26:12.358 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:54210
+-! 05/05/19 22:56:40.053 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:55367
+-! 05/05/19 22:58:48.725 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:55463
+-! 05/05/19 23:12:40.068 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:55966
+-! 05/05/19 23:13:19.322 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:55960
+-! 05/05/19 23:13:20.013 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:55982
+-! 05/05/19 23:36:40.145 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 175, in jouerMorceaux
+       threading.start_new_thread(target=play, args=[player]).start()
+   AttributeError: module 'threading' has no attribute 'start_new_thread'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.1.15 remote port: 56913
+-- 05/05/19 23:45:32.060 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/05/19 23:45:32.067 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 172.30.56.241, 172.24.192.1, 192.168.56.1, 192.168.1.15, ::1, 127.0.0.1
+-- 05/05/19 23:45:32.073 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 172.30.56.241 -p 10000 -t 60000:tcp -h 172.24.192.1 -p 10000 -t 60000:tcp -h 192.168.56.1 -p 10000 -t 60000:tcp -h 192.168.1.15 -p 10000 -t 60000
+-- 05/05/19 23:45:32.074 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/05/19 23:45:35.098 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57218
+-- 05/05/19 23:45:35.098 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57218
+-- 05/05/19 23:47:05.111 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57218
+-- 05/05/19 23:48:12.227 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/05/19 23:48:17.557 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/05/19 23:48:17.564 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 172.30.56.241, 172.24.192.1, 192.168.56.1, 192.168.1.15, ::1, 127.0.0.1
+-- 05/05/19 23:48:17.570 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 172.30.56.241 -p 10000 -t 60000:tcp -h 172.24.192.1 -p 10000 -t 60000:tcp -h 192.168.56.1 -p 10000 -t 60000:tcp -h 192.168.1.15 -p 10000 -t 60000
+-- 05/05/19 23:48:17.571 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/05/19 23:48:19.692 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57310
+-- 05/05/19 23:48:19.692 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57310
+-- 05/05/19 23:49:49.710 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57310
+-- 05/05/19 23:49:53.263 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/05/19 23:49:58.834 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/05/19 23:49:58.842 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 172.30.56.241, 172.24.192.1, 192.168.56.1, 192.168.1.15, ::1, 127.0.0.1
+-- 05/05/19 23:49:58.848 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 172.30.56.241 -p 10000 -t 60000:tcp -h 172.24.192.1 -p 10000 -t 60000:tcp -h 192.168.56.1 -p 10000 -t 60000:tcp -h 192.168.1.15 -p 10000 -t 60000
+-- 05/05/19 23:49:58.849 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/05/19 23:50:13.863 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/05/19 23:58:48.263 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/05/19 23:58:48.275 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 172.30.56.241, 172.24.192.1, 192.168.56.1, 192.168.1.15, ::1, 127.0.0.1
+-- 05/05/19 23:58:48.281 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 172.30.56.241 -p 10000 -t 60000:tcp -h 172.24.192.1 -p 10000 -t 60000:tcp -h 192.168.56.1 -p 10000 -t 60000:tcp -h 192.168.1.15 -p 10000 -t 60000
+-- 05/05/19 23:58:48.281 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/05/19 23:58:49.326 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57655
+-- 05/05/19 23:58:49.326 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57655
+-! 05/05/19 23:59:12.798 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57655
+-- 05/05/19 23:59:12.798 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57655
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+-- 05/05/19 23:59:13.308 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/05/19 23:59:27.392 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/05/19 23:59:27.402 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 172.30.56.241, 172.24.192.1, 192.168.56.1, 192.168.1.15, ::1, 127.0.0.1
+-- 05/05/19 23:59:27.410 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 172.30.56.241 -p 10000 -t 60000:tcp -h 172.24.192.1 -p 10000 -t 60000:tcp -h 192.168.56.1 -p 10000 -t 60000:tcp -h 192.168.1.15 -p 10000 -t 60000
+-- 05/05/19 23:59:27.410 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/05/19 23:59:28.520 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57686
+-- 05/05/19 23:59:28.520 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57686
+-! 05/05/19 23:59:31.244 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57686
+-- 05/05/19 23:59:31.244 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57686
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+-- 05/06/19 00:00:28.469 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/06/19 00:00:33.832 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/06/19 00:00:33.844 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 172.30.56.241, 172.24.192.1, 192.168.56.1, 192.168.1.15, ::1, 127.0.0.1
+-- 05/06/19 00:00:33.850 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 172.30.56.241 -p 10000 -t 60000:tcp -h 172.24.192.1 -p 10000 -t 60000:tcp -h 192.168.56.1 -p 10000 -t 60000:tcp -h 192.168.1.15 -p 10000 -t 60000
+-- 05/06/19 00:00:33.850 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/06/19 00:00:53.724 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/06/19 00:00:53.737 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 172.30.56.241, 172.24.192.1, 192.168.56.1, 192.168.1.15, ::1, 127.0.0.1
+-- 05/06/19 00:00:53.744 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 172.30.56.241 -p 10000 -t 60000:tcp -h 172.24.192.1 -p 10000 -t 60000:tcp -h 192.168.56.1 -p 10000 -t 60000:tcp -h 192.168.1.15 -p 10000 -t 60000
+-- 05/06/19 00:00:53.745 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/06/19 00:00:56.322 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57734
+-- 05/06/19 00:00:56.323 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57734
+-! 05/06/19 00:00:56.341 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 36, in subscribe
+       numClient = basePort + self.nbClients
+   NameError: name 'basePort' is not defined
+   
+   identity: SimpleClientManager
+   facet: 
+   operation: subscribe
+   remote host: ::ffff:192.168.1.15 remote port: 57734
+-- 05/06/19 00:00:56.344 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57734
+-- 05/06/19 00:01:12.775 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/06/19 00:01:34.175 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/06/19 00:01:34.196 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 172.30.56.241, 172.24.192.1, 192.168.56.1, 192.168.1.15, ::1, 127.0.0.1
+-- 05/06/19 00:01:34.209 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 172.30.56.241 -p 10000 -t 60000:tcp -h 172.24.192.1 -p 10000 -t 60000:tcp -h 192.168.56.1 -p 10000 -t 60000:tcp -h 192.168.1.15 -p 10000 -t 60000
+-- 05/06/19 00:01:34.210 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/06/19 00:01:38.044 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57757
+-- 05/06/19 00:01:38.044 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57757
+-- 05/06/19 00:01:48.566 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57769
+-- 05/06/19 00:01:48.566 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57769
+-- 05/06/19 00:03:04.795 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/06/19 00:03:04.796 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57769
+-- 05/06/19 00:03:04.796 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57757
+-- 05/06/19 00:03:10.243 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/06/19 00:03:10.255 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 172.30.56.241, 172.24.192.1, 192.168.56.1, 192.168.1.15, ::1, 127.0.0.1
+-- 05/06/19 00:03:10.264 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 172.30.56.241 -p 10000 -t 60000:tcp -h 172.24.192.1 -p 10000 -t 60000:tcp -h 192.168.56.1 -p 10000 -t 60000:tcp -h 192.168.1.15 -p 10000 -t 60000
+-- 05/06/19 00:03:10.264 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/06/19 00:03:14.184 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57816
+-- 05/06/19 00:03:14.184 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57816
+-- 05/06/19 00:03:22.031 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57826
+-- 05/06/19 00:03:22.031 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57826
+-- 05/06/19 00:04:09.330 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/06/19 00:04:09.335 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57816
+-- 05/06/19 00:04:09.335 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57826
+-- 05/06/19 00:04:15.086 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/06/19 00:04:15.093 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 172.30.56.241, 172.24.192.1, 192.168.56.1, 192.168.1.15, ::1, 127.0.0.1
+-- 05/06/19 00:04:15.099 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 172.30.56.241 -p 10000 -t 60000:tcp -h 172.24.192.1 -p 10000 -t 60000:tcp -h 192.168.56.1 -p 10000 -t 60000:tcp -h 192.168.1.15 -p 10000 -t 60000
+-- 05/06/19 00:04:15.099 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/06/19 00:04:16.092 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57860
+-- 05/06/19 00:04:16.092 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57860
+-- 05/06/19 00:04:17.930 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57864
+-- 05/06/19 00:04:17.930 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57864
+-! 05/06/19 00:04:55.713 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57864
+-- 05/06/19 00:04:55.713 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57864
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+-- 05/06/19 00:04:57.110 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57892
+-- 05/06/19 00:04:57.110 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57892
+-- 05/06/19 00:05:08.650 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/06/19 00:05:08.655 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57860
+-- 05/06/19 00:05:08.658 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57892
+-- 05/06/19 00:06:04.727 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/06/19 00:06:04.741 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 172.30.56.241, 172.24.192.1, 192.168.56.1, 192.168.1.15, ::1, 127.0.0.1
+-- 05/06/19 00:06:04.749 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 172.30.56.241 -p 10000 -t 60000:tcp -h 172.24.192.1 -p 10000 -t 60000:tcp -h 192.168.56.1 -p 10000 -t 60000:tcp -h 192.168.1.15 -p 10000 -t 60000
+-- 05/06/19 00:06:04.749 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/06/19 00:06:05.919 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57934
+-- 05/06/19 00:06:05.920 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57934
+-- 05/06/19 00:06:14.423 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57949
+-- 05/06/19 00:06:14.423 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57949
+-- 05/06/19 00:07:44.442 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57949
+-! 05/06/19 00:08:58.949 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:332: ::Ice::ConnectionLostException:
+   connection lost: WSAECONNRESET
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57934
+-- 05/06/19 00:08:58.950 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:58022
+-- 05/06/19 00:08:58.950 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:58022
+-- 05/06/19 00:08:58.950 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:57934
+   src\ice\cpp\src\Ice\StreamSocket.cpp:332: ::Ice::ConnectionLostException:
+   connection lost: WSAECONNRESET
+-- 05/06/19 00:09:55.910 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:58073
+-- 05/06/19 00:09:55.910 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:58073
+-! 05/06/19 00:10:00.380 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:58073
+-- 05/06/19 00:10:00.380 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:58073
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+-! 05/06/19 00:10:04.375 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:58022
+-- 05/06/19 00:10:04.375 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.1.15:10000
+   remote address = ::ffff:192.168.1.15:58022
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+-- 05/06/19 00:10:05.476 server/server.py: Network: stopping to accept tcp connections at :::10000

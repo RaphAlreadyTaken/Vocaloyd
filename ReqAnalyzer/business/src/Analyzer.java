@@ -60,7 +60,7 @@ public class Analyzer
         
                     if (matcher.matches())
                     {
-                        commandGroup = matcher.group(1);
+                        commandGroup = entry.getKey();
                         contentGroup = matcher.group(2);
                         foundBase = true;
                         break;
@@ -94,7 +94,7 @@ public class Analyzer
         
                     if (matcher.matches())
                     {
-                        commandGroup += " " + matcher.group(1); //Full command
+                        commandGroup = entry.getKey();
                         contentGroup = matcher.group(2);
                         foundSpecific = true;
                         break;
