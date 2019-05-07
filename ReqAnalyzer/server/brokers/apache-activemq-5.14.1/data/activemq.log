@@ -50,3 +50,30 @@
 2019-05-07 16:54:47,852 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
 2019-05-07 16:54:48,075 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | WrapperSimpleAppMain
 2019-05-07 16:54:48,393 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | WrapperSimpleAppMain
+2019-05-07 19:15:28,323 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@20ebf8e8: startup date [Tue May 07 19:15:28 CEST 2019]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2019-05-07 19:15:29,166 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2019-05-07 19:15:29,307 | INFO  | KahaDB is version 6 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2019-05-07 19:15:29,322 | INFO  | Recovering from the journal @1:1335923 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2019-05-07 19:15:29,354 | INFO  | Recovery replayed 479 operations from the journal in 0.047 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2019-05-07 19:15:29,369 | INFO  | PListStore:[C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\localhost\tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2019-05-07 19:15:29,510 | INFO  | Apache ActiveMQ 5.14.1 (localhost, ID:DESKTOP-LIE5PSR-49827-1557249329385-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2019-05-07 19:15:29,604 | INFO  | Listening for connections at: tcp://DESKTOP-LIE5PSR:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2019-05-07 19:15:29,604 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2019-05-07 19:15:29,619 | INFO  | Listening for connections at: amqp://DESKTOP-LIE5PSR:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2019-05-07 19:15:29,619 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2019-05-07 19:15:29,619 | INFO  | Listening for connections at: stomp://DESKTOP-LIE5PSR:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2019-05-07 19:15:29,619 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2019-05-07 19:15:29,635 | INFO  | Listening for connections at: mqtt://DESKTOP-LIE5PSR:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2019-05-07 19:15:29,635 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2019-05-07 19:15:29,729 | WARN  | ServletContext@o.e.j.s.ServletContextHandler@786605ef{/,null,STARTING} has uncovered http methods for path: / | org.eclipse.jetty.security.SecurityHandler | WrapperSimpleAppMain
+2019-05-07 19:15:29,775 | INFO  | Listening for connections at ws://DESKTOP-LIE5PSR:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2019-05-07 19:15:29,775 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2019-05-07 19:15:29,775 | INFO  | Apache ActiveMQ 5.14.1 (localhost, ID:DESKTOP-LIE5PSR-49827-1557249329385-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2019-05-07 19:15:29,791 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2019-05-07 19:15:29,791 | WARN  | Store limit is 102400 mb (current store usage is 1 mb). The data directory: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\kahadb only has 57905 mb of usable space. - resetting to maximum available disk space: 57905 mb | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2019-05-07 19:15:30,463 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /admin | WrapperSimpleAppMain
+2019-05-07 19:15:30,588 | INFO  | ActiveMQ WebConsole available at http://192.168.43.15:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2019-05-07 19:15:30,588 | INFO  | ActiveMQ Jolokia REST API available at http://192.168.43.15:8161/api/jolokia/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2019-05-07 19:15:30,666 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2019-05-07 19:15:30,963 | INFO  | No Spring WebApplicationInitializer types detected on classpath | /api | WrapperSimpleAppMain
+2019-05-07 19:15:31,228 | INFO  | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml | /api | WrapperSimpleAppMain
