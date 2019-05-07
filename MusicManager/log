@@ -1061,3 +1061,4 @@
 -- 05/06/19 19:57:44.626 server/server.py: Network: closed tcp connection
    local address = ::ffff:192.168.1.15:10000
    remote address = ::ffff:192.168.1.37:45729
+-- 05/06/19 20:16:30.038 server/server.py: Network: stopping to accept tcp connections at :::10000

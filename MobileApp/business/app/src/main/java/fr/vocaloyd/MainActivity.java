@@ -3,7 +3,6 @@ package fr.vocaloyd;
 import android.Manifest;
 import android.content.Context;
 import android.media.MediaRecorder;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
@@ -28,10 +27,17 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
+import fr.vocaloyd.Analysis.AnalyzeEvent;
+import fr.vocaloyd.Analysis.AnalyzeService;
+import fr.vocaloyd.Music.MusicEvent;
+import fr.vocaloyd.Music.MusicService;
+import fr.vocaloyd.Transcription.TranscribeEvent;
+import fr.vocaloyd.Transcription.TranscribeService;
+
 public class MainActivity extends AppCompatActivity
 {
-    boolean recording = false;
-    MediaRecorder rec = new MediaRecorder();
+    private boolean recording = false;
+    private MediaRecorder rec = new MediaRecorder();
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -40,7 +46,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         String[] permissions = {Manifest.permission.INTERNET, Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE};
-
         ActivityCompat.requestPermissions(this, permissions, 10);
 
         EventBus.getDefault().register(this);
@@ -89,7 +94,6 @@ public class MainActivity extends AppCompatActivity
         musicCommand(aEvent.getResult());
     }
 
-    //TODO Vérifier que la prépa du player ne bloque pas le thread
     @Subscribe
     public void onMusicEvent(MusicEvent mEvent)
     {
@@ -165,5 +169,15 @@ public class MainActivity extends AppCompatActivity
 
         MusicService mServ = new MusicService();
         mServ.execute(command.getKey(), command.getValue());
+    }
+
+    public void previousTrack(View view)
+    {
+//        TODO: appel serveur Ice (prev track in playlist)
+    }
+
+    public void nextTrack(View view)
+    {
+//        TODO: appel serveur Ice (next track in playlist)
     }
 }

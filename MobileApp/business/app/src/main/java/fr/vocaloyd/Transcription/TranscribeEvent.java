@@ -1,4 +1,4 @@
-package fr.vocaloyd;
+package fr.vocaloyd.Transcription;
 
 public class TranscribeEvent
 {

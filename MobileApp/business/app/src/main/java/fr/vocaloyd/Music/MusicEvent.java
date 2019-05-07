@@ -1,8 +1,6 @@
-package fr.vocaloyd;
+package fr.vocaloyd.Music;
 
 import android.net.Uri;
-
-import com.google.android.exoplayer2.ExoPlayer;
 
 public class MusicEvent
 {

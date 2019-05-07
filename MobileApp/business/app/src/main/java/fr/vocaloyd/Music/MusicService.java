@@ -1,18 +1,11 @@
-package fr.vocaloyd;
+package fr.vocaloyd.Music;
 
 import org.greenrobot.eventbus.EventBus;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.AsyncTask;
 
 import com.google.android.exoplayer2.ExoPlayer;
-import com.google.android.exoplayer2.ExoPlayerFactory;
-import com.google.android.exoplayer2.source.ExtractorMediaSource;
-import com.google.android.exoplayer2.source.MediaSource;
-import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
-import com.google.android.exoplayer2.util.Util;
-
 
 import discotheque.Morceau;
 
@@ -51,11 +44,6 @@ public class MusicService extends AsyncTask<String, Void, Uri>
         return uri;
     }
 
-    protected void onPostExecute(Uri uri)
-    {
-        EventBus.getDefault().post(new MusicEvent(uri));
-    }
-
     private Morceau[] searchMethod(discotheque.trackManagementPrx manager, String[] entry)
     {
         switch(entry[0])
@@ -77,5 +65,10 @@ public class MusicService extends AsyncTask<String, Void, Uri>
         }
 
         return null;
+    }
+
+    protected void onPostExecute(Uri uri)
+    {
+        EventBus.getDefault().post(new MusicEvent(uri));
     }
 }

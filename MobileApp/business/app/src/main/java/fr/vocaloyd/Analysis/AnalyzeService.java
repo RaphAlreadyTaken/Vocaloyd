@@ -1,4 +1,4 @@
-package fr.vocaloyd;
+package fr.vocaloyd.Analysis;
 
 import android.os.AsyncTask;
 
@@ -24,7 +24,6 @@ import com.kaazing.net.auth.BasicChallengeHandler;
 import com.kaazing.net.auth.LoginHandler;
 import com.kaazing.net.http.HttpRedirectPolicy;
 import com.kaazing.net.ws.WebSocketFactory;
-
 
 public class AnalyzeService extends AsyncTask<String, Void, Map.Entry<String, String>>
 {

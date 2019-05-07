@@ -1,4 +1,4 @@
-package fr.vocaloyd;
+package fr.vocaloyd.Transcription;
 
 import android.os.AsyncTask;
 

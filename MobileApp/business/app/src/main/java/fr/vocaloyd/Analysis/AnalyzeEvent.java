@@ -1,4 +1,4 @@
-package fr.vocaloyd;
+package fr.vocaloyd.Analysis;
 
 import java.util.Map;
 

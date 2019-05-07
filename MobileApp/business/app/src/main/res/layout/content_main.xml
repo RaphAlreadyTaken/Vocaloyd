@@ -8,8 +8,6 @@
     tools:context="fr.vocaloyd.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <include layout="@layout/music_play" />
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -31,5 +29,23 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
     </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="120dp" />
+
+        <!--<com.google.android.exoplayer2.ui.PlayerControlView-->
+            <!--android:id="@+id/playerCtrl"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="565dp"-->
+            <!--android:layout_marginTop="111dp"/>-->
+    </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>
