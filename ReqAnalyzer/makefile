@@ -6,15 +6,13 @@ all: clean analyzer
 analyzer:
 	@echo "Compiling..."
 	${shell} cd ./business ;\
-	javac -d ./build/ ./src/*.java ;\
-	javac -d ./build/ -proc:none ./Client.java	
+	javac -d ./build/ ./src/*.java
 
 #Run server
 .ONESHELL:
 runServer:
 	cd ./server/bin
 	gateway.start.bat --broker jms
-
 
 #Run listener
 runList:

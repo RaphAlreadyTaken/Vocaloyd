@@ -1062,3 +1062,11 @@
    local address = ::ffff:192.168.1.15:10000
    remote address = ::ffff:192.168.1.37:45729
 -- 05/06/19 20:16:30.038 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/07/19 16:35:06.031 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/07/19 16:35:06.039 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/07/19 16:35:06.045 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/07/19 16:35:06.045 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/07/19 16:52:12.710 server/server.py: Network: stopping to accept tcp connections at :::10000

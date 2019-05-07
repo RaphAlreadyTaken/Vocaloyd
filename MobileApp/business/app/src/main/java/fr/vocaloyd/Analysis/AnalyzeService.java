@@ -55,7 +55,7 @@ public class AnalyzeService extends AsyncTask<String, Void, Map.Entry<String, St
             handler.setLoginHandler(logHandler);
             webSocketFactory.setDefaultChallengeHandler(handler);
 
-            connectionFactory.setGatewayLocation(URI.create("ws://192.168.1.15:8000/jms"));
+            connectionFactory.setGatewayLocation(URI.create("ws://192.168.43.15:8000/jms"));
             Connection connection = connectionFactory.createConnection();
             Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
             Destination dest = session.createQueue("/queue/connectFact");

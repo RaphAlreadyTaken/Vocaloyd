@@ -17,7 +17,7 @@ const path = require('path');
  *
  ********/
 var app = express();
-const hostname = '192.168.1.15';
+const hostname = '192.168.43.15';
 const port = 3131;
 
 /******** Routes
@@ -37,7 +37,7 @@ app.use(session(
     resave: false,
     store: new MongoDBStore(
     {
-        uri: "mongodb://192.168.1.15:27017/db",
+        uri: "mongodb://192.168.43.15:27017/db",
         collection: 'vocaloydSessions',
         touchAfter: 24 * 3600
     }),
