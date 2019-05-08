@@ -2,30 +2,34 @@ package fr.vocaloyd.Music;
 
 import org.greenrobot.eventbus.EventBus;
 
+import android.app.Activity;
 import android.net.Uri;
 import android.os.AsyncTask;
 
 import com.google.android.exoplayer2.ExoPlayer;
 
-import discotheque.Morceau;
+import java.util.Arrays;
 
-public class MusicService extends AsyncTask<String, Void, Uri>
+import discotheque.Morceau;
+import fr.vocaloyd.MainActivity;
+
+public class MusicService extends AsyncTask<Object, Void, Uri>
 {
     @SafeVarargs
-    protected final Uri doInBackground(String... entry)
+    protected final Uri doInBackground(Object... args)
     {
-        ExoPlayer player = null;
+        String ip = "192.168.1.15";
 
         com.zeroc.Ice.Properties props = com.zeroc.Ice.Util.createProperties();
         props.setProperty("Ice.MessageSizeMax", "40000");
         com.zeroc.Ice.InitializationData initData = new com.zeroc.Ice.InitializationData();
         initData.properties = props;
-        Uri uri;
+        Uri uri = null;
 
         try (com.zeroc.Ice.Communicator communicator = com.zeroc.Ice.Util.initialize(initData))
         {
-            com.zeroc.Ice.ObjectPrx base = communicator.stringToProxy("SimpleManager:default -h 192.168.1.15 -p 10000");
-            com.zeroc.Ice.ObjectPrx baseClient = communicator.stringToProxy("SimpleClientManager:default -h 192.168.1.15 -p 10000");
+            com.zeroc.Ice.ObjectPrx base = communicator.stringToProxy("SimpleManager:default -h " + ip + " -p 10000");
+            com.zeroc.Ice.ObjectPrx baseClient = communicator.stringToProxy("SimpleClientManager:default -h " + ip + " -p 10000");
             discotheque.trackManagementPrx manager = discotheque.trackManagementPrx.checkedCast(base);
             discotheque.clientManagementPrx clientManager = discotheque.clientManagementPrx.checkedCast(baseClient);
 
@@ -34,11 +38,36 @@ public class MusicService extends AsyncTask<String, Void, Uri>
                 throw new Error("Invalid proxy");
             }
 
-            int port = clientManager.subscribe();
-            Morceau[] tracks = searchMethod(manager, entry);
-            String target = manager.jouerMorceaux(tracks, port);
+            MainActivity activ = (MainActivity) args[0];
 
-            uri = Uri.parse("http://192.168.1.15:" + port + target);
+            //If new client
+            if (activ.getPort() == 0)
+            {
+                System.out.println("Setting port");
+                activ.setPort(clientManager.subscribe());
+            }
+
+            String action = (String) args[1];
+
+            switch(action)
+            {
+                case "init":
+                    Object[] arg = Arrays.copyOfRange(args, 2, 4);
+                    String[] entry = Arrays.copyOf(arg, arg.length, String[].class);
+
+                    Morceau[] tracks = searchMethod(manager, entry);
+
+                    if (tracks.length == 0)
+                    {
+                        System.out.println("No track found. Try again");
+                        break;
+                    }
+
+                    String path = manager.jouerMorceaux(tracks, activ.getPort());
+
+                    uri = Uri.parse("http://" + ip + ":" + activ.getPort() + path);
+                    break;
+            }
         }
 
         return uri;

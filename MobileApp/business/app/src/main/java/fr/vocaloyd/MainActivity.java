@@ -36,6 +36,7 @@ import fr.vocaloyd.Transcription.TranscribeService;
 
 public class MainActivity extends AppCompatActivity
 {
+    private int port = 0;
     private boolean recording = false;
     private MediaRecorder rec = new MediaRecorder();
 
@@ -100,6 +101,12 @@ public class MainActivity extends AppCompatActivity
         System.out.println("Music event received:");
         System.out.println(mEvent.getResult());
 
+        if (mEvent.getResult() == null)
+        {
+            System.out.println("No result");
+            return;
+        }
+
         Context servContext = VocaloydApp.getAppContext();
         ExoPlayer mainPlayer = ExoPlayerFactory.newSimpleInstance(servContext);
         PlayerView view = findViewById(R.id.playerView);
@@ -115,7 +122,7 @@ public class MainActivity extends AppCompatActivity
     {
         File audioFile = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/command.amr");
 
-        if (recording == false)
+        if (!recording)
         {
             rec.setAudioSource(MediaRecorder.AudioSource.MIC);
             rec.setOutputFormat(MediaRecorder.OutputFormat.AMR_WB);
@@ -168,7 +175,7 @@ public class MainActivity extends AppCompatActivity
         System.out.println("Streaming");
 
         MusicService mServ = new MusicService();
-        mServ.execute(command.getKey(), command.getValue());
+        mServ.execute(this, "init", command.getKey(), command.getValue());
     }
 
     public void previousTrack(View view)
@@ -179,5 +186,15 @@ public class MainActivity extends AppCompatActivity
     public void nextTrack(View view)
     {
 //        TODO: appel serveur Ice (next track in playlist)
+    }
+
+    public int getPort()
+    {
+        return port;
+    }
+
+    public void setPort(int paramPort)
+    {
+        port = paramPort;
     }
 }
