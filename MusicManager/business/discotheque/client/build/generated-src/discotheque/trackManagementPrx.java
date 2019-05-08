@@ -496,6 +496,105 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
+    default void playPause()
+    {
+        playPause(com.zeroc.Ice.ObjectPrx.noExplicitContext);
+    }
+
+    default void playPause(java.util.Map<String, String> context)
+    {
+        _iceI_playPauseAsync(context, true).waitForResponse();
+    }
+
+    default java.util.concurrent.CompletableFuture<Void> playPauseAsync()
+    {
+        return _iceI_playPauseAsync(com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+    }
+
+    default java.util.concurrent.CompletableFuture<Void> playPauseAsync(java.util.Map<String, String> context)
+    {
+        return _iceI_playPauseAsync(context, false);
+    }
+
+    /**
+     * @hidden
+     * @param context -
+     * @param sync -
+     * @return -
+     **/
+    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_playPauseAsync(java.util.Map<String, String> context, boolean sync)
+    {
+        com.zeroc.IceInternal.OutgoingAsync<Void> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "playPause", null, sync, null);
+        f.invoke(false, context, null, null, null);
+        return f;
+    }
+
+    default void nextTrack()
+    {
+        nextTrack(com.zeroc.Ice.ObjectPrx.noExplicitContext);
+    }
+
+    default void nextTrack(java.util.Map<String, String> context)
+    {
+        _iceI_nextTrackAsync(context, true).waitForResponse();
+    }
+
+    default java.util.concurrent.CompletableFuture<Void> nextTrackAsync()
+    {
+        return _iceI_nextTrackAsync(com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+    }
+
+    default java.util.concurrent.CompletableFuture<Void> nextTrackAsync(java.util.Map<String, String> context)
+    {
+        return _iceI_nextTrackAsync(context, false);
+    }
+
+    /**
+     * @hidden
+     * @param context -
+     * @param sync -
+     * @return -
+     **/
+    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_nextTrackAsync(java.util.Map<String, String> context, boolean sync)
+    {
+        com.zeroc.IceInternal.OutgoingAsync<Void> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "nextTrack", null, sync, null);
+        f.invoke(false, context, null, null, null);
+        return f;
+    }
+
+    default void previousTrack()
+    {
+        previousTrack(com.zeroc.Ice.ObjectPrx.noExplicitContext);
+    }
+
+    default void previousTrack(java.util.Map<String, String> context)
+    {
+        _iceI_previousTrackAsync(context, true).waitForResponse();
+    }
+
+    default java.util.concurrent.CompletableFuture<Void> previousTrackAsync()
+    {
+        return _iceI_previousTrackAsync(com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+    }
+
+    default java.util.concurrent.CompletableFuture<Void> previousTrackAsync(java.util.Map<String, String> context)
+    {
+        return _iceI_previousTrackAsync(context, false);
+    }
+
+    /**
+     * @hidden
+     * @param context -
+     * @param sync -
+     * @return -
+     **/
+    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_previousTrackAsync(java.util.Map<String, String> context, boolean sync)
+    {
+        com.zeroc.IceInternal.OutgoingAsync<Void> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "previousTrack", null, sync, null);
+        f.invoke(false, context, null, null, null);
+        return f;
+    }
+
     /**
      * Contacts the remote server to verify that the object implements this type.
      * Raises a local exception if a communication error occurs.

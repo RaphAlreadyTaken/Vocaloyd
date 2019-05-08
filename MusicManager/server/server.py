@@ -22,24 +22,31 @@ class clientManagementI(discotheque.clientManagement):
     clients = {}
 
     def __init__(self, *args, **kwargs):
-        #Clients: (port libre: booléen, stream en cours: booléen)
+        #Clients: (port libre: booléen, player associé: media_list_player)
         for i in range(self.basePort, self.basePort + self.nbMaxClients):
-            self.clients[i] = (True, False)
+            self.clients[i] = [True, None]
     
     def subscribe(self, current=None):
         if self.nbClients == self.nbMaxClients:
             print("No more ports available")
             return -1
         else:
-            numClient = self.basePort + self.nbClients
-            self.clients[numClient] = (False, False)
-            self.nbClients += 1
-            print("Port " + str(numClient) + " given to client")
-            return numClient
+            i = 0
+            for i in range(self.basePort, self.basePort + self.nbMaxClients):
+                if self.clients[i][0] is True:
+                    self.clients[i][0] = False
+                    self.nbClients += 1
+                    print("Port " + str(i) + " given to client")
+                    break
+                else:
+                    continue
+            return i
 
     def unsubscribe(self, port, current=None):
-        self.clients[i] = (True, False)
+        trackManagementI.stop(port)
+        self.clients[port] = [True, None]
         self.nbClients -= 1
+        print("Client with port " + port + " unsubscribed")
 
 class trackManagementI(discotheque.trackManagement):
 
@@ -150,16 +157,20 @@ class trackManagementI(discotheque.trackManagement):
         else:
             return True
 
-    #TODO requête HTTP pour arrêter stream (voir fav)
     def jouerMorceaux(self, tracks, port, current=None):
-        if clientManagementI.clients[port][1] is True:
+        vlcInst = None
+
+        if clientManagementI.clients[port][1] is None:
+            vlcInst = vlc.Instance()
+            clientManagementI.clients[port][1] = vlcInst.media_list_player_new()
+        else:
             print("I already know you")
 
-        vlcInst = vlc.Instance()
-        player = vlcInst.media_list_player_new()
-
+        player = clientManagementI.clients[port][1]
+        print(player)
+        print(clientManagementI.clients[port][0])
+        print(clientManagementI.clients[port][1])
         target = "/stream"
-
         localTracks = []
 
         for track in tracks:
@@ -175,6 +186,40 @@ class trackManagementI(discotheque.trackManagement):
         player.play()
 
         return target
+
+    def playPause(self, port, current=None):
+        if clientManagementI.clients[port][1] == None:
+            return
+        else:
+            player = clientManagementI.clients[port][1]
+
+            if player.is_playing():
+                print("Pausing")
+                player.pause()
+            elif not player.is_playing():
+                print("Resuming")
+                player.play()
+        return
+    
+    def nextTrack(self, port, current=None):
+        if clientManagementI.clients[port][1] == None:
+            return
+        else:
+            player = clientManagementI.clients[port][1]
+            player.next()
+        return
+
+    def previousTrack(self, port, current=None):
+        if clientManagementI.clients[port][1] == None:
+            return
+        else:
+            player = clientManagementI.clients[port][1]
+            player.previous()
+        return
+
+    def stop(port, current=None):
+        player = clientManagementI.clients[port][1]
+        player.release()
 
 def queryResult(funcName, queryCount):
     log = funcName + " -> " + str(queryCount)

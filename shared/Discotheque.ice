@@ -26,6 +26,9 @@ module discotheque
         bool supprimerAlbum(string artist, string album);
         bool supprimerArtiste(string artist);
         string jouerMorceaux(Morceaux morceaux, int port);
+        void playPause();
+        void nextTrack();
+        void previousTrack();
     };
 
     interface clientManagement

@@ -310,6 +310,42 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
         def end_jouerMorceaux(self, _r):
             return _M_discotheque.trackManagement._op_jouerMorceaux.end(self, _r)
 
+        def playPause(self, context=None):
+            return _M_discotheque.trackManagement._op_playPause.invoke(self, ((), context))
+
+        def playPauseAsync(self, context=None):
+            return _M_discotheque.trackManagement._op_playPause.invokeAsync(self, ((), context))
+
+        def begin_playPause(self, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_playPause.begin(self, ((), _response, _ex, _sent, context))
+
+        def end_playPause(self, _r):
+            return _M_discotheque.trackManagement._op_playPause.end(self, _r)
+
+        def nextTrack(self, context=None):
+            return _M_discotheque.trackManagement._op_nextTrack.invoke(self, ((), context))
+
+        def nextTrackAsync(self, context=None):
+            return _M_discotheque.trackManagement._op_nextTrack.invokeAsync(self, ((), context))
+
+        def begin_nextTrack(self, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_nextTrack.begin(self, ((), _response, _ex, _sent, context))
+
+        def end_nextTrack(self, _r):
+            return _M_discotheque.trackManagement._op_nextTrack.end(self, _r)
+
+        def previousTrack(self, context=None):
+            return _M_discotheque.trackManagement._op_previousTrack.invoke(self, ((), context))
+
+        def previousTrackAsync(self, context=None):
+            return _M_discotheque.trackManagement._op_previousTrack.invokeAsync(self, ((), context))
+
+        def begin_previousTrack(self, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_previousTrack.begin(self, ((), _response, _ex, _sent, context))
+
+        def end_previousTrack(self, _r):
+            return _M_discotheque.trackManagement._op_previousTrack.end(self, _r)
+
         @staticmethod
         def checkedCast(proxy, facetOrContext=None, context=None):
             return _M_discotheque.trackManagementPrx.ice_checkedCast(proxy, '::discotheque::trackManagement', facetOrContext, context)
@@ -375,6 +411,15 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
         def jouerMorceaux(self, morceaux, port, current=None):
             raise NotImplementedError("servant method 'jouerMorceaux' not implemented")
 
+        def playPause(self, current=None):
+            raise NotImplementedError("servant method 'playPause' not implemented")
+
+        def nextTrack(self, current=None):
+            raise NotImplementedError("servant method 'nextTrack' not implemented")
+
+        def previousTrack(self, current=None):
+            raise NotImplementedError("servant method 'previousTrack' not implemented")
+
         def __str__(self):
             return IcePy.stringify(self, _M_discotheque._t_trackManagementDisp)
 
@@ -395,6 +440,9 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
     trackManagement._op_supprimerAlbum = IcePy.Operation('supprimerAlbum', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_bool, False, 0), ())
     trackManagement._op_supprimerArtiste = IcePy.Operation('supprimerArtiste', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), IcePy._t_bool, False, 0), ())
     trackManagement._op_jouerMorceaux = IcePy.Operation('jouerMorceaux', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), _M_discotheque._t_Morceaux, False, 0), ((), IcePy._t_int, False, 0)), (), ((), IcePy._t_string, False, 0), ())
+    trackManagement._op_playPause = IcePy.Operation('playPause', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (), (), None, ())
+    trackManagement._op_nextTrack = IcePy.Operation('nextTrack', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (), (), None, ())
+    trackManagement._op_previousTrack = IcePy.Operation('previousTrack', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (), (), None, ())
 
     _M_discotheque.trackManagement = trackManagement
     del trackManagement

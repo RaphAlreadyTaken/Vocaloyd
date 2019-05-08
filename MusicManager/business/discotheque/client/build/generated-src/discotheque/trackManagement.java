@@ -41,6 +41,12 @@ public interface trackManagement extends com.zeroc.Ice.Object
 
     String jouerMorceaux(Morceau[] morceaux, int port, com.zeroc.Ice.Current current);
 
+    void playPause(com.zeroc.Ice.Current current);
+
+    void nextTrack(com.zeroc.Ice.Current current);
+
+    void previousTrack(com.zeroc.Ice.Current current);
+
     /** @hidden */
     static final String[] _iceIds =
     {
@@ -317,6 +323,51 @@ public interface trackManagement extends com.zeroc.Ice.Object
         return inS.setResult(ostr);
     }
 
+    /**
+     * @hidden
+     * @param obj -
+     * @param inS -
+     * @param current -
+     * @return -
+    **/
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_playPause(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    {
+        com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
+        inS.readEmptyParams();
+        obj.playPause(current);
+        return inS.setResult(inS.writeEmptyParams());
+    }
+
+    /**
+     * @hidden
+     * @param obj -
+     * @param inS -
+     * @param current -
+     * @return -
+    **/
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_nextTrack(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    {
+        com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
+        inS.readEmptyParams();
+        obj.nextTrack(current);
+        return inS.setResult(inS.writeEmptyParams());
+    }
+
+    /**
+     * @hidden
+     * @param obj -
+     * @param inS -
+     * @param current -
+     * @return -
+    **/
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_previousTrack(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    {
+        com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
+        inS.readEmptyParams();
+        obj.previousTrack(current);
+        return inS.setResult(inS.writeEmptyParams());
+    }
+
     /** @hidden */
     final static String[] _iceOps =
     {
@@ -326,6 +377,9 @@ public interface trackManagement extends com.zeroc.Ice.Object
         "ice_isA",
         "ice_ping",
         "jouerMorceaux",
+        "nextTrack",
+        "playPause",
+        "previousTrack",
         "rechercher",
         "rechercherParAlbum",
         "rechercherParArtiste",
@@ -377,41 +431,53 @@ public interface trackManagement extends com.zeroc.Ice.Object
             }
             case 6:
             {
-                return _iceD_rechercher(this, in, current);
+                return _iceD_nextTrack(this, in, current);
             }
             case 7:
             {
-                return _iceD_rechercherParAlbum(this, in, current);
+                return _iceD_playPause(this, in, current);
             }
             case 8:
             {
-                return _iceD_rechercherParArtiste(this, in, current);
+                return _iceD_previousTrack(this, in, current);
             }
             case 9:
             {
-                return _iceD_rechercherParDuree(this, in, current);
+                return _iceD_rechercher(this, in, current);
             }
             case 10:
             {
-                return _iceD_rechercherParGenre(this, in, current);
+                return _iceD_rechercherParAlbum(this, in, current);
             }
             case 11:
             {
-                return _iceD_rechercherParTitre(this, in, current);
+                return _iceD_rechercherParArtiste(this, in, current);
             }
             case 12:
             {
-                return _iceD_recupererTitres(this, in, current);
+                return _iceD_rechercherParDuree(this, in, current);
             }
             case 13:
             {
-                return _iceD_supprimerAlbum(this, in, current);
+                return _iceD_rechercherParGenre(this, in, current);
             }
             case 14:
             {
-                return _iceD_supprimerArtiste(this, in, current);
+                return _iceD_rechercherParTitre(this, in, current);
             }
             case 15:
+            {
+                return _iceD_recupererTitres(this, in, current);
+            }
+            case 16:
+            {
+                return _iceD_supprimerAlbum(this, in, current);
+            }
+            case 17:
+            {
+                return _iceD_supprimerArtiste(this, in, current);
+            }
+            case 18:
             {
                 return _iceD_supprimerTitre(this, in, current);
             }

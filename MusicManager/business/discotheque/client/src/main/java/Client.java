@@ -47,7 +47,8 @@ public class Client
                     "5- Supprimer une piste",
                     "6- Supprimer un album",
                     "7- Jouer",
-                    "8- Quitter"
+                    "8- Gérer lecture",
+                    "9- Quitter"
                 };
 
                 System.out.println("** Gestion de discothèque **");
@@ -90,13 +91,11 @@ public class Client
                         track.file = choixStr;
 
                         manager.ajouterTitre(track);
-
                         break;
 
                     case 2:
                         tracks = manager.recupererTitres();
                         displayTitles(tracks);
-
                         break;
 
                     case 3:
@@ -104,7 +103,6 @@ public class Client
                         choixStr = saisirString();
                         tracks = manager.rechercherParTitre(choixStr);
                         displayTitles(tracks);
-                        
                         break;
 
                     case 4:
@@ -112,7 +110,6 @@ public class Client
                         choixStr = saisirString();
                         tracks = manager.rechercherParArtiste(choixStr);
                         displayTitles(tracks);
-
                         break;
 
                     case 5:
@@ -156,7 +153,6 @@ public class Client
                         break;
 
                     case 7:
-
                         System.out.print("Type de recherche (entrer 'all' pour tous types): ");
                         choixStr = saisirString();
 
@@ -199,7 +195,7 @@ public class Client
                                 break;
 
                             default:
-                            System.out.println("Input non reconnu");
+                                System.out.println("Input non reconnu");
                                 break;
                         }
 
@@ -207,7 +203,49 @@ public class Client
                         break;
 
                     case 8:
+                        Boolean end = false;
+
+                        while (end == false)
+                        {
+                            System.out.println("Action: ");
+                            System.out.println("1- Play/Pause");
+                            System.out.println("2- Next track");
+                            System.out.println("3- Previous track");
+                            System.out.println("4- Quitter");
+
+                            choixInt = saisirInt(3);
+
+                            switch (choixInt)
+                            {
+                                case 1:
+                                    manager.playPause();
+                                    break;
+
+                                case 2:
+                                    manager.nextTrack();
+                                    break;
+
+                                case 3:
+                                    manager.previousTrack();
+                                    break;
+
+                                case 4:
+                                    end = true;
+                                    break;
+
+                                default:
+                                    break;
+                            }
+                        }
+
+                        break;
+
+                    case 9:
+                        clientManager.unsubscribe(port);
                         return;
+
+                    default:
+                        break;
                 }
             }
         }
