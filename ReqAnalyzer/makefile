@@ -13,7 +13,7 @@ analyzer:
 .ONESHELL:
 runServer:
 	cd ./server/bin
-	gateway.start.bat --broker jms
+	${shell} gateway.start.bat --broker jms
 
 
 #Run listener
@@ -22,14 +22,6 @@ runList:
 	${shell} cd ./business/build ;\
 	java src.Listener
 
-#Run client
-.ONESHELL:
-runClient:
-	@echo "Running client..."
-	${shell} cd ./business/build ;\
-	java Client
-
 clean:
 	@echo "Cleaning previously generated files..."
 	${shell} if (Test-Path business/build) {rm -r business/build/*}
-	${shell} if (Test-Path .) {rm *.class}

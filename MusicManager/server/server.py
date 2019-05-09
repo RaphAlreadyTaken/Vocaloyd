@@ -31,6 +31,7 @@ class clientManagementI(discotheque.clientManagement):
             for i in range(self.basePort, self.basePort + self.nbMaxClients):
                 if self.clients[i][0] is True:
                     self.clients[i][0] = False
+                    self.clients[i][1] = None
                     self.nbClients += 1
                     print("Port " + str(i) + " given to client")
                     break
@@ -42,7 +43,7 @@ class clientManagementI(discotheque.clientManagement):
         trackManagementI.stop(port)
         self.clients[port] = [True, None]
         self.nbClients -= 1
-        print("Client with port " + port + " unsubscribed")
+        print("Client with port " + str(port) + " unsubscribed")
 
 class trackManagementI(discotheque.trackManagement):
 
@@ -158,7 +159,7 @@ class trackManagementI(discotheque.trackManagement):
             return True
 
     def jouerMorceaux(self, tracks, port, current=None):
-        if clientManagementI.clients[port][1] == None:
+        if clientManagementI.clients[port][1] is None:
             clientManagementI.clients[port][1] = self.vlcInst.media_list_player_new()
 
         player = clientManagementI.clients[port][1]
@@ -186,21 +187,19 @@ class trackManagementI(discotheque.trackManagement):
         return target
 
     def playPause(self, port, current=None):
-        if clientManagementI.clients[port][1] == None:
+        if clientManagementI.clients[port][1] is None:
             return
         else:
             player = clientManagementI.clients[port][1]
 
             if player.is_playing():
-                print("Pausing")
                 player.pause()
             elif not player.is_playing():
-                print("Resuming")
                 player.play()
         return
     
     def nextTrack(self, port, current=None):
-        if clientManagementI.clients[port][1] == None:
+        if clientManagementI.clients[port][1] is None:
             return
         else:
             player = clientManagementI.clients[port][1]
@@ -208,7 +207,7 @@ class trackManagementI(discotheque.trackManagement):
         return
 
     def previousTrack(self, port, current=None):
-        if clientManagementI.clients[port][1] == None:
+        if clientManagementI.clients[port][1] is None:
             return
         else:
             player = clientManagementI.clients[port][1]

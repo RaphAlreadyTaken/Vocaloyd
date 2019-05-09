@@ -1,139 +1,93 @@
-STATUS | wrapper  | 2019/05/07 16:33:04 | --> Wrapper Started as Console
-STATUS | wrapper  | 2019/05/07 16:33:05 | Launching a JVM...
-INFO   | jvm 1    | 2019/05/07 16:33:05 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
-INFO   | jvm 1    | 2019/05/07 16:33:05 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
-INFO   | jvm 1    | 2019/05/07 16:33:05 | 
-INFO   | jvm 1    | 2019/05/07 16:33:05 | Java Runtime: Oracle Corporation 1.8.0_211 C:\Program Files\Java\jre1.8.0_211
-INFO   | jvm 1    | 2019/05/07 16:33:05 |   Heap sizes: current=125952k  free=116631k  max=932352k
-INFO   | jvm 1    | 2019/05/07 16:33:05 |     JVM args: -Dactivemq.home=C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\\..\brokers\apache-activemq-5.14.1 -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\\..\brokers\apache-activemq-5.14.1/bin/win64 -Dwrapper.key=6nTfkemeeYo5EOeQ -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=9392 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
-INFO   | jvm 1    | 2019/05/07 16:33:05 | Extensions classpath:
-INFO   | jvm 1    | 2019/05/07 16:33:05 |   [..\..\lib,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\camel,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\optional,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\web,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\extra]
-INFO   | jvm 1    | 2019/05/07 16:33:05 | ACTIVEMQ_HOME: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1
-INFO   | jvm 1    | 2019/05/07 16:33:05 | ACTIVEMQ_BASE: ..\..
-INFO   | jvm 1    | 2019/05/07 16:33:05 | ACTIVEMQ_CONF: ..\..\conf
-INFO   | jvm 1    | 2019/05/07 16:33:05 | ACTIVEMQ_DATA: ..\..\data
-INFO   | jvm 1    | 2019/05/07 16:33:06 | SLF4J: Class path contains multiple SLF4J bindings.
-INFO   | jvm 1    | 2019/05/07 16:33:06 | SLF4J: Found binding in [jar:file:/C:/Users/Raph/Desktop/Vocaloyd/ReqAnalyzer/server/brokers/apache-activemq-5.14.1/bin/win64/../../lib/optional/slf4j-log4j12-1.7.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-INFO   | jvm 1    | 2019/05/07 16:33:06 | SLF4J: Found binding in [jar:file:/C:/Users/Raph/Desktop/Vocaloyd/ReqAnalyzer/server/bin/../brokers/apache-activemq-5.14.1/lib/optional/slf4j-log4j12-1.7.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-INFO   | jvm 1    | 2019/05/07 16:33:06 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-INFO   | jvm 1    | 2019/05/07 16:33:06 | SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
-INFO   | jvm 1    | 2019/05/07 16:33:06 | Loading message broker from: xbean:activemq.xml
-INFO   | jvm 1    | 2019/05/07 16:33:06 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@ddce1ea: startup date [Tue May 07 16:33:06 CEST 2019]; root of context hierarchy
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\kahadb]
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | KahaDB is version 6
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | PListStore:[C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\localhost\tmp_storage] started
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | Apache ActiveMQ 5.14.1 (localhost, ID:DESKTOP-LIE5PSR-51415-1557239587348-0:1) is starting
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | Listening for connections at: tcp://DESKTOP-LIE5PSR:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | Connector openwire started
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | Listening for connections at: amqp://DESKTOP-LIE5PSR:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | Connector amqp started
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | Listening for connections at: stomp://DESKTOP-LIE5PSR:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | Connector stomp started
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | Listening for connections at: mqtt://DESKTOP-LIE5PSR:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | Connector mqtt started
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@197d3bd6{/,null,STARTING} has uncovered http methods for path: /
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | Listening for connections at ws://DESKTOP-LIE5PSR:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | Connector ws started
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | Apache ActiveMQ 5.14.1 (localhost, ID:DESKTOP-LIE5PSR-51415-1557239587348-0:1) started
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  INFO | For help or more information please see: http://activemq.apache.org
-INFO   | jvm 1    | 2019/05/07 16:33:07 |  WARN | Store limit is 102400 mb (current store usage is 1 mb). The data directory: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\kahadb only has 56542 mb of usable space. - resetting to maximum available disk space: 56542 mb
-INFO   | jvm 1    | 2019/05/07 16:33:08 |  INFO | No Spring WebApplicationInitializer types detected on classpath
-INFO   | jvm 1    | 2019/05/07 16:33:08 |  INFO | ActiveMQ WebConsole available at http://192.168.43.15:8161/
-INFO   | jvm 1    | 2019/05/07 16:33:08 |  INFO | ActiveMQ Jolokia REST API available at http://192.168.43.15:8161/api/jolokia/
-INFO   | jvm 1    | 2019/05/07 16:33:08 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
-INFO   | jvm 1    | 2019/05/07 16:33:08 |  INFO | No Spring WebApplicationInitializer types detected on classpath
-INFO   | jvm 1    | 2019/05/07 16:33:09 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
-STATUS | wrapper  | 2019/05/07 16:54:43 | --> Wrapper Started as Console
-STATUS | wrapper  | 2019/05/07 16:54:44 | Launching a JVM...
-INFO   | jvm 1    | 2019/05/07 16:54:44 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
-INFO   | jvm 1    | 2019/05/07 16:54:44 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
-INFO   | jvm 1    | 2019/05/07 16:54:44 | 
-INFO   | jvm 1    | 2019/05/07 16:54:45 | Java Runtime: Oracle Corporation 1.8.0_211 C:\Program Files\Java\jre1.8.0_211
-INFO   | jvm 1    | 2019/05/07 16:54:45 |   Heap sizes: current=125952k  free=116632k  max=932352k
-INFO   | jvm 1    | 2019/05/07 16:54:45 |     JVM args: -Dactivemq.home=C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\\..\brokers\apache-activemq-5.14.1 -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\\..\brokers\apache-activemq-5.14.1/bin/win64 -Dwrapper.key=eNsQSWAj7m7eNVcK -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=11012 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
-INFO   | jvm 1    | 2019/05/07 16:54:45 | Extensions classpath:
-INFO   | jvm 1    | 2019/05/07 16:54:45 |   [..\..\lib,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\camel,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\optional,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\web,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\extra]
-INFO   | jvm 1    | 2019/05/07 16:54:45 | ACTIVEMQ_HOME: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1
-INFO   | jvm 1    | 2019/05/07 16:54:45 | ACTIVEMQ_BASE: ..\..
-INFO   | jvm 1    | 2019/05/07 16:54:45 | ACTIVEMQ_CONF: ..\..\conf
-INFO   | jvm 1    | 2019/05/07 16:54:45 | ACTIVEMQ_DATA: ..\..\data
-INFO   | jvm 1    | 2019/05/07 16:54:45 | SLF4J: Class path contains multiple SLF4J bindings.
-INFO   | jvm 1    | 2019/05/07 16:54:45 | SLF4J: Found binding in [jar:file:/C:/Users/Raph/Desktop/Vocaloyd/ReqAnalyzer/server/brokers/apache-activemq-5.14.1/bin/win64/../../lib/optional/slf4j-log4j12-1.7.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-INFO   | jvm 1    | 2019/05/07 16:54:45 | SLF4J: Found binding in [jar:file:/C:/Users/Raph/Desktop/Vocaloyd/ReqAnalyzer/server/bin/../brokers/apache-activemq-5.14.1/lib/optional/slf4j-log4j12-1.7.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-INFO   | jvm 1    | 2019/05/07 16:54:45 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-INFO   | jvm 1    | 2019/05/07 16:54:45 | SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
-INFO   | jvm 1    | 2019/05/07 16:54:45 | Loading message broker from: xbean:activemq.xml
-INFO   | jvm 1    | 2019/05/07 16:54:45 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@20ebf8e8: startup date [Tue May 07 16:54:45 CEST 2019]; root of context hierarchy
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\kahadb]
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | KahaDB is version 6
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Recovering from the journal @1:1279380
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Recovery replayed 221 operations from the journal in 0.038 seconds.
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | PListStore:[C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\localhost\tmp_storage] started
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Apache ActiveMQ 5.14.1 (localhost, ID:DESKTOP-LIE5PSR-51779-1557240886496-0:1) is starting
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Listening for connections at: tcp://DESKTOP-LIE5PSR:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Connector openwire started
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Listening for connections at: amqp://DESKTOP-LIE5PSR:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Connector amqp started
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Listening for connections at: stomp://DESKTOP-LIE5PSR:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Connector stomp started
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Listening for connections at: mqtt://DESKTOP-LIE5PSR:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Connector mqtt started
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@786605ef{/,null,STARTING} has uncovered http methods for path: /
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Listening for connections at ws://DESKTOP-LIE5PSR:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Connector ws started
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | Apache ActiveMQ 5.14.1 (localhost, ID:DESKTOP-LIE5PSR-51779-1557240886496-0:1) started
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  INFO | For help or more information please see: http://activemq.apache.org
-INFO   | jvm 1    | 2019/05/07 16:54:46 |  WARN | Store limit is 102400 mb (current store usage is 1 mb). The data directory: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\kahadb only has 56426 mb of usable space. - resetting to maximum available disk space: 56426 mb
-INFO   | jvm 1    | 2019/05/07 16:54:47 |  INFO | No Spring WebApplicationInitializer types detected on classpath
-INFO   | jvm 1    | 2019/05/07 16:54:47 |  INFO | ActiveMQ WebConsole available at http://192.168.43.15:8161/
-INFO   | jvm 1    | 2019/05/07 16:54:47 |  INFO | ActiveMQ Jolokia REST API available at http://192.168.43.15:8161/api/jolokia/
-INFO   | jvm 1    | 2019/05/07 16:54:47 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
-INFO   | jvm 1    | 2019/05/07 16:54:48 |  INFO | No Spring WebApplicationInitializer types detected on classpath
-INFO   | jvm 1    | 2019/05/07 16:54:48 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
-STATUS | wrapper  | 2019/05/07 19:15:15 | --> Wrapper Started as Console
-STATUS | wrapper  | 2019/05/07 19:15:15 | Launching a JVM...
-INFO   | jvm 1    | 2019/05/07 19:15:17 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
-INFO   | jvm 1    | 2019/05/07 19:15:17 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
-INFO   | jvm 1    | 2019/05/07 19:15:17 | 
-INFO   | jvm 1    | 2019/05/07 19:15:17 | Java Runtime: Oracle Corporation 1.8.0_211 C:\Program Files\Java\jre1.8.0_211
-INFO   | jvm 1    | 2019/05/07 19:15:17 |   Heap sizes: current=125952k  free=116628k  max=932352k
-INFO   | jvm 1    | 2019/05/07 19:15:17 |     JVM args: -Dactivemq.home=C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\\..\brokers\apache-activemq-5.14.1 -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\\..\brokers\apache-activemq-5.14.1/bin/win64 -Dwrapper.key=kuuA05O7nJGjVRk5 -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=5084 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
-INFO   | jvm 1    | 2019/05/07 19:15:17 | Extensions classpath:
-INFO   | jvm 1    | 2019/05/07 19:15:17 |   [..\..\lib,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\camel,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\optional,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\web,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\extra]
-INFO   | jvm 1    | 2019/05/07 19:15:17 | ACTIVEMQ_HOME: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1
-INFO   | jvm 1    | 2019/05/07 19:15:17 | ACTIVEMQ_BASE: ..\..
-INFO   | jvm 1    | 2019/05/07 19:15:17 | ACTIVEMQ_CONF: ..\..\conf
-INFO   | jvm 1    | 2019/05/07 19:15:17 | ACTIVEMQ_DATA: ..\..\data
-INFO   | jvm 1    | 2019/05/07 19:15:28 | SLF4J: Class path contains multiple SLF4J bindings.
-INFO   | jvm 1    | 2019/05/07 19:15:28 | SLF4J: Found binding in [jar:file:/C:/Users/Raph/Desktop/Vocaloyd/ReqAnalyzer/server/brokers/apache-activemq-5.14.1/bin/win64/../../lib/optional/slf4j-log4j12-1.7.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-INFO   | jvm 1    | 2019/05/07 19:15:28 | SLF4J: Found binding in [jar:file:/C:/Users/Raph/Desktop/Vocaloyd/ReqAnalyzer/server/bin/../brokers/apache-activemq-5.14.1/lib/optional/slf4j-log4j12-1.7.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-INFO   | jvm 1    | 2019/05/07 19:15:28 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-INFO   | jvm 1    | 2019/05/07 19:15:28 | SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
-INFO   | jvm 1    | 2019/05/07 19:15:28 | Loading message broker from: xbean:activemq.xml
-INFO   | jvm 1    | 2019/05/07 19:15:28 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@20ebf8e8: startup date [Tue May 07 19:15:28 CEST 2019]; root of context hierarchy
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\kahadb]
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | KahaDB is version 6
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Recovering from the journal @1:1335923
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Recovery replayed 479 operations from the journal in 0.047 seconds.
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | PListStore:[C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\localhost\tmp_storage] started
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Apache ActiveMQ 5.14.1 (localhost, ID:DESKTOP-LIE5PSR-49827-1557249329385-0:1) is starting
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Listening for connections at: tcp://DESKTOP-LIE5PSR:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Connector openwire started
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Listening for connections at: amqp://DESKTOP-LIE5PSR:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Connector amqp started
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Listening for connections at: stomp://DESKTOP-LIE5PSR:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Connector stomp started
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Listening for connections at: mqtt://DESKTOP-LIE5PSR:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Connector mqtt started
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@786605ef{/,null,STARTING} has uncovered http methods for path: /
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Listening for connections at ws://DESKTOP-LIE5PSR:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Connector ws started
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | Apache ActiveMQ 5.14.1 (localhost, ID:DESKTOP-LIE5PSR-49827-1557249329385-0:1) started
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  INFO | For help or more information please see: http://activemq.apache.org
-INFO   | jvm 1    | 2019/05/07 19:15:29 |  WARN | Store limit is 102400 mb (current store usage is 1 mb). The data directory: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\kahadb only has 57905 mb of usable space. - resetting to maximum available disk space: 57905 mb
-INFO   | jvm 1    | 2019/05/07 19:15:30 |  INFO | No Spring WebApplicationInitializer types detected on classpath
-INFO   | jvm 1    | 2019/05/07 19:15:30 |  INFO | ActiveMQ WebConsole available at http://192.168.43.15:8161/
-INFO   | jvm 1    | 2019/05/07 19:15:30 |  INFO | ActiveMQ Jolokia REST API available at http://192.168.43.15:8161/api/jolokia/
-INFO   | jvm 1    | 2019/05/07 19:15:30 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
-INFO   | jvm 1    | 2019/05/07 19:15:31 |  INFO | No Spring WebApplicationInitializer types detected on classpath
-INFO   | jvm 1    | 2019/05/07 19:15:31 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+STATUS | wrapper  | 2019/05/09 19:38:21 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/05/09 19:38:21 | Launching a JVM...
+INFO   | jvm 1    | 2019/05/09 19:38:22 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/05/09 19:38:22 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/05/09 19:38:22 | 
+INFO   | jvm 1    | 2019/05/09 19:38:22 | Java Runtime: Oracle Corporation 1.8.0_211 C:\Program Files\Java\jre1.8.0_211
+INFO   | jvm 1    | 2019/05/09 19:38:22 |   Heap sizes: current=125952k  free=115958k  max=932352k
+INFO   | jvm 1    | 2019/05/09 19:38:22 |     JVM args: -Dactivemq.home=C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\\..\brokers\apache-activemq-5.14.1 -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\\..\brokers\apache-activemq-5.14.1/bin/win64 -Dwrapper.key=G56uOEERVggHRsyq -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=5200 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/05/09 19:38:22 | Extensions classpath:
+INFO   | jvm 1    | 2019/05/09 19:38:22 |   [..\..\lib,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\camel,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\optional,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\web,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\extra]
+INFO   | jvm 1    | 2019/05/09 19:38:22 | ACTIVEMQ_HOME: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1
+INFO   | jvm 1    | 2019/05/09 19:38:22 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/05/09 19:38:22 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/05/09 19:38:22 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/05/09 19:38:22 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2019/05/09 19:38:22 | SLF4J: Found binding in [jar:file:/C:/Users/Raph/Desktop/Vocaloyd/ReqAnalyzer/server/brokers/apache-activemq-5.14.1/bin/win64/../../lib/optional/slf4j-log4j12-1.7.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/05/09 19:38:22 | SLF4J: Found binding in [jar:file:/C:/Users/Raph/Desktop/Vocaloyd/ReqAnalyzer/server/bin/../brokers/apache-activemq-5.14.1/lib/optional/slf4j-log4j12-1.7.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/05/09 19:38:22 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2019/05/09 19:38:22 | SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+INFO   | jvm 1    | 2019/05/09 19:38:22 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/05/09 19:38:22 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@607478a5: startup date [Thu May 09 19:38:22 CEST 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/05/09 19:38:23 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/05/09 19:38:23 |  INFO | PListStore:[C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/05/09 19:38:23 |  INFO | Apache ActiveMQ 5.14.1 (localhost, ID:DESKTOP-GH7SNE4-58650-1557423503778-0:1) is starting
+INFO   | jvm 1    | 2019/05/09 19:38:23 |  INFO | Listening for connections at: tcp://DESKTOP-GH7SNE4:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/05/09 19:38:23 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/05/09 19:38:23 |  INFO | Listening for connections at: amqp://DESKTOP-GH7SNE4:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/05/09 19:38:23 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/05/09 19:38:23 |  INFO | Listening for connections at: stomp://DESKTOP-GH7SNE4:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/05/09 19:38:23 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/05/09 19:38:23 |  INFO | Listening for connections at: mqtt://DESKTOP-GH7SNE4:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/05/09 19:38:23 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/05/09 19:38:24 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@246dce38{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/05/09 19:38:24 |  INFO | Listening for connections at ws://DESKTOP-GH7SNE4:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/05/09 19:38:24 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/05/09 19:38:24 |  INFO | Apache ActiveMQ 5.14.1 (localhost, ID:DESKTOP-GH7SNE4-58650-1557423503778-0:1) started
+INFO   | jvm 1    | 2019/05/09 19:38:24 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/05/09 19:38:24 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\kahadb only has 88855 mb of usable space. - resetting to maximum available disk space: 88855 mb
+INFO   | jvm 1    | 2019/05/09 19:38:24 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/05/09 19:38:25 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/05/09 19:38:25 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/05/09 19:38:25 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/05/09 19:38:25 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/05/09 19:38:25 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+INFO   | jvm 1    | 2019/05/09 19:53:25 |  WARN | Transport Connection to: tcp://192.168.43.15:58841 failed: java.net.SocketException: Connection reset
+INFO   | jvm 1    | 2019/05/09 20:00:20 |  WARN | Transport Connection to: tcp://192.168.43.15:59257 failed: java.net.SocketException: Connection reset
+STATUS | wrapper  | 2019/05/09 20:06:00 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/05/09 20:06:00 | Launching a JVM...
+INFO   | jvm 1    | 2019/05/09 20:06:00 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/05/09 20:06:00 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/05/09 20:06:00 | 
+INFO   | jvm 1    | 2019/05/09 20:06:01 | Java Runtime: Oracle Corporation 1.8.0_211 C:\Program Files\Java\jre1.8.0_211
+INFO   | jvm 1    | 2019/05/09 20:06:01 |   Heap sizes: current=125952k  free=115955k  max=932352k
+INFO   | jvm 1    | 2019/05/09 20:06:01 |     JVM args: -Dactivemq.home=C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\\..\brokers\apache-activemq-5.14.1 -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\\..\brokers\apache-activemq-5.14.1/bin/win64 -Dwrapper.key=qWNvLqP_f95QNxuy -Dwrapper.port=32000 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=1712 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/05/09 20:06:01 | Extensions classpath:
+INFO   | jvm 1    | 2019/05/09 20:06:01 |   [..\..\lib,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\camel,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\optional,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\web,C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1\lib\extra]
+INFO   | jvm 1    | 2019/05/09 20:06:01 | ACTIVEMQ_HOME: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\bin\..\brokers\apache-activemq-5.14.1
+INFO   | jvm 1    | 2019/05/09 20:06:01 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/05/09 20:06:01 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/05/09 20:06:01 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/05/09 20:06:01 | SLF4J: Class path contains multiple SLF4J bindings.
+INFO   | jvm 1    | 2019/05/09 20:06:01 | SLF4J: Found binding in [jar:file:/C:/Users/Raph/Desktop/Vocaloyd/ReqAnalyzer/server/brokers/apache-activemq-5.14.1/bin/win64/../../lib/optional/slf4j-log4j12-1.7.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/05/09 20:06:01 | SLF4J: Found binding in [jar:file:/C:/Users/Raph/Desktop/Vocaloyd/ReqAnalyzer/server/bin/../brokers/apache-activemq-5.14.1/lib/optional/slf4j-log4j12-1.7.13.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+INFO   | jvm 1    | 2019/05/09 20:06:01 | SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+INFO   | jvm 1    | 2019/05/09 20:06:01 | SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+INFO   | jvm 1    | 2019/05/09 20:06:01 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/05/09 20:06:01 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@3e5de52f: startup date [Thu May 09 20:06:01 CEST 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Recovering from the journal @1:504
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Recovery replayed 262 operations from the journal in 0.031 seconds.
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | PListStore:[C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Apache ActiveMQ 5.14.1 (localhost, ID:DESKTOP-GH7SNE4-59629-1557425162254-0:1) is starting
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Listening for connections at: tcp://DESKTOP-GH7SNE4:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Listening for connections at: amqp://DESKTOP-GH7SNE4:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Listening for connections at: stomp://DESKTOP-GH7SNE4:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Listening for connections at: mqtt://DESKTOP-GH7SNE4:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@7560275c{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Listening for connections at ws://DESKTOP-GH7SNE4:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | Apache ActiveMQ 5.14.1 (localhost, ID:DESKTOP-GH7SNE4-59629-1557425162254-0:1) started
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/05/09 20:06:02 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\brokers\apache-activemq-5.14.1\bin\win64\..\..\data\kahadb only has 89370 mb of usable space. - resetting to maximum available disk space: 89370 mb
+INFO   | jvm 1    | 2019/05/09 20:06:03 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/05/09 20:06:03 |  INFO | ActiveMQ WebConsole available at http://192.168.43.15:8161/
+INFO   | jvm 1    | 2019/05/09 20:06:03 |  INFO | ActiveMQ Jolokia REST API available at http://192.168.43.15:8161/api/jolokia/
+INFO   | jvm 1    | 2019/05/09 20:06:03 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/05/09 20:06:03 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/05/09 20:06:04 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml

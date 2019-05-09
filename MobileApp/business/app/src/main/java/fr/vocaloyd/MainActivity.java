@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         String[] permissions = {Manifest.permission.INTERNET, Manifest.permission.RECORD_AUDIO, Manifest.permission.WRITE_EXTERNAL_STORAGE};
@@ -180,12 +181,14 @@ public class MainActivity extends AppCompatActivity
 
     public void previousTrack(View view)
     {
-//        TODO: appel serveur Ice (prev track in playlist)
+        MusicService mServ = new MusicService();
+        mServ.execute(this, "previousTrack");
     }
 
     public void nextTrack(View view)
     {
-//        TODO: appel serveur Ice (next track in playlist)
+        MusicService mServ = new MusicService();
+        mServ.execute(this, "nextTrack");
     }
 
     public int getPort()

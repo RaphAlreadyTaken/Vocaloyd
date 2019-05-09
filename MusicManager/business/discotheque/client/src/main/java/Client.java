@@ -22,8 +22,8 @@ public class Client
 
         try (com.zeroc.Ice.Communicator communicator = com.zeroc.Ice.Util.initialize(initData))
         {
-            com.zeroc.Ice.ObjectPrx base = communicator.stringToProxy("SimpleManager:default -h 192.168.1.15 -p 10000");
-            com.zeroc.Ice.ObjectPrx baseClient = communicator.stringToProxy("SimpleClientManager:default -h 192.168.1.15 -p 10000");
+            com.zeroc.Ice.ObjectPrx base = communicator.stringToProxy("SimpleManager:default -h 192.168.43.15 -p 10000");
+            com.zeroc.Ice.ObjectPrx baseClient = communicator.stringToProxy("SimpleClientManager:default -h 192.168.43.15 -p 10000");
             discotheque.trackManagementPrx manager = discotheque.trackManagementPrx.checkedCast(base);
             discotheque.clientManagementPrx clientManager = discotheque.clientManagementPrx.checkedCast(baseClient);
 
@@ -199,7 +199,7 @@ public class Client
                                 break;
                         }
 
-                        Runtime.getRuntime().exec("vlc http://192.168.1.15:" + port + target);
+                        Runtime.getRuntime().exec("vlc http://192.168.43.15:" + port + target);
                         break;
 
                     case 8:
@@ -218,15 +218,15 @@ public class Client
                             switch (choixInt)
                             {
                                 case 1:
-                                    manager.playPause();
+                                    manager.playPause(port);
                                     break;
 
                                 case 2:
-                                    manager.nextTrack();
+                                    manager.nextTrack(port);
                                     break;
 
                                 case 3:
-                                    manager.previousTrack();
+                                    manager.previousTrack(port);
                                     break;
 
                                 case 4:

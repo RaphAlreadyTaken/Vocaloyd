@@ -10,7 +10,7 @@ const amrToMp3 = require('amrToMp3');
  *
  ********/
 const router = express.Router();
-const dsnMongoDB = "mongodb://192.168.1.15:27017/";
+const dsnMongoDB = "mongodb://192.168.43.15:27017/";
 
 //POST request. Route: /transcribe/newTranscript. Allows to convert an audio file to text
 router.post('/newTranscript', function (request, response)

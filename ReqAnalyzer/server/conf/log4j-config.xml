@@ -37,23 +37,23 @@
     </appender>
 
     <logger name="transport.tcp">
-        <level value="debug"/>
+        <level value="info"/>
     </logger>
 
     <logger name="transport.http">
-        <level value="debug"/>
+        <level value="info"/>
     </logger>
 
     <logger name="transport.wsn">
-        <level value="debug"/>
+        <level value="info"/>
     </logger>
 
     <logger name="transport.wseb">
-        <level value="debug"/>
+        <level value="info"/>
     </logger>
 
     <logger name="org.kaazing.gateway.service.proxy">
-        <level value="debug"/>
+        <level value="info"/>
     </logger>
 
     <logger name="org.kaazing.gateway.server">
@@ -62,45 +62,45 @@
 
     <!-- Used for Gateway startup -->
     <logger name="org.kaazing.gateway.server.Gateway">
-        <level value="debug"/>
+        <level value="info"/>
         <appender-ref ref="STDOUT"/>
     </logger>
 
     <logger name="org.kaazing.gateway.management">
-        <level value="debug"/>
+        <level value="info"/>
         <appender-ref ref="STDOUT"/>
     </logger>
 
     <logger name="ha">
-        <level value="debug"/>
+        <level value="info"/>
         <appender-ref ref="STDOUT"/>
     </logger>
 
     <logger name="messaging">
-        <level value="debug"/>
+        <level value="info"/>
         <appender-ref ref="STDOUT"/>
     </logger>
 
     <logger name="messaging.ha">
-        <level value="debug"/>
+        <level value="info"/>
         <appender-ref ref="STDOUT"/>
     </logger>
 
     <!-- Used for update service -->
     <logger name="org.kaazing.gateway.service.update.check">
-        <level value="debug"/>
+        <level value="info"/>
         <appender-ref ref="STDOUT"/>
     </logger>
 
     <!-- Used for update property -->
     <logger name="com.kaazing.update.check">
-        <level value="debug"/>
+        <level value="info"/>
         <appender-ref ref="STDOUT"/>
     </logger>
 
     <!-- Used for Gateway services. Specific loggers can also be added like "service.jms" -->
     <logger name="service">
-        <level value="debug"/>
+        <level value="info"/>
     </logger>
 
     <root>

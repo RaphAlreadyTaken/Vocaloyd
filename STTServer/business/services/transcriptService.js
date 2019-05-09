@@ -15,7 +15,7 @@ function transcriptService($http)
 		var _this = this;
 
 		return $http
-		.post('http://192.168.1.15:3131/transcribe/getAllTranscripts')
+		.post('http://192.168.43.15:3131/transcribe/getAllTranscripts')
 		.then(function(response)
 		{
 			angular.copy(response.data, _this.transcripts);

@@ -24,7 +24,7 @@ public class Listener
 {
     public static void main(String[] args) throws JMSException, InterruptedException
     {
-        String url = "tcp://192.168.1.15:61616";
+        String url = "tcp://192.168.43.15:61616";
 
         ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
         Destination destination = new ActiveMQQueue("connectFact");

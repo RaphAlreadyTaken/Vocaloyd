@@ -10,7 +10,7 @@ install:
 #Run
 .ONESHELL:
 runServer:
-	mongod --bind_ip 192.168.1.15 &
+	mongod --bind_ip 192.168.43.15 &
 	cd server
 	npm run devstart
 

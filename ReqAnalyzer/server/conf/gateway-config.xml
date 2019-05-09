@@ -71,7 +71,7 @@
   <service>
     <name>JMS Service</name>
     <accept>ws://${gateway.hostname}:${gateway.port}/jms</accept>
-    <accept>ws://192.168.43.15:${gateway.port}/jms</accept>
+
     <type>jms</type>
 
     <properties>
@@ -82,7 +82,7 @@
       <env.java.naming.provider.url>tcp://${gateway.hostname}:61616</env.java.naming.provider.url>
     </properties>
 
-    <realm-name>vocaloyd</realm-name>
+    <realm-name>demo</realm-name>
 
     <!-- "*" is not secure for javascript applications, change before running in production -->
     <cross-site-constraint>
@@ -122,26 +122,6 @@
     <realm>
       <name>demo</name>
       <description>Sample realm for file-based authentication</description>
-
-      <user-principal-class>org.kaazing.gateway.security.auth.config.UserConfig</user-principal-class>
-
-      <authentication>
-        <http-challenge-scheme>Application Basic</http-challenge-scheme>
-        <login-modules>
-          <login-module>
-            <type>file</type>
-            <success>required</success>
-            <options>
-              <file>jaas-config.xml</file>
-            </options>
-          </login-module>
-        </login-modules>
-      </authentication>
-    </realm>
-
-    <realm>
-      <name>vocaloyd</name>
-      <description>Vocaloyd</description>
 
       <user-principal-class>org.kaazing.gateway.security.auth.config.UserConfig</user-principal-class>
 

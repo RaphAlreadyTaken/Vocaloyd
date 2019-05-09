@@ -1,619 +1,132 @@
-2019-05-07 16:33:05,385 [main] DEBUG The jar file enterprise.gateway.amqp.spi with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,385 [main] DEBUG The jar file enterprise.gateway.jms.driver.mq with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,385 [main] DEBUG The jar file enterprise.gateway.jms.driver.redis with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,385 [main] DEBUG The jar file enterprise.gateway.resource.address.mux with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,385 [main] DEBUG The jar file enterprise.gateway.resource.address.proxy with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,401 [main] DEBUG The jar file enterprise.gateway.resource.address.socks with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,401 [main] DEBUG The jar file enterprise.gateway.security with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,401 [main] DEBUG The jar file enterprise.gateway.server with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,401 [main] DEBUG The jar file enterprise.gateway.server.spi with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,401 [main] DEBUG The jar file enterprise.gateway.service.amqp.extension with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,411 [main] DEBUG The jar file enterprise.gateway.service.http.kerberos5 with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,411 [main] DEBUG The jar file enterprise.gateway.service.ibmmq with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,411 [main] DEBUG The jar file enterprise.gateway.service.jms.ems with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,411 [main] DEBUG The jar file enterprise.gateway.service.jms.tests with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,411 [main] DEBUG The jar file enterprise.gateway.service.jms.spi with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,411 [main] DEBUG The jar file enterprise.gateway.service.proxy.extension with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,411 [main] DEBUG The jar file enterprise.gateway.service.turn.proxy with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,411 [main] DEBUG The jar file enterprise.gateway.transport.mux with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file enterprise.gateway.transport.nio.extension.bandwidth with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file enterprise.gateway.transport.nio.extension.security with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file enterprise.gateway.transport.proxy with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file enterprise.gateway.transport.socks with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file enterprise.gateway.transport.ws.extension.revalidate with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file org.kaazing:gateway.check.update with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file org.kaazing:gateway.management with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file org.kaazing:gateway.resource.address.http with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpx with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpxdraft with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpxe with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file org.kaazing:gateway.resource.address with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file org.kaazing:gateway.resource.address.pipe with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file org.kaazing:gateway.resource.address.rtmp with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,427 [main] DEBUG The jar file org.kaazing:gateway.resource.address.sse with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.resource.address.ssl with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.resource.address.tcp with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.resource.address.udp with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.resource.address.ws with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsdraft with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wse with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsn with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsx with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsxdraft with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.security with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.server.api with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file gateway.server.config with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.server with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.server.spi with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.service.amqp with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.service.broadcast with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,443 [main] DEBUG The jar file org.kaazing:gateway.service.echo with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.service.http.balancer with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.service.http.directory with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.service.http.proxy with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.service.http.redirect with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.service with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.service.proxy with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.service.turn.rest with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.service.update.check with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.service.update.check.management with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.transport.bio with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.transport.http with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.transport with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.transport.nio with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.transport.pipe with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.transport.sse with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.transport.ssl with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,458 [main] DEBUG The jar file org.kaazing:gateway.transport.ws with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,474 [main] DEBUG The jar file org.kaazing:gateway.transport.wseb with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,474 [main] DEBUG The jar file org.kaazing:gateway.transport.wsn with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,474 [main] DEBUG The jar file org.kaazing:gateway.util with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,512 [main] DEBUG The jar file org.kaazing:mina.netty with the version 5.8.0 was loaded.
-2019-05-07 16:33:05,527 [main] INFO  Kaazing Gateway (5.8.0)
-2019-05-07 16:33:05,527 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
-2019-05-07 16:33:05,991 [main] DEBUG parsed  gateway config file 'gateway-config.xml' in [448 ms]
-2019-05-07 16:33:06,006 [main] INFO  Checking license information
-2019-05-07 16:33:06,060 [main] INFO    No valid Kaazing license found
-2019-05-07 16:33:06,060 [main] INFO  Using Kaazing developer license, maximum 100 connections
-2019-05-07 16:33:07,232 [gtwy_bg_tasks-1] DEBUG Checking for newer version on URL: https://version.kaazing.com/KaazingGateway/1.0/latest?x-sessionuuid=429d088c-dccd-41ca-821f-ffbcb9838894&x-osname=Windows+10&x-osversion=10.0&x-productname=KaazingGateway&x-machash=aedaa2549e0a6516f894b5e1c0fb82b74609f725&x-licenseid=Developer+License&x-event=START&x-productversion=5.8.0
-2019-05-07 16:33:07,332 [main] DEBUG connectionFactory = org.apache.activemq.ActiveMQConnectionFactory
-2019-05-07 16:33:07,332 [main] DEBUG topicFormat = dynamicTopics/%s
-2019-05-07 16:33:07,332 [main] DEBUG queueFormat = dynamicQueues/%s
-2019-05-07 16:33:07,332 [main] DEBUG topicSessionCount = 1
-2019-05-07 16:33:07,332 [main] DEBUG sendSessionCount = 1
-2019-05-07 16:33:07,332 [main] DEBUG durableAcknowledgeMode = AcknowledgeMode{value=4, scope=message}
-2019-05-07 16:33:07,332 [main] DEBUG queueAcknowledgeMode = AcknowledgeMode{value=4, scope=message}
-2019-05-07 16:33:07,332 [main] DEBUG anonymous.clientid.pattern
-2019-05-07 16:33:07,332 [main] DEBUG workarounds = [RETRY_CREATE_DURABLE]
-2019-05-07 16:33:07,348 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@66c92293: maximum.pending.bytes=64000, using resume threshold 32000
-2019-05-07 16:33:07,348 [main] DEBUG Proxy handler org.kaazing.gateway.service.proxy.ProxyServiceHandler$ConnectHandler@332796d3: maximum.pending.bytes=64000, using resume threshold 32000
-2019-05-07 16:33:07,348 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@66c92293: maximum.transferred.bytes=-1.
-2019-05-07 16:33:07,348 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@66c92293: maximum.recovery.interval=0.
-2019-05-07 16:33:07,363 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@66c92293: connect.strategy=IMMEDIATE.
-2019-05-07 16:33:07,363 [main] DEBUG amqp.proxy service with thread alignment, using prepared.connection.count=0
-2019-05-07 16:33:07,595 [main] DEBUG TCP acceptor: worker count = 8
-2019-05-07 16:33:07,695 [main] DEBUG Exit Bind
-2019-05-07 16:33:07,711 [main] DEBUG Exit Bind
-2019-05-07 16:33:07,717 [main] DEBUG Exit Bind
-2019-05-07 16:33:07,749 [main] DEBUG Exit Bind
-2019-05-07 16:33:07,764 [main] INFO  Starting server
-2019-05-07 16:33:07,764 [main] INFO  Starting services
-2019-05-07 16:33:07,764 [main] INFO    http://192.168.43.15:8000/
-2019-05-07 16:33:07,764 [main] INFO    ws://192.168.43.15:8000/amqp
-2019-05-07 16:33:07,764 [main] INFO    ws://192.168.43.15:8000/echo
-2019-05-07 16:33:07,780 [main] INFO    ws://192.168.43.15:8000/jms
-2019-05-07 16:33:07,780 [main] INFO  Started services
-2019-05-07 16:33:07,780 [main] INFO  Started server successfully in 0.532 secs at 2019-05-07 16:33:07
-2019-05-07 16:33:07,780 [main] DEBUG Exit Gateway launcher initInternal
-2019-05-07 16:33:07,933 [gtwy_bg_tasks-1] DEBUG Received status: 200
-2019-05-07 16:33:08,165 [EagerCP_0-1] DEBUG AligningConnectionProcessor@6340ca71 (kind=INNER): Server connection has been established
-2019-05-07 16:33:08,165 [EagerCP_0-1] INFO  JMS Connection established using ConnectionFactory "org.apache.activemq.ActiveMQConnectionFactory@11fb5c7f"
-2019-05-07 16:51:44,182 [Thread-5] DEBUG Checking for newer version on URL: https://version.kaazing.com/KaazingGateway/1.0/latest?x-sessionuuid=429d088c-dccd-41ca-821f-ffbcb9838894&x-osname=Windows+10&x-osversion=10.0&x-productname=KaazingGateway&x-machash=aedaa2549e0a6516f894b5e1c0fb82b74609f725&x-licenseid=Developer+License&x-event=SHUTDOWN&x-productversion=5.8.0
-2019-05-07 16:51:44,198 [Thread-0] INFO  Stopping server
-2019-05-07 16:51:44,198 [Thread-0] INFO  Stopping services
-2019-05-07 16:51:44,198 [Thread-0] INFO    http://192.168.43.15:8000/
-2019-05-07 16:51:44,198 [Thread-0] INFO    ws://192.168.43.15:8000/amqp
-2019-05-07 16:51:44,198 [Thread-0] INFO    ws://192.168.43.15:8000/echo
-2019-05-07 16:51:44,198 [Thread-0] INFO    ws://192.168.43.15:8000/jms
-2019-05-07 16:51:44,198 [Thread-0] INFO  Stopped services
-2019-05-07 16:51:44,198 [Thread-0] INFO  Stopped server successfully in 0.053 secs at 2019-05-07 16:51:44
-2019-05-07 16:54:44,422 [main] DEBUG The jar file enterprise.gateway.amqp.spi with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,422 [main] DEBUG The jar file enterprise.gateway.jms.driver.mq with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,422 [main] DEBUG The jar file enterprise.gateway.jms.driver.redis with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,422 [main] DEBUG The jar file enterprise.gateway.resource.address.mux with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,422 [main] DEBUG The jar file enterprise.gateway.resource.address.proxy with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,422 [main] DEBUG The jar file enterprise.gateway.resource.address.socks with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,438 [main] DEBUG The jar file enterprise.gateway.security with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,438 [main] DEBUG The jar file enterprise.gateway.server with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,438 [main] DEBUG The jar file enterprise.gateway.server.spi with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,438 [main] DEBUG The jar file enterprise.gateway.service.amqp.extension with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,444 [main] DEBUG The jar file enterprise.gateway.service.http.kerberos5 with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,444 [main] DEBUG The jar file enterprise.gateway.service.ibmmq with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,444 [main] DEBUG The jar file enterprise.gateway.service.jms.ems with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,444 [main] DEBUG The jar file enterprise.gateway.service.jms.tests with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,444 [main] DEBUG The jar file enterprise.gateway.service.jms.spi with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,460 [main] DEBUG The jar file enterprise.gateway.service.proxy.extension with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,460 [main] DEBUG The jar file enterprise.gateway.service.turn.proxy with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,460 [main] DEBUG The jar file enterprise.gateway.transport.mux with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,460 [main] DEBUG The jar file enterprise.gateway.transport.nio.extension.bandwidth with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,460 [main] DEBUG The jar file enterprise.gateway.transport.nio.extension.security with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,460 [main] DEBUG The jar file enterprise.gateway.transport.proxy with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,460 [main] DEBUG The jar file enterprise.gateway.transport.socks with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,460 [main] DEBUG The jar file enterprise.gateway.transport.ws.extension.revalidate with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,460 [main] DEBUG The jar file org.kaazing:gateway.check.update with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,460 [main] DEBUG The jar file org.kaazing:gateway.management with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,460 [main] DEBUG The jar file org.kaazing:gateway.resource.address.http with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,460 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpx with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpxdraft with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpxe with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.pipe with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.rtmp with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.sse with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.ssl with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.tcp with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.udp with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.ws with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsdraft with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wse with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsn with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsx with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsxdraft with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,476 [main] DEBUG The jar file org.kaazing:gateway.security with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.server.api with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file gateway.server.config with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.server with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.server.spi with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.service.amqp with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.service.broadcast with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.service.echo with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.service.http.balancer with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.service.http.directory with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.service.http.proxy with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.service.http.redirect with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.service with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.service.proxy with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.service.turn.rest with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.service.update.check with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.service.update.check.management with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.transport.bio with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,491 [main] DEBUG The jar file org.kaazing:gateway.transport.http with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,507 [main] DEBUG The jar file org.kaazing:gateway.transport with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,507 [main] DEBUG The jar file org.kaazing:gateway.transport.nio with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,507 [main] DEBUG The jar file org.kaazing:gateway.transport.pipe with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,507 [main] DEBUG The jar file org.kaazing:gateway.transport.sse with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,507 [main] DEBUG The jar file org.kaazing:gateway.transport.ssl with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,507 [main] DEBUG The jar file org.kaazing:gateway.transport.ws with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,507 [main] DEBUG The jar file org.kaazing:gateway.transport.wseb with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,507 [main] DEBUG The jar file org.kaazing:gateway.transport.wsn with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,507 [main] DEBUG The jar file org.kaazing:gateway.util with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,545 [main] DEBUG The jar file org.kaazing:mina.netty with the version 5.8.0 was loaded.
-2019-05-07 16:54:44,560 [main] INFO  Kaazing Gateway (5.8.0)
-2019-05-07 16:54:44,560 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
-2019-05-07 16:54:45,140 [main] DEBUG parsed  gateway config file 'gateway-config.xml' in [564 ms]
-2019-05-07 16:54:45,146 [main] INFO  Checking license information
-2019-05-07 16:54:45,209 [main] INFO    No valid Kaazing license found
-2019-05-07 16:54:45,209 [main] INFO  Using Kaazing developer license, maximum 100 connections
-2019-05-07 16:54:46,396 [gtwy_bg_tasks-1] DEBUG Checking for newer version on URL: https://version.kaazing.com/KaazingGateway/1.0/latest?x-sessionuuid=cf525b8f-5004-483c-a826-c62e53b11861&x-osname=Windows+10&x-osversion=10.0&x-productname=KaazingGateway&x-machash=aedaa2549e0a6516f894b5e1c0fb82b74609f725&x-licenseid=Developer+License&x-event=START&x-productversion=5.8.0
-2019-05-07 16:54:46,512 [main] DEBUG connectionFactory = org.apache.activemq.ActiveMQConnectionFactory
-2019-05-07 16:54:46,512 [main] DEBUG topicFormat = dynamicTopics/%s
-2019-05-07 16:54:46,512 [main] DEBUG queueFormat = dynamicQueues/%s
-2019-05-07 16:54:46,512 [main] DEBUG topicSessionCount = 1
-2019-05-07 16:54:46,512 [main] DEBUG sendSessionCount = 1
-2019-05-07 16:54:46,512 [main] DEBUG durableAcknowledgeMode = AcknowledgeMode{value=4, scope=message}
-2019-05-07 16:54:46,512 [main] DEBUG queueAcknowledgeMode = AcknowledgeMode{value=4, scope=message}
-2019-05-07 16:54:46,512 [main] DEBUG anonymous.clientid.pattern
-2019-05-07 16:54:46,512 [main] DEBUG workarounds = [RETRY_CREATE_DURABLE]
-2019-05-07 16:54:46,527 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@66c92293: maximum.pending.bytes=64000, using resume threshold 32000
-2019-05-07 16:54:46,527 [main] DEBUG Proxy handler org.kaazing.gateway.service.proxy.ProxyServiceHandler$ConnectHandler@332796d3: maximum.pending.bytes=64000, using resume threshold 32000
-2019-05-07 16:54:46,527 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@66c92293: maximum.transferred.bytes=-1.
-2019-05-07 16:54:46,527 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@66c92293: maximum.recovery.interval=0.
-2019-05-07 16:54:46,527 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@66c92293: connect.strategy=IMMEDIATE.
-2019-05-07 16:54:46,527 [main] DEBUG amqp.proxy service with thread alignment, using prepared.connection.count=0
-2019-05-07 16:54:46,814 [main] DEBUG TCP acceptor: worker count = 8
-2019-05-07 16:54:46,852 [EagerCP_0-1] DEBUG AligningConnectionProcessor@719ed9bf (kind=INNER): Server connection has been established
-2019-05-07 16:54:46,852 [EagerCP_0-1] INFO  JMS Connection established using ConnectionFactory "org.apache.activemq.ActiveMQConnectionFactory@2d764ae8"
-2019-05-07 16:54:46,930 [main] DEBUG Exit Bind
-2019-05-07 16:54:46,930 [main] DEBUG Exit Bind
-2019-05-07 16:54:46,953 [main] DEBUG Exit Bind
-2019-05-07 16:54:46,999 [main] DEBUG Exit Bind
-2019-05-07 16:54:46,999 [main] INFO  Starting server
-2019-05-07 16:54:46,999 [main] INFO  Starting services
-2019-05-07 16:54:46,999 [main] INFO    http://192.168.43.15:8000/
-2019-05-07 16:54:47,015 [main] INFO    ws://192.168.43.15:8000/amqp
-2019-05-07 16:54:47,015 [main] INFO    ws://192.168.43.15:8000/echo
-2019-05-07 16:54:47,015 [main] INFO    ws://192.168.43.15:8000/jms
-2019-05-07 16:54:47,015 [main] INFO  Started services
-2019-05-07 16:54:47,015 [main] INFO  Started server successfully in 0.603 secs at 2019-05-07 16:54:46
-2019-05-07 16:54:47,015 [main] DEBUG Exit Gateway launcher initInternal
-2019-05-07 16:54:47,234 [gtwy_bg_tasks-1] DEBUG Received status: 200
-2019-05-07 17:35:01,930 [ActiveMQ Connection Executor: tcp:///192.168.43.15:61616@51781] WARN  ExceptionListener on JMS Connection ActiveMQConnection {id=ID:DESKTOP-LIE5PSR-51780-1557240886614-1:1,clientId=ID:DESKTOP-LIE5PSR-51780-1557240886614-0:1,started=true} reported exception javax.jms.JMSException: Connection reset
-javax.jms.JMSException: Connection reset
-	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
-	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1949)
-	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1968)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.WireFormatNegotiator.onException(WireFormatNegotiator.java:173)
-	at org.apache.activemq.transport.AbstractInactivityMonitor.onException(AbstractInactivityMonitor.java:344)
-	at org.apache.activemq.transport.TransportSupport.onException(TransportSupport.java:96)
-	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:219)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50)
-	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634)
-	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59)
-	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619)
-	at java.io.DataInputStream.readInt(Unknown Source)
-	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
-	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
-	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
-	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
-	... 1 more
-2019-05-07 17:35:01,945 [ActiveMQ Connection Executor: tcp:///192.168.43.15:61616@51781] DEBUG Error closing connection
-javax.jms.JMSException: Disposed due to prior exception
-	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
-	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1413)
-	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
-	at com.kaazing.gateway.jms.server.service.jms.handler.JmsConnectionImpl.stopAndClose(JmsConnectionImpl.java:283)
-	at com.kaazing.gateway.jms.server.service.jms.handler.JmsConnectionImpl$4.onException(JmsConnectionImpl.java:522)
-	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1956)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
-	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.WireFormatNegotiator.onException(WireFormatNegotiator.java:173)
-	at org.apache.activemq.transport.AbstractInactivityMonitor.onException(AbstractInactivityMonitor.java:344)
-	at org.apache.activemq.transport.TransportSupport.onException(TransportSupport.java:96)
-	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:219)
-	... 1 more
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50)
-	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634)
-	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59)
-	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619)
-	at java.io.DataInputStream.readInt(Unknown Source)
-	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
-	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
-	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
-	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
-	... 1 more
-2019-05-07 17:35:01,945 [ActiveMQ Connection Executor: tcp:///192.168.43.15:61616@51781] DEBUG Unexpected exception
-javax.jms.JMSException: Connection reset
-	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
-	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1949)
-	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1968)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.WireFormatNegotiator.onException(WireFormatNegotiator.java:173)
-	at org.apache.activemq.transport.AbstractInactivityMonitor.onException(AbstractInactivityMonitor.java:344)
-	at org.apache.activemq.transport.TransportSupport.onException(TransportSupport.java:96)
-	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:219)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50)
-	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634)
-	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59)
-	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619)
-	at java.io.DataInputStream.readInt(Unknown Source)
-	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
-	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
-	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
-	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
-	... 1 more
-2019-05-07 17:35:01,945 [EagerCP_0-1] DEBUG AligningConnectionProcessor@719ed9bf (kind=INNER): Server connection disconnected with keep-alive=false
-2019-05-07 19:15:23,468 [main] DEBUG The jar file enterprise.gateway.amqp.spi with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,468 [main] DEBUG The jar file enterprise.gateway.jms.driver.mq with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,468 [main] DEBUG The jar file enterprise.gateway.jms.driver.redis with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,468 [main] DEBUG The jar file enterprise.gateway.resource.address.mux with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,468 [main] DEBUG The jar file enterprise.gateway.resource.address.proxy with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,468 [main] DEBUG The jar file enterprise.gateway.resource.address.socks with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,468 [main] DEBUG The jar file enterprise.gateway.security with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,468 [main] DEBUG The jar file enterprise.gateway.server with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,468 [main] DEBUG The jar file enterprise.gateway.server.spi with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,468 [main] DEBUG The jar file enterprise.gateway.service.amqp.extension with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,483 [main] DEBUG The jar file enterprise.gateway.service.http.kerberos5 with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,483 [main] DEBUG The jar file enterprise.gateway.service.ibmmq with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,483 [main] DEBUG The jar file enterprise.gateway.service.jms.ems with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,483 [main] DEBUG The jar file enterprise.gateway.service.jms.tests with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,483 [main] DEBUG The jar file enterprise.gateway.service.jms.spi with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,499 [main] DEBUG The jar file enterprise.gateway.service.proxy.extension with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,499 [main] DEBUG The jar file enterprise.gateway.service.turn.proxy with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,499 [main] DEBUG The jar file enterprise.gateway.transport.mux with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,499 [main] DEBUG The jar file enterprise.gateway.transport.nio.extension.bandwidth with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,499 [main] DEBUG The jar file enterprise.gateway.transport.nio.extension.security with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,499 [main] DEBUG The jar file enterprise.gateway.transport.proxy with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,499 [main] DEBUG The jar file enterprise.gateway.transport.socks with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,499 [main] DEBUG The jar file enterprise.gateway.transport.ws.extension.revalidate with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,499 [main] DEBUG The jar file org.kaazing:gateway.check.update with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,499 [main] DEBUG The jar file org.kaazing:gateway.management with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,499 [main] DEBUG The jar file org.kaazing:gateway.resource.address.http with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,499 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpx with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpxdraft with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.httpxe with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.pipe with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.rtmp with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.sse with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.ssl with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.tcp with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.udp with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.ws with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsdraft with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wse with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsn with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsx with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.resource.address.wsxdraft with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.security with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.server.api with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file gateway.server.config with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.server with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.server.spi with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,511 [main] DEBUG The jar file org.kaazing:gateway.service.amqp with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.service.broadcast with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.service.echo with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.service.http.balancer with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.service.http.directory with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.service.http.proxy with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.service.http.redirect with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.service with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.service.proxy with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.service.turn.rest with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.service.update.check with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.service.update.check.management with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.transport.bio with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.transport.http with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.transport with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.transport.nio with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.transport.pipe with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.transport.sse with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.transport.ssl with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,527 [main] DEBUG The jar file org.kaazing:gateway.transport.ws with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,543 [main] DEBUG The jar file org.kaazing:gateway.transport.wseb with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,543 [main] DEBUG The jar file org.kaazing:gateway.transport.wsn with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,543 [main] DEBUG The jar file org.kaazing:gateway.util with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,589 [main] DEBUG The jar file org.kaazing:mina.netty with the version 5.8.0 was loaded.
-2019-05-07 19:15:23,605 [main] INFO  Kaazing Gateway (5.8.0)
-2019-05-07 19:15:23,605 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
-2019-05-07 19:15:25,011 [main] DEBUG parsed  gateway config file 'gateway-config.xml' in [1406 ms]
-2019-05-07 19:15:25,027 [main] INFO  Checking license information
-2019-05-07 19:15:25,073 [main] INFO    No valid Kaazing license found
-2019-05-07 19:15:25,073 [main] INFO  Using Kaazing developer license, maximum 100 connections
-2019-05-07 19:15:26,307 [gtwy_bg_tasks-1] DEBUG Checking for newer version on URL: https://version.kaazing.com/KaazingGateway/1.0/latest?x-sessionuuid=4f20ba8e-b265-42ac-ab60-2f5c3aa0927e&x-osname=Windows+10&x-osversion=10.0&x-productname=KaazingGateway&x-machash=aedaa2549e0a6516f894b5e1c0fb82b74609f725&x-licenseid=Developer+License&x-event=START&x-productversion=5.8.0
-2019-05-07 19:15:26,417 [main] DEBUG connectionFactory = org.apache.activemq.ActiveMQConnectionFactory
-2019-05-07 19:15:26,417 [main] DEBUG topicFormat = dynamicTopics/%s
-2019-05-07 19:15:26,417 [main] DEBUG queueFormat = dynamicQueues/%s
-2019-05-07 19:15:26,417 [main] DEBUG topicSessionCount = 1
-2019-05-07 19:15:26,417 [main] DEBUG sendSessionCount = 1
-2019-05-07 19:15:26,417 [main] DEBUG durableAcknowledgeMode = AcknowledgeMode{value=4, scope=message}
-2019-05-07 19:15:26,417 [main] DEBUG queueAcknowledgeMode = AcknowledgeMode{value=4, scope=message}
-2019-05-07 19:15:26,417 [main] DEBUG anonymous.clientid.pattern
-2019-05-07 19:15:26,417 [main] DEBUG workarounds = [RETRY_CREATE_DURABLE]
-2019-05-07 19:15:26,448 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@66c92293: maximum.pending.bytes=64000, using resume threshold 32000
-2019-05-07 19:15:26,448 [main] DEBUG Proxy handler org.kaazing.gateway.service.proxy.ProxyServiceHandler$ConnectHandler@332796d3: maximum.pending.bytes=64000, using resume threshold 32000
-2019-05-07 19:15:26,448 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@66c92293: maximum.transferred.bytes=-1.
-2019-05-07 19:15:26,448 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@66c92293: maximum.recovery.interval=0.
-2019-05-07 19:15:26,448 [main] DEBUG Proxy handler org.kaazing.gateway.service.amqp.handler.AmqpProxyServiceHandlerSpi@66c92293: connect.strategy=IMMEDIATE.
-2019-05-07 19:15:26,448 [main] DEBUG amqp.proxy service with thread alignment, using prepared.connection.count=0
-2019-05-07 19:15:26,667 [main] DEBUG TCP acceptor: worker count = 8
-2019-05-07 19:15:26,761 [main] DEBUG Exit Bind
-2019-05-07 19:15:26,761 [main] DEBUG Exit Bind
-2019-05-07 19:15:26,776 [main] DEBUG Exit Bind
-2019-05-07 19:15:26,807 [main] DEBUG Exit Bind
-2019-05-07 19:15:26,807 [main] INFO  Starting server
-2019-05-07 19:15:26,807 [main] INFO  Starting services
-2019-05-07 19:15:26,807 [main] INFO    http://192.168.43.15:8000/
-2019-05-07 19:15:26,807 [main] INFO    ws://192.168.43.15:8000/amqp
-2019-05-07 19:15:26,807 [main] INFO    ws://192.168.43.15:8000/echo
-2019-05-07 19:15:26,807 [main] INFO    ws://192.168.43.15:8000/jms
-2019-05-07 19:15:26,807 [main] INFO  Started services
-2019-05-07 19:15:26,807 [main] INFO  Started server successfully in 0.500 secs at 2019-05-07 19:15:26
-2019-05-07 19:15:26,807 [main] DEBUG Exit Gateway launcher initInternal
-2019-05-07 19:15:27,667 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: 
-javax.jms.JMSException: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
-	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
-	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:374)
-	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:304)
-	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:244)
-	at com.kaazing.gateway.jms.server.service.jms.handler.JmsConnectionFactoryImpl$1.call(JmsConnectionFactoryImpl.java:78)
-	at com.kaazing.gateway.jms.server.service.jms.handler.JmsConnectionFactoryImpl.createConnection(JmsConnectionFactoryImpl.java:85)
-	at com.kaazing.gateway.jms.server.service.jms.handler.JmsConnectionFactoryImpl.createConnection(JmsConnectionFactoryImpl.java:28)
-	at com.kaazing.gateway.jms.server.service.jms.handler.StompJmsHandler.messageReceived(StompJmsHandler.java:131)
-	at com.kaazing.gateway.jms.server.service.jms.handler.StompJmsHandler.messageReceived(StompJmsHandler.java:68)
-	at com.kaazing.gateway.jms.server.message.JmsConnectMessage.messageReceived(JmsConnectMessage.java:95)
-	at com.kaazing.gateway.jms.server.util.JmsHandler$Adapter.messageReceived(JmsHandler.java:78)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:748)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:462)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChainEx.callNextMessageReceived(DefaultIoFilterChainEx.java:102)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:834)
-	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:103)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:462)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChainEx.callNextMessageReceived(DefaultIoFilterChainEx.java:102)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:454)
-	at com.kaazing.gateway.jms.server.service.handler.ConnectionProcessor.add(ConnectionProcessor.java:417)
-	at com.kaazing.gateway.jms.server.service.handler.ConnectionProcessor$ConnectTask.run(ConnectionProcessor.java:849)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:525)
-	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:488)
-	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
-	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:168)
-	at org.apache.activemq.transport.InactivityMonitor.start(InactivityMonitor.java:52)
-	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64)
-	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
-	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64)
-	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64)
-	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:354)
-	... 26 more
-2019-05-07 19:15:27,667 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
-2019-05-07 19:15:27,667 [EagerCP_0-1] DEBUG AligningConnectionProcessor@6f82d145 (kind=INNER): Server connection disconnected with keep-alive=false
-2019-05-07 19:15:28,026 [gtwy_bg_tasks-1] DEBUG Received status: 200
-2019-05-07 19:15:32,775 [EagerCP_0-1] DEBUG AligningConnectionProcessor@6f82d145 (kind=INNER): Server connection has been established
-2019-05-07 19:15:32,775 [EagerCP_0-1] INFO  JMS Connection established using ConnectionFactory "org.apache.activemq.ActiveMQConnectionFactory@5943f443"
-2019-05-07 20:55:16,071 [ActiveMQ Connection Executor: tcp:///192.168.43.15:61616@49844] WARN  ExceptionListener on JMS Connection ActiveMQConnection {id=ID:DESKTOP-LIE5PSR-49806-1557249326526-1:2,clientId=ID:DESKTOP-LIE5PSR-49806-1557249326526-0:1,started=true} reported exception javax.jms.JMSException: Connection reset
-javax.jms.JMSException: Connection reset
-	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
-	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1949)
-	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1968)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.WireFormatNegotiator.onException(WireFormatNegotiator.java:173)
-	at org.apache.activemq.transport.AbstractInactivityMonitor.onException(AbstractInactivityMonitor.java:344)
-	at org.apache.activemq.transport.TransportSupport.onException(TransportSupport.java:96)
-	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:219)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50)
-	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634)
-	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59)
-	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619)
-	at java.io.DataInputStream.readInt(Unknown Source)
-	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
-	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
-	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
-	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
-	... 1 more
-2019-05-07 20:55:16,101 [ActiveMQ Connection Executor: tcp:///192.168.43.15:61616@49844] DEBUG Error closing connection
-javax.jms.JMSException: Disposed due to prior exception
-	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
-	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1413)
-	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
-	at com.kaazing.gateway.jms.server.service.jms.handler.JmsConnectionImpl.stopAndClose(JmsConnectionImpl.java:283)
-	at com.kaazing.gateway.jms.server.service.jms.handler.JmsConnectionImpl$4.onException(JmsConnectionImpl.java:522)
-	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1956)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
-	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.WireFormatNegotiator.onException(WireFormatNegotiator.java:173)
-	at org.apache.activemq.transport.AbstractInactivityMonitor.onException(AbstractInactivityMonitor.java:344)
-	at org.apache.activemq.transport.TransportSupport.onException(TransportSupport.java:96)
-	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:219)
-	... 1 more
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50)
-	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634)
-	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59)
-	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619)
-	at java.io.DataInputStream.readInt(Unknown Source)
-	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
-	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
-	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
-	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
-	... 1 more
-2019-05-07 20:55:16,105 [ActiveMQ Connection Executor: tcp:///192.168.43.15:61616@49844] DEBUG Unexpected exception
-javax.jms.JMSException: Connection reset
-	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
-	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1949)
-	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1968)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
-	at org.apache.activemq.transport.WireFormatNegotiator.onException(WireFormatNegotiator.java:173)
-	at org.apache.activemq.transport.AbstractInactivityMonitor.onException(AbstractInactivityMonitor.java:344)
-	at org.apache.activemq.transport.TransportSupport.onException(TransportSupport.java:96)
-	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:219)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50)
-	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634)
-	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59)
-	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619)
-	at java.io.DataInputStream.readInt(Unknown Source)
-	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
-	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
-	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
-	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
-	... 1 more
-2019-05-07 20:55:16,113 [EagerCP_0-1] DEBUG AligningConnectionProcessor@6f82d145 (kind=INNER): Server connection disconnected with keep-alive=false
-2019-05-07 20:55:22,152 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: 
-javax.jms.JMSException: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
-	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:36)
-	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:374)
-	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:304)
-	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:244)
-	at com.kaazing.gateway.jms.server.service.jms.handler.JmsConnectionFactoryImpl$1.call(JmsConnectionFactoryImpl.java:78)
-	at com.kaazing.gateway.jms.server.service.jms.handler.JmsConnectionFactoryImpl.createConnection(JmsConnectionFactoryImpl.java:85)
-	at com.kaazing.gateway.jms.server.service.jms.handler.JmsConnectionFactoryImpl.createConnection(JmsConnectionFactoryImpl.java:28)
-	at com.kaazing.gateway.jms.server.service.jms.handler.StompJmsHandler.messageReceived(StompJmsHandler.java:131)
-	at com.kaazing.gateway.jms.server.service.jms.handler.StompJmsHandler.messageReceived(StompJmsHandler.java:68)
-	at com.kaazing.gateway.jms.server.message.JmsConnectMessage.messageReceived(JmsConnectMessage.java:95)
-	at com.kaazing.gateway.jms.server.util.JmsHandler$Adapter.messageReceived(JmsHandler.java:78)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain$TailFilter.messageReceived(DefaultIoFilterChain.java:748)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:462)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChainEx.callNextMessageReceived(DefaultIoFilterChainEx.java:102)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain$EntryImpl$1.messageReceived(DefaultIoFilterChain.java:834)
-	at org.apache.mina.core.filterchain.IoFilterAdapter.messageReceived(IoFilterAdapter.java:103)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain.callNextMessageReceived(DefaultIoFilterChain.java:462)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChainEx.callNextMessageReceived(DefaultIoFilterChainEx.java:102)
-	at org.kaazing.mina.core.filterchain.DefaultIoFilterChain.fireMessageReceived(DefaultIoFilterChain.java:454)
-	at com.kaazing.gateway.jms.server.service.handler.ConnectionProcessor.add(ConnectionProcessor.java:417)
-	at com.kaazing.gateway.jms.server.service.handler.ConnectionProcessor$ConnectTask.run(ConnectionProcessor.java:849)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at org.apache.activemq.transport.tcp.TcpTransport.connect(TcpTransport.java:525)
-	at org.apache.activemq.transport.tcp.TcpTransport.doStart(TcpTransport.java:488)
-	at org.apache.activemq.util.ServiceSupport.start(ServiceSupport.java:55)
-	at org.apache.activemq.transport.AbstractInactivityMonitor.start(AbstractInactivityMonitor.java:168)
-	at org.apache.activemq.transport.InactivityMonitor.start(InactivityMonitor.java:52)
-	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64)
-	at org.apache.activemq.transport.WireFormatNegotiator.start(WireFormatNegotiator.java:72)
-	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64)
-	at org.apache.activemq.transport.TransportFilter.start(TransportFilter.java:64)
-	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:354)
-	... 26 more
-2019-05-07 20:55:22,152 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
-2019-05-07 20:55:22,152 [EagerCP_0-1] DEBUG AligningConnectionProcessor@6f82d145 (kind=INNER): Server connection disconnected with keep-alive=false
+2019-05-09 19:38:06,220 [main] INFO  Kaazing Gateway (5.8.0)
+2019-05-09 19:38:06,222 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
+2019-05-09 19:38:06,596 [main] INFO  Checking license information
+2019-05-09 19:38:06,631 [main] INFO    No valid Kaazing license found
+2019-05-09 19:38:06,631 [main] INFO  Using Kaazing developer license, maximum 100 connections
+2019-05-09 19:38:07,719 [main] INFO  Starting server
+2019-05-09 19:38:07,720 [main] INFO  Starting services
+2019-05-09 19:38:07,720 [main] INFO    http://localhost:8000/
+2019-05-09 19:38:07,720 [main] INFO    ws://localhost:8000/amqp
+2019-05-09 19:38:07,720 [main] INFO    ws://localhost:8000/echo
+2019-05-09 19:38:07,720 [main] INFO    ws://localhost:8000/jms
+2019-05-09 19:38:07,720 [main] INFO  Started services
+2019-05-09 19:38:07,721 [main] INFO  Started server successfully in 0,369 secs at 2019-05-09 19:38:07
+2019-05-09 19:38:08,869 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-09 19:38:08,877 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-09 19:38:14,898 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-09 19:38:14,899 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-09 19:38:15,669 [Thread-0] INFO  Stopping server
+2019-05-09 19:38:15,670 [Thread-0] INFO  Stopping services
+2019-05-09 19:38:15,670 [Thread-0] INFO    http://localhost:8000/
+2019-05-09 19:38:15,670 [Thread-0] INFO    ws://localhost:8000/amqp
+2019-05-09 19:38:15,670 [Thread-0] INFO    ws://localhost:8000/echo
+2019-05-09 19:38:15,670 [Thread-0] INFO    ws://localhost:8000/jms
+2019-05-09 19:38:15,670 [Thread-0] INFO  Stopped services
+2019-05-09 19:38:15,670 [Thread-0] INFO  Stopped server successfully in 0,067 secs at 2019-05-09 19:38:15
+2019-05-09 19:38:21,812 [main] INFO  Kaazing Gateway (5.8.0)
+2019-05-09 19:38:21,813 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
+2019-05-09 19:38:22,222 [main] INFO  Checking license information
+2019-05-09 19:38:22,272 [main] INFO    No valid Kaazing license found
+2019-05-09 19:38:22,272 [main] INFO  Using Kaazing developer license, maximum 100 connections
+2019-05-09 19:38:23,704 [main] INFO  Starting server
+2019-05-09 19:38:23,719 [main] INFO  Starting services
+2019-05-09 19:38:23,719 [main] INFO    http://localhost:8000/
+2019-05-09 19:38:23,721 [main] INFO    ws://localhost:8000/amqp
+2019-05-09 19:38:23,721 [main] INFO    ws://localhost:8000/echo
+2019-05-09 19:38:23,723 [main] INFO    ws://localhost:8000/jms
+2019-05-09 19:38:23,723 [main] INFO  Started services
+2019-05-09 19:38:23,725 [main] INFO  Started server successfully in 0,395 secs at 2019-05-09 19:38:23
+2019-05-09 19:38:24,529 [EagerCP_0-1] INFO  JMS Connection established using ConnectionFactory "org.apache.activemq.ActiveMQConnectionFactory@de871bb"
+2019-05-09 20:00:18,808 [Thread-0] INFO  Stopping server
+2019-05-09 20:00:18,810 [Thread-0] INFO  Stopping services
+2019-05-09 20:00:18,810 [Thread-0] INFO    http://localhost:8000/
+2019-05-09 20:00:18,810 [Thread-0] INFO    ws://localhost:8000/amqp
+2019-05-09 20:00:18,811 [Thread-0] INFO    ws://localhost:8000/echo
+2019-05-09 20:00:18,811 [Thread-0] INFO    ws://localhost:8000/jms
+2019-05-09 20:00:18,811 [Thread-0] INFO  Stopped services
+2019-05-09 20:00:18,812 [Thread-0] INFO  Stopped server successfully in 0,142 secs at 2019-05-09 20:00:18
+2019-05-09 20:00:30,562 [main] INFO  Kaazing Gateway (5.8.0)
+2019-05-09 20:00:30,564 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
+2019-05-09 20:00:31,032 [main] INFO  Checking license information
+2019-05-09 20:00:31,078 [main] INFO    No valid Kaazing license found
+2019-05-09 20:00:31,078 [main] INFO  Using Kaazing developer license, maximum 100 connections
+2019-05-09 20:00:32,310 [main] INFO  Starting server
+2019-05-09 20:00:32,311 [main] INFO  Starting services
+2019-05-09 20:00:32,312 [main] INFO    http://192.168.43.15:8000/
+2019-05-09 20:00:32,312 [main] INFO    ws://192.168.43.15:8000/amqp
+2019-05-09 20:00:32,313 [main] INFO    ws://192.168.43.15:8000/echo
+2019-05-09 20:00:32,313 [main] INFO    ws://192.168.43.15:8000/jms
+2019-05-09 20:00:32,314 [main] INFO  Started services
+2019-05-09 20:00:32,316 [main] INFO  Started server successfully in 0,401 secs at 2019-05-09 20:00:31
+2019-05-09 20:00:33,198 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-09 20:00:33,199 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-09 20:00:35,043 [Thread-0] INFO  Stopping server
+2019-05-09 20:00:35,044 [Thread-0] INFO  Stopping services
+2019-05-09 20:00:35,045 [Thread-0] INFO    http://192.168.43.15:8000/
+2019-05-09 20:00:35,045 [Thread-0] INFO    ws://192.168.43.15:8000/amqp
+2019-05-09 20:00:35,045 [Thread-0] INFO    ws://192.168.43.15:8000/echo
+2019-05-09 20:00:35,046 [Thread-0] INFO    ws://192.168.43.15:8000/jms
+2019-05-09 20:00:35,046 [Thread-0] INFO  Stopped services
+2019-05-09 20:00:35,047 [Thread-0] INFO  Stopped server successfully in 0,079 secs at 2019-05-09 20:00:34
+2019-05-09 20:05:02,618 [main] INFO  Kaazing Gateway (5.8.0)
+2019-05-09 20:05:02,620 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
+2019-05-09 20:05:03,006 [main] INFO  Checking license information
+2019-05-09 20:05:03,043 [main] INFO    No valid Kaazing license found
+2019-05-09 20:05:03,043 [main] INFO  Using Kaazing developer license, maximum 100 connections
+2019-05-09 20:05:04,195 [main] INFO  Starting server
+2019-05-09 20:05:04,197 [main] INFO  Starting services
+2019-05-09 20:05:04,198 [main] INFO    http://192.168.43.15:8000/
+2019-05-09 20:05:04,198 [main] INFO    ws://192.168.43.15:8000/amqp
+2019-05-09 20:05:04,199 [main] INFO    ws://192.168.43.15:8000/echo
+2019-05-09 20:05:04,199 [main] INFO    ws://192.168.43.15:8000/jms
+2019-05-09 20:05:04,200 [main] INFO  Started services
+2019-05-09 20:05:04,202 [main] INFO  Started server successfully in 0,394 secs at 2019-05-09 20:05:03
+2019-05-09 20:05:05,096 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-09 20:05:05,103 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-09 20:05:11,122 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-09 20:05:11,123 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-09 20:05:17,144 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-09 20:05:17,145 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-09 20:05:23,161 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-09 20:05:23,162 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-09 20:05:29,168 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-09 20:05:29,168 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-09 20:05:35,181 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-09 20:05:35,181 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-09 20:05:41,198 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-09 20:05:41,199 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-09 20:05:47,213 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-09 20:05:47,214 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-09 20:05:53,231 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-09 20:05:53,231 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-09 20:05:56,616 [Thread-0] INFO  Stopping server
+2019-05-09 20:05:56,617 [Thread-0] INFO  Stopping services
+2019-05-09 20:05:56,617 [Thread-0] INFO    http://192.168.43.15:8000/
+2019-05-09 20:05:56,618 [Thread-0] INFO    ws://192.168.43.15:8000/amqp
+2019-05-09 20:05:56,618 [Thread-0] INFO    ws://192.168.43.15:8000/echo
+2019-05-09 20:05:56,618 [Thread-0] INFO    ws://192.168.43.15:8000/jms
+2019-05-09 20:05:56,619 [Thread-0] INFO  Stopped services
+2019-05-09 20:05:56,619 [Thread-0] INFO  Stopped server successfully in 0,073 secs at 2019-05-09 20:05:56
+2019-05-09 20:06:00,631 [main] INFO  Kaazing Gateway (5.8.0)
+2019-05-09 20:06:00,633 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
+2019-05-09 20:06:01,105 [main] INFO  Checking license information
+2019-05-09 20:06:01,147 [main] INFO    No valid Kaazing license found
+2019-05-09 20:06:01,147 [main] INFO  Using Kaazing developer license, maximum 100 connections
+2019-05-09 20:06:02,643 [main] INFO  Starting server
+2019-05-09 20:06:02,648 [main] INFO  Starting services
+2019-05-09 20:06:02,648 [main] INFO    http://192.168.43.15:8000/
+2019-05-09 20:06:02,649 [main] INFO    ws://192.168.43.15:8000/amqp
+2019-05-09 20:06:02,649 [main] INFO    ws://192.168.43.15:8000/echo
+2019-05-09 20:06:02,649 [main] INFO    ws://192.168.43.15:8000/jms
+2019-05-09 20:06:02,650 [main] INFO  Started services
+2019-05-09 20:06:02,651 [main] INFO  Started server successfully in 0,441 secs at 2019-05-09 20:06:02
+2019-05-09 20:06:03,078 [EagerCP_0-1] INFO  JMS Connection established using ConnectionFactory "org.apache.activemq.ActiveMQConnectionFactory@2727da9a"
+2019-05-09 20:06:15,840 [ActiveMQ Connection Executor: tcp:///192.168.43.15:61616@59632] WARN  ExceptionListener on JMS Connection ActiveMQConnection {id=ID:DESKTOP-GH7SNE4-59630-1557425162365-1:1,clientId=ID:DESKTOP-GH7SNE4-59630-1557425162365-0:1,started=true} reported exception javax.jms.JMSException: Connection reset
+2019-05-09 20:06:18,515 [Thread-0] INFO  Stopping server
+2019-05-09 20:06:18,517 [Thread-0] INFO  Stopping services
+2019-05-09 20:06:18,517 [Thread-0] INFO    http://192.168.43.15:8000/
+2019-05-09 20:06:18,517 [Thread-0] INFO    ws://192.168.43.15:8000/amqp
+2019-05-09 20:06:18,518 [Thread-0] INFO    ws://192.168.43.15:8000/echo
+2019-05-09 20:06:18,518 [Thread-0] INFO    ws://192.168.43.15:8000/jms
+2019-05-09 20:06:18,518 [Thread-0] INFO  Stopped services
+2019-05-09 20:06:18,519 [Thread-0] INFO  Stopped server successfully in 0,070 secs at 2019-05-09 20:06:18

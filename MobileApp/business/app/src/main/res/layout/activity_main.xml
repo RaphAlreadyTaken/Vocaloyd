@@ -25,6 +25,5 @@
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_main" />
-    <include layout="@layout/exo_player_control_view" />
 
 </android.support.design.widget.CoordinatorLayout>

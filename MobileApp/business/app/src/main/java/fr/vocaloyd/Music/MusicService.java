@@ -18,7 +18,7 @@ public class MusicService extends AsyncTask<Object, Void, Uri>
     @SafeVarargs
     protected final Uri doInBackground(Object... args)
     {
-        String ip = "192.168.1.15";
+        String ip = "192.168.43.15";
 
         com.zeroc.Ice.Properties props = com.zeroc.Ice.Util.createProperties();
         props.setProperty("Ice.MessageSizeMax", "40000");
@@ -47,6 +47,8 @@ public class MusicService extends AsyncTask<Object, Void, Uri>
                 activ.setPort(clientManager.subscribe());
             }
 
+            int port = activ.getPort();
+
             String action = (String) args[1];
 
             switch(action)
@@ -63,22 +65,20 @@ public class MusicService extends AsyncTask<Object, Void, Uri>
                         break;
                     }
 
-                    String path = manager.jouerMorceaux(tracks, activ.getPort());
+                    String path = manager.jouerMorceaux(tracks, port);
 
-                    uri = Uri.parse("http://" + ip + ":" + activ.getPort() + path);
-                    break;
-
-                case "playPause":
-                    manager.playPause();
-                    break;
-
-                case "nextTrack":
-                    manager.nextTrack();
+                    uri = Uri.parse("http://" + ip + ":" + port + path);
                     break;
 
                 case "previousTrack":
-                    manager.previousTrack();
+                    System.out.println("Client " + port + " request : previousTrack");
+                    manager.previousTrack(port);
                     break;
+
+                case "nextTrack":
+                System.out.println("Client " + port + " request : nextTrack");
+                manager.nextTrack(port);
+                break;
 
                 default:
                     break;

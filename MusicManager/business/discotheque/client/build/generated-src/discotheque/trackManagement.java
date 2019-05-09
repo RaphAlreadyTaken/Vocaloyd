@@ -41,11 +41,11 @@ public interface trackManagement extends com.zeroc.Ice.Object
 
     String jouerMorceaux(Morceau[] morceaux, int port, com.zeroc.Ice.Current current);
 
-    void playPause(com.zeroc.Ice.Current current);
+    void playPause(int port, com.zeroc.Ice.Current current);
 
-    void nextTrack(com.zeroc.Ice.Current current);
+    void nextTrack(int port, com.zeroc.Ice.Current current);
 
-    void previousTrack(com.zeroc.Ice.Current current);
+    void previousTrack(int port, com.zeroc.Ice.Current current);
 
     /** @hidden */
     static final String[] _iceIds =
@@ -333,8 +333,11 @@ public interface trackManagement extends com.zeroc.Ice.Object
     static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_playPause(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
     {
         com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
-        inS.readEmptyParams();
-        obj.playPause(current);
+        com.zeroc.Ice.InputStream istr = inS.startReadParams();
+        int iceP_port;
+        iceP_port = istr.readInt();
+        inS.endReadParams();
+        obj.playPause(iceP_port, current);
         return inS.setResult(inS.writeEmptyParams());
     }
 
@@ -348,8 +351,11 @@ public interface trackManagement extends com.zeroc.Ice.Object
     static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_nextTrack(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
     {
         com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
-        inS.readEmptyParams();
-        obj.nextTrack(current);
+        com.zeroc.Ice.InputStream istr = inS.startReadParams();
+        int iceP_port;
+        iceP_port = istr.readInt();
+        inS.endReadParams();
+        obj.nextTrack(iceP_port, current);
         return inS.setResult(inS.writeEmptyParams());
     }
 
@@ -363,8 +369,11 @@ public interface trackManagement extends com.zeroc.Ice.Object
     static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_previousTrack(trackManagement obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
     {
         com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
-        inS.readEmptyParams();
-        obj.previousTrack(current);
+        com.zeroc.Ice.InputStream istr = inS.startReadParams();
+        int iceP_port;
+        iceP_port = istr.readInt();
+        inS.endReadParams();
+        obj.previousTrack(iceP_port, current);
         return inS.setResult(inS.writeEmptyParams());
     }
 

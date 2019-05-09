@@ -15,7 +15,7 @@ function authService($http, $window)
 	this.logIn = function(login, password)
 	{
 		return $http
-		.post('http://192.168.1.15:3131/log/login', {'login': login, 'password': password})
+		.post('http://192.168.43.15:3131/log/login', {'login': login, 'password': password})
 		.then(function(response)
 		{
 			$window.location.reload();
@@ -30,7 +30,7 @@ function authService($http, $window)
 	this.logOut = function()
 	{
 		return $http
-		.post('http://192.168.1.15:3131/log/logout')
+		.post('http://192.168.43.15:3131/log/logout')
 		.then(function()
 		{
 			$window.location.reload();

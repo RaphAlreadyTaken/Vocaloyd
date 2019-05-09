@@ -33,7 +33,7 @@ public class TranscribeService extends AsyncTask<File, Void, String>
         {
             URI uri = new URIBuilder()
                 .setScheme("http")
-                .setHost("192.168.1.15")
+                .setHost("192.168.43.15")
                 .setPort(3131)
                 .setPath("/transcribe/newTranscript")
                 .build();
