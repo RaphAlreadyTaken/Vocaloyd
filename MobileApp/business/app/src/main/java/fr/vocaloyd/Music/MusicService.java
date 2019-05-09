@@ -67,6 +67,21 @@ public class MusicService extends AsyncTask<Object, Void, Uri>
 
                     uri = Uri.parse("http://" + ip + ":" + activ.getPort() + path);
                     break;
+
+                case "playPause":
+                    manager.playPause();
+                    break;
+
+                case "nextTrack":
+                    manager.nextTrack();
+                    break;
+
+                case "previousTrack":
+                    manager.previousTrack();
+                    break;
+
+                default:
+                    break;
             }
         }
 
