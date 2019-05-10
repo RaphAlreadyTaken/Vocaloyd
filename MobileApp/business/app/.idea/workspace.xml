@@ -76,402 +76,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9de97545-7c16-4cdf-b240-16a8edee276c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Analysis/AnalyzeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Analysis/AnalyzeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Music/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Music/MusicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Transcription/TranscribeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Transcription/TranscribeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/res/layout/content_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/content_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/exo_playback_control_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/trackManagement$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/trackManagement$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/trackManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/trackManagement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/trackManagementPrx.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/trackManagementPrx.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/discotheque/trackManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/discotheque/trackManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/discotheque/trackManagementPrx.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/discotheque/trackManagementPrx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/slice2java.df.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/slice2java.df.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/libs/client.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/libs/client.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/src/main/java/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../MusicManager/log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/Discotheque_ice.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/server/Discotheque_ice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/server/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/vlc-help.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/business/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/business/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/business/build/src/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/business/build/src/Listener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/business/src/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/business/src/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/bin/activemq" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/bin/activemq" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/activemq.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/activemq.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/db-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/db-1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/db.data" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/db.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/db.redo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/db.redo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/wrapper.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/wrapper.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/amqp/java/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/amqp/java/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/amqp/java/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/amqp/java/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/amqp/java/target/classes/example/Listener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/amqp/java/target/classes/example/Publisher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/mqtt/java/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/mqtt/java/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/mqtt/java/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/mqtt/java/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/mqtt/java/target/classes/example/Listener$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/mqtt/java/target/classes/example/Listener$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/mqtt/java/target/classes/example/Listener$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/mqtt/java/target/classes/example/Listener$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/mqtt/java/target/classes/example/Listener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/mqtt/java/target/classes/example/Publisher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-composite-destinations/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-composite-destinations/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-composite-destinations/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-composite-destinations/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-composite-destinations/target/classes/example/composite/dest/Consumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-composite-destinations/target/classes/example/composite/dest/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-durable-sub/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-durable-sub/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-durable-sub/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-durable-sub/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-durable-sub/target/classes/example/topic/durable/Publisher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-durable-sub/target/classes/example/topic/durable/Subscriber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-exclusive-consumer/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-exclusive-consumer/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-exclusive-consumer/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-exclusive-consumer/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-exclusive-consumer/target/classes/example/queue/exclusive/Consumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-exclusive-consumer/target/classes/example/queue/exclusive/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-message-browser/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-message-browser/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-message-browser/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-message-browser/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-message-browser/target/classes/example/browser/Browser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-message-browser/target/classes/example/browser/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-queue-selector/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-queue-selector/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-queue-selector/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-queue-selector/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-queue-selector/target/classes/example/queue/selector/Consumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-queue-selector/target/classes/example/queue/selector/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-queue/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-queue/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-queue/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-queue/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-queue/target/classes/example/queue/Consumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-queue/target/classes/example/queue/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-queue/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-temp-destinations/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-temp-destinations/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-temp-destinations/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-temp-destinations/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-temp-destinations/target/classes/example/tempdest/Consumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-temp-destinations/target/classes/example/tempdest/ProducerRequestReply$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-temp-destinations/target/classes/example/tempdest/ProducerRequestReply.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-topic/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-topic/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-topic/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-topic/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-topic/target/classes/example/topic/Publisher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-topic/target/classes/example/topic/Subscriber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-topic/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-transaction/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-transaction/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-transaction/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-transaction/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-transaction/target/classes/example/transaction/Client$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-transaction/target/classes/example/transaction/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-wildcard-consumer/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-wildcard-consumer/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-wildcard-consumer/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-wildcard-consumer/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-wildcard-consumer/target/classes/example/wildcard/Client$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/advanced-scenarios/jms-example-wildcard-consumer/target/classes/example/wildcard/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/java/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/java/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/java/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/java/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/java/target/classes/example/Listener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/openwire/java/target/classes/example/Publisher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/stomp/java/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/stomp/java/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/stomp/java/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/stomp/java/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/stomp/java/target/classes/example/Listener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/examples/stomp/java/target/classes/example/Publisher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/META-INF/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/META-INF/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/META-INF/NOTICE" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/META-INF/NOTICE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/amq.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/amq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/amq_dojo_adapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/amq_dojo_adapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/amq_jquery_adapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/amq_jquery_adapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/amq_prototype_adapter.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/amq_prototype_adapter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/css.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/dojo.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/dojo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/jquery-1.4.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/jquery-1.4.2.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/mochi/MochiKit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/mochi/MochiKit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/mochi/__package__.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/mochi/__package__.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/Base.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/Base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/Canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/Canvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/SVG.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/SVG.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/SweetCanvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/SweetCanvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/SweetSVG.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/SweetSVG.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/dummy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/dummy.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/iecanvas.htc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/plotkit/iecanvas.htc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/prettify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/prototype.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/prototype.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/standardista-table-sorting.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/js/standardista-table-sorting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/mqtt/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/mqtt/chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/mqtt/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/mqtt/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/mqtt/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/mqtt/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/mqtt/mqttws31.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/mqtt/mqttws31.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/portfolio/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/portfolio/portfolio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/portfolio/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/portfolio/portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/send.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/send.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/styles/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/styles/prettify.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/styles/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/styles/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/styles/sorttable.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/styles/sorttable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/styles/type-settings.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/styles/type-settings.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/test/amq_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/test/amq_test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/test/assets/README" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/test/assets/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/test/assets/jsunittest.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/test/assets/jsunittest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/test/assets/unittest.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/test/assets/unittest.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/websocket/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/websocket/chat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/websocket/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/websocket/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/websocket/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/websocket/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/websocket/stomp.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps-demo/demo/websocket/stomp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/403.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/403.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/META-INF/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/META-INF/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/META-INF/NOTICE" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/META-INF/NOTICE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/jspf/headertags.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/jspf/headertags.jspf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/checkbox.tag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/checkbox.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/escape.tag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/escape.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/forEachMapEntry.tag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/forEachMapEntry.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/option.tag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/option.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/short.tag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/short.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/text.tag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/text.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/tooltip.tag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/tooltip.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/uri.tag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/form/uri.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/jms/forEachConnection.tag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/jms/forEachConnection.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/jms/forEachMessage.tag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/jms/forEachMessage.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/jms/formatTimestamp.tag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/jms/formatTimestamp.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/jms/persistent.tag" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/tags/jms/persistent.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/webconsole-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/webconsole-default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/webconsole-invm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/webconsole-invm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/webconsole-jndi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/webconsole-jndi.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/webconsole-osgi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/webconsole-osgi.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/webconsole-properties.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/webconsole-properties.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/webconsole-query.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/WEB-INF/webconsole-query.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/browse.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/browse.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/connection.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/connection.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/connections.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/connections.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/decorators/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/decorators/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/decorators/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/decorators/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/decorators/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/decorators/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/graph.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/css.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/mochi/MochiKit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/mochi/MochiKit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/mochi/__package__.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/mochi/__package__.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/Base.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/Base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/Canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/Canvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/SVG.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/SVG.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/SweetCanvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/SweetCanvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/SweetSVG.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/SweetSVG.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/dummy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/dummy.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/iecanvas.htc" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/plotkit/iecanvas.htc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/prettify.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/prettify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/standardista-table-sorting.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/js/standardista-table-sorting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/message.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/message.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/network.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/network.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/queueConsumers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/queueConsumers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/queueGraph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/queueGraph.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/queueProducers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/queueProducers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/queues.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/queues.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/scheduled.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/scheduled.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/send.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/send.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/slave.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/slave.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/styles/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/styles/prettify.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/styles/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/styles/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/styles/sorttable.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/styles/sorttable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/styles/type-settings.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/styles/type-settings.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/subscribers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/subscribers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/test/dummy.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/test/dummy.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/test/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/test/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/test/systemProperties.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/test/systemProperties.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/topicProducers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/topicProducers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/topicSubscribers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/topicSubscribers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/topics.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/topics.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/xml/queues.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/xml/queues.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/xml/subscribers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/xml/subscribers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/xml/topics.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/admin/xml/topics.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/styles/prettify.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/styles/prettify.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/styles/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/styles/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/styles/sorttable.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/styles/sorttable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/styles/type-settings.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/webapps/styles/type-settings.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/NOTICE" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/NOTICE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/backup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/backup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/qpid-jaddr" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/qpid-jaddr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/qpid-passwd" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/qpid-passwd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/qpid-run" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/qpid-run" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/qpid-server" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/qpid-server" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/qpid.stop" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/qpid.stop" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/qpid.stopall" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/bin/qpid.stopall" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/etc/broker_example.acl" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/etc/broker_example.acl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/etc/groups" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/etc/groups" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/etc/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/etc/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/etc/passwd" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/qpid-java-broker-0.28/etc/passwd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/conf/gateway-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/conf/gateway-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/conf/log4j-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/conf/log4j-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/log/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/web/welcome/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/web/welcome/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/business/services/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../STTServer/business/services/authService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/business/services/transcriptService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../STTServer/business/services/transcriptService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../../STTServer/makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/routes/log.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../STTServer/server/routes/log.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/routes/transcribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../STTServer/server/routes/transcribe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_03cc0166b972cd332fb81a1c17fff775.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_0b6ba62bc161ab4af262bb34a6b8ba37.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_11ed83d604ec16d0a26b559c9dfe9237.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_127c699561a3588e5d6076f418cf5bee.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_13bba3ddf934377b781613c0b8bd6707.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_18b950f598ec7f94ae86127105871f05.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_195a9af432d797ebc0a0354b99b65ff4.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_1bd38fb9290fd1ebb6e1e484a7fbddae.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_1d3e187a690e45d41d66f2ddb9034065.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_1ddc810dec32280366ad7240b736de82.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_1f6457ee31017f367a315ee9c6c9defa.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_24a76b2bf8d70b869842a322593bb875.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_24ab429ea340330f050257c47781cab2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_2774043f0b54a8c667a39947aaafecb1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_2a3019c4398246ab822965c79f429197.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_2c0343fcc11b8abf80256b2745ff8c32.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_2d119acc0d67839912805c415b2d508a.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_2d3f8a11ca03fa89afc43574ae0e3718.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_2e1f5010544cd4cf5f9098013d54085f.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_2ecfa48ef432947fc3dbfac21444676b.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_2fb79ce7eb574e6103e22b484f7b8b4c.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_3358e2780c81a19b37c60b49bc424e2f.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_34dc7d3afe1c94bc4d86bd30392eb35a.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_3a21e0a21980604f3ba8a324ba137921.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_3b491355886269f0d0f25884c303c17c.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_3bef36d780d43f60d837502d182459b3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_41ac3ad6d69a1d73aa085d30573262d0.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_42d90ac467a5fd1376a7d79a2d4f1254.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_479681fdd63f730107640cfcb321c5f4.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_492de954be4a4490c7397b2b2a4a5fc1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_498921d794d0c270afbe2b7e14f2a065.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_4b82470ba3f9f783c033076e1e2862df.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_4c582a4ab8d8da978b8353f141036c78.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_4d44dd91dbbcd6b54cf25972d1bdc2f6.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_56a2d732f95e522f76260382cc2c6af5.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_58d56499a70f215b416d8ae58834f1a0.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_5a19858978133d499b4ab5bb6021ad7d.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_601c9f28a59f70d31c89e5183bb495ae.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_628b89ab59319931f31a735fdb553238.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_630db2bdcd7849ddb256864b2f9db458.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_63e75af0bad5396af3189760e7dc867d.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_677e15dab4927df663944dfd77f59695.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_6e5bcf49a2a3f3c906bbd44d802447ee.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_6f17690ee6b4d50ae58be3bf00aa041c.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_73d29a6cb8c3421ddffec0f34b6ac9c0.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_794fe7dff69cd328869bc5d1af8acfff.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_79a6de4320833a0c7d6d98c01c6b0e7f.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_7a09e2231da448e31e4ea7d93226f675.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_7b5b63105e7c357ad8fa69691218c97f.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_7c71bba78f0c373b5bd8a7e6790a4f4a.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_7fc9668699573170d7fe5b95d9031aac.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_7ff96605ff28f99ffcd82dacf4657a44.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_8611edd8bb214ba93906b907f3bdcd31.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_898766c5ffc82d82428f31365a0a9fdf.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_8a45ec31c3b96b8b637897cd2517ed30.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_8ccae7ce36aaf0128296e61e90d936e4.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_8d14bf7ac4044de5e3bc4eef210bd564.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_8ea01669fc9feeb54e4ece7a0fb48af2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_946ddc4bd6e02227b2984be1abd60fb6.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_949039fb366aa2ecf1dc7c874c7f321c.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_9593b5dfda6f8c520a29a3c9bd23ab25.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_99fc1f574322d080e07a3c3a24e0b3fe.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_9a21daae5a3a62f487c17bd838176574.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_9a6baabae1110c87405558e7067942dd.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_9af16d85f027eef85cb610efe7168e30.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_9cdf5fed88ee946232ec2d90a07f69c9.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_9fd651a69dc067bda6f5df3fd5448331.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_a001f4a8e2895dd030210f5c6b0a49ce.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_a09bf1f84303ecf82f0cf52af58fc428.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_a20cc96d4558d1db3c067d5a5d95c6f0.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_a2bde40d234bfa63e69651f34eecbdf9.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_a34853cf90cb90e856d2b112ad0e41db.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_a45483de6c79e170268fa19f32a2ebca.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_a823a8c86fc88d0a71e0b47f69157282.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_a8836a59c6cfb9ecd48169d90b1125c1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_a8bf1def895edd0c810196e139bda57b.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_aa06f3f7fc4c4cb867513ac8b0e4bb58.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_abdaca4cc27701df098cb09bf78b08f5.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_ad5807595e553c8f6f3888db87f8b09a.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_ae674bb9fb09c7b9c1d4c2a5e08b7589.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_b1026b76d2159dbed9abf680692ce45f.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_b182843825a5743e50d0c5fe39374895.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_b2553b51299785e9ddb17c5d97ba9e94.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_b534a19157fd352da5596358ff6e5a55.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_b7cb5a9c7157900dcfb55fbf0e6f6c6b.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_be96c4035f9622740d21e18bf82f49c4.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_bf284aed40b66724485987f424e30ca6.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_cc357e88a7209507909513a0b134e6c2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_cdc931c95e73871e9f69ff1d4c8e4cd0.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_ce1b826c4df347575b8ab432f7125762.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_cfcb325dcf35480a9d557d24f0382c53.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_d429964d45fc1dd02ca28e228b333b1b.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_d7c0f42f536e583c6bb0cf441d89c564.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_d7d0e27664bf2ea16e94466f0e29ab23.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_d885c3c00c0bb0ddc551d8c4ed471129.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_d8eec9e6cce9e79425006eb9da6a566c.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_dbf1f92978cfde5dbd0c270034a92f2c.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_dc07334af8004d4e45c3164787989a0b.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_df6b69a656885957d6064e04eb3fe368.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_dfc616168cc59e5f3f5cfb05d39897fa.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_e130ebb158f16b8c41fe753eed53851e.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_ec29d2b22ac6edb53a54fec79dfffb90.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_ede56693af01baf32f9fe0eb56fc8780.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_eeca02db040c7de748a4ca8a3b51d71e.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_f4331ada6994a8aae4dffe7256d9c50a.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_f5718e4d2dbba42b532b0825ad894063.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_f671a7ff81a19bd8e443ad5e1c9435e4.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_fbe339d5862fefb7ba924f665f564ebd.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../STTServer/server/upload/upload_fc7f537abba0c8325c05e677d692b304.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../shared/Discotheque.ice" beforeDir="false" afterPath="$PROJECT_DIR$/../../../shared/Discotheque.ice" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -496,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-74">
-              <caret line="112" column="56" selection-start-line="112" selection-start-column="56" selection-end-line="112" selection-end-column="56" />
+            <state relative-caret-position="2133">
+              <caret line="143" column="9" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -505,24 +117,55 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+            <state relative-caret-position="425">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#760#789#0" expanded="true" />
+                <element signature="e#942#960#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/res/layout/content_main.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+            <state relative-caret-position="306">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/values/colors.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/drawable/gradient.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/content_main.xml">
           <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -532,6 +175,7 @@
       <list>
         <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -571,18 +215,21 @@
         <option value="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Transcription/TranscribeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Analysis/AnalyzeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Music/MusicService.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/exo_playback_control_view.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/vocaloyd/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/exo_playback_control_view_custom.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/exo_player_control_view.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/exo_playback_control_view.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/content_main.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/vocaloyd/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/drawable/gradient.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/src/main/res/values/colors.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="527" />
-    <option name="y" value="-19" />
+    <option name="x" value="552" />
+    <option name="y" value="-12" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -650,7 +297,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -699,36 +345,6 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vocaloyd" type="462c0819:PsiDirectoryNode" />
-              <item name="Analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="business" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vocaloyd" type="462c0819:PsiDirectoryNode" />
-              <item name="Music" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="business" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vocaloyd" type="462c0819:PsiDirectoryNode" />
-              <item name="Transcription" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="business" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -739,6 +355,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="business" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="values" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -755,6 +380,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -868,7 +494,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13314785" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13314785" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -883,15 +509,15 @@
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5007949" side_tool="true" weight="0.18650794" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49960256" weight="0.14603175" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49960256" visible="true" weight="0.14603175" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" visible="true" weight="0.22380953" />
+      <window_info active="true" anchor="bottom" id="Find" order="9" visible="true" weight="0.22380953" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.3298887" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Preview" order="5" visible="true" weight="0.3227345" />
+      <window_info active="true" anchor="right" id="Preview" order="5" visible="true" weight="0.3227345" />
     </layout>
   </component>
   <component name="XDebuggerManager">
@@ -941,25 +567,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/MusicFragment.java" />
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b037ea4121751ca4afb09270440b3e70/res/layout/exo_simple_player_view.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="67" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b037ea4121751ca4afb09270440b3e70/res/layout/exo_player_view.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/exo_simple_player_view.xml" />
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b037ea4121751ca4afb09270440b3e70/res/layout/exo_player_control_view.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/music_play.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
@@ -1055,14 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b037ea4121751ca4afb09270440b3e70/res/layout/exo_playback_control_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/exoplayer-ui/2.9.6/1a677a36368a1d1ca647a10c74f558a970fa5d3/exoplayer-ui-2.9.6-sources.jar!/com/google/android/exoplayer2/ui/PlaybackControlView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1077,47 +695,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/exo_player_control_view.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/exo_playback_control_view_custom.xml" />
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b037ea4121751ca4afb09270440b3e70/res/layout/exo_playback_control_view.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/exo_playback_control_view_custom.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="45" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-anydpi-v26/ic_mic_empty.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-anydpi-v26/ic_mic_empty_round.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/content_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="112" column="56" selection-start-line="112" selection-start-column="56" selection-end-line="112" selection-end-column="56" />
+        <state relative-caret-position="2133">
+          <caret line="143" column="9" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/exo_player_control_view.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/gradient.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/exo_playback_control_view_custom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#760#789#0" expanded="true" />
+            <element signature="e#942#960#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/content_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
   </component>
 </project>

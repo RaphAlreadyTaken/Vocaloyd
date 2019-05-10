@@ -11,9 +11,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ExoPlayerFactory;
+import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.source.ExtractorMediaSource;
 import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.ui.PlayerView;
@@ -39,6 +41,8 @@ public class MainActivity extends AppCompatActivity
     private int port = 0;
     private boolean recording = false;
     private MediaRecorder rec = new MediaRecorder();
+    private Context servContext = VocaloydApp.getAppContext();
+    private ExoPlayer mainPlayer = ExoPlayerFactory.newSimpleInstance(servContext);
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -108,8 +112,6 @@ public class MainActivity extends AppCompatActivity
             return;
         }
 
-        Context servContext = VocaloydApp.getAppContext();
-        ExoPlayer mainPlayer = ExoPlayerFactory.newSimpleInstance(servContext);
         PlayerView view = findViewById(R.id.playerView);
         view.setPlayer(mainPlayer);
         String agent = Util.getUserAgent(servContext, servContext.getApplicationInfo().name);
@@ -134,14 +136,14 @@ public class MainActivity extends AppCompatActivity
             rec.prepare();
 
             rec.start();
-            view.setBackground(ContextCompat.getDrawable(this, R.mipmap.ic_mic_active));
+            view.setForeground(ContextCompat.getDrawable(this, R.mipmap.ic_mic_active_empty_foreground));
             recording = true;
             System.out.println("Starting recording");
         }
         else
         {
             rec.stop();
-            view.setBackground(ContextCompat.getDrawable(this, R.mipmap.ic_mic));
+            view.setForeground(ContextCompat.getDrawable(this, R.mipmap.ic_mic_empty_foreground));
             recording = false;
             rec.reset();
             System.out.println("Stopping recording");
@@ -177,6 +179,22 @@ public class MainActivity extends AppCompatActivity
 
         MusicService mServ = new MusicService();
         mServ.execute(this, "init", command.getKey(), command.getValue());
+    }
+
+    public void playPause(View view)
+    {
+        ImageButton butt = (ImageButton) view;
+
+        if(mainPlayer.getPlaybackState() == Player.STATE_READY && mainPlayer.getPlayWhenReady())
+        {
+            mainPlayer.setPlayWhenReady(false);
+            butt.setImageDrawable(getDrawable(R.drawable.exo_controls_play));
+        }
+        else
+        {
+            mainPlayer.setPlayWhenReady(true);
+            butt.setImageDrawable(getDrawable(R.drawable.exo_controls_pause));
+        }
     }
 
     public void previousTrack(View view)

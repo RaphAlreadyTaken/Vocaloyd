@@ -17,13 +17,10 @@
             android:id="@+id/playerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="120dp" />
+            android:layout_marginTop="120dp"
+            app:use_controller="false"/>
 
-        <com.google.android.exoplayer2.ui.PlayerControlView
-            android:id="@+id/playerCtrl"
-            android:layout_width="match_parent"
-            android:layout_height="565dp"
-            android:layout_marginTop="111dp"/>
+        <include layout="@layout/exo_playback_control_view_custom" />
     </FrameLayout>
 
     <RelativeLayout
@@ -33,12 +30,15 @@
 
         <Button
             android:id="@+id/recordButton"
+            android:layout_width="76dp"
+            android:layout_height="80dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="false"
             android:layout_marginTop="20dp"
-            android:layout_width="76dp"
-            android:layout_height="80dp"
-            android:background="@mipmap/ic_mic"
+            android:foreground="@mipmap/ic_mic_empty_foreground"
+            android:background="@android:color/transparent"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
             android:onClick="record"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

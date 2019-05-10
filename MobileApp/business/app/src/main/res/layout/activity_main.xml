@@ -15,12 +15,14 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="65dp"
-            android:contentDescription="app @string/App name"
+            android:contentDescription="@string/app_string_app_name"
             android:fontFamily="sans-serif-light"
             android:gravity="center_vertical"
-            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
             android:text="@string/Vocaloyd"
-            android:textSize="32dp" />
+            android:textSize="32sp"
+            android:background="@drawable/gradient"/>
 
     </android.support.design.widget.AppBarLayout>
 
