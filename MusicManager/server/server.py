@@ -6,6 +6,7 @@ import json
 import os
 import pymongo
 import sys
+import threading
 import time
 import traceback
 import vlc
@@ -20,9 +21,9 @@ class clientManagementI(clientManagement):
     clients = {}
 
     def __init__(self, *args, **kwargs):
-        #Clients: (port libre: booléen, player associé: media_list_player)
+        #Clients: (ip port associated: boolean, associated player: media_list_player, subscription time: seconds since epoch)
         for i in range(self.basePort, self.basePort + self.nbMaxClients):
-            self.clients[i] = [True, None]
+            self.clients[i] = [True, None, None]
     
     def subscribe(self, current=None):
         if self.nbClients == self.nbMaxClients:
@@ -31,9 +32,10 @@ class clientManagementI(clientManagement):
         else:
             i = 0
             for i in range(self.basePort, self.basePort + self.nbMaxClients):
-                if self.clients[i][0] is True:
+                if self.clients[i][0] == True:
                     self.clients[i][0] = False
                     self.clients[i][1] = None
+                    self.clients[i][2] = Chrono.getCurrentTime(Chrono)
                     self.nbClients += 1
                     print("Port " + str(i) + " given to client")
                     break
@@ -43,12 +45,11 @@ class clientManagementI(clientManagement):
 
     def unsubscribe(self, port, current=None):
         trackManagementI.stop(trackManagementI, port)
-        self.clients[port] = [True, None]
+        self.clients[port] = [True, None, None]
         self.nbClients -= 1
         print("Client with port " + str(port) + " unsubscribed")
 
 class trackManagementI(trackManagement):
-
     client = pymongo.MongoClient("mongodb+srv://raph:Multani55%2b@cluster0-guvid.gcp.mongodb.net/test?retryWrites=true")
     db = client.db
     collecMusique = db['musiqueRaph']
@@ -62,7 +63,7 @@ class trackManagementI(trackManagement):
         queryCount = 1
         log = queryResult(sys._getframe().f_code.co_name, queryCount)
         print(log)
-        return "Titre ajouté dans la base"
+        return "Track added to base"
 
     def recupererTitres(self, current=None):
         musiques = []
@@ -75,7 +76,7 @@ class trackManagementI(trackManagement):
         print(log)
         return musiques
 
-    #Recherche générique (toutes informations confondues)
+    #Generic search (all criteria)
     def rechercher(self, info, current=None):
         musiques = []
         query = self.collecMusique.find({"$or": [{"titre": info}, {"artiste": info}, {"album": info}, {"genre": info}]}, {"_id": 0}).collation(Collation(locale = 'fr', strength = 1))
@@ -104,7 +105,6 @@ class trackManagementI(trackManagement):
         queryCount = self.collecMusique.count_documents({"artiste": artist}, collation = Collation(locale = 'fr', strength = 1))
         for musique in query:
             track = Morceau(musique['titre'], musique['artiste'], musique['album'], musique['genre'], musique['piste'], musique['image'], musique['fichier'])
-            print(track.titre + ", " + track.artiste + ", " + track.album + ", " + track.fichier)
             musiques.append(track)
         log = queryResult(sys._getframe().f_code.co_name, queryCount)
         print(log)
@@ -231,6 +231,8 @@ class trackManagementI(trackManagement):
         print("Releasing player")
 
     def getInfos(self, port, current=None):
+        clientManagementI.clients[port][2] = Chrono.getCurrentTime(Chrono)  #Resetting client time if activity
+
         if clientManagementI.clients[port][1] is None:
             return
         else:
@@ -253,12 +255,42 @@ class trackManagementI(trackManagement):
                 
                 return result
 
+class Chrono:
+    stop = False    #Stops thread if switched to True
+    maxTime = 3600  #Max idle time on server (seconds)
+    scanFreq = 300  #Frequency of client inactivity check (seconds)
+
+    @staticmethod
+    def getCurrentTime(self):
+        curTime = time.time()
+        print(curTime)
+        return curTime
+
+    @staticmethod
+    def getElapsedTime(self, testTime):
+        curTime = self.getCurrentTime(self)
+        elapsedTime = curTime - testTime
+        print(elapsedTime)
+        return elapsedTime
+    
+    def checkTimeLimit(self):
+        while self.stop is False:
+            for i in range(clientManagementI.basePort, clientManagementI.basePort + clientManagementI.nbMaxClients):
+                if clientManagementI.clients[i][0] is False:
+                    actTime = self.getElapsedTime(Chrono, clientManagementI.clients[i][2])
+
+                    if actTime > maxTime:
+                        print("Client inactive for " + str(actTime) + "s. Goodbye " + str(i))
+                        clientManagementI.unsubscribe(clientManagementI, i)
+
+            time.sleep(self.scanFreq)
+
 def queryResult(funcName, queryCount):
     log = funcName + " -> " + str(queryCount)
     if (queryCount > 1):
-        log += " documents concernés"
+        log += " documents affected"
     else:
-        log += " document concerné"
+        log += " document affected"
     return log            
 
 props = Ice.createProperties(sys.argv)
@@ -279,5 +311,8 @@ with Ice.initialize(initData) as communicator:
     adapter.add(object2, communicator.stringToIdentity("SimpleClientManager"))
     adapter.activate()
 
-    print("Server launched")
+    threadClientMgmt = threading.Thread(target = Chrono.checkTimeLimit, args = (Chrono,))
+    threadClientMgmt.start()
+
+    print("Server running")
     communicator.waitForShutdown()

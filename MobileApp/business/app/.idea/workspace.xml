@@ -76,130 +76,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9de97545-7c16-4cdf-b240-16a8edee276c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ic_mic_active_empty-web.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ic_mic_active_empty-web.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Analysis/AnalyzeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Analysis/AnalyzeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Music/MusicEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Music/MusicEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Music/MusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Music/MusicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Transcription/TranscribeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/Transcription/TranscribeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/VocaloydApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/vocaloyd/VocaloydApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/gradient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/gradient.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/content_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/content_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_mic_active_empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_mic_active_empty.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_mic_active_empty_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_mic_active_empty_foreground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_mic_active_empty_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_mic_active_empty_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_mic_active_empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_mic_active_empty.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_mic_active_empty_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_mic_active_empty_foreground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_mic_active_empty_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_mic_active_empty_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_mic_active_empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_mic_active_empty.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_mic_active_empty_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_mic_active_empty_foreground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_mic_active_empty_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_mic_active_empty_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_mic_active_empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_mic_active_empty.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_mic_active_empty_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_mic_active_empty_foreground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_mic_active_empty_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_mic_active_empty_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_mic_active_empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_mic_active_empty.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_mic_active_empty_foreground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_mic_active_empty_foreground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_mic_active_empty_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_mic_active_empty_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/5.0/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/bin/main/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/bin/main/discotheque/Morceau.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/bin/main/discotheque/MorceauxHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/bin/main/discotheque/_clientManagementPrxI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/bin/main/discotheque/_trackManagementPrxI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/bin/main/discotheque/clientManagement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/bin/main/discotheque/clientManagementPrx.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/bin/main/discotheque/trackManagement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/bin/main/discotheque/trackManagementPrx.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/bin/main/slice2java.df.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/Morceau.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/Morceau.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/MorceauxHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/MorceauxHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/trackManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/trackManagement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/trackManagementPrx.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/classes/java/main/discotheque/trackManagementPrx.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/discotheque/Morceau.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/discotheque/Morceau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/discotheque/MorceauxHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/discotheque/MorceauxHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/discotheque/trackManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/discotheque/trackManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/discotheque/trackManagementPrx.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/discotheque/trackManagementPrx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/slice2java.df.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/generated-src/slice2java.df.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/libs/client.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/build/libs/client.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/business/discotheque/client/src/main/java/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../MusicManager/log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/Discotheque_ice.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/server/Discotheque_ice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../MusicManager/server/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/Bouger la Tête.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/Chez le Mac.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/Cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/Dangereux.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/Demain, C'Est Loin.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/Elle Donne Son Corps Avant Son Nom.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/Independenza.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/L'Ecole du Micro d'Argent.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/L'Empire du Côté Obscur.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/L'Enfer.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/La Saga.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/Nés Sous la Même Etoile.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/Petit Frère.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/Quand Tu Allais, on Revenait.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/Regarde.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/Un Bon Son Brut Pour Les Truands.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/iam_l'école du micro d'argent/Un Cri Court Dans la Nuit.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/01 - Leaders.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/02 - Deliberation.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/03 - Soil's Song.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/04 - My Twin.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/05 - Consternation.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/06 - Follower.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/07 - Rusted.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/08 - Increase.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/09 - July.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/10 - In The White.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/11 - The Itch.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/12 - Journey Through Pressure.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/13 - Displaced.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/14 - Dissolving Bonds.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/katatonia_the great cold distance/Cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/another_one_bites_the_dust.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/bicycle_race.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/bohemian_rhapsody.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/crazy_little_thing_called_love.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/dont_stop_me_now.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/fat_bottomed_girls.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/flash.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/good_old-fashioned_lover_boy.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/killer_queen.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/now_im_here.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/play_the_game.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/save_me.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/seven_seas_of_rhye.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/somebody_to_love.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/we_are_the_champions.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/we_will_rock_you.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../MusicManager/server/tracks/queen_greatest hits/youre_my_best_friend.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/business/build/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/business/build/src/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/business/build/src/Listener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/business/src/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/business/src/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/activemq.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/activemq.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/db-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/db-1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/db.data" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/db.data" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/db.redo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/db.redo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/kahadb/lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/wrapper.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/brokers/apache-activemq-5.14.1/data/wrapper.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ReqAnalyzer/server/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ReqAnalyzer/server/log/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../shared/Discotheque.ice" beforeDir="false" afterPath="$PROJECT_DIR$/../../../shared/Discotheque.ice" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -231,11 +110,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="342" column="26" lean-forward="true" selection-start-line="342" selection-start-column="26" selection-end-line="342" selection-end-column="26" />
+            <state relative-caret-position="2111">
+              <caret line="342" column="26" selection-start-line="342" selection-start-column="26" selection-end-line="342" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -246,26 +125,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/VocaloydApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
+            <state relative-caret-position="408">
               <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
                 <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#578#579#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/Music/MusicService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="110" column="29" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
+            <state relative-caret-position="152">
+              <caret line="92" column="69" lean-forward="true" selection-start-line="92" selection-start-column="69" selection-end-line="92" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -276,7 +151,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/Analysis/AnalyzeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
+            <state relative-caret-position="986">
               <caret line="81" selection-start-line="81" selection-end-line="81" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -288,12 +163,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/Music/BackgroundMusicService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="340">
               <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#723#724#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -311,12 +184,12 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/content_main.xml">
+          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="935">
               <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -400,9 +273,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="604" />
-    <option name="y" value="164" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="472" />
+    <option name="y" value="155" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -414,6 +287,62 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Source Files'; set:Project Source Files; class com.jetbrains.cidr.lang.search.scopes.ProjectSourcesScopeProvider$SourceFilesScope">
+          <expand>
+            <path>
+              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="fr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="fr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="vocaloyd" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -496,64 +425,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Source Files'; set:Project Source Files; class com.jetbrains.cidr.lang.search.scopes.ProjectSourcesScopeProvider$SourceFilesScope">
-          <expand>
-            <path>
-              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="fr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Raph\Desktop\Vocaloyd\MobileApp\business" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="fr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="vocaloyd" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -676,11 +549,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="604" y="164" width="1400" height="1000" extended-state="0" />
+    <frame x="483" y="191" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2238806" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2238806" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -695,8 +568,8 @@
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5007949" side_tool="true" weight="0.18650794" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49960256" weight="0.14603175" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49960256" visible="true" weight="0.1457346" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.21190476" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" weight="0.3298887" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -759,22 +632,22 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/MusicFragment.java" />
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/exo_simple_player_view.xml" />
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b037ea4121751ca4afb09270440b3e70/res/layout/exo_player_control_view.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/music_play.xml" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/exoplayer-core/2.9.6/36f02ae560a34b567e06b9308828280b3a63947f/exoplayer-core-2.9.6-sources.jar!/com/google/android/exoplayer2/ExoPlayer.java">
@@ -895,12 +768,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b037ea4121751ca4afb09270440b3e70/res/drawable-anydpi-v21/exo_icon_pause.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -909,12 +782,12 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/exo_playback_control_view_custom.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -931,24 +804,24 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b037ea4121751ca4afb09270440b3e70/res/layout/exo_player_view.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b037ea4121751ca4afb09270440b3e70/res/layout/exo_simple_player_view.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b037ea4121751ca4afb09270440b3e70/res/layout/exo_playback_control_view.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b037ea4121751ca4afb09270440b3e70/res/values/values.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -957,21 +830,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b037ea4121751ca4afb09270440b3e70/res/drawable-hdpi-v4/exo_controls_repeat_all.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/content_main.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/Lifecycle/SubscribeService.java" />
+    <entry file="file://$PROJECT_DIR$/build/generated/source/ice/discotheque/clientManagementPrx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
+        <state relative-caret-position="771">
+          <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2111">
+          <caret line="342" column="26" selection-start-line="342" selection-start-column="26" selection-end-line="342" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/VocaloydApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/Analysis/AnalyzeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
+        <state relative-caret-position="986">
           <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/Music/BackgroundMusicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -984,65 +886,21 @@
     <entry file="file://$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_mic_active_empty_foreground.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/VocaloydApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/content_main.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="935">
+          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/Music/BackgroundMusicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/Lifecycle/SubscribeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/generated/source/ice/discotheque/clientManagementPrx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
-        </state>
-      </provider>
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b037ea4121751ca4afb09270440b3e70/res/drawable-hdpi-v4/exo_controls_repeat_all.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/Music/MusicService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="110" column="29" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/vocaloyd/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="342" column="26" lean-forward="true" selection-start-line="342" selection-start-column="26" selection-end-line="342" selection-end-column="26" />
+        <state relative-caret-position="152">
+          <caret line="92" column="69" lean-forward="true" selection-start-line="92" selection-start-column="69" selection-end-line="92" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -9121,3 +9121,596 @@
    local address = ::ffff:192.168.43.15:10000
    remote address = ::ffff:192.168.43.1:39088
 -- 05/12/19 17:08:38.425 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 17:23:19.647 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 17:23:19.652 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 17:23:19.656 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 17:23:19.657 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 17:23:37.308 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59733
+-- 05/12/19 17:23:37.308 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59733
+-- 05/12/19 17:23:44.383 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59733
+-- 05/12/19 17:24:27.236 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 17:24:33.243 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 17:24:33.247 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 17:24:33.251 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 17:24:33.251 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 17:24:42.323 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59770
+-- 05/12/19 17:24:42.323 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59770
+-- 05/12/19 17:24:52.770 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59770
+-- 05/12/19 17:24:54.587 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59780
+-- 05/12/19 17:24:54.587 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59780
+-- 05/12/19 17:24:57.562 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59780
+-- 05/12/19 17:26:33.855 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 17:26:40.167 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 17:26:40.172 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 17:26:40.176 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 17:26:40.176 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 17:26:45.016 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59833
+-- 05/12/19 17:26:45.016 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59833
+-- 05/12/19 17:28:15.031 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59833
+-- 05/12/19 17:28:22.258 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 17:28:28.264 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 17:28:28.268 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 17:28:28.272 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 17:28:28.272 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 17:28:28.903 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59877
+-- 05/12/19 17:28:28.903 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59877
+-- 05/12/19 17:28:28.905 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59877
+-- 05/12/19 17:28:31.217 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59885
+-- 05/12/19 17:28:31.217 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59885
+-! 05/12/19 17:28:31.238 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 37, in subscribe
+       self.clients[i][2] = Chrono.getCurrentTime(Chrono)
+   IndexError: list assignment index out of range
+   
+   identity: SimpleClientManager
+   facet: 
+   operation: subscribe
+   remote host: ::ffff:192.168.43.15 remote port: 59885
+-- 05/12/19 17:28:31.241 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59885
+-- 05/12/19 17:29:07.303 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 17:29:14.618 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 17:29:14.623 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 17:29:14.627 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 17:29:14.628 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 17:29:15.715 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59914
+-- 05/12/19 17:29:15.715 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59914
+-- 05/12/19 17:29:41.656 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 17:29:41.665 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:59914
+-- 05/12/19 18:03:01.785 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:03:01.790 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:03:01.793 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:03:01.794 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:03:03.396 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61049
+-- 05/12/19 18:03:03.396 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61049
+-- 05/12/19 18:04:33.414 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61049
+-- 05/12/19 18:08:31.708 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:08:36.670 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:08:36.675 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:08:36.679 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:08:36.679 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:08:40.075 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61063
+-- 05/12/19 18:08:40.075 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61063
+-! 05/12/19 18:09:19.956 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61063
+-- 05/12/19 18:09:19.956 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61063
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+-- 05/12/19 18:09:58.308 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61080
+-- 05/12/19 18:09:58.308 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61080
+-- 05/12/19 18:11:06.873 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:11:06.875 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61080
+-- 05/12/19 18:13:37.980 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:13:37.985 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:13:37.989 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:13:37.989 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:13:42.290 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61094
+-- 05/12/19 18:13:42.291 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61094
+-! 05/12/19 18:13:44.945 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   builtins.ValueError: invalid value for ::discotheque::Morceau member `annee'
+   identity: SimpleManager
+   facet: 
+   operation: recupererTitres
+   remote host: ::ffff:192.168.43.15 remote port: 61094
+-- 05/12/19 18:13:44.958 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61094
+-- 05/12/19 18:14:31.106 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:14:37.067 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:14:37.072 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:14:37.076 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:14:37.076 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:14:38.286 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61103
+-- 05/12/19 18:14:38.286 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61103
+-! 05/12/19 18:14:42.053 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 72, in recupererTitres
+       track = Morceau(musique['titre'], musique['artiste'], musique['album'], musique['genre'], musique['annee'], musique['piste'], musique['image'], musique['fichier'])
+   KeyError: 'annee'
+   
+   identity: SimpleManager
+   facet: 
+   operation: recupererTitres
+   remote host: ::ffff:192.168.43.15 remote port: 61103
+-- 05/12/19 18:14:42.065 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61103
+-- 05/12/19 18:14:54.646 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:15:58.981 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:15:58.988 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:15:58.993 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:15:58.993 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:21:27.087 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:21:38.884 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:21:38.889 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:21:38.892 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:21:38.892 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:21:39.915 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61340
+-- 05/12/19 18:21:39.915 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61340
+-! 05/12/19 18:21:41.524 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   builtins.ValueError: invalid value for ::discotheque::Morceau member `annee'
+   identity: SimpleManager
+   facet: 
+   operation: recupererTitres
+   remote host: ::ffff:192.168.43.15 remote port: 61340
+-- 05/12/19 18:21:41.535 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61340
+-- 05/12/19 18:22:36.044 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:22:51.864 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:22:51.869 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:22:51.872 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:22:51.872 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:22:53.564 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61390
+-- 05/12/19 18:22:53.564 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61390
+-- 05/12/19 18:24:24.163 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:24:24.166 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61390
+-- 05/12/19 18:24:30.843 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:24:30.848 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:24:30.853 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:24:30.853 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:24:33.186 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61448
+-- 05/12/19 18:24:33.186 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61448
+-! 05/12/19 18:24:45.148 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61448
+-- 05/12/19 18:24:45.148 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61448
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+-- 05/12/19 18:24:49.621 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61466
+-- 05/12/19 18:24:49.621 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61466
+-- 05/12/19 18:25:07.880 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61483
+-- 05/12/19 18:25:07.881 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61483
+-- 05/12/19 18:26:19.633 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61466
+-- 05/12/19 18:26:37.897 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61483
+-- 05/12/19 18:29:14.859 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61596
+-- 05/12/19 18:29:14.860 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61596
+-- 05/12/19 18:29:14.862 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61596
+-- 05/12/19 18:29:22.178 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:29:27.664 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:29:27.669 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:29:27.673 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:29:27.674 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:29:28.777 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61609
+-- 05/12/19 18:29:28.777 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61609
+-- 05/12/19 18:29:30.733 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61612
+-- 05/12/19 18:29:30.733 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61612
+-- 05/12/19 18:29:30.736 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61612
+-- 05/12/19 18:29:33.359 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61609
+-- 05/12/19 18:29:34.912 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61617
+-- 05/12/19 18:29:34.912 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61617
+-! 05/12/19 18:29:34.927 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 37, in subscribe
+       self.clients[i][2] = Chrono.getCurrentTime(Chrono)
+   IndexError: list assignment index out of range
+   
+   identity: SimpleClientManager
+   facet: 
+   operation: subscribe
+   remote host: ::ffff:192.168.43.15 remote port: 61617
+-- 05/12/19 18:29:34.930 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61617
+-- 05/12/19 18:29:37.104 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61622
+-- 05/12/19 18:29:37.104 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61622
+-- 05/12/19 18:30:04.848 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:30:04.853 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61622
+-- 05/12/19 18:30:13.966 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:30:13.971 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:30:13.975 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:30:13.975 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:30:15.649 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61645
+-- 05/12/19 18:30:15.650 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61645
+-- 05/12/19 18:30:18.269 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61650
+-- 05/12/19 18:30:18.269 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61650
+-- 05/12/19 18:30:21.331 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61650
+-- 05/12/19 18:30:24.980 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61657
+-- 05/12/19 18:30:24.981 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61657
+-! 05/12/19 18:30:25.000 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Program Files\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 37, in subscribe
+       self.clients[i][2] = Chrono.getCurrentTime(Chrono)
+   IndexError: list assignment index out of range
+   
+   identity: SimpleClientManager
+   facet: 
+   operation: subscribe
+   remote host: ::ffff:192.168.43.15 remote port: 61657
+-- 05/12/19 18:30:25.003 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61657
+-! 05/12/19 18:30:52.491 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61645
+-- 05/12/19 18:30:52.491 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61645
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+-- 05/12/19 18:30:53.100 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:31:01.506 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:31:01.511 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:31:01.514 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:31:01.514 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:31:02.810 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61680
+-- 05/12/19 18:31:02.810 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61680
+-- 05/12/19 18:31:05.469 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61685
+-- 05/12/19 18:31:05.469 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61685
+-- 05/12/19 18:31:07.397 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61680
+-- 05/12/19 18:31:10.350 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61692
+-- 05/12/19 18:31:10.351 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61692
+-- 05/12/19 18:31:15.613 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61685
+-- 05/12/19 18:31:20.401 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61692
+-- 05/12/19 18:31:22.586 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61700
+-- 05/12/19 18:31:22.586 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61700
+-! 05/12/19 18:31:26.546 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61700
+-- 05/12/19 18:31:26.546 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61700
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: Le nom réseau spécifié n’est plus disponible.
+-- 05/12/19 18:34:02.588 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:34:08.475 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:34:08.480 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:34:08.483 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:34:08.483 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:34:43.628 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:34:48.761 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:34:48.765 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:34:48.769 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:34:48.770 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:35:52.429 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:35:57.572 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:35:57.578 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:35:57.581 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:35:57.582 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:36:03.799 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61851
+-- 05/12/19 18:36:03.799 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61851
+-- 05/12/19 18:36:19.176 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:36:19.179 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61851
+-- 05/12/19 18:37:50.512 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:37:50.527 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:37:50.530 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:37:50.530 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:38:14.577 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:38:19.399 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:38:19.404 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:38:19.408 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:38:19.409 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:38:28.470 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61929
+-- 05/12/19 18:38:28.470 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61929
+-- 05/12/19 18:39:28.165 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:39:28.166 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61929
+-- 05/12/19 18:39:40.704 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:39:40.709 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:39:40.712 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:39:40.712 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:39:42.787 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61966
+-- 05/12/19 18:39:42.787 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61966
+-- 05/12/19 18:40:05.294 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:40:05.299 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61966
+-- 05/12/19 18:40:13.795 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 18:40:13.800 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 18:40:13.804 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 18:40:13.805 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 18:40:15.939 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61989
+-- 05/12/19 18:40:15.940 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61989
+-- 05/12/19 18:40:50.926 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:62005
+-- 05/12/19 18:40:50.926 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:62005
+-- 05/12/19 18:41:31.050 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:61989
+-- 05/12/19 18:41:38.739 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:62031
+-- 05/12/19 18:41:38.739 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:62031
+-- 05/12/19 18:41:57.762 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 18:41:57.767 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:62031
+-- 05/12/19 18:41:57.768 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:62005

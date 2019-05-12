@@ -134,12 +134,14 @@ public class Client
                         choixStr = saisirString();
                         tracks = manager.rechercherParAlbum(choixStr);
                         displayTitles(tracks);
+                        break;
 
                     case 6:
                         System.out.print("Genre : ");
                         choixStr = saisirString();
                         tracks = manager.rechercherParGenre(choixStr);
                         displayTitles(tracks);
+                        break;
 
                     case 7:
                         System.out.print("Titre : ");
