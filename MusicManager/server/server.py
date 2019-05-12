@@ -21,9 +21,9 @@ class clientManagementI(clientManagement):
     clients = {}
 
     def __init__(self, *args, **kwargs):
-        #Clients: (ip port associated: boolean, associated player: media_list_player, subscription time: seconds since epoch)
+        #Clients: (ip port associated: boolean, associated player: media_list_player, associated player: media_player (for track info), subscription time: seconds since epoch)
         for i in range(self.basePort, self.basePort + self.nbMaxClients):
-            self.clients[i] = [True, None, None]
+            self.clients[i] = [True, None, None, None]
     
     def subscribe(self, current=None):
         if self.nbClients == self.nbMaxClients:
@@ -35,7 +35,8 @@ class clientManagementI(clientManagement):
                 if self.clients[i][0] == True:
                     self.clients[i][0] = False
                     self.clients[i][1] = None
-                    self.clients[i][2] = Chrono.getCurrentTime(Chrono)
+                    self.clients[i][2] = None
+                    self.clients[i][3] = Chrono.getCurrentTime(Chrono)
                     self.nbClients += 1
                     print("Port " + str(i) + " given to client")
                     break
@@ -45,7 +46,7 @@ class clientManagementI(clientManagement):
 
     def unsubscribe(self, port, current=None):
         trackManagementI.stop(trackManagementI, port)
-        self.clients[port] = [True, None, None]
+        self.clients[port] = [True, None, None, None]
         self.nbClients -= 1
         print("Client with port " + str(port) + " unsubscribed")
 
@@ -55,8 +56,6 @@ class trackManagementI(trackManagement):
     collecMusique = db['musiqueRaph']
     localPath = os.path.join(os.path.dirname(__file__), 'tracks/')
     vlcInst = vlc.Instance()
-    player = None
-    innerPlayer = None
 
     def ajouterTitre(self, song, current=None):
         query = self.collecMusique.insert_one(song.__dict__)
@@ -163,21 +162,22 @@ class trackManagementI(trackManagement):
             return True
 
     def jouerMorceaux(self, tracks, port, current=None):
-        self.player = clientManagementI.clients[port][1]
+        player = clientManagementI.clients[port][1]
+        innerPlayer = clientManagementI.clients[port][2]
 
-        if self.player is not None:
-            self.innerPlayer.release()
-            self.player.release()
+        if player is not None:
+            player.release()
             print("Releasing player")
+        if innerPlayer is not None:
+            innerPlayer.release()
+            print("Releasing inner player")
 
-        self.player = self.vlcInst.media_list_player_new()
-        self.innerPlayer = self.vlcInst.media_player_new()
-        self.player.set_media_player(self.innerPlayer)
+        player = self.vlcInst.media_list_player_new()
+        innerPlayer = self.vlcInst.media_player_new()
+        player.set_media_player(innerPlayer)
 
         target = "/stream"
         localTracks = []
-
-        clientManagementI.clients[port][1] = self.player
 
         for track in tracks:
             localTracks.append(self.localPath + str(track.fichier))
@@ -188,8 +188,11 @@ class trackManagementI(trackManagement):
             media.add_media(self.vlcInst.media_new(track, 'sout=#transcode{vcodec=none,acodec=mp3,ab=128,channels=2,samplerate=44100,scodec=none}:http{mux=mp3,dst=:' + str(port) + target + '}', 'sout-all', 'sout-keep'))
             # media.add_media(self.vlcInst.media_new(track, 'sout=#udp{dst=192.168.43.15:11000/stream}', 'sout-all', 'sout-keep'))
 
-        self.player.set_media_list(media)
-        self.player.play()
+        player.set_media_list(media)
+        player.play()
+
+        clientManagementI.clients[port][1] = player
+        clientManagementI.clients[port][2] = innerPlayer
 
         return target
 
@@ -197,47 +200,48 @@ class trackManagementI(trackManagement):
         if clientManagementI.clients[port][1] is None:
             return
         else:
-            self.player = clientManagementI.clients[port][1]
+            player = clientManagementI.clients[port][1]
 
-            if self.player.is_playing():
-                self.player.pause()
-            elif not self.player.is_playing():
-                self.player.play()
+            if player.is_playing():
+                player.pause()
+            elif not player.is_playing():
+                player.play()
         return
     
     def nextTrack(self, port, current=None):
         if clientManagementI.clients[port][1] is None:
             return
         else:
-            self.player = clientManagementI.clients[port][1]
-            self.player.next()
+            player = clientManagementI.clients[port][1]
+            player.next()
         return
 
     def previousTrack(self, port, current=None):
         if clientManagementI.clients[port][1] is None:
             return
         else:
-            self.player = clientManagementI.clients[port][1]
-            self.player.previous()
+            player = clientManagementI.clients[port][1]
+            player.previous()
         return
 
     def stop(self, port, current=None):
-        self.player = clientManagementI.clients[port][1]
+        player = clientManagementI.clients[port][1]
 
-        if self.player is not None:
-            self.player.release()
-        if self.innerPlayer is not None:
-            self.innerPlayer.release()
+        if player is not None:
+            player.release()
+        if innerPlayer is not None:
+            innerPlayer.release()
         print("Releasing player")
 
     def getInfos(self, port, current=None):
-        clientManagementI.clients[port][2] = Chrono.getCurrentTime(Chrono)  #Resetting client time if activity
+        clientManagementI.clients[port][3] = Chrono.getCurrentTime(Chrono)  #Resetting client time if activity
 
-        if clientManagementI.clients[port][1] is None:
+        if clientManagementI.clients[port][1] is None or clientManagementI.clients[port][2] is None:
             return
         else:
-            self.player = clientManagementI.clients[port][1]
-            mediaExtract = self.innerPlayer.get_media()
+            player = clientManagementI.clients[port][1]
+            innerPlayer = clientManagementI.clients[port][2]
+            mediaExtract = innerPlayer.get_media()
 
             if mediaExtract is not None:
                 mediaExtract.parse_with_options(vlc.MediaParseFlag.fetch_local, 0)
@@ -263,23 +267,21 @@ class Chrono:
     @staticmethod
     def getCurrentTime(self):
         curTime = time.time()
-        print(curTime)
         return curTime
 
     @staticmethod
     def getElapsedTime(self, testTime):
         curTime = self.getCurrentTime(self)
         elapsedTime = curTime - testTime
-        print(elapsedTime)
         return elapsedTime
     
     def checkTimeLimit(self):
         while self.stop is False:
             for i in range(clientManagementI.basePort, clientManagementI.basePort + clientManagementI.nbMaxClients):
                 if clientManagementI.clients[i][0] is False:
-                    actTime = self.getElapsedTime(Chrono, clientManagementI.clients[i][2])
+                    actTime = self.getElapsedTime(Chrono, clientManagementI.clients[i][3])
 
-                    if actTime > maxTime:
+                    if actTime > self.maxTime:
                         print("Client inactive for " + str(actTime) + "s. Goodbye " + str(i))
                         clientManagementI.unsubscribe(clientManagementI, i)
 

@@ -35,6 +35,7 @@ public class Client
             clientManagementPrx clientManager = clientManagementPrx.checkedCast(baseClient);
 
             int port = clientManager.subscribe();
+            System.out.println(port);
 
             String target = "";
 
@@ -297,13 +298,16 @@ public class Client
                                     String album = resultMap.get("Album");
                                     String desc = resultMap.get("Description");
 
+                                    System.out.println(resultMap.get("Title"));
+                                    System.out.println(album);
+                                    System.out.println(resultMap.get("Genre"));
+
                                     desc = desc.substring(2); //Remove leading "b'"
                                     
                                     //Inspired from https://stackoverflow.com/a/50682688/9908246
                                     byte[] imageBytes = javax.xml.bind.DatatypeConverter.parseBase64Binary(desc);
                                     BufferedImage image = ImageIO.read(new ByteArrayInputStream(imageBytes));
                                     File outputfile = new File("./business/discotheque/client/img/" + album + ".jpg");
-                                    System.out.println(ImageIO.write(image, "jpg", outputfile));
 
                                     break;
 

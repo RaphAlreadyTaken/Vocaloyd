@@ -9714,3 +9714,2516 @@
 -- 05/12/19 18:41:57.768 server/server.py: Network: closed tcp connection
    local address = ::ffff:192.168.43.15:10000
    remote address = ::ffff:192.168.43.15:62005
+-- 05/12/19 20:06:51.901 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 20:06:51.907 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 20:06:51.912 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 20:06:51.913 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 20:09:29.342 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39292
+-- 05/12/19 20:09:29.345 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39292
+-- 05/12/19 20:09:29.420 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39292
+-- 05/12/19 20:09:39.103 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39297
+-- 05/12/19 20:09:39.103 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39297
+-- 05/12/19 20:09:39.118 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39297
+-- 05/12/19 20:09:49.094 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39298
+-- 05/12/19 20:09:49.094 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39298
+-- 05/12/19 20:09:49.110 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39298
+-- 05/12/19 20:09:59.093 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39299
+-- 05/12/19 20:09:59.093 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39299
+-- 05/12/19 20:09:59.110 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39299
+-- 05/12/19 20:10:09.091 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39300
+-- 05/12/19 20:10:09.092 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39300
+-- 05/12/19 20:10:09.106 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39300
+-- 05/12/19 20:10:19.091 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39301
+-- 05/12/19 20:10:19.091 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39301
+-- 05/12/19 20:10:19.107 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39301
+-- 05/12/19 20:10:29.091 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39302
+-- 05/12/19 20:10:29.091 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39302
+-- 05/12/19 20:10:29.106 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39302
+-- 05/12/19 20:10:41.573 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39304
+-- 05/12/19 20:10:41.574 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39304
+-- 05/12/19 20:10:41.588 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39304
+-- 05/12/19 20:11:14.683 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39307
+-- 05/12/19 20:11:14.683 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39307
+-- 05/12/19 20:11:14.707 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39307
+-- 05/12/19 20:11:14.765 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39308
+-- 05/12/19 20:11:14.765 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39308
+-- 05/12/19 20:11:14.782 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39308
+-- 05/12/19 20:11:14.817 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39309
+-- 05/12/19 20:11:14.817 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39309
+-- 05/12/19 20:11:14.834 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39309
+-- 05/12/19 20:11:19.097 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39310
+-- 05/12/19 20:11:19.097 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39310
+-- 05/12/19 20:11:19.120 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39310
+-- 05/12/19 20:11:27.268 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39314
+-- 05/12/19 20:11:27.268 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39314
+-- 05/12/19 20:11:29.272 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39314
+-- 05/12/19 20:11:29.302 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39315
+-- 05/12/19 20:11:29.303 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39315
+-- 05/12/19 20:11:29.326 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39315
+-- 05/12/19 20:11:29.358 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39317
+-- 05/12/19 20:11:29.359 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39317
+-- 05/12/19 20:11:29.374 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39317
+-- 05/12/19 20:11:39.095 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39318
+-- 05/12/19 20:11:39.096 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39318
+-- 05/12/19 20:11:39.172 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39318
+-- 05/12/19 20:11:49.098 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39319
+-- 05/12/19 20:11:49.099 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39319
+-- 05/12/19 20:11:49.142 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39319
+-- 05/12/19 20:11:59.104 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39320
+-- 05/12/19 20:11:59.104 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39320
+-- 05/12/19 20:11:59.143 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39320
+-- 05/12/19 20:12:09.104 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39321
+-- 05/12/19 20:12:09.104 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39321
+-- 05/12/19 20:12:09.163 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39321
+-- 05/12/19 20:12:19.104 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39322
+-- 05/12/19 20:12:19.104 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39322
+-- 05/12/19 20:12:19.151 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39322
+-- 05/12/19 20:12:29.108 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39323
+-- 05/12/19 20:12:29.108 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39323
+-- 05/12/19 20:12:29.154 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39323
+-- 05/12/19 20:12:29.768 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39324
+-- 05/12/19 20:12:29.768 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39324
+-- 05/12/19 20:12:29.787 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39324
+-- 05/12/19 20:12:29.814 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39325
+-- 05/12/19 20:12:29.815 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39325
+-- 05/12/19 20:12:29.854 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39325
+-- 05/12/19 20:12:39.112 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39326
+-- 05/12/19 20:12:39.112 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39326
+-- 05/12/19 20:12:39.518 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39326
+-- 05/12/19 20:12:43.129 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39327
+-- 05/12/19 20:12:43.130 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39327
+-- 05/12/19 20:12:43.150 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39327
+-- 05/12/19 20:12:43.182 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39328
+-- 05/12/19 20:12:43.183 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39328
+-- 05/12/19 20:12:43.227 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39328
+-- 05/12/19 20:12:49.112 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39329
+-- 05/12/19 20:12:49.112 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39329
+-- 05/12/19 20:12:49.158 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39329
+-- 05/12/19 20:12:59.113 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39330
+-- 05/12/19 20:12:59.113 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39330
+-- 05/12/19 20:12:59.168 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39330
+-- 05/12/19 20:13:09.384 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39332
+-- 05/12/19 20:13:09.384 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39332
+-- 05/12/19 20:13:09.428 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39332
+-- 05/12/19 20:13:09.680 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39335
+-- 05/12/19 20:13:09.680 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39335
+-- 05/12/19 20:13:09.942 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39335
+-- 05/12/19 20:13:10.004 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39337
+-- 05/12/19 20:13:10.004 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39337
+-- 05/12/19 20:13:10.061 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39337
+-- 05/12/19 20:13:19.110 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39338
+-- 05/12/19 20:13:19.110 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39338
+-- 05/12/19 20:13:19.150 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39338
+-- 05/12/19 20:13:29.109 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39339
+-- 05/12/19 20:13:29.109 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39339
+-- 05/12/19 20:13:29.169 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39339
+-- 05/12/19 20:13:38.261 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39340
+-- 05/12/19 20:13:38.261 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39340
+-- 05/12/19 20:13:38.288 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39340
+-- 05/12/19 20:13:38.319 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39341
+-- 05/12/19 20:13:38.320 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39341
+-- 05/12/19 20:13:38.364 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39341
+-- 05/12/19 20:13:39.115 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39342
+-- 05/12/19 20:13:39.115 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39342
+-- 05/12/19 20:13:39.163 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39342
+-- 05/12/19 20:13:49.111 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39344
+-- 05/12/19 20:13:49.111 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39344
+-- 05/12/19 20:13:49.151 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39344
+-- 05/12/19 20:13:59.634 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39348
+-- 05/12/19 20:13:59.634 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39348
+-- 05/12/19 20:13:59.913 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39348
+-- 05/12/19 20:13:59.958 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39350
+-- 05/12/19 20:13:59.958 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39350
+-- 05/12/19 20:14:00.003 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39350
+-- 05/12/19 20:14:00.044 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39351
+-- 05/12/19 20:14:00.044 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39351
+-- 05/12/19 20:14:00.081 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39351
+-- 05/12/19 20:14:08.984 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39353
+-- 05/12/19 20:14:08.984 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39353
+-- 05/12/19 20:14:09.006 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39353
+-- 05/12/19 20:14:09.050 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39354
+-- 05/12/19 20:14:09.050 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39354
+-- 05/12/19 20:14:09.090 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39354
+-- 05/12/19 20:14:09.146 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39355
+-- 05/12/19 20:14:09.146 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39355
+-- 05/12/19 20:14:09.194 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39355
+-- 05/12/19 20:14:19.118 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39357
+-- 05/12/19 20:14:19.118 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39357
+-- 05/12/19 20:14:19.167 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39357
+-- 05/12/19 20:14:25.878 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39358
+-- 05/12/19 20:14:25.878 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39358
+-- 05/12/19 20:14:25.898 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39358
+-- 05/12/19 20:14:25.929 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39359
+-- 05/12/19 20:14:25.929 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39359
+-- 05/12/19 20:14:25.973 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39359
+-- 05/12/19 20:14:29.113 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39360
+-- 05/12/19 20:14:29.114 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39360
+-- 05/12/19 20:14:29.146 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39360
+-- 05/12/19 20:14:33.037 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39361
+-- 05/12/19 20:14:33.037 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39361
+-- 05/12/19 20:14:33.101 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39361
+-- 05/12/19 20:14:33.146 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39362
+-- 05/12/19 20:14:33.147 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39362
+-- 05/12/19 20:14:33.189 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39362
+-- 05/12/19 20:14:39.133 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39363
+-- 05/12/19 20:14:39.133 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39363
+-- 05/12/19 20:14:39.179 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39363
+-- 05/12/19 20:14:49.132 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39364
+-- 05/12/19 20:14:49.132 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39364
+-- 05/12/19 20:14:49.174 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39364
+-- 05/12/19 20:14:59.127 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39365
+-- 05/12/19 20:14:59.127 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39365
+-- 05/12/19 20:14:59.164 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39365
+-- 05/12/19 20:15:09.127 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39366
+-- 05/12/19 20:15:09.127 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39366
+-- 05/12/19 20:15:09.170 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39366
+-- 05/12/19 20:15:19.168 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39367
+-- 05/12/19 20:15:19.168 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39367
+-- 05/12/19 20:15:19.240 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39367
+-- 05/12/19 20:15:29.131 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39369
+-- 05/12/19 20:15:29.132 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39369
+-- 05/12/19 20:15:29.170 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39369
+-- 05/12/19 20:15:39.134 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39370
+-- 05/12/19 20:15:39.134 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39370
+-- 05/12/19 20:15:39.181 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39370
+-- 05/12/19 20:15:49.132 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39371
+-- 05/12/19 20:15:49.133 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39371
+-- 05/12/19 20:15:49.177 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39371
+-- 05/12/19 20:15:59.136 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39372
+-- 05/12/19 20:15:59.136 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39372
+-- 05/12/19 20:15:59.184 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39372
+-- 05/12/19 20:16:04.240 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39373
+-- 05/12/19 20:16:04.240 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39373
+-- 05/12/19 20:16:04.259 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39373
+-- 05/12/19 20:16:04.289 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39374
+-- 05/12/19 20:16:04.289 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39374
+-- 05/12/19 20:16:04.328 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39374
+-- 05/12/19 20:16:09.141 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39375
+-- 05/12/19 20:16:09.141 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39375
+-- 05/12/19 20:16:09.181 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39375
+-- 05/12/19 20:16:19.136 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39376
+-- 05/12/19 20:16:19.136 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39376
+-- 05/12/19 20:16:19.181 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39376
+-- 05/12/19 20:16:29.155 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39377
+-- 05/12/19 20:16:29.155 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39377
+-- 05/12/19 20:16:29.192 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39377
+-- 05/12/19 20:16:39.150 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39378
+-- 05/12/19 20:16:39.151 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39378
+-- 05/12/19 20:16:39.191 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39378
+-- 05/12/19 20:16:49.150 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39379
+-- 05/12/19 20:16:49.150 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39379
+-- 05/12/19 20:16:49.183 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39379
+-- 05/12/19 20:16:51.493 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:62980
+-- 05/12/19 20:16:51.493 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:62980
+-- 05/12/19 20:16:59.151 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39380
+-- 05/12/19 20:16:59.151 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39380
+-- 05/12/19 20:16:59.200 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39380
+-- 05/12/19 20:17:08.943 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:62980
+-- 05/12/19 20:17:09.152 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39381
+-- 05/12/19 20:17:09.152 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39381
+-- 05/12/19 20:17:09.212 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39381
+-- 05/12/19 20:17:19.155 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39382
+-- 05/12/19 20:17:19.155 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39382
+-- 05/12/19 20:17:19.194 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39382
+-- 05/12/19 20:17:28.996 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:62986
+-- 05/12/19 20:17:28.996 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:62986
+-- 05/12/19 20:17:29.154 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39383
+-- 05/12/19 20:17:29.154 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39383
+-- 05/12/19 20:17:29.195 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39383
+-- 05/12/19 20:17:39.155 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39384
+-- 05/12/19 20:17:39.155 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39384
+-- 05/12/19 20:17:39.170 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39384
+-- 05/12/19 20:17:47.047 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:62986
+-- 05/12/19 20:17:49.156 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39385
+-- 05/12/19 20:17:49.157 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39385
+-- 05/12/19 20:17:49.198 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39385
+-- 05/12/19 20:17:59.175 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39386
+-- 05/12/19 20:17:59.175 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39386
+-- 05/12/19 20:17:59.418 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39386
+-- 05/12/19 20:18:09.170 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39387
+-- 05/12/19 20:18:09.171 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39387
+-- 05/12/19 20:18:09.215 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39387
+-- 05/12/19 20:18:17.282 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39388
+-- 05/12/19 20:18:17.282 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39388
+-- 05/12/19 20:18:17.300 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39388
+-- 05/12/19 20:18:17.330 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39389
+-- 05/12/19 20:18:17.330 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39389
+-- 05/12/19 20:18:17.374 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39389
+-- 05/12/19 20:18:19.175 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39390
+-- 05/12/19 20:18:19.175 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39390
+-- 05/12/19 20:18:19.226 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39390
+-- 05/12/19 20:18:29.172 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39391
+-- 05/12/19 20:18:29.173 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39391
+-- 05/12/19 20:18:29.211 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 20:18:29.229 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39391
+-- 05/12/19 20:19:35.147 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 20:19:35.154 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 20:19:35.159 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 20:19:35.159 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 20:19:53.094 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39397
+-- 05/12/19 20:19:53.094 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39397
+-- 05/12/19 20:19:53.122 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39397
+-- 05/12/19 20:20:04.554 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39399
+-- 05/12/19 20:20:04.554 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39399
+-- 05/12/19 20:20:04.620 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39399
+-- 05/12/19 20:20:05.053 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39402
+-- 05/12/19 20:20:05.054 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39402
+-- 05/12/19 20:20:05.965 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39402
+-- 05/12/19 20:20:06.042 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39403
+-- 05/12/19 20:20:06.042 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39403
+-- 05/12/19 20:20:06.118 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39403
+-- 05/12/19 20:20:12.913 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39405
+-- 05/12/19 20:20:12.913 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39405
+-- 05/12/19 20:20:12.962 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39405
+-- 05/12/19 20:20:15.601 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63023
+-- 05/12/19 20:20:15.601 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63023
+-- 05/12/19 20:20:22.909 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39406
+-- 05/12/19 20:20:22.910 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39406
+-- 05/12/19 20:20:22.959 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39406
+-- 05/12/19 20:20:32.911 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39407
+-- 05/12/19 20:20:32.912 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39407
+-- 05/12/19 20:20:32.960 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39407
+-- 05/12/19 20:20:42.904 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39408
+-- 05/12/19 20:20:42.904 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39408
+-- 05/12/19 20:20:42.944 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39408
+-- 05/12/19 20:20:52.902 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39409
+-- 05/12/19 20:20:52.902 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39409
+-- 05/12/19 20:20:52.944 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39409
+-- 05/12/19 20:21:02.915 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39410
+-- 05/12/19 20:21:02.916 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39410
+-- 05/12/19 20:21:02.960 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39410
+-- 05/12/19 20:21:12.914 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39411
+-- 05/12/19 20:21:12.914 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39411
+-- 05/12/19 20:21:12.954 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39411
+-- 05/12/19 20:21:22.917 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39412
+-- 05/12/19 20:21:22.918 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39412
+-- 05/12/19 20:21:22.963 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39412
+-- 05/12/19 20:21:33.095 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39413
+-- 05/12/19 20:21:33.095 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39413
+-- 05/12/19 20:21:33.133 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39413
+-- 05/12/19 20:21:43.115 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39414
+-- 05/12/19 20:21:43.115 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39414
+-- 05/12/19 20:21:43.412 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39414
+-- 05/12/19 20:21:45.619 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63023
+-- 05/12/19 20:23:25.169 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63033
+-- 05/12/19 20:23:25.169 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63033
+-- 05/12/19 20:23:25.173 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63033
+-- 05/12/19 20:23:30.595 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 20:23:34.445 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 20:23:34.453 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 20:23:34.457 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 20:23:34.458 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 20:33:54.038 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 20:33:59.414 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 20:33:59.420 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 20:33:59.425 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 20:33:59.425 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 20:34:10.709 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39431
+-- 05/12/19 20:34:10.710 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39431
+-- 05/12/19 20:34:10.745 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39431
+-- 05/12/19 20:34:20.492 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39432
+-- 05/12/19 20:34:20.493 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39432
+-- 05/12/19 20:34:20.507 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39432
+-- 05/12/19 20:34:25.995 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39436
+-- 05/12/19 20:34:25.996 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39436
+-- 05/12/19 20:34:26.877 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39436
+-- 05/12/19 20:34:26.931 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39437
+-- 05/12/19 20:34:26.931 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39437
+-- 05/12/19 20:34:26.956 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39437
+-- 05/12/19 20:34:30.477 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39439
+-- 05/12/19 20:34:30.477 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39439
+-- 05/12/19 20:34:30.500 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39439
+-- 05/12/19 20:34:40.494 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39440
+-- 05/12/19 20:34:40.494 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39440
+-- 05/12/19 20:34:40.516 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39440
+-- 05/12/19 20:34:50.492 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39441
+-- 05/12/19 20:34:50.492 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39441
+-- 05/12/19 20:34:50.518 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39441
+-- 05/12/19 20:34:52.587 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63094
+-- 05/12/19 20:34:52.587 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63094
+-- 05/12/19 20:35:00.496 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39442
+-- 05/12/19 20:35:00.496 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39442
+-- 05/12/19 20:35:00.515 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39442
+-- 05/12/19 20:35:10.493 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39443
+-- 05/12/19 20:35:10.493 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39443
+-- 05/12/19 20:35:10.512 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39443
+-- 05/12/19 20:35:20.494 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39444
+-- 05/12/19 20:35:20.494 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39444
+-- 05/12/19 20:35:20.517 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39444
+-! 05/12/19 20:35:24.949 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63094
+-- 05/12/19 20:35:24.949 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63094
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+-- 05/12/19 20:35:26.113 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 20:35:31.098 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 20:35:31.104 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 20:35:31.109 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 20:35:31.109 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 20:35:45.266 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39445
+-- 05/12/19 20:35:45.267 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39445
+-- 05/12/19 20:35:45.331 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39445
+-- 05/12/19 20:35:55.095 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39446
+-- 05/12/19 20:35:55.095 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39446
+-- 05/12/19 20:35:55.110 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39446
+-- 05/12/19 20:35:58.849 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39450
+-- 05/12/19 20:35:58.849 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39450
+-- 05/12/19 20:35:59.733 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39450
+-- 05/12/19 20:35:59.818 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39451
+-- 05/12/19 20:35:59.818 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39451
+-- 05/12/19 20:35:59.844 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39451
+-- 05/12/19 20:36:05.101 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39453
+-- 05/12/19 20:36:05.101 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39453
+-- 05/12/19 20:36:05.127 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39453
+-- 05/12/19 20:36:15.104 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39455
+-- 05/12/19 20:36:15.104 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39455
+-- 05/12/19 20:36:15.129 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39455
+-- 05/12/19 20:36:25.108 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39456
+-- 05/12/19 20:36:25.109 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39456
+-- 05/12/19 20:36:25.130 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39456
+-- 05/12/19 20:36:35.096 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39457
+-- 05/12/19 20:36:35.096 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39457
+-- 05/12/19 20:36:35.116 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39457
+-- 05/12/19 20:36:45.095 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39458
+-- 05/12/19 20:36:45.095 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39458
+-- 05/12/19 20:36:45.113 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39458
+-- 05/12/19 20:36:55.096 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39459
+-- 05/12/19 20:36:55.096 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39459
+-- 05/12/19 20:36:55.115 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39459
+-- 05/12/19 20:37:09.944 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 20:37:49.952 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 20:37:49.959 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 20:37:49.967 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 20:37:49.968 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 20:38:03.987 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39460
+-- 05/12/19 20:38:03.987 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39460
+-- 05/12/19 20:38:04.040 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39460
+-- 05/12/19 20:38:13.797 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39461
+-- 05/12/19 20:38:13.798 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39461
+-- 05/12/19 20:38:13.813 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39461
+-- 05/12/19 20:38:19.384 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39465
+-- 05/12/19 20:38:19.384 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39465
+-- 05/12/19 20:38:20.316 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39465
+-- 05/12/19 20:38:20.393 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39466
+-- 05/12/19 20:38:20.394 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39466
+-- 05/12/19 20:38:20.459 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39466
+-- 05/12/19 20:38:23.793 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39468
+-- 05/12/19 20:38:23.794 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39468
+-- 05/12/19 20:38:23.846 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39468
+-- 05/12/19 20:38:33.794 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39469
+-- 05/12/19 20:38:33.794 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39469
+-- 05/12/19 20:38:33.837 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39469
+-- 05/12/19 20:38:43.783 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39471
+-- 05/12/19 20:38:43.783 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39471
+-- 05/12/19 20:38:43.837 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39471
+-- 05/12/19 20:38:46.618 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 20:42:05.489 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 20:42:05.497 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 20:42:05.502 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 20:42:05.503 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 20:42:22.489 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39473
+-- 05/12/19 20:42:22.489 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39473
+-- 05/12/19 20:42:22.534 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39473
+-- 05/12/19 20:42:32.280 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39474
+-- 05/12/19 20:42:32.281 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39474
+-- 05/12/19 20:42:32.299 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39474
+-- 05/12/19 20:42:45.271 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39476
+-- 05/12/19 20:42:45.271 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39476
+-- 05/12/19 20:42:45.285 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39476
+-- 05/12/19 20:42:45.577 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39479
+-- 05/12/19 20:42:45.577 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39479
+-- 05/12/19 20:42:46.459 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39479
+-- 05/12/19 20:42:46.551 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39480
+-- 05/12/19 20:42:46.552 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39480
+-- 05/12/19 20:42:46.621 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39480
+-- 05/12/19 20:42:52.275 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39482
+-- 05/12/19 20:42:52.275 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39482
+-- 05/12/19 20:42:52.319 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39482
+-- 05/12/19 20:43:02.276 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39483
+-- 05/12/19 20:43:02.276 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39483
+-- 05/12/19 20:43:02.325 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39483
+-- 05/12/19 20:43:12.277 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39484
+-- 05/12/19 20:43:12.277 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39484
+-- 05/12/19 20:43:12.320 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39484
+-- 05/12/19 20:43:15.411 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63236
+-- 05/12/19 20:43:15.411 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63236
+-- 05/12/19 20:43:22.256 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39485
+-- 05/12/19 20:43:22.257 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39485
+-- 05/12/19 20:43:22.298 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39485
+-- 05/12/19 20:43:32.281 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39486
+-- 05/12/19 20:43:32.282 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39486
+-- 05/12/19 20:43:32.331 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39486
+-- 05/12/19 20:43:41.740 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63236
+-- 05/12/19 20:43:42.282 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39487
+-- 05/12/19 20:43:42.283 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39487
+-- 05/12/19 20:43:42.328 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39487
+-- 05/12/19 20:43:52.282 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39488
+-- 05/12/19 20:43:52.282 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39488
+-- 05/12/19 20:43:52.331 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39488
+-- 05/12/19 20:43:53.742 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39489
+-- 05/12/19 20:43:53.742 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39489
+-- 05/12/19 20:43:53.763 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39489
+-- 05/12/19 20:43:53.797 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39490
+-- 05/12/19 20:43:53.797 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39490
+-- 05/12/19 20:43:54.052 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39490
+-- 05/12/19 20:44:02.286 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39491
+-- 05/12/19 20:44:02.287 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39491
+-- 05/12/19 20:44:02.343 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39491
+-- 05/12/19 20:44:12.309 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39492
+-- 05/12/19 20:44:12.309 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39492
+-- 05/12/19 20:44:12.373 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39492
+-- 05/12/19 20:44:22.290 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39493
+-- 05/12/19 20:44:22.291 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39493
+-- 05/12/19 20:44:22.335 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39493
+-- 05/12/19 20:44:32.284 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39494
+-- 05/12/19 20:44:32.284 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39494
+-- 05/12/19 20:44:32.328 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39494
+-- 05/12/19 20:44:42.283 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39495
+-- 05/12/19 20:44:42.283 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39495
+-- 05/12/19 20:44:42.326 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39495
+-- 05/12/19 20:44:49.436 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39496
+-- 05/12/19 20:44:49.436 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39496
+-- 05/12/19 20:44:49.456 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39496
+-- 05/12/19 20:44:50.498 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39497
+-- 05/12/19 20:44:50.498 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39497
+-- 05/12/19 20:44:50.563 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39497
+-- 05/12/19 20:44:52.290 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39498
+-- 05/12/19 20:44:52.290 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39498
+-- 05/12/19 20:44:52.336 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39498
+-- 05/12/19 20:45:02.290 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39499
+-- 05/12/19 20:45:02.290 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39499
+-- 05/12/19 20:45:02.545 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39499
+-- 05/12/19 20:45:12.301 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39500
+-- 05/12/19 20:45:12.301 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39500
+-- 05/12/19 20:45:12.351 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39500
+-- 05/12/19 20:45:22.300 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39501
+-- 05/12/19 20:45:22.300 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39501
+-- 05/12/19 20:45:22.343 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39501
+-- 05/12/19 20:45:32.300 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39502
+-- 05/12/19 20:45:32.300 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39502
+-- 05/12/19 20:45:32.344 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39502
+-- 05/12/19 20:45:42.302 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39503
+-- 05/12/19 20:45:42.302 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39503
+-- 05/12/19 20:45:42.343 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39503
+-- 05/12/19 20:45:52.302 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39506
+-- 05/12/19 20:45:52.302 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39506
+-- 05/12/19 20:45:52.345 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39506
+-- 05/12/19 20:46:02.303 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39507
+-- 05/12/19 20:46:02.303 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39507
+-- 05/12/19 20:46:02.406 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39507
+-- 05/12/19 20:46:12.286 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39509
+-- 05/12/19 20:46:12.286 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39509
+-- 05/12/19 20:46:12.332 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39509
+-- 05/12/19 20:46:23.291 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39510
+-- 05/12/19 20:46:23.291 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39510
+-- 05/12/19 20:46:23.344 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39510
+-- 05/12/19 20:46:32.305 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39511
+-- 05/12/19 20:46:32.305 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39511
+-- 05/12/19 20:46:32.347 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39511
+-- 05/12/19 20:46:42.305 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39512
+-- 05/12/19 20:46:42.306 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39512
+-- 05/12/19 20:46:42.354 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39512
+-- 05/12/19 20:46:52.316 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39513
+-- 05/12/19 20:46:52.317 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39513
+-- 05/12/19 20:46:52.370 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39513
+-- 05/12/19 20:47:02.307 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39514
+-- 05/12/19 20:47:02.307 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39514
+-- 05/12/19 20:47:02.356 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39514
+-- 05/12/19 20:47:12.334 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39515
+-- 05/12/19 20:47:12.334 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39515
+-- 05/12/19 20:47:12.376 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39515
+-- 05/12/19 20:47:22.321 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39516
+-- 05/12/19 20:47:22.321 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39516
+-- 05/12/19 20:47:22.358 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39516
+-- 05/12/19 20:47:32.323 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39517
+-- 05/12/19 20:47:32.323 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39517
+-- 05/12/19 20:47:32.370 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39517
+-- 05/12/19 20:47:35.789 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63272
+-- 05/12/19 20:47:35.789 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63272
+-- 05/12/19 20:47:43.321 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39518
+-- 05/12/19 20:47:43.321 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39518
+-- 05/12/19 20:47:43.374 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39518
+-- 05/12/19 20:47:52.340 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39519
+-- 05/12/19 20:47:52.340 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39519
+-- 05/12/19 20:47:52.355 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39519
+-- 05/12/19 20:48:02.324 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39520
+-- 05/12/19 20:48:02.324 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39520
+-- 05/12/19 20:48:02.358 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39520
+-- 05/12/19 20:48:06.894 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63272
+-- 05/12/19 20:48:09.598 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 20:52:45.305 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 20:52:45.311 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 20:52:45.316 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 20:52:45.316 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 20:53:02.680 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39530
+-- 05/12/19 20:53:02.680 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39530
+-- 05/12/19 20:53:02.725 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39530
+-- 05/12/19 20:53:12.753 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39534
+-- 05/12/19 20:53:12.753 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39534
+-- 05/12/19 20:53:12.770 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39534
+-- 05/12/19 20:53:12.808 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39535
+-- 05/12/19 20:53:12.809 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39535
+-- 05/12/19 20:53:14.200 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39535
+-- 05/12/19 20:53:14.255 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39536
+-- 05/12/19 20:53:14.255 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39536
+-- 05/12/19 20:53:14.276 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39536
+-- 05/12/19 20:53:22.526 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39538
+-- 05/12/19 20:53:22.527 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39538
+-- 05/12/19 20:53:22.557 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39538
+-- 05/12/19 20:53:32.527 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39542
+-- 05/12/19 20:53:32.528 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39542
+-- 05/12/19 20:53:32.558 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39542
+-- 05/12/19 20:53:39.606 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 20:57:08.175 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 20:57:08.182 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 20:57:08.186 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 20:57:08.186 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 20:57:17.167 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39556
+-- 05/12/19 20:57:17.167 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39556
+-- 05/12/19 20:57:17.221 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39556
+-- 05/12/19 20:57:17.294 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39557
+-- 05/12/19 20:57:17.294 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39557
+-- 05/12/19 20:57:17.322 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39557
+-- 05/12/19 20:57:19.641 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39558
+-- 05/12/19 20:57:19.641 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39558
+-- 05/12/19 20:57:19.678 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39558
+-- 05/12/19 20:57:29.642 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39559
+-- 05/12/19 20:57:29.643 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39559
+-- 05/12/19 20:57:29.659 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39559
+-- 05/12/19 20:57:36.719 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39563
+-- 05/12/19 20:57:36.720 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39563
+-- 05/12/19 20:57:37.657 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39563
+-- 05/12/19 20:57:37.734 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39564
+-- 05/12/19 20:57:37.734 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39564
+-- 05/12/19 20:57:37.794 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39564
+-- 05/12/19 20:57:39.642 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39566
+-- 05/12/19 20:57:39.642 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39566
+-- 05/12/19 20:57:39.691 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39566
+-- 05/12/19 20:57:49.644 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39567
+-- 05/12/19 20:57:49.644 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39567
+-- 05/12/19 20:57:49.711 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39567
+-- 05/12/19 20:57:59.640 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39568
+-- 05/12/19 20:57:59.640 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39568
+-- 05/12/19 20:57:59.689 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39568
+-- 05/12/19 20:58:07.310 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39569
+-- 05/12/19 20:58:07.310 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39569
+-- 05/12/19 20:58:07.332 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39569
+-- 05/12/19 20:58:07.366 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39570
+-- 05/12/19 20:58:07.366 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39570
+-- 05/12/19 20:58:07.406 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39570
+-- 05/12/19 20:58:09.639 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39571
+-- 05/12/19 20:58:09.640 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39571
+-- 05/12/19 20:58:09.694 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39571
+-- 05/12/19 20:58:20.825 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39573
+-- 05/12/19 20:58:20.825 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39573
+-- 05/12/19 20:58:20.871 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39573
+-- 05/12/19 20:58:21.148 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39576
+-- 05/12/19 20:58:21.148 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39576
+-- 05/12/19 20:58:21.413 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39576
+-- 05/12/19 20:58:21.470 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39578
+-- 05/12/19 20:58:21.470 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39578
+-- 05/12/19 20:58:21.514 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39578
+-- 05/12/19 20:58:28.959 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39579
+-- 05/12/19 20:58:28.959 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39579
+-- 05/12/19 20:58:28.984 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39579
+-- 05/12/19 20:58:29.028 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39580
+-- 05/12/19 20:58:29.028 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39580
+-- 05/12/19 20:58:29.073 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39580
+-- 05/12/19 20:58:29.639 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39581
+-- 05/12/19 20:58:29.640 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39581
+-- 05/12/19 20:58:29.687 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39581
+-- 05/12/19 20:58:39.621 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39582
+-- 05/12/19 20:58:39.621 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39582
+-- 05/12/19 20:58:39.669 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39582
+-- 05/12/19 20:58:44.997 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39589
+-- 05/12/19 20:58:44.997 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39589
+-- 05/12/19 20:58:45.210 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39589
+-- 05/12/19 20:58:45.282 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39591
+-- 05/12/19 20:58:45.282 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39591
+-- 05/12/19 20:58:45.326 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39591
+-- 05/12/19 20:58:49.639 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39592
+-- 05/12/19 20:58:49.639 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39592
+-- 05/12/19 20:58:49.682 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39592
+-- 05/12/19 20:58:54.581 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39596
+-- 05/12/19 20:58:54.581 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39596
+-- 05/12/19 20:58:54.817 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39596
+-- 05/12/19 20:58:54.871 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39598
+-- 05/12/19 20:58:54.871 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39598
+-- 05/12/19 20:58:54.911 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39598
+-- 05/12/19 20:58:59.625 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39599
+-- 05/12/19 20:58:59.626 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39599
+-- 05/12/19 20:58:59.669 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39599
+-- 05/12/19 20:59:04.411 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39600
+-- 05/12/19 20:59:04.411 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39600
+-- 05/12/19 20:59:04.432 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39600
+-- 05/12/19 20:59:04.786 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39601
+-- 05/12/19 20:59:04.786 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39601
+-- 05/12/19 20:59:04.827 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39601
+-- 05/12/19 20:59:09.639 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39602
+-- 05/12/19 20:59:09.639 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39602
+-- 05/12/19 20:59:09.677 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39602
+-- 05/12/19 20:59:13.560 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39604
+-- 05/12/19 20:59:13.560 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39604
+-- 05/12/19 20:59:13.585 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39604
+-- 05/12/19 20:59:13.633 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39605
+-- 05/12/19 20:59:13.633 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39605
+-- 05/12/19 20:59:13.676 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39605
+-- 05/12/19 20:59:19.642 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39606
+-- 05/12/19 20:59:19.642 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39606
+-- 05/12/19 20:59:19.682 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39606
+-- 05/12/19 20:59:27.819 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39607
+-- 05/12/19 20:59:27.819 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39607
+-- 05/12/19 20:59:27.839 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39607
+-- 05/12/19 20:59:27.877 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39608
+-- 05/12/19 20:59:27.878 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39608
+-- 05/12/19 20:59:27.917 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39608
+-- 05/12/19 20:59:29.642 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39609
+-- 05/12/19 20:59:29.642 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39609
+-- 05/12/19 20:59:29.683 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39609
+-- 05/12/19 20:59:39.642 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39611
+-- 05/12/19 20:59:39.643 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39611
+-- 05/12/19 20:59:39.686 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39611
+-- 05/12/19 20:59:49.638 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39612
+-- 05/12/19 20:59:49.638 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39612
+-- 05/12/19 20:59:49.675 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39612
+-- 05/12/19 20:59:59.640 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63491
+-- 05/12/19 20:59:59.640 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63491
+-- 05/12/19 20:59:59.641 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39613
+-- 05/12/19 20:59:59.642 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39613
+-- 05/12/19 20:59:59.680 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39613
+-- 05/12/19 21:00:09.640 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39614
+-- 05/12/19 21:00:09.640 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39614
+-- 05/12/19 21:00:09.671 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39614
+-- 05/12/19 21:00:19.655 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39615
+-- 05/12/19 21:00:19.655 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39615
+-- 05/12/19 21:00:19.691 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39615
+-- 05/12/19 21:00:29.655 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39616
+-- 05/12/19 21:00:29.655 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39616
+-- 05/12/19 21:00:29.707 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39616
+-- 05/12/19 21:00:33.237 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39617
+-- 05/12/19 21:00:33.237 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39617
+-- 05/12/19 21:00:33.256 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39617
+-- 05/12/19 21:00:33.287 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39618
+-- 05/12/19 21:00:33.288 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39618
+-- 05/12/19 21:00:33.328 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39618
+-- 05/12/19 21:00:39.663 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39619
+-- 05/12/19 21:00:39.663 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39619
+-- 05/12/19 21:00:39.707 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39619
+-- 05/12/19 21:00:49.661 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39620
+-- 05/12/19 21:00:49.661 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39620
+-- 05/12/19 21:00:49.712 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39620
+-- 05/12/19 21:00:59.687 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39621
+-- 05/12/19 21:00:59.687 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39621
+-- 05/12/19 21:00:59.741 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39621
+-- 05/12/19 21:01:09.659 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39622
+-- 05/12/19 21:01:09.659 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39622
+-- 05/12/19 21:01:09.694 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39622
+-- 05/12/19 21:01:18.443 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 21:01:18.457 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63491
+-- 05/12/19 21:02:03.117 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 21:02:03.123 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 21:02:03.128 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 21:02:03.128 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 21:06:32.687 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63518
+-- 05/12/19 21:06:32.688 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63518
+-- 05/12/19 21:06:32.690 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63518
+-- 05/12/19 21:06:37.563 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63526
+-- 05/12/19 21:06:37.563 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63526
+-- 05/12/19 21:06:54.617 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63532
+-- 05/12/19 21:06:54.617 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63532
+-- 05/12/19 21:08:37.577 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63526
+-- 05/12/19 21:08:54.632 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63532
+-- 05/12/19 21:18:32.510 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 21:18:43.483 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 21:18:43.490 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 21:18:43.494 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 21:18:43.494 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 21:18:58.712 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63733
+-- 05/12/19 21:18:58.712 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63733
+-! 05/12/19 21:19:28.715 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:332: ::Ice::ConnectionLostException:
+   connection lost: WSAECONNRESET
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63733
+-- 05/12/19 21:19:51.166 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63767
+-- 05/12/19 21:19:51.166 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63767
+-- 05/12/19 21:19:51.166 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63733
+   src\ice\cpp\src\Ice\StreamSocket.cpp:332: ::Ice::ConnectionLostException:
+   connection lost: WSAECONNRESET
+-- 05/12/19 21:20:02.831 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63783
+-- 05/12/19 21:20:02.831 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63783
+-! 05/12/19 21:20:38.018 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63783
+-- 05/12/19 21:20:38.018 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63783
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+-! 05/12/19 21:20:38.869 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63767
+-- 05/12/19 21:20:38.869 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:63767
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+-- 05/12/19 21:20:40.599 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 21:36:58.116 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 21:36:58.122 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 21:36:58.127 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 21:36:58.127 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 21:37:17.988 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64307
+-- 05/12/19 21:37:17.989 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64307
+-- 05/12/19 21:37:22.928 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64313
+-- 05/12/19 21:37:22.928 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64313
+-! 05/12/19 21:38:55.080 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64307
+-- 05/12/19 21:38:55.080 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64307
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+-! 05/12/19 21:39:06.021 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64313
+-- 05/12/19 21:39:06.021 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64313
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+-- 05/12/19 21:39:08.252 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 21:45:05.533 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 21:45:05.539 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 21:45:05.543 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 21:45:05.543 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 21:45:23.801 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64566
+-- 05/12/19 21:45:23.801 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64566
+-- 05/12/19 21:45:26.480 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64570
+-- 05/12/19 21:45:26.480 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64570
+-! 05/12/19 21:45:33.411 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 194, in jouerMorceaux
+       clientManagementI.client[port][1] = self.player
+   AttributeError: type object 'clientManagementI' has no attribute 'client'
+   
+   identity: SimpleManager
+   facet: 
+   operation: jouerMorceaux
+   remote host: ::ffff:192.168.43.15 remote port: 64566
+-- 05/12/19 21:45:33.423 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64566
+-- 05/12/19 21:45:56.593 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 21:45:56.599 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64570
+-- 05/12/19 21:45:59.968 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 21:45:59.975 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 21:45:59.980 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 21:45:59.980 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 21:46:14.057 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64603
+-- 05/12/19 21:46:14.057 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64603
+-- 05/12/19 21:46:16.290 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64609
+-- 05/12/19 21:46:16.291 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64609
+-! 05/12/19 21:46:39.591 server/server.py: warning: dispatch exception: src\Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "C:\Python37\lib\site-packages\Ice\__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server/server.py", line 242, in getInfos
+       mediaExtract = innerPlayer.get_media()
+   NameError: name 'innerPlayer' is not defined
+   
+   identity: SimpleManager
+   facet: 
+   operation: getInfos
+   remote host: ::ffff:192.168.43.15 remote port: 64603
+-- 05/12/19 21:46:39.595 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64603
+-- 05/12/19 21:47:11.094 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64639
+-- 05/12/19 21:47:11.094 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64639
+-- 05/12/19 21:47:18.064 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 21:47:18.073 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64609
+-- 05/12/19 21:47:18.073 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64639
+-- 05/12/19 21:47:19.533 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 21:47:19.539 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 21:47:19.544 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 21:47:19.544 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 21:47:25.274 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64649
+-- 05/12/19 21:47:25.274 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64649
+-- 05/12/19 21:47:25.279 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64649
+-- 05/12/19 21:47:30.553 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64655
+-- 05/12/19 21:47:30.554 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64655
+-- 05/12/19 21:47:35.030 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64661
+-- 05/12/19 21:47:35.030 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64661
+-- 05/12/19 21:47:50.342 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64661
+-! 05/12/19 21:48:55.061 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64655
+-- 05/12/19 21:48:55.061 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64655
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+-- 05/12/19 21:49:16.292 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64725
+-- 05/12/19 21:49:16.293 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64725
+-- 05/12/19 21:49:19.374 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64731
+-- 05/12/19 21:49:19.374 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64731
+-- 05/12/19 21:49:46.506 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64725
+-- 05/12/19 21:49:50.044 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64748
+-- 05/12/19 21:49:50.045 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64748
+-- 05/12/19 21:50:31.093 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64748
+-- 05/12/19 21:50:35.513 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64773
+-- 05/12/19 21:50:35.513 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64773
+-- 05/12/19 21:50:37.847 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64773
+-- 05/12/19 21:50:45.725 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 21:50:45.727 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:64731
+-- 05/12/19 22:02:19.362 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 22:02:19.372 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 22:02:19.378 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 22:02:19.378 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 22:02:34.909 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:65135
+-- 05/12/19 22:02:34.909 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:65135
+-- 05/12/19 22:02:38.431 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:65139
+-- 05/12/19 22:02:38.431 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:65139
+-- 05/12/19 22:03:35.952 server/server.py: Network: stopping to accept tcp connections at :::10000
+-- 05/12/19 22:03:35.955 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:65139
+-- 05/12/19 22:03:35.955 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:65135
+-- 05/12/19 22:03:54.471 server/server.py: Network: attempting to bind to tcp socket :::10000
+-- 05/12/19 22:03:54.479 server/server.py: Network: listening for tcp connections
+   local address = :::10000
+   local interfaces = 192.168.43.15, ::1, 127.0.0.1
+-- 05/12/19 22:03:54.483 server/server.py: Network: published endpoints for object adapter `SimpleManagerAdapter':
+   tcp -h 192.168.43.15 -p 10000 -t 60000
+-- 05/12/19 22:03:54.483 server/server.py: Network: accepting tcp connections at :::10000
+-- 05/12/19 22:04:08.013 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39661
+-- 05/12/19 22:04:08.013 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39661
+-- 05/12/19 22:04:08.069 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39661
+-- 05/12/19 22:04:10.658 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39662
+-- 05/12/19 22:04:10.658 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39662
+-- 05/12/19 22:04:10.679 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39662
+-- 05/12/19 22:04:21.480 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39664
+-- 05/12/19 22:04:21.480 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39664
+-- 05/12/19 22:04:21.494 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39664
+-- 05/12/19 22:04:21.974 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39667
+-- 05/12/19 22:04:21.974 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39667
+-- 05/12/19 22:04:22.920 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39667
+-- 05/12/19 22:04:22.981 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39668
+-- 05/12/19 22:04:22.981 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39668
+-- 05/12/19 22:04:23.039 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39668
+-- 05/12/19 22:04:28.938 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:65227
+-- 05/12/19 22:04:28.938 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:65227
+-- 05/12/19 22:04:30.656 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39670
+-- 05/12/19 22:04:30.656 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39670
+-- 05/12/19 22:04:30.707 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39670
+-- 05/12/19 22:04:40.659 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39671
+-- 05/12/19 22:04:40.659 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39671
+-- 05/12/19 22:04:40.936 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39671
+-- 05/12/19 22:04:50.661 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39672
+-- 05/12/19 22:04:50.661 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39672
+-- 05/12/19 22:04:50.714 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39672
+-- 05/12/19 22:05:00.649 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39673
+-- 05/12/19 22:05:00.649 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39673
+-- 05/12/19 22:05:00.694 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39673
+-- 05/12/19 22:05:10.664 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39674
+-- 05/12/19 22:05:10.664 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39674
+-- 05/12/19 22:05:10.709 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39674
+-- 05/12/19 22:05:13.813 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39675
+-- 05/12/19 22:05:13.813 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39675
+-- 05/12/19 22:05:13.851 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39675
+-- 05/12/19 22:05:13.913 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39676
+-- 05/12/19 22:05:13.913 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39676
+-- 05/12/19 22:05:13.963 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39676
+-- 05/12/19 22:05:20.667 server/server.py: Network: trying to accept tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39677
+-- 05/12/19 22:05:20.667 server/server.py: Network: accepted tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39677
+-- 05/12/19 22:05:20.717 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.1:39677
+-! 05/12/19 22:05:26.514 server/server.py: warning: connection exception:
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:65227
+-- 05/12/19 22:05:26.515 server/server.py: Network: closed tcp connection
+   local address = ::ffff:192.168.43.15:10000
+   remote address = ::ffff:192.168.43.15:65227
+   src\ice\cpp\src\Ice\StreamSocket.cpp:474: ::Ice::ConnectionLostException:
+   connection lost: The specified network name is no longer available.
+-- 05/12/19 22:05:30.640 server/server.py: Network: stopping to accept tcp connections at :::10000
