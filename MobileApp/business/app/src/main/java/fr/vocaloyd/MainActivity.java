@@ -1,8 +1,13 @@
 package fr.vocaloyd;
 
+import android.graphics.BitmapFactory;
+
 import android.Manifest;
 import android.content.Context;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.media.MediaRecorder;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
@@ -12,6 +17,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageButton;
+import android.util.Base64;
+import android.widget.TextView;
 
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ExoPlayerFactory;
@@ -27,10 +34,12 @@ import org.greenrobot.eventbus.Subscribe;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 
 import fr.vocaloyd.Analysis.AnalyzeEvent;
 import fr.vocaloyd.Analysis.AnalyzeService;
+import fr.vocaloyd.Music.BackgroundMusicService;
 import fr.vocaloyd.Music.MusicEvent;
 import fr.vocaloyd.Music.MusicService;
 import fr.vocaloyd.Transcription.TranscribeEvent;
@@ -38,11 +47,11 @@ import fr.vocaloyd.Transcription.TranscribeService;
 
 public class MainActivity extends AppCompatActivity
 {
-    private int port = 0;
-    private boolean recording = false;
-    private MediaRecorder rec = new MediaRecorder();
-    private Context servContext = VocaloydApp.getAppContext();
-    private ExoPlayer mainPlayer = ExoPlayerFactory.newSimpleInstance(servContext);
+    boolean recording;
+    MediaRecorder rec;
+    Context servContext;
+    ExoPlayer mainPlayer;
+    BackgroundMusicService bServ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -55,6 +64,12 @@ public class MainActivity extends AppCompatActivity
         ActivityCompat.requestPermissions(this, permissions, 10);
 
         EventBus.getDefault().register(this);
+
+        recording = false;
+        rec = new MediaRecorder();
+
+        servContext = VocaloydApp.getAppContext();
+        mainPlayer = ExoPlayerFactory.newSimpleInstance(servContext);
     }
 
     @Override
@@ -82,43 +97,12 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @Subscribe
-    public void onTranscribeEvent(TranscribeEvent tEvent)
+    @Override
+    protected void onStart()
     {
-        System.out.println("Transcription event received:");
-        System.out.println(tEvent.getResult());
-
-        analyzeCommand(tEvent.getResult());
-    }
-
-    @Subscribe
-    public void onAnalyzeEvent(AnalyzeEvent aEvent)
-    {
-        System.out.println("Analyze event received:");
-        System.out.println(aEvent.getResult());
-
-        musicCommand(aEvent.getResult());
-    }
-
-    @Subscribe
-    public void onMusicEvent(MusicEvent mEvent)
-    {
-        System.out.println("Music event received:");
-        System.out.println(mEvent.getResult());
-
-        if (mEvent.getResult() == null)
-        {
-            System.out.println("No result");
-            return;
-        }
-
-        PlayerView view = findViewById(R.id.playerView);
-        view.setPlayer(mainPlayer);
-        String agent = Util.getUserAgent(servContext, servContext.getApplicationInfo().name);
-        DefaultDataSourceFactory data = new DefaultDataSourceFactory(servContext, agent);
-        MediaSource source = new ExtractorMediaSource.Factory(data).createMediaSource(mEvent.getResult());
-        mainPlayer.prepare(source);
-        mainPlayer.setPlayWhenReady(true);
+        super.onStart();
+        bServ = new BackgroundMusicService("getInfos");
+        bServ.start();
     }
 
     public void record(View view) throws IOException
@@ -127,6 +111,7 @@ public class MainActivity extends AppCompatActivity
 
         if (!recording)
         {
+            mainPlayer.setPlayWhenReady(false);
             rec.setAudioSource(MediaRecorder.AudioSource.MIC);
             rec.setOutputFormat(MediaRecorder.OutputFormat.AMR_WB);
             rec.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_WB);
@@ -147,6 +132,7 @@ public class MainActivity extends AppCompatActivity
             recording = false;
             rec.reset();
             System.out.println("Stopping recording");
+            mainPlayer.setPlayWhenReady(true);
 
             transcribeCommand(audioFile);
         }
@@ -165,6 +151,23 @@ public class MainActivity extends AppCompatActivity
         tServ.execute(file);
     }
 
+    @Subscribe
+    public void onTranscribeEvent(TranscribeEvent tEvent)
+    {
+        System.out.println("Transcription event received:");
+        System.out.println(tEvent.getResult());
+
+        if (tEvent.getResult() == null)
+        {
+            System.out.println("No result");
+            return;
+        }
+        else
+        {
+            analyzeCommand(tEvent.getResult());
+        }
+    }
+
     public void analyzeCommand(String transcription)
     {
         System.out.println("Analysis");
@@ -173,12 +176,123 @@ public class MainActivity extends AppCompatActivity
         aServ.execute(transcription);
     }
 
+    @Subscribe
+    public void onAnalyzeEvent(AnalyzeEvent aEvent)
+    {
+        System.out.println("Analyze event received:");
+        System.out.println(aEvent.getResult());
+
+        if (aEvent.getResult() == null)
+        {
+            System.out.println("No result");
+            return;
+        }
+        else
+        {
+            musicCommand(aEvent.getResult());
+        }
+    }
+
     public void musicCommand(Map.Entry<String, String> command)
     {
         System.out.println("Streaming");
 
         MusicService mServ = new MusicService();
-        mServ.execute(this, "init", command.getKey(), command.getValue());
+        mServ.execute("init", command.getKey(), command.getValue());
+
+        mServ = new MusicService();
+        mServ.execute("getInfos");
+    }
+
+    @Subscribe
+    public void onMusicEvent(MusicEvent mEvent)
+    {
+        System.out.println("Music event received:");
+        System.out.println(mEvent.getResult());
+        HashMap<String, String> result = mEvent.getResult();
+
+        if (result.get("uri") != null)
+        {
+            PlayerView view = findViewById(R.id.playerView);
+            view.setPlayer(mainPlayer);
+            String agent = Util.getUserAgent(servContext, servContext.getApplicationInfo().name);
+            DefaultDataSourceFactory data = new DefaultDataSourceFactory(servContext, agent);
+            MediaSource source = new ExtractorMediaSource.Factory(data).createMediaSource(Uri.parse(result.get("uri")));
+            mainPlayer.prepare(source);
+            mainPlayer.setPlayWhenReady(true);
+            ImageButton butt = findViewById(R.id.exo_play);
+            playPause(butt);
+            return;
+        }
+
+        if (result.get("info") != null)
+        {
+            Boolean freshContent = false;
+            Boolean changedContent = false;
+
+            if (result.get("Title") == null)
+            {
+                return;
+            }
+
+            TextView tView;
+
+            tView = findViewById(R.id.textTitre);
+            String titreBase = tView.getText().toString();
+
+            String titre = result.get("Title");
+            String album = result.get("Album");
+            String artiste = result.get("Artist");
+
+            if (titreBase.length() == 0)    //No data displayed
+            {
+                freshContent = true;
+            }
+            else    //Test if displayed data is up-to-date
+            {
+                tView = findViewById(R.id.textAlbum);
+                String albumBase = tView.getText().toString();
+
+                tView = findViewById(R.id.textArtiste);
+                String artisteBase = tView.getText().toString();
+
+                if (!titre.equals(titreBase) || !album.equals(albumBase) || !artiste.equals(artisteBase))
+                {
+                    changedContent = true;
+                }
+            }
+
+            ///Outdated values → New values
+            if (freshContent == true || changedContent == true)
+            {
+                String desc = result.get("Description");
+
+                desc = desc.substring(2); //Remove leading "b'"
+
+                byte[] imageStr = Base64.decode(desc, Base64.DEFAULT);
+                Drawable img = new BitmapDrawable(getResources(), BitmapFactory.decodeByteArray(imageStr, 0, imageStr.length));
+
+                PlayerView view = findViewById(R.id.playerView);
+                view.setDefaultArtwork(img);
+
+                tView = findViewById(R.id.textTitre);
+                tView.setText(titre);
+
+                tView = findViewById(R.id.textAlbum);
+                tView.setText(album);
+
+                tView = findViewById(R.id.textArtiste);
+                tView.setText(artiste);
+
+                tView = findViewById(R.id.textGenre);
+                tView.setText(result.get("Genre"));
+
+                tView = findViewById(R.id.textAnnee);
+                tView.setText(result.get("Date"));
+            }
+
+            return;
+        }
     }
 
     public void playPause(View view)
@@ -200,22 +314,34 @@ public class MainActivity extends AppCompatActivity
     public void previousTrack(View view)
     {
         MusicService mServ = new MusicService();
-        mServ.execute(this, "previousTrack");
+        mServ.execute("previousTrack");
+
+        mServ = new MusicService();
+        mServ.execute("getInfos");
     }
 
     public void nextTrack(View view)
     {
         MusicService mServ = new MusicService();
-        mServ.execute(this, "nextTrack");
+        mServ.execute("nextTrack");
+
+        mServ = new MusicService();
+        mServ.execute("getInfos");
     }
 
-    public int getPort()
+    @Override
+    protected void onStop()
     {
-        return port;
+        super.onStop();
+        bServ.interrupt();
     }
 
-    public void setPort(int paramPort)
+    @Override
+    protected void onDestroy()
     {
-        port = paramPort;
+        System.out.println("Destroying");
+        super.onDestroy();
+        MusicService mServ = new MusicService();
+        mServ.execute("unsub");
     }
 }

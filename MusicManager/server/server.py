@@ -1,17 +1,19 @@
 # coding=utf-8
 
-import sys, Ice
-import discotheque
+import base64
+import Ice
 import json
 import os
 import pymongo
+import sys
 import time
+import traceback
 import vlc
 
+from discotheque import *
 from pymongo.collation import Collation
 
-#TODO : rajouter genres dans construction morceaux (recherches)
-class clientManagementI(discotheque.clientManagement):
+class clientManagementI(clientManagement):
     nbClients = 0
     nbMaxClients = 101
     basePort = 10100
@@ -40,22 +42,24 @@ class clientManagementI(discotheque.clientManagement):
             return i
 
     def unsubscribe(self, port, current=None):
-        trackManagementI.stop(port)
+        trackManagementI.stop(trackManagementI, port)
         self.clients[port] = [True, None]
         self.nbClients -= 1
         print("Client with port " + str(port) + " unsubscribed")
 
-class trackManagementI(discotheque.trackManagement):
+class trackManagementI(trackManagement):
 
     client = pymongo.MongoClient("mongodb+srv://raph:Multani55%2b@cluster0-guvid.gcp.mongodb.net/test?retryWrites=true")
     db = client.db
-    collecMusique = db['musiquePath']
+    collecMusique = db['musiqueRaph']
     localPath = os.path.join(os.path.dirname(__file__), 'tracks/')
     vlcInst = vlc.Instance()
+    player = None
+    innerPlayer = None
 
     def ajouterTitre(self, song, current=None):
         query = self.collecMusique.insert_one(song.__dict__)
-        queryCount = self.collecMusique.count_documents({})
+        queryCount = 1
         log = queryResult(sys._getframe().f_code.co_name, queryCount)
         print(log)
         return "Titre ajouté dans la base"
@@ -65,7 +69,7 @@ class trackManagementI(discotheque.trackManagement):
         query = self.collecMusique.find({}, {"_id": 0})
         queryCount = self.collecMusique.count_documents({})
         for musique in query:
-            track = discotheque.Morceau(musique['artiste'], musique['album'], musique['titre'], musique['file'])
+            track = Morceau(musique['titre'], musique['artiste'], musique['album'], musique['genre'], musique['piste'], musique['image'], musique['fichier'])
             musiques.append(track)
         log = queryResult(sys._getframe().f_code.co_name, queryCount)
         print(log)
@@ -74,10 +78,10 @@ class trackManagementI(discotheque.trackManagement):
     #Recherche générique (toutes informations confondues)
     def rechercher(self, info, current=None):
         musiques = []
-        query = self.collecMusique.find({"$or": [{"titre": info}, {"artiste": info}, {"album": info}, {"genre": info}]}, {"_id": 0}).collation(Collation(locale = 'fr', strength = 2))
-        queryCount = self.collecMusique.count_documents({"$or": [{"titre": info}, {"artiste": info}, {"album": info}, {"genre": info}]}, collation = Collation(locale = 'fr', strength = 2))
+        query = self.collecMusique.find({"$or": [{"titre": info}, {"artiste": info}, {"album": info}, {"genre": info}]}, {"_id": 0}).collation(Collation(locale = 'fr', strength = 1))
+        queryCount = self.collecMusique.count_documents({"$or": [{"titre": info}, {"artiste": info}, {"album": info}, {"genre": info}]}, collation = Collation(locale = 'fr', strength = 1))
         for musique in query:
-            track = discotheque.Morceau(musique['artiste'], musique['album'], musique['titre'], musique['file'])
+            track = Morceau(musique['titre'], musique['artiste'], musique['album'], musique['genre'], musique['piste'], musique['image'], musique['fichier'])
             musiques.append(track)
         log = queryResult(sys._getframe().f_code.co_name, queryCount)
         print(log)
@@ -85,22 +89,22 @@ class trackManagementI(discotheque.trackManagement):
 
     def rechercherParTitre(self, title, current=None):
         musiques = []
-        query = self.collecMusique.find({"titre": title}, {"_id": 0}).collation(Collation(locale = 'fr', strength = 2))
-        queryCount = self.collecMusique.count_documents({"titre": title}, collation = Collation(locale = 'fr', strength = 2))
+        query = self.collecMusique.find({"titre": title}, {"_id": 0}).collation(Collation(locale = 'fr', strength = 1))
+        queryCount = self.collecMusique.count_documents({"titre": title}, collation = Collation(locale = 'fr', strength = 1))
         for musique in query:
-            track = discotheque.Morceau(musique['artiste'], musique['album'], musique['titre'], musique['file'])
+            track = Morceau(musique['titre'], musique['artiste'], musique['album'], musique['genre'], musique['piste'], musique['image'], musique['fichier'])
             musiques.append(track)
         log = queryResult(sys._getframe().f_code.co_name, queryCount)
         print(log)
-        print(query)
         return musiques
 
     def rechercherParArtiste(self, artist, current=None):
         musiques = []
-        query = self.collecMusique.find({"artiste": artist}, {"_id": 0}).collation(Collation(locale = 'fr', strength = 2))
-        queryCount = query.count_documents({"artiste": artist}, collation = Collation(locale = 'fr', strength = 2))
+        query = self.collecMusique.find({"artiste": artist}, {"_id": 0}).collation(Collation(locale = 'fr', strength = 1))
+        queryCount = self.collecMusique.count_documents({"artiste": artist}, collation = Collation(locale = 'fr', strength = 1))
         for musique in query:
-            track = discotheque.Morceau(musique['artiste'], musique['album'], musique['titre'], musique['file'])
+            track = Morceau(musique['titre'], musique['artiste'], musique['album'], musique['genre'], musique['piste'], musique['image'], musique['fichier'])
+            print(track.titre + ", " + track.artiste + ", " + track.album + ", " + track.fichier)
             musiques.append(track)
         log = queryResult(sys._getframe().f_code.co_name, queryCount)
         print(log)
@@ -108,10 +112,10 @@ class trackManagementI(discotheque.trackManagement):
 
     def rechercherParAlbum(self, album, current=None):
         musiques = []
-        query = self.collecMusique.find({"album": album}, {"_id": 0}).collation(Collation(locale = 'fr', strength = 2))
-        queryCount = query.count_documents({"album": album}, collation = Collation(locale = 'fr', strength = 2))
+        query = self.collecMusique.find({"album": album}, {"_id": 0}).collation(Collation(locale = 'fr', strength = 1)).sort("piste", pymongo.ASCENDING)
+        queryCount = self.collecMusique.count_documents({"album": album}, collation = Collation(locale = 'fr', strength = 1))
         for musique in query:
-            track = discotheque.Morceau(musique['artiste'], musique['album'], musique['titre'], musique['file'])
+            track = Morceau(musique['titre'], musique['artiste'], musique['album'], musique['genre'], musique['piste'], musique['image'], musique['fichier'])
             musiques.append(track)
         log = queryResult(sys._getframe().f_code.co_name, queryCount)
         print(log)
@@ -119,17 +123,17 @@ class trackManagementI(discotheque.trackManagement):
 
     def rechercherParGenre(self, genre, current=None):
         musiques = []
-        query = self.collecMusique.find({"genre": genre}, {"_id": 0}).collation(Collation(locale = 'fr', strength = 2))
-        queryCount = query.count_documents({"genre": genre}, collation = Collation(locale = 'fr', strength = 2))
+        query = self.collecMusique.find({"genre": genre}, {"_id": 0}).collation(Collation(locale = 'fr', strength = 1))
+        queryCount = self.collecMusique.count_documents({"genre": genre}, collation = Collation(locale = 'fr', strength = 1))
         for musique in query:
-            track = discotheque.Morceau(musique['artiste'], musique['album'], musique['titre'], musique['file'])
+            track = Morceau(musique['titre'], musique['artiste'], musique['album'], musique['genre'], musique['piste'], musique['image'], musique['fichier'])
             musiques.append(track)
         log = queryResult(sys._getframe().f_code.co_name, queryCount)
         print(log)
         return musiques
  
     def supprimerTitre(self, title, artist, current=None):
-        query = self.collecMusique.delete_one({"titre": title, "artiste": artist}, collation = Collation(locale = 'fr', strength = 2))
+        query = self.collecMusique.delete_one({"titre": title, "artiste": artist}, collation = Collation(locale = 'fr', strength = 1))
         queryCount = query.deleted_count
         log = queryResult(sys._getframe().f_code.co_name, queryCount)
         print(log)
@@ -139,7 +143,7 @@ class trackManagementI(discotheque.trackManagement):
             return True
             
     def supprimerAlbum(self, artist, album, current=None):
-        query = self.collecMusique.delete_many({"artiste": artist, "album": album}, collation = Collation(locale = 'fr', strength = 2))
+        query = self.collecMusique.delete_many({"artiste": artist, "album": album}, collation = Collation(locale = 'fr', strength = 1))
         queryCount = query.deleted_count
         log = queryResult(sys._getframe().f_code.co_name, queryCount)
         print(log)
@@ -149,7 +153,7 @@ class trackManagementI(discotheque.trackManagement):
             return True
 
     def supprimerArtiste(self, artist, current=None):
-        query = self.collecMusique.delete_many({"artiste": artist}, collation = Collation(locale = 'fr', strength = 2))
+        query = self.collecMusique.delete_many({"artiste": artist}, collation = Collation(locale = 'fr', strength = 1))
         queryCount = query.deleted_count
         log = queryResult(sys._getframe().f_code.co_name, queryCount)
         print(log)
@@ -159,30 +163,33 @@ class trackManagementI(discotheque.trackManagement):
             return True
 
     def jouerMorceaux(self, tracks, port, current=None):
-        if clientManagementI.clients[port][1] is None:
-            clientManagementI.clients[port][1] = self.vlcInst.media_list_player_new()
+        self.player = clientManagementI.clients[port][1]
 
-        player = clientManagementI.clients[port][1]
+        if self.player is not None:
+            self.innerPlayer.release()
+            self.player.release()
+            print("Releasing player")
 
-        if player.is_playing():
-            print("Stopping")
-            player.release()
-            player = self.vlcInst.media_list_player_new()
+        self.player = self.vlcInst.media_list_player_new()
+        self.innerPlayer = self.vlcInst.media_player_new()
+        self.player.set_media_player(self.innerPlayer)
 
         target = "/stream"
         localTracks = []
 
+        clientManagementI.clients[port][1] = self.player
+
         for track in tracks:
-            localTracks.append(self.localPath + str(track.file))
+            localTracks.append(self.localPath + str(track.fichier))
 
         media = self.vlcInst.media_list_new()
 
         for track in localTracks:
             media.add_media(self.vlcInst.media_new(track, 'sout=#transcode{vcodec=none,acodec=mp3,ab=128,channels=2,samplerate=44100,scodec=none}:http{mux=mp3,dst=:' + str(port) + target + '}', 'sout-all', 'sout-keep'))
-            # media.add_media(self.vlcInst.media_new(track, 'sout=#udp{dst=192.168.1.15:11000/stream}', 'sout-all', 'sout-keep'))
+            # media.add_media(self.vlcInst.media_new(track, 'sout=#udp{dst=192.168.43.15:11000/stream}', 'sout-all', 'sout-keep'))
 
-        player.set_media_list(media)
-        player.play()
+        self.player.set_media_list(media)
+        self.player.play()
 
         return target
 
@@ -190,33 +197,61 @@ class trackManagementI(discotheque.trackManagement):
         if clientManagementI.clients[port][1] is None:
             return
         else:
-            player = clientManagementI.clients[port][1]
+            self.player = clientManagementI.clients[port][1]
 
-            if player.is_playing():
-                player.pause()
-            elif not player.is_playing():
-                player.play()
+            if self.player.is_playing():
+                self.player.pause()
+            elif not self.player.is_playing():
+                self.player.play()
         return
     
     def nextTrack(self, port, current=None):
         if clientManagementI.clients[port][1] is None:
             return
         else:
-            player = clientManagementI.clients[port][1]
-            player.next()
+            self.player = clientManagementI.clients[port][1]
+            self.player.next()
         return
 
     def previousTrack(self, port, current=None):
         if clientManagementI.clients[port][1] is None:
             return
         else:
-            player = clientManagementI.clients[port][1]
-            player.previous()
+            self.player = clientManagementI.clients[port][1]
+            self.player.previous()
         return
 
-    def stop(port, current=None):
-        player = clientManagementI.clients[port][1]
-        player.release()
+    def stop(self, port, current=None):
+        self.player = clientManagementI.clients[port][1]
+
+        if self.player is not None:
+            self.player.release()
+        if self.innerPlayer is not None:
+            self.innerPlayer.release()
+        print("Releasing player")
+
+    def getInfos(self, port, current=None):
+        if clientManagementI.clients[port][1] is None:
+            return
+        else:
+            self.player = clientManagementI.clients[port][1]
+            mediaExtract = self.innerPlayer.get_media()
+
+            if mediaExtract is not None:
+                mediaExtract.parse_with_options(vlc.MediaParseFlag.fetch_local, 0)
+            
+                result = []
+
+                for i in range(12):
+                    if mediaExtract.get_meta(i) is not None:
+                        if vlc.Meta._enum_names_[i] == "Description":
+                            image = open(self.localPath + str(mediaExtract.get_meta(i)), 'rb').read()
+                            imageStr = str(base64.b64encode(image))
+                            result.append(Entry("Description", imageStr))
+                            continue
+                        result.append(Entry(vlc.Meta._enum_names_[i], mediaExtract.get_meta(i)))
+                
+                return result
 
 def queryResult(funcName, queryCount):
     log = funcName + " -> " + str(queryCount)
@@ -224,7 +259,7 @@ def queryResult(funcName, queryCount):
         log += " documents concernés"
     else:
         log += " document concerné"
-    return log
+    return log            
 
 props = Ice.createProperties(sys.argv)
 props.setProperty("Ice.LogFile", "log")
@@ -243,4 +278,6 @@ with Ice.initialize(initData) as communicator:
     adapter.add(object, communicator.stringToIdentity("SimpleManager"))
     adapter.add(object2, communicator.stringToIdentity("SimpleClientManager"))
     adapter.activate()
+
+    print("Server launched")
     communicator.waitForShutdown()

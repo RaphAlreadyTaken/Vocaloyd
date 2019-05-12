@@ -1,7 +1,11 @@
-import discotheque.Morceau;
+import discotheque.*;
 
+import java.awt.image.BufferedImage;
+import java.util.HashMap;
 import java.util.Scanner;
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -9,23 +13,26 @@ import java.io.InputStream;
 import java.io.InterruptedIOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import javax.imageio.ImageIO;
+
+import com.zeroc.Ice.*;
 
 public class Client
 {
     public static void main(String[] args) throws FileNotFoundException, IOException, InterruptedIOException
     {
-        com.zeroc.Ice.Properties props = com.zeroc.Ice.Util.createProperties(args);
+        Properties props = Util.createProperties(args);
         props.setProperty("Ice.MessageSizeMax", "40000");
-        com.zeroc.Ice.InitializationData initData = new com.zeroc.Ice.InitializationData();
+        InitializationData initData = new InitializationData();
         initData.properties = props;
         
 
-        try (com.zeroc.Ice.Communicator communicator = com.zeroc.Ice.Util.initialize(initData))
+        try (Communicator communicator = Util.initialize(initData))
         {
-            com.zeroc.Ice.ObjectPrx base = communicator.stringToProxy("SimpleManager:default -h 192.168.43.15 -p 10000");
-            com.zeroc.Ice.ObjectPrx baseClient = communicator.stringToProxy("SimpleClientManager:default -h 192.168.43.15 -p 10000");
-            discotheque.trackManagementPrx manager = discotheque.trackManagementPrx.checkedCast(base);
-            discotheque.clientManagementPrx clientManager = discotheque.clientManagementPrx.checkedCast(baseClient);
+            ObjectPrx base = communicator.stringToProxy("SimpleManager:default -h 192.168.43.15 -p 10000");
+            ObjectPrx baseClient = communicator.stringToProxy("SimpleClientManager:default -h 192.168.43.15 -p 10000");
+            trackManagementPrx manager = trackManagementPrx.checkedCast(base);
+            clientManagementPrx clientManager = clientManagementPrx.checkedCast(baseClient);
 
             int port = clientManager.subscribe();
 
@@ -44,11 +51,13 @@ public class Client
                     "2- Lister les titres",
                     "3- Rechercher par titre",
                     "4- Rechercher par artiste",
-                    "5- Supprimer une piste",
-                    "6- Supprimer un album",
-                    "7- Jouer",
-                    "8- Gérer lecture",
-                    "9- Quitter"
+                    "5- Rechercher par album",
+                    "6- Rechercher par genre",
+                    "7- Supprimer une piste",
+                    "8- Supprimer un album",
+                    "9- Jouer",
+                    "10- Gérer lecture",
+                    "0- Quitter"
                 };
 
                 System.out.println("** Gestion de discothèque **");
@@ -68,7 +77,7 @@ public class Client
                 switch(choixInt)
                 {
                     case 1:
-                        discotheque.Morceau track = new discotheque.Morceau();
+                        Morceau track = new Morceau();
 
                         System.out.print("Titre : ");
                         choixStr = saisirString();
@@ -86,9 +95,17 @@ public class Client
                         choixStr = saisirString();
                         track.genre = choixStr;
 
+                        System.out.print("Piste : ");
+                        choixStr = saisirString();
+                        track.piste = choixStr;
+
+                        System.out.print("Image : ");
+                        choixStr = saisirString();
+                        track.image = choixStr;
+
                         System.out.print("Fichier : ");
                         choixStr = saisirString();
-                        track.file = choixStr;
+                        track.fichier = choixStr;
 
                         manager.ajouterTitre(track);
                         break;
@@ -113,6 +130,18 @@ public class Client
                         break;
 
                     case 5:
+                        System.out.print("Album : ");
+                        choixStr = saisirString();
+                        tracks = manager.rechercherParAlbum(choixStr);
+                        displayTitles(tracks);
+
+                    case 6:
+                        System.out.print("Genre : ");
+                        choixStr = saisirString();
+                        tracks = manager.rechercherParGenre(choixStr);
+                        displayTitles(tracks);
+
+                    case 7:
                         System.out.print("Titre : ");
                         choixStr = saisirString();
                         
@@ -132,7 +161,7 @@ public class Client
 
                         break;
 
-                    case 6:
+                    case 8:
                         System.out.print("Artiste : ");
                         choixStr = saisirString();
                         
@@ -152,20 +181,28 @@ public class Client
 
                         break;
 
-                    case 7:
-                        System.out.print("Type de recherche (entrer 'all' pour tous types): ");
-                        choixStr = saisirString();
+                    case 9:
+                        System.out.println("Type de recherche: ");
 
-                        switch (choixStr)
+                        String[] choix2 =
                         {
-                            case "all":
-                                System.out.print("Information : ");
-                                choixStr2 = saisirString();
-                                Morceau[] defaultResult = manager.rechercher(choixStr2);
-                                target = manager.jouerMorceaux(defaultResult, port);
-                                break;
+                            "1- Titre",
+                            "2- Artiste",
+                            "3- Album",
+                            "4- Genre",
+                            "5- Tous"
+                        };
 
-                            case "titre":
+                        for (String str : choix2)
+                        {
+                            System.out.println(str);
+                        }
+
+                        choixInt = saisirInt(choix2.length);
+
+                        switch (choixInt)
+                        {
+                            case 1:
                                 System.out.print("Titre : ");
                                 choixStr2 = saisirString();
                                 System.out.println(choixStr2);
@@ -173,24 +210,31 @@ public class Client
                                 target = manager.jouerMorceaux(tracks, port);
                                 break;
 
-                            case "artiste":
+                            case 2:
                                 System.out.print("Artiste : ");
                                 choixStr2 = saisirString();
                                 tracks = manager.rechercherParArtiste(choixStr2);
                                 target = manager.jouerMorceaux(tracks, port);
                                 break;
 
-                            case "album":
+                            case 3:
                                 System.out.print("Album : ");
                                 choixStr2 = saisirString();
                                 tracks = manager.rechercherParAlbum(choixStr2);
                                 target = manager.jouerMorceaux(tracks, port);
                                 break;
 
-                            case "genre":
+                            case 4:
                                 System.out.print("Genre : ");
                                 choixStr2 = saisirString();
                                 tracks = manager.rechercherParGenre(choixStr2);
+                                target = manager.jouerMorceaux(tracks, port);
+                                break;
+
+                            case 5:
+                                System.out.print("Information : ");
+                                choixStr2 = saisirString();
+                                tracks = manager.rechercher(choixStr2);
                                 target = manager.jouerMorceaux(tracks, port);
                                 break;
 
@@ -202,18 +246,28 @@ public class Client
                         Runtime.getRuntime().exec("vlc http://192.168.43.15:" + port + target);
                         break;
 
-                    case 8:
+                    case 10:
                         Boolean end = false;
+
+                        String[] choix3 = 
+                        {
+                            "1- Play/Pause",
+                            "2- Next track",
+                            "3- Previous track",
+                            "4- Info current track",
+                            "5- Quitter"
+                        };
 
                         while (end == false)
                         {
                             System.out.println("Action: ");
-                            System.out.println("1- Play/Pause");
-                            System.out.println("2- Next track");
-                            System.out.println("3- Previous track");
-                            System.out.println("4- Quitter");
+                            
+                            for (String str : choix3)
+                            {
+                                System.out.println(str);
+                            }
 
-                            choixInt = saisirInt(3);
+                            choixInt = saisirInt(choix3.length);
 
                             switch (choixInt)
                             {
@@ -230,6 +284,28 @@ public class Client
                                     break;
 
                                 case 4:
+                                    Entry[] result = manager.getInfos(port);
+                                    HashMap<String, String> resultMap = new HashMap<>();
+
+                                    for (Entry ent : result)
+                                    {
+                                        resultMap.put(ent.key, ent.value);
+                                    }
+                                    
+                                    String album = resultMap.get("Album");
+                                    String desc = resultMap.get("Description");
+
+                                    desc = desc.substring(2); //Remove leading "b'"
+                                    
+                                    //Inspired from https://stackoverflow.com/a/50682688/9908246
+                                    byte[] imageBytes = javax.xml.bind.DatatypeConverter.parseBase64Binary(desc);
+                                    BufferedImage image = ImageIO.read(new ByteArrayInputStream(imageBytes));
+                                    File outputfile = new File("./business/discotheque/client/img/" + album + ".jpg");
+                                    System.out.println(ImageIO.write(image, "jpg", outputfile));
+
+                                    break;
+
+                                case 5:
                                     end = true;
                                     break;
 
@@ -240,7 +316,7 @@ public class Client
 
                         break;
 
-                    case 9:
+                    case 0:
                         clientManager.unsubscribe(port);
                         return;
 
@@ -266,10 +342,10 @@ public class Client
 
                 if (choix < 0 || choix > valMax)
                 {
-                    throw new Exception("Valeur incorrecte");
+                    throw new java.lang.Exception("Valeur incorrecte");
                 }
             }
-            catch (Exception ex)
+            catch (java.lang.Exception ex)
             {
                 System.out.println("\nInput invalide : " + ex.getMessage() + "\n");
             }
@@ -293,7 +369,7 @@ public class Client
             {
                 choix = sc.nextLine();
             }
-            catch (Exception ex)
+            catch (java.lang.Exception ex)
             {
                 System.out.println("\nInput invalide : " + ex.getMessage() + "\n");
             }
@@ -304,18 +380,19 @@ public class Client
         return choix;
     }
 
-    public static void displayTitle(discotheque.Morceau track)
+    public static void displayTitle(Morceau track)
     {
         System.out.println("*** " + track.titre);
         System.out.println("* Artiste : " + track.artiste);
         System.out.println("* Album : " + track.album);
+        System.out.println("* Genre : " + track.genre);
         System.out.println("***");
         System.out.println();
     }
 
-    public static void displayTitles(discotheque.Morceau [] tracks)
+    public static void displayTitles(Morceau [] tracks)
     {
-        for (discotheque.Morceau track : tracks)
+        for (Morceau track : tracks)
         {
             displayTitle(track);
         }

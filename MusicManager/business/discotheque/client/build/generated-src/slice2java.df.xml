@@ -1,11 +1,13 @@
 <state>
-  <timestamp value='1557432609065' />
+  <timestamp value='1557609635799' />
   <sourceSet name='default'>
     <source name='C:\Users\Raph\Desktop\Vocaloyd\shared\Discotheque.ice'>
       <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\Morceau.java' />
+      <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\Entry.java' />
       <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\trackManagement.java' />
       <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\clientManagement.java' />
       <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\MorceauxHelper.java' />
+      <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\MapHelper.java' />
       <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\trackManagementPrx.java' />
       <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\_trackManagementPrxI.java' />
       <file name='C:\Users\Raph\Desktop\Vocaloyd\MusicManager\business\discotheque\client\build\generated-src\discotheque\clientManagementPrx.java' />

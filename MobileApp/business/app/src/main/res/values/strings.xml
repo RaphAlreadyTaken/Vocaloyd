@@ -4,4 +4,9 @@
     <string name="Vocaloyd">Vocaloyd</string>
     <string name="stream">Stream</string>
     <string name="app_string_app_name">app @string/App name</string>
+    <string name="Artiste">artist</string>
+    <string name="Album">album</string>
+    <string name="Genre">genre</string>
+    <string name="Titre">titre</string>
+    <string name="Annee">annee</string>
 </resources>

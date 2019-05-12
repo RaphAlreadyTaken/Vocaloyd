@@ -24,13 +24,14 @@ __name__ = 'discotheque'
 if 'Morceau' not in _M_discotheque.__dict__:
     _M_discotheque.Morceau = Ice.createTempClass()
     class Morceau(object):
-        def __init__(self, titre='', artiste='', album='', genre='', file='', duree=''):
+        def __init__(self, titre='', artiste='', album='', genre='', piste='', image='', fichier=''):
             self.titre = titre
             self.artiste = artiste
             self.album = album
             self.genre = genre
-            self.file = file
-            self.duree = duree
+            self.piste = piste
+            self.image = image
+            self.fichier = fichier
 
         def __hash__(self):
             _h = 0
@@ -38,8 +39,9 @@ if 'Morceau' not in _M_discotheque.__dict__:
             _h = 5 * _h + Ice.getHash(self.artiste)
             _h = 5 * _h + Ice.getHash(self.album)
             _h = 5 * _h + Ice.getHash(self.genre)
-            _h = 5 * _h + Ice.getHash(self.file)
-            _h = 5 * _h + Ice.getHash(self.duree)
+            _h = 5 * _h + Ice.getHash(self.piste)
+            _h = 5 * _h + Ice.getHash(self.image)
+            _h = 5 * _h + Ice.getHash(self.fichier)
             return _h % 0x7fffffff
 
         def __compare(self, other):
@@ -80,21 +82,29 @@ if 'Morceau' not in _M_discotheque.__dict__:
                         return -1
                     elif self.genre > other.genre:
                         return 1
-                if self.file is None or other.file is None:
-                    if self.file != other.file:
-                        return (-1 if self.file is None else 1)
+                if self.piste is None or other.piste is None:
+                    if self.piste != other.piste:
+                        return (-1 if self.piste is None else 1)
                 else:
-                    if self.file < other.file:
+                    if self.piste < other.piste:
                         return -1
-                    elif self.file > other.file:
+                    elif self.piste > other.piste:
                         return 1
-                if self.duree is None or other.duree is None:
-                    if self.duree != other.duree:
-                        return (-1 if self.duree is None else 1)
+                if self.image is None or other.image is None:
+                    if self.image != other.image:
+                        return (-1 if self.image is None else 1)
                 else:
-                    if self.duree < other.duree:
+                    if self.image < other.image:
                         return -1
-                    elif self.duree > other.duree:
+                    elif self.image > other.image:
+                        return 1
+                if self.fichier is None or other.fichier is None:
+                    if self.fichier != other.fichier:
+                        return (-1 if self.fichier is None else 1)
+                else:
+                    if self.fichier < other.fichier:
+                        return -1
+                    elif self.fichier > other.fichier:
                         return 1
                 return 0
 
@@ -150,8 +160,9 @@ if 'Morceau' not in _M_discotheque.__dict__:
         ('artiste', (), IcePy._t_string),
         ('album', (), IcePy._t_string),
         ('genre', (), IcePy._t_string),
-        ('file', (), IcePy._t_string),
-        ('duree', (), IcePy._t_string)
+        ('piste', (), IcePy._t_string),
+        ('image', (), IcePy._t_string),
+        ('fichier', (), IcePy._t_string)
     ))
 
     _M_discotheque.Morceau = Morceau
@@ -159,6 +170,101 @@ if 'Morceau' not in _M_discotheque.__dict__:
 
 if '_t_Morceaux' not in _M_discotheque.__dict__:
     _M_discotheque._t_Morceaux = IcePy.defineSequence('::discotheque::Morceaux', (), _M_discotheque._t_Morceau)
+
+if 'Entry' not in _M_discotheque.__dict__:
+    _M_discotheque.Entry = Ice.createTempClass()
+    class Entry(object):
+        def __init__(self, key='', value=''):
+            self.key = key
+            self.value = value
+
+        def __hash__(self):
+            _h = 0
+            _h = 5 * _h + Ice.getHash(self.key)
+            _h = 5 * _h + Ice.getHash(self.value)
+            return _h % 0x7fffffff
+
+        def __compare(self, other):
+            if other is None:
+                return 1
+            elif not isinstance(other, _M_discotheque.Entry):
+                return NotImplemented
+            else:
+                if self.key is None or other.key is None:
+                    if self.key != other.key:
+                        return (-1 if self.key is None else 1)
+                else:
+                    if self.key < other.key:
+                        return -1
+                    elif self.key > other.key:
+                        return 1
+                if self.value is None or other.value is None:
+                    if self.value != other.value:
+                        return (-1 if self.value is None else 1)
+                else:
+                    if self.value < other.value:
+                        return -1
+                    elif self.value > other.value:
+                        return 1
+                return 0
+
+        def __lt__(self, other):
+            r = self.__compare(other)
+            if r is NotImplemented:
+                return r
+            else:
+                return r < 0
+
+        def __le__(self, other):
+            r = self.__compare(other)
+            if r is NotImplemented:
+                return r
+            else:
+                return r <= 0
+
+        def __gt__(self, other):
+            r = self.__compare(other)
+            if r is NotImplemented:
+                return r
+            else:
+                return r > 0
+
+        def __ge__(self, other):
+            r = self.__compare(other)
+            if r is NotImplemented:
+                return r
+            else:
+                return r >= 0
+
+        def __eq__(self, other):
+            r = self.__compare(other)
+            if r is NotImplemented:
+                return r
+            else:
+                return r == 0
+
+        def __ne__(self, other):
+            r = self.__compare(other)
+            if r is NotImplemented:
+                return r
+            else:
+                return r != 0
+
+        def __str__(self):
+            return IcePy.stringify(self, _M_discotheque._t_Entry)
+
+        __repr__ = __str__
+
+    _M_discotheque._t_Entry = IcePy.defineStruct('::discotheque::Entry', Entry, (), (
+        ('key', (), IcePy._t_string),
+        ('value', (), IcePy._t_string)
+    ))
+
+    _M_discotheque.Entry = Entry
+    del Entry
+
+if '_t_Map' not in _M_discotheque.__dict__:
+    _M_discotheque._t_Map = IcePy.defineSequence('::discotheque::Map', (), _M_discotheque._t_Entry)
 
 _M_discotheque._t_trackManagement = IcePy.defineValue('::discotheque::trackManagement', Ice.Value, -1, (), False, True, None, ())
 
@@ -250,18 +356,6 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
         def end_rechercherParGenre(self, _r):
             return _M_discotheque.trackManagement._op_rechercherParGenre.end(self, _r)
 
-        def rechercherParDuree(self, duration, context=None):
-            return _M_discotheque.trackManagement._op_rechercherParDuree.invoke(self, ((duration, ), context))
-
-        def rechercherParDureeAsync(self, duration, context=None):
-            return _M_discotheque.trackManagement._op_rechercherParDuree.invokeAsync(self, ((duration, ), context))
-
-        def begin_rechercherParDuree(self, duration, _response=None, _ex=None, _sent=None, context=None):
-            return _M_discotheque.trackManagement._op_rechercherParDuree.begin(self, ((duration, ), _response, _ex, _sent, context))
-
-        def end_rechercherParDuree(self, _r):
-            return _M_discotheque.trackManagement._op_rechercherParDuree.end(self, _r)
-
         def supprimerTitre(self, title, artist, context=None):
             return _M_discotheque.trackManagement._op_supprimerTitre.invoke(self, ((title, artist), context))
 
@@ -346,6 +440,18 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
         def end_previousTrack(self, _r):
             return _M_discotheque.trackManagement._op_previousTrack.end(self, _r)
 
+        def getInfos(self, port, context=None):
+            return _M_discotheque.trackManagement._op_getInfos.invoke(self, ((port, ), context))
+
+        def getInfosAsync(self, port, context=None):
+            return _M_discotheque.trackManagement._op_getInfos.invokeAsync(self, ((port, ), context))
+
+        def begin_getInfos(self, port, _response=None, _ex=None, _sent=None, context=None):
+            return _M_discotheque.trackManagement._op_getInfos.begin(self, ((port, ), _response, _ex, _sent, context))
+
+        def end_getInfos(self, _r):
+            return _M_discotheque.trackManagement._op_getInfos.end(self, _r)
+
         @staticmethod
         def checkedCast(proxy, facetOrContext=None, context=None):
             return _M_discotheque.trackManagementPrx.ice_checkedCast(proxy, '::discotheque::trackManagement', facetOrContext, context)
@@ -396,9 +502,6 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
         def rechercherParGenre(self, genre, current=None):
             raise NotImplementedError("servant method 'rechercherParGenre' not implemented")
 
-        def rechercherParDuree(self, duration, current=None):
-            raise NotImplementedError("servant method 'rechercherParDuree' not implemented")
-
         def supprimerTitre(self, title, artist, current=None):
             raise NotImplementedError("servant method 'supprimerTitre' not implemented")
 
@@ -420,6 +523,9 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
         def previousTrack(self, port, current=None):
             raise NotImplementedError("servant method 'previousTrack' not implemented")
 
+        def getInfos(self, port, current=None):
+            raise NotImplementedError("servant method 'getInfos' not implemented")
+
         def __str__(self):
             return IcePy.stringify(self, _M_discotheque._t_trackManagementDisp)
 
@@ -435,7 +541,6 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
     trackManagement._op_rechercherParArtiste = IcePy.Operation('rechercherParArtiste', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
     trackManagement._op_rechercherParAlbum = IcePy.Operation('rechercherParAlbum', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
     trackManagement._op_rechercherParGenre = IcePy.Operation('rechercherParGenre', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
-    trackManagement._op_rechercherParDuree = IcePy.Operation('rechercherParDuree', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), _M_discotheque._t_Morceaux, False, 0), ())
     trackManagement._op_supprimerTitre = IcePy.Operation('supprimerTitre', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_bool, False, 0), ())
     trackManagement._op_supprimerAlbum = IcePy.Operation('supprimerAlbum', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0), ((), IcePy._t_string, False, 0)), (), ((), IcePy._t_bool, False, 0), ())
     trackManagement._op_supprimerArtiste = IcePy.Operation('supprimerArtiste', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_string, False, 0),), (), ((), IcePy._t_bool, False, 0), ())
@@ -443,6 +548,7 @@ if 'trackManagementPrx' not in _M_discotheque.__dict__:
     trackManagement._op_playPause = IcePy.Operation('playPause', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_int, False, 0),), (), None, ())
     trackManagement._op_nextTrack = IcePy.Operation('nextTrack', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_int, False, 0),), (), None, ())
     trackManagement._op_previousTrack = IcePy.Operation('previousTrack', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_int, False, 0),), (), None, ())
+    trackManagement._op_getInfos = IcePy.Operation('getInfos', Ice.OperationMode.Normal, Ice.OperationMode.Normal, False, None, (), (((), IcePy._t_int, False, 0),), (), ((), _M_discotheque._t_Map, False, 0), ())
 
     _M_discotheque.trackManagement = trackManagement
     del trackManagement

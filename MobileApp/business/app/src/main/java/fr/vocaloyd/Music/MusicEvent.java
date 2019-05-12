@@ -1,17 +1,17 @@
 package fr.vocaloyd.Music;
 
-import android.net.Uri;
+import java.util.HashMap;
 
 public class MusicEvent
 {
-    private Uri eventResult;
+    private HashMap<String, String> eventResult;
 
-    public MusicEvent(Uri result)
+    public MusicEvent(HashMap<String, String> result)
     {
         eventResult = result;
     }
 
-    public Uri getResult()
+    public HashMap<String, String> getResult()
     {
         return eventResult;
     }

@@ -53,19 +53,24 @@ public class Listener
             System.out.println("Message received: " + request);
 
             Analyzer analyzer = new Analyzer();
-            HashMap<String, String> output;
+            HashMap<String, String> output = new HashMap<>();
             output = analyzer.analyzeText(request);
 
-            if (output != null)
+            MessageProducer sender = session.createProducer(null);
+            ActiveMQMapMessage msgRet = (ActiveMQMapMessage) session.createMapMessage();
+
+            if (output == null)
             {
-                MessageProducer sender = session.createProducer(null);
-                ActiveMQMapMessage msgRet = (ActiveMQMapMessage) session.createMapMessage();
-    
-                Entry<String, String> entry = output.entrySet().iterator().next();
-                msgRet.setString(entry.getKey(), entry.getValue());
-    
+                msgRet.setString("empty", "");
                 sender.send(message.getJMSReplyTo(), msgRet);
-            }            
+                continue;
+            }
+
+            Entry<String, String> entry = output.entrySet().iterator().next();
+
+            msgRet.setString(entry.getKey(), entry.getValue());
+
+            sender.send(message.getJMSReplyTo(), msgRet);          
         }
     }
 }

@@ -39,7 +39,7 @@ public final class MorceauxHelper
     public static Morceau[] read(com.zeroc.Ice.InputStream istr)
     {
         final Morceau[] v;
-        final int len0 = istr.readAndCheckSeqSize(6);
+        final int len0 = istr.readAndCheckSeqSize(7);
         v = new Morceau[len0];
         for(int i0 = 0; i0 < len0; i0++)
         {

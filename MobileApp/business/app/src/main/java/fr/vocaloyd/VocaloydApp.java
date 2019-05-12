@@ -9,6 +9,7 @@ import android.content.Context;
 public class VocaloydApp extends Application
 {
     private static Context appContext;
+    private static int port = 0;
 
     @Override
     public void onCreate()
@@ -20,5 +21,16 @@ public class VocaloydApp extends Application
     public static Context getAppContext()
     {
         return appContext;
+    }
+
+
+    public static int getPort()
+    {
+        return port;
+    }
+
+    public static void setPort(int paramPort)
+    {
+        port = paramPort;
     }
 }

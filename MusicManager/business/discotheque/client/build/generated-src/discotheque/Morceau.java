@@ -26,9 +26,11 @@ public class Morceau implements java.lang.Cloneable,
 
     public String genre;
 
-    public String file;
+    public String piste;
 
-    public String duree;
+    public String image;
+
+    public String fichier;
 
     public Morceau()
     {
@@ -36,18 +38,20 @@ public class Morceau implements java.lang.Cloneable,
         this.artiste = "";
         this.album = "";
         this.genre = "";
-        this.file = "";
-        this.duree = "";
+        this.piste = "";
+        this.image = "";
+        this.fichier = "";
     }
 
-    public Morceau(String titre, String artiste, String album, String genre, String file, String duree)
+    public Morceau(String titre, String artiste, String album, String genre, String piste, String image, String fichier)
     {
         this.titre = titre;
         this.artiste = artiste;
         this.album = album;
         this.genre = genre;
-        this.file = file;
-        this.duree = duree;
+        this.piste = piste;
+        this.image = image;
+        this.fichier = fichier;
     }
 
     public boolean equals(java.lang.Object rhs)
@@ -92,16 +96,23 @@ public class Morceau implements java.lang.Cloneable,
                     return false;
                 }
             }
-            if(this.file != r.file)
+            if(this.piste != r.piste)
             {
-                if(this.file == null || r.file == null || !this.file.equals(r.file))
+                if(this.piste == null || r.piste == null || !this.piste.equals(r.piste))
                 {
                     return false;
                 }
             }
-            if(this.duree != r.duree)
+            if(this.image != r.image)
             {
-                if(this.duree == null || r.duree == null || !this.duree.equals(r.duree))
+                if(this.image == null || r.image == null || !this.image.equals(r.image))
+                {
+                    return false;
+                }
+            }
+            if(this.fichier != r.fichier)
+            {
+                if(this.fichier == null || r.fichier == null || !this.fichier.equals(r.fichier))
                 {
                     return false;
                 }
@@ -121,8 +132,9 @@ public class Morceau implements java.lang.Cloneable,
         h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, artiste);
         h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, album);
         h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, genre);
-        h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, file);
-        h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, duree);
+        h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, piste);
+        h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, image);
+        h_ = com.zeroc.IceInternal.HashUtil.hashAdd(h_, fichier);
         return h_;
     }
 
@@ -146,8 +158,9 @@ public class Morceau implements java.lang.Cloneable,
         ostr.writeString(this.artiste);
         ostr.writeString(this.album);
         ostr.writeString(this.genre);
-        ostr.writeString(this.file);
-        ostr.writeString(this.duree);
+        ostr.writeString(this.piste);
+        ostr.writeString(this.image);
+        ostr.writeString(this.fichier);
     }
 
     public void ice_readMembers(com.zeroc.Ice.InputStream istr)
@@ -156,8 +169,9 @@ public class Morceau implements java.lang.Cloneable,
         this.artiste = istr.readString();
         this.album = istr.readString();
         this.genre = istr.readString();
-        this.file = istr.readString();
-        this.duree = istr.readString();
+        this.piste = istr.readString();
+        this.image = istr.readString();
+        this.fichier = istr.readString();
     }
 
     static public void ice_write(com.zeroc.Ice.OutputStream ostr, Morceau v)
@@ -213,5 +227,5 @@ public class Morceau implements java.lang.Cloneable,
     private static final Morceau _nullMarshalValue = new Morceau();
 
     /** @hidden */
-    public static final long serialVersionUID = -1348374152L;
+    public static final long serialVersionUID = 1330953724L;
 }

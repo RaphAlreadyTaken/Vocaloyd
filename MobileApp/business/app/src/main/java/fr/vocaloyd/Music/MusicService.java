@@ -2,21 +2,18 @@ package fr.vocaloyd.Music;
 
 import org.greenrobot.eventbus.EventBus;
 
-import android.app.Activity;
-import android.net.Uri;
 import android.os.AsyncTask;
 
-import com.google.android.exoplayer2.ExoPlayer;
-
 import java.util.Arrays;
+import java.util.HashMap;
 
-import discotheque.Morceau;
-import fr.vocaloyd.MainActivity;
+import discotheque.*;
+import fr.vocaloyd.VocaloydApp;
 
-public class MusicService extends AsyncTask<Object, Void, Uri>
+public class MusicService extends AsyncTask<Object, Void, HashMap<String, String>>
 {
     @SafeVarargs
-    protected final Uri doInBackground(Object... args)
+    protected final HashMap<String, String> doInBackground(Object... args)
     {
         String ip = "192.168.43.15";
 
@@ -24,7 +21,7 @@ public class MusicService extends AsyncTask<Object, Void, Uri>
         props.setProperty("Ice.MessageSizeMax", "40000");
         com.zeroc.Ice.InitializationData initData = new com.zeroc.Ice.InitializationData();
         initData.properties = props;
-        Uri uri = null;
+        HashMap<String, String> result = new HashMap<>();
 
         try (com.zeroc.Ice.Communicator communicator = com.zeroc.Ice.Util.initialize(initData))
         {
@@ -38,23 +35,23 @@ public class MusicService extends AsyncTask<Object, Void, Uri>
                 throw new Error("Invalid proxy");
             }
 
-            MainActivity activ = (MainActivity) args[0];
-
             //If new client
-            if (activ.getPort() == 0)
+            if (VocaloydApp.getPort() == 0)
             {
                 System.out.println("Setting port");
-                activ.setPort(clientManager.subscribe());
+                VocaloydApp.setPort(clientManager.subscribe());
             }
 
-            int port = activ.getPort();
+            int port = VocaloydApp.getPort();
 
-            String action = (String) args[1];
+            String action = (String) args[0];
 
             switch(action)
             {
                 case "init":
-                    Object[] arg = Arrays.copyOfRange(args, 2, 4);
+                    System.out.println("Client " + port + " request : init");
+                    result.put("music", "");
+                    Object[] arg = Arrays.copyOfRange(args, 1, 3);
                     String[] entry = Arrays.copyOf(arg, arg.length, String[].class);
 
                     Morceau[] tracks = searchMethod(manager, entry);
@@ -67,7 +64,7 @@ public class MusicService extends AsyncTask<Object, Void, Uri>
 
                     String path = manager.jouerMorceaux(tracks, port);
 
-                    uri = Uri.parse("http://" + ip + ":" + port + path);
+                    result.put("uri", "http://" + ip + ":" + port + path);
                     break;
 
                 case "previousTrack":
@@ -76,16 +73,31 @@ public class MusicService extends AsyncTask<Object, Void, Uri>
                     break;
 
                 case "nextTrack":
-                System.out.println("Client " + port + " request : nextTrack");
-                manager.nextTrack(port);
-                break;
+                    System.out.println("Client " + port + " request : nextTrack");
+                    manager.nextTrack(port);
+                    break;
+
+                case "getInfos":
+                    System.out.println("Client " + port + " request : getInfos");
+                    result.put("info", "");
+                    Entry[] infos = manager.getInfos(port);
+
+                    for (Entry ent : infos)
+                    {
+                        result.put(ent.key, ent.value);
+                    }
+                    break;
+
+                case "unsub":
+                    System.out.println("Client " + port + " request : getInfos");
+                    clientManager.unsubscribe(VocaloydApp.getPort());
 
                 default:
                     break;
             }
         }
 
-        return uri;
+        return result;
     }
 
     private Morceau[] searchMethod(discotheque.trackManagementPrx manager, String[] entry)
@@ -102,8 +114,6 @@ public class MusicService extends AsyncTask<Object, Void, Uri>
                 return manager.rechercherParArtiste(entry[1]);
             case "playGenre":
                 return manager.rechercherParGenre(entry[1]);
-            case "playDuration":
-                return manager.rechercherParDuree(entry[1]);
             default:
                 break;
         }
@@ -111,8 +121,8 @@ public class MusicService extends AsyncTask<Object, Void, Uri>
         return null;
     }
 
-    protected void onPostExecute(Uri uri)
+    protected void onPostExecute(HashMap<String, String> result)
     {
-        EventBus.getDefault().post(new MusicEvent(uri));
+        EventBus.getDefault().post(new MusicEvent(result));
     }
 }

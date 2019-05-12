@@ -290,46 +290,6 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
-    default Morceau[] rechercherParDuree(String duration)
-    {
-        return rechercherParDuree(duration, com.zeroc.Ice.ObjectPrx.noExplicitContext);
-    }
-
-    default Morceau[] rechercherParDuree(String duration, java.util.Map<String, String> context)
-    {
-        return _iceI_rechercherParDureeAsync(duration, context, true).waitForResponse();
-    }
-
-    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherParDureeAsync(String duration)
-    {
-        return _iceI_rechercherParDureeAsync(duration, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
-    }
-
-    default java.util.concurrent.CompletableFuture<Morceau[]> rechercherParDureeAsync(String duration, java.util.Map<String, String> context)
-    {
-        return _iceI_rechercherParDureeAsync(duration, context, false);
-    }
-
-    /**
-     * @hidden
-     * @param iceP_duration -
-     * @param context -
-     * @param sync -
-     * @return -
-     **/
-    default com.zeroc.IceInternal.OutgoingAsync<Morceau[]> _iceI_rechercherParDureeAsync(String iceP_duration, java.util.Map<String, String> context, boolean sync)
-    {
-        com.zeroc.IceInternal.OutgoingAsync<Morceau[]> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "rechercherParDuree", null, sync, null);
-        f.invoke(true, context, null, ostr -> {
-                     ostr.writeString(iceP_duration);
-                 }, istr -> {
-                     Morceau[] ret;
-                     ret = MorceauxHelper.read(istr);
-                     return ret;
-                 });
-        return f;
-    }
-
     default boolean supprimerTitre(String title, String artist)
     {
         return supprimerTitre(title, artist, com.zeroc.Ice.ObjectPrx.noExplicitContext);
@@ -601,6 +561,46 @@ public interface trackManagementPrx extends com.zeroc.Ice.ObjectPrx
         f.invoke(false, context, null, ostr -> {
                      ostr.writeInt(iceP_port);
                  }, null);
+        return f;
+    }
+
+    default Entry[] getInfos(int port)
+    {
+        return getInfos(port, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+    }
+
+    default Entry[] getInfos(int port, java.util.Map<String, String> context)
+    {
+        return _iceI_getInfosAsync(port, context, true).waitForResponse();
+    }
+
+    default java.util.concurrent.CompletableFuture<Entry[]> getInfosAsync(int port)
+    {
+        return _iceI_getInfosAsync(port, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+    }
+
+    default java.util.concurrent.CompletableFuture<Entry[]> getInfosAsync(int port, java.util.Map<String, String> context)
+    {
+        return _iceI_getInfosAsync(port, context, false);
+    }
+
+    /**
+     * @hidden
+     * @param iceP_port -
+     * @param context -
+     * @param sync -
+     * @return -
+     **/
+    default com.zeroc.IceInternal.OutgoingAsync<Entry[]> _iceI_getInfosAsync(int iceP_port, java.util.Map<String, String> context, boolean sync)
+    {
+        com.zeroc.IceInternal.OutgoingAsync<Entry[]> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "getInfos", null, sync, null);
+        f.invoke(true, context, null, ostr -> {
+                     ostr.writeInt(iceP_port);
+                 }, istr -> {
+                     Entry[] ret;
+                     ret = MapHelper.read(istr);
+                     return ret;
+                 });
         return f;
     }
 

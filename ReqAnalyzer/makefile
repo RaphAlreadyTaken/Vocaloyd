@@ -3,17 +3,17 @@ shell=powershell
 all: clean analyzer
 
 #Compile
+.ONESHELL:
 analyzer:
 	@echo "Compiling..."
-	${shell} cd ./business ;\
-	javac -d ./build/ ./src/*.java ;\
-	javac -d ./build/ -proc:none ./Client.java	
+	cd ./business
+	javac -d ./build/ ./src/*.java
 
 #Run server
 .ONESHELL:
 runServer:
 	cd ./server/bin
-	${shell} gateway.start.bat --broker jms
+	${shell} ./gateway.start.bat --broker jms
 
 
 #Run listener

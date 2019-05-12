@@ -73,21 +73,25 @@ public class AnalyzeService extends AsyncTask<String, Void, Map.Entry<String, St
 
             MapMessage res = (MapMessage) tempRec.receive();
 
-            if (res != null)
-            {
-                HashMap<String, String> output = new HashMap<>();
-                Enumeration en = res.getMapNames();
+            HashMap<String, String> output = new HashMap<>();
+            Enumeration en = res.getMapNames();
 
-                while (en.hasMoreElements())
+            while (en.hasMoreElements())
+            {
+                String key = (String) en.nextElement();
+
+                if (key.equals("empty"))
                 {
-                    String key = (String) en.nextElement();
-                    String value = res.getString(key);
-                    output.put(key, value);
+                    System.out.println("Null result in analyze");
+                    return null;
                 }
 
-                entry = output.entrySet().iterator().next();
-                System.out.println("Command: " + entry.getKey() + ", Content: " + entry.getValue());
+                String value = res.getString(key);
+                output.put(key, value);
             }
+
+            entry = output.entrySet().iterator().next();
+            System.out.println("Command: " + entry.getKey() + ", Content: " + entry.getValue());
 
         }
         catch (Exception ex)

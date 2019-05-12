@@ -26,6 +26,8 @@ public class TranscribeService extends AsyncTask<File, Void, String>
      */
     protected String doInBackground(File... file)
     {
+        System.out.println("Transcription service reached");
+
         CloseableHttpClient client = HttpClientBuilder.create().build();
         String result = "";
 

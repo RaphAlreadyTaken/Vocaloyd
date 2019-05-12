@@ -1,17 +1,31 @@
 module discotheque
 {
+    //Piste de musique
     struct Morceau
     {
         string titre;
         string artiste;
         string album;
         string genre;
-        string file;
-        string duree;
+        string piste;
+        string image;
+        string fichier;
     };
 
+    //Playlist (tableau de pistes)
     sequence<Morceau> Morceaux;
 
+    //Entrée (clé, valeur) de pseudo-map
+    struct Entry
+    {
+        string key;
+        string value;
+    };
+
+    //Map (tableau d'entrées)
+    sequence<Entry> Map;
+
+    //Gestion de pistes de musique
     interface trackManagement
     {
         void ajouterTitre(Morceau song);
@@ -21,7 +35,6 @@ module discotheque
         Morceaux rechercherParArtiste(string artist);
         Morceaux rechercherParAlbum(string album);
         Morceaux rechercherParGenre(string genre);
-        Morceaux rechercherParDuree(string duration);
         bool supprimerTitre(string title, string artist);
         bool supprimerAlbum(string artist, string album);
         bool supprimerArtiste(string artist);
@@ -29,8 +42,10 @@ module discotheque
         void playPause(int port);
         void nextTrack(int port);
         void previousTrack(int port);
+        Map getInfos(int port);
     };
 
+    //Gestion de clients
     interface clientManagement
     {
         int subscribe();
