@@ -3,6 +3,8 @@ package fr.vocaloyd;
 import android.app.Application;
 import android.content.Context;
 
+import java.util.HashMap;
+
 /**
  * Inspired from : https://www.dev2qa.com/android-get-application-context-from-anywhere-example/
  */
@@ -22,7 +24,6 @@ public class VocaloydApp extends Application
     {
         return appContext;
     }
-
 
     public static int getPort()
     {

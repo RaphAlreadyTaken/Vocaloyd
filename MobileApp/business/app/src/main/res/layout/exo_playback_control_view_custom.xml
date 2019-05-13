@@ -24,11 +24,13 @@
     tools:targetApi="28">
 
     <LinearLayout
+        android:id="@id/exoControls"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:paddingTop="4dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="invisible">
 
         <ImageButton android:id="@id/exo_prev"
             style="@style/ExoMediaButton.Previous"
@@ -38,8 +40,8 @@
             style="@style/ExoMediaButton.Rewind"
             android:layout_marginRight="25dp"/>
 
-        <ImageButton android:id="@id/exo_play"
-            style="@style/ExoMediaButton.Play"
+        <ImageButton android:id="@id/exo_pause"
+            style="@style/ExoMediaButton.Pause"
             android:onClick="playPause"/>
 
         <ImageButton android:id="@id/exo_ffwd"

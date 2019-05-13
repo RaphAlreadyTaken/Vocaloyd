@@ -220,7 +220,9 @@ public class MainActivity extends AppCompatActivity
             MediaSource source = new ExtractorMediaSource.Factory(data).createMediaSource(Uri.parse(result.get("uri")));
             mainPlayer.prepare(source);
             mainPlayer.setPlayWhenReady(true);
-            ImageButton butt = findViewById(R.id.exo_play);
+            View playerView = findViewById(R.id.exoControls);
+            playerView.setVisibility(View.VISIBLE);
+            ImageButton butt = findViewById(R.id.exo_pause);
             playPause(butt);
             return;
         }

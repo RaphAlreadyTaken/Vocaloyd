@@ -2546,3 +2546,212 @@
 2019-05-12 22:05:39,226 [Thread-0] INFO    ws://192.168.43.15:8000/jms
 2019-05-12 22:05:39,226 [Thread-0] INFO  Stopped services
 2019-05-12 22:05:39,226 [Thread-0] INFO  Stopped server successfully in 0.116 secs at 2019-05-12 22:05:39
+2019-05-13 09:45:56,330 [main] INFO  Kaazing Gateway (5.8.0)
+2019-05-13 09:45:56,332 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
+2019-05-13 09:45:57,785 [main] INFO  Checking license information
+2019-05-13 09:45:57,827 [main] INFO    No valid Kaazing license found
+2019-05-13 09:45:57,827 [main] INFO  Using Kaazing developer license, maximum 100 connections
+2019-05-13 09:45:59,526 [main] INFO  Starting server
+2019-05-13 09:45:59,526 [main] INFO  Starting services
+2019-05-13 09:45:59,526 [main] INFO    http://192.168.43.15:8000/
+2019-05-13 09:45:59,526 [main] INFO    ws://192.168.43.15:8000/amqp
+2019-05-13 09:45:59,527 [main] INFO    ws://192.168.43.15:8000/echo
+2019-05-13 09:45:59,527 [main] INFO    ws://192.168.43.15:8000/jms
+2019-05-13 09:45:59,527 [main] INFO  Started services
+2019-05-13 09:45:59,529 [main] INFO  Started server successfully in 0.469 secs at 2019-05-13 09:45:59
+2019-05-13 09:46:00,399 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 09:46:00,402 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 09:46:05,452 [EagerCP_0-1] INFO  JMS Connection established using ConnectionFactory "org.apache.activemq.ActiveMQConnectionFactory@9b4440e"
+2019-05-13 09:46:44,080 [New I/O worker #1] INFO  [tcp#3 192.168.43.1:38175] OPENED: (#00000003: kaazing tcp, server, /192.168.43.1:38175 => /192.168.43.15:8000)
+2019-05-13 09:46:44,121 [New I/O worker #1] INFO  /192.168.43.1:38175 - [192.168.43.15:8000] "GET /jms/;e/cookies?.kl=Y HTTP/1.1 " "Dalvik/2.1.0 (Linux; U; Android 8.1.0; Redmi 5 Plus MIUI/V10.2.1.0.OEGMIXM)"
+2019-05-13 09:46:44,130 [New I/O worker #1] INFO  [http#4 192.168.43.1:38175] OPENED: (#00000004: kzg http, server, http://192.168.43.15:8000/jms/;e/cookies?.kl=Y => http://192.168.43.15:8000/jms/;e/cookies)
+2019-05-13 09:46:44,147 [New I/O worker #1] INFO  [http#4 192.168.43.1:38175] CLOSED: (#00000004: kzg http, server, http://192.168.43.15:8000/jms/;e/cookies?.kl=Y => http://192.168.43.15:8000/jms/;e/cookies)
+2019-05-13 09:46:44,171 [New I/O worker #2] INFO  [tcp#5 192.168.43.1:38176] OPENED: (#00000005: kaazing tcp, server, /192.168.43.1:38176 => /192.168.43.15:8000)
+2019-05-13 09:46:44,178 [New I/O worker #2] INFO  /192.168.43.1:38176 - [192.168.43.15:8000] "GET /jms?.kl=Y HTTP/1.1 " "-"
+2019-05-13 09:46:44,179 [New I/O worker #2] INFO  [http#6 192.168.43.1:38176] OPENED: (#00000006: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => http://192.168.43.15:8000/jms)
+2019-05-13 09:46:44,203 [New I/O worker #2] INFO  [wsn#7 192.168.43.1:38176] OPENED: (#00000007: kzg wsn, server, ws://192.168.43.15:8000/jms => wsn://192.168.43.15:8000/jms)
+2019-05-13 09:46:44,203 [New I/O worker #2] INFO  [http#6 192.168.43.1:38176] CLOSED: (#00000006: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => http://192.168.43.15:8000/jms)
+2019-05-13 09:46:44,562 [New I/O worker #2] INFO  [ws://192.168.43.15:8000/jms (ws://192.168.43.15:8000/jms) x-kaazing-handshake]
+  [http://192.168.43.15:8000/jms?.kl=Y (http://192.168.43.15:8000/jms?.kl=Y) ws/rfc6455]
+    [tcp://192.168.43.1:38176 (tcp://192.168.43.1:38176) http/1.1] - [192.168.43.15:8000] "GET /jms?.kl=Y HTTP/1.1 " "-"
+2019-05-13 09:46:44,563 [New I/O worker #2] INFO  [http#8 admin 192.168.43.1:38176] OPENED: (#00000008: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => httpx://192.168.43.15:8000/jms)
+2019-05-13 09:46:44,602 [New I/O worker #2] INFO  [wsn#9 admin 192.168.43.1:38176] OPENED: (#00000009: kzg wsn, server, ws://192.168.43.15:8000/jms => wsx://192.168.43.15:8000/jms)
+2019-05-13 09:46:44,602 [New I/O worker #2] INFO  [http#8 admin 192.168.43.1:38176] CLOSED: (#00000008: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => httpx://192.168.43.15:8000/jms)
+2019-05-13 09:46:58,524 [New I/O worker #1] INFO  [tcp#3 192.168.43.1:38175] CLOSED: (#00000003: kaazing tcp, server, /192.168.43.1:38175 => /192.168.43.15:8000)
+2019-05-13 09:47:03,001 [New I/O worker #2] INFO  [tcp#5 192.168.43.1:38176] CLOSED: (#00000005: kaazing tcp, server, /192.168.43.1:38176 => /192.168.43.15:8000)
+2019-05-13 09:47:03,001 [New I/O worker #2] INFO  [wsn#7 192.168.43.1:38176] EXCEPTION: java.io.IOException: Network connectivity has been lost or transport was closed at other end
+2019-05-13 09:47:03,002 [New I/O worker #2] INFO  [wsn#7 192.168.43.1:38176] CLOSED: (#00000007: kzg wsn, server, ws://192.168.43.15:8000/jms => wsn://192.168.43.15:8000/jms)
+2019-05-13 09:47:03,003 [New I/O worker #2] INFO  [wsn#9 admin 192.168.43.1:38176] CLOSED: (#00000009: kzg wsn, server, ws://192.168.43.15:8000/jms => wsx://192.168.43.15:8000/jms)
+2019-05-13 09:47:15,806 [Thread-0] INFO  Stopping server
+2019-05-13 09:47:15,808 [Thread-0] INFO  Stopping services
+2019-05-13 09:47:15,808 [Thread-0] INFO    http://192.168.43.15:8000/
+2019-05-13 09:47:15,808 [Thread-0] INFO    ws://192.168.43.15:8000/amqp
+2019-05-13 09:47:15,809 [Thread-0] INFO    ws://192.168.43.15:8000/echo
+2019-05-13 09:47:15,809 [Thread-0] INFO    ws://192.168.43.15:8000/jms
+2019-05-13 09:47:15,809 [Thread-0] INFO  Stopped services
+2019-05-13 09:47:15,809 [Thread-0] INFO  Stopped server successfully in 0.060 secs at 2019-05-13 09:47:15
+2019-05-13 13:15:50,806 [main] INFO  Kaazing Gateway (5.8.0)
+2019-05-13 13:15:50,806 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
+2019-05-13 13:15:52,295 [main] INFO  Checking license information
+2019-05-13 13:15:52,348 [main] INFO    No valid Kaazing license found
+2019-05-13 13:15:52,348 [main] INFO  Using Kaazing developer license, maximum 100 connections
+2019-05-13 13:15:54,073 [main] INFO  Starting server
+2019-05-13 13:15:54,073 [main] INFO  Starting services
+2019-05-13 13:15:54,073 [main] INFO    http://192.168.43.15:8000/
+2019-05-13 13:15:54,073 [main] INFO    ws://192.168.43.15:8000/amqp
+2019-05-13 13:15:54,073 [main] INFO    ws://192.168.43.15:8000/echo
+2019-05-13 13:15:54,073 [main] INFO    ws://192.168.43.15:8000/jms
+2019-05-13 13:15:54,073 [main] INFO  Started services
+2019-05-13 13:15:54,073 [main] INFO  Started server successfully in 0.490 secs at 2019-05-13 13:15:53
+2019-05-13 13:15:54,938 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:15:54,938 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:16:00,093 [EagerCP_0-1] INFO  JMS Connection established using ConnectionFactory "org.apache.activemq.ActiveMQConnectionFactory@f02e22d"
+2019-05-13 13:16:56,629 [ActiveMQ Connection Executor: tcp:///192.168.43.15:61616@57169] WARN  ExceptionListener on JMS Connection ActiveMQConnection {id=ID:DESKTOP-LIE5PSR-57129-1557746153818-1:2,clientId=ID:DESKTOP-LIE5PSR-57129-1557746153818-0:1,started=true} reported exception javax.jms.JMSException: java.io.EOFException
+2019-05-13 13:17:02,671 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:17:02,671 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:17:08,688 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:17:08,688 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:17:14,725 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:17:14,725 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:17:20,739 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:17:20,739 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:17:26,775 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:17:26,775 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:17:32,811 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:17:32,811 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:17:38,845 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:17:38,845 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:17:44,879 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:17:44,879 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:17:50,899 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:17:50,899 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:17:56,929 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:17:56,929 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:18:02,961 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:18:02,961 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:18:08,967 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:18:08,967 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:18:14,980 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:18:14,980 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:18:20,995 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:18:20,995 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:18:27,012 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:18:27,012 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:18:33,049 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:18:33,049 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:18:39,085 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:18:39,085 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:18:45,099 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:18:45,099 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:18:51,130 [EagerCP_0-1] WARN  Unable to establish JMS Connection due to the following exception: Could not connect to broker URL: tcp://192.168.43.15:61616. Reason: java.net.ConnectException: Connection refused: connect
+2019-05-13 13:18:51,130 [EagerCP_0-1] INFO  Connection failed while attempting to connect to a remote server. Please verify that the servers to which your Gateway is configured to connect are successfully started.  See the Administrator's Guide for more information.
+2019-05-13 13:18:52,544 [Thread-0] INFO  Stopping server
+2019-05-13 13:18:52,544 [Thread-0] INFO  Stopping services
+2019-05-13 13:18:52,544 [Thread-0] INFO    http://192.168.43.15:8000/
+2019-05-13 13:18:52,544 [Thread-0] INFO    ws://192.168.43.15:8000/amqp
+2019-05-13 13:18:52,544 [Thread-0] INFO    ws://192.168.43.15:8000/echo
+2019-05-13 13:18:52,544 [Thread-0] INFO    ws://192.168.43.15:8000/jms
+2019-05-13 13:18:52,544 [Thread-0] INFO  Stopped services
+2019-05-13 13:18:52,544 [Thread-0] INFO  Stopped server successfully in 0.069 secs at 2019-05-13 13:18:52
+2019-05-13 13:19:18,980 [main] INFO  Kaazing Gateway (5.8.0)
+2019-05-13 13:19:18,980 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
+2019-05-13 13:19:19,490 [main] INFO  Checking license information
+2019-05-13 13:19:19,540 [main] INFO    No valid Kaazing license found
+2019-05-13 13:19:19,540 [main] INFO  Using Kaazing developer license, maximum 100 connections
+2019-05-13 13:19:21,079 [main] INFO  Starting server
+2019-05-13 13:19:21,084 [main] INFO  Starting services
+2019-05-13 13:19:21,084 [main] INFO    http://192.168.43.15:8000/
+2019-05-13 13:19:21,084 [main] INFO    ws://192.168.43.15:8000/amqp
+2019-05-13 13:19:21,084 [main] INFO    ws://192.168.43.15:8000/echo
+2019-05-13 13:19:21,084 [main] INFO    ws://192.168.43.15:8000/jms
+2019-05-13 13:19:21,084 [main] INFO  Started services
+2019-05-13 13:19:21,084 [main] INFO  Started server successfully in 0.454 secs at 2019-05-13 13:19:20
+2019-05-13 13:19:21,539 [EagerCP_0-1] INFO  JMS Connection established using ConnectionFactory "org.apache.activemq.ActiveMQConnectionFactory@70c2d78d"
+2019-05-13 13:22:21,562 [New I/O worker #1] INFO  [tcp#2 192.168.43.1:38577] OPENED: (#00000002: kaazing tcp, server, /192.168.43.1:38577 => /192.168.43.15:8000)
+2019-05-13 13:22:21,605 [New I/O worker #1] INFO  /192.168.43.1:38577 - [192.168.43.15:8000] "GET /jms/;e/cookies?.kl=Y HTTP/1.1 " "Dalvik/2.1.0 (Linux; U; Android 8.1.0; Redmi 5 Plus MIUI/V10.2.1.0.OEGMIXM)"
+2019-05-13 13:22:21,613 [New I/O worker #1] INFO  [http#3 192.168.43.1:38577] OPENED: (#00000003: kzg http, server, http://192.168.43.15:8000/jms/;e/cookies?.kl=Y => http://192.168.43.15:8000/jms/;e/cookies)
+2019-05-13 13:22:21,631 [New I/O worker #1] INFO  [http#3 192.168.43.1:38577] CLOSED: (#00000003: kzg http, server, http://192.168.43.15:8000/jms/;e/cookies?.kl=Y => http://192.168.43.15:8000/jms/;e/cookies)
+2019-05-13 13:22:21,654 [New I/O worker #2] INFO  [tcp#4 192.168.43.1:38578] OPENED: (#00000004: kaazing tcp, server, /192.168.43.1:38578 => /192.168.43.15:8000)
+2019-05-13 13:22:21,655 [New I/O worker #2] INFO  /192.168.43.1:38578 - [192.168.43.15:8000] "GET /jms?.kl=Y HTTP/1.1 " "-"
+2019-05-13 13:22:21,656 [New I/O worker #2] INFO  [http#5 192.168.43.1:38578] OPENED: (#00000005: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => http://192.168.43.15:8000/jms)
+2019-05-13 13:22:21,678 [New I/O worker #2] INFO  [wsn#6 192.168.43.1:38578] OPENED: (#00000006: kzg wsn, server, ws://192.168.43.15:8000/jms => wsn://192.168.43.15:8000/jms)
+2019-05-13 13:22:21,680 [New I/O worker #2] INFO  [http#5 192.168.43.1:38578] CLOSED: (#00000005: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => http://192.168.43.15:8000/jms)
+2019-05-13 13:22:22,056 [New I/O worker #2] INFO  [ws://192.168.43.15:8000/jms (ws://192.168.43.15:8000/jms) x-kaazing-handshake]
+  [http://192.168.43.15:8000/jms?.kl=Y (http://192.168.43.15:8000/jms?.kl=Y) ws/rfc6455]
+    [tcp://192.168.43.1:38578 (tcp://192.168.43.1:38578) http/1.1] - [192.168.43.15:8000] "GET /jms?.kl=Y HTTP/1.1 " "-"
+2019-05-13 13:22:22,057 [New I/O worker #2] INFO  [http#7 admin 192.168.43.1:38578] OPENED: (#00000007: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => httpx://192.168.43.15:8000/jms)
+2019-05-13 13:22:22,094 [New I/O worker #2] INFO  [wsn#8 admin 192.168.43.1:38578] OPENED: (#00000008: kzg wsn, server, ws://192.168.43.15:8000/jms => wsx://192.168.43.15:8000/jms)
+2019-05-13 13:22:22,094 [New I/O worker #2] INFO  [http#7 admin 192.168.43.1:38578] CLOSED: (#00000007: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => httpx://192.168.43.15:8000/jms)
+2019-05-13 13:22:25,365 [New I/O worker #1] INFO  [tcp#2 192.168.43.1:38577] CLOSED: (#00000002: kaazing tcp, server, /192.168.43.1:38577 => /192.168.43.15:8000)
+2019-05-13 13:22:48,688 [New I/O worker #2] INFO  [tcp#4 192.168.43.1:38578] CLOSED: (#00000004: kaazing tcp, server, /192.168.43.1:38578 => /192.168.43.15:8000)
+2019-05-13 13:22:48,689 [New I/O worker #2] INFO  [wsn#6 192.168.43.1:38578] EXCEPTION: java.io.IOException: Network connectivity has been lost or transport was closed at other end
+2019-05-13 13:22:48,689 [New I/O worker #2] INFO  [wsn#6 192.168.43.1:38578] CLOSED: (#00000006: kzg wsn, server, ws://192.168.43.15:8000/jms => wsn://192.168.43.15:8000/jms)
+2019-05-13 13:22:48,690 [New I/O worker #2] INFO  [wsn#8 admin 192.168.43.1:38578] CLOSED: (#00000008: kzg wsn, server, ws://192.168.43.15:8000/jms => wsx://192.168.43.15:8000/jms)
+2019-05-13 13:28:36,498 [New I/O worker #3] INFO  [tcp#10 192.168.43.1:38593] OPENED: (#00000010: kaazing tcp, server, /192.168.43.1:38593 => /192.168.43.15:8000)
+2019-05-13 13:28:36,501 [New I/O worker #3] INFO  /192.168.43.1:38593 - [192.168.43.15:8000] "GET /jms/;e/cookies?.kl=Y HTTP/1.1 " "Dalvik/2.1.0 (Linux; U; Android 8.1.0; Redmi 5 Plus MIUI/V10.2.1.0.OEGMIXM)"
+2019-05-13 13:28:36,502 [New I/O worker #3] INFO  [http#11 192.168.43.1:38593] OPENED: (#00000011: kzg http, server, http://192.168.43.15:8000/jms/;e/cookies?.kl=Y => http://192.168.43.15:8000/jms/;e/cookies)
+2019-05-13 13:28:36,503 [New I/O worker #3] INFO  [http#11 192.168.43.1:38593] CLOSED: (#00000011: kzg http, server, http://192.168.43.15:8000/jms/;e/cookies?.kl=Y => http://192.168.43.15:8000/jms/;e/cookies)
+2019-05-13 13:28:36,559 [New I/O worker #4] INFO  [tcp#12 192.168.43.1:38594] OPENED: (#00000012: kaazing tcp, server, /192.168.43.1:38594 => /192.168.43.15:8000)
+2019-05-13 13:28:36,566 [New I/O worker #4] INFO  /192.168.43.1:38594 - [192.168.43.15:8000] "GET /jms?.kl=Y HTTP/1.1 " "-"
+2019-05-13 13:28:36,566 [New I/O worker #4] INFO  [http#13 192.168.43.1:38594] OPENED: (#00000013: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => http://192.168.43.15:8000/jms)
+2019-05-13 13:28:36,571 [New I/O worker #4] INFO  [wsn#14 192.168.43.1:38594] OPENED: (#00000014: kzg wsn, server, ws://192.168.43.15:8000/jms => wsn://192.168.43.15:8000/jms)
+2019-05-13 13:28:36,572 [New I/O worker #4] INFO  [http#13 192.168.43.1:38594] CLOSED: (#00000013: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => http://192.168.43.15:8000/jms)
+2019-05-13 13:28:36,616 [New I/O worker #4] INFO  [ws://192.168.43.15:8000/jms (ws://192.168.43.15:8000/jms) x-kaazing-handshake]
+  [http://192.168.43.15:8000/jms?.kl=Y (http://192.168.43.15:8000/jms?.kl=Y) ws/rfc6455]
+    [tcp://192.168.43.1:38594 (tcp://192.168.43.1:38594) http/1.1] - [192.168.43.15:8000] "GET /jms?.kl=Y HTTP/1.1 " "-"
+2019-05-13 13:28:36,617 [New I/O worker #4] INFO  [http#15 admin 192.168.43.1:38594] OPENED: (#00000015: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => httpx://192.168.43.15:8000/jms)
+2019-05-13 13:28:36,620 [New I/O worker #4] INFO  [wsn#16 admin 192.168.43.1:38594] OPENED: (#00000016: kzg wsn, server, ws://192.168.43.15:8000/jms => wsx://192.168.43.15:8000/jms)
+2019-05-13 13:28:36,620 [New I/O worker #4] INFO  [http#15 admin 192.168.43.1:38594] CLOSED: (#00000015: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => httpx://192.168.43.15:8000/jms)
+2019-05-13 13:28:47,863 [New I/O worker #3] INFO  /192.168.43.1:38593 - [192.168.43.15:8000] "GET /jms/;e/cookies?.kl=Y HTTP/1.1 " "Dalvik/2.1.0 (Linux; U; Android 8.1.0; Redmi 5 Plus MIUI/V10.2.1.0.OEGMIXM)"
+2019-05-13 13:28:47,865 [New I/O worker #3] INFO  [http#18 192.168.43.1:38593] OPENED: (#00000018: kzg http, server, http://192.168.43.15:8000/jms/;e/cookies?.kl=Y => http://192.168.43.15:8000/jms/;e/cookies)
+2019-05-13 13:28:47,866 [New I/O worker #3] INFO  [http#18 192.168.43.1:38593] CLOSED: (#00000018: kzg http, server, http://192.168.43.15:8000/jms/;e/cookies?.kl=Y => http://192.168.43.15:8000/jms/;e/cookies)
+2019-05-13 13:28:47,881 [New I/O worker #5] INFO  [tcp#19 192.168.43.1:38602] OPENED: (#00000019: kaazing tcp, server, /192.168.43.1:38602 => /192.168.43.15:8000)
+2019-05-13 13:28:47,883 [New I/O worker #5] INFO  /192.168.43.1:38602 - [192.168.43.15:8000] "GET /jms?.kl=Y HTTP/1.1 " "-"
+2019-05-13 13:28:47,884 [New I/O worker #5] INFO  [http#20 192.168.43.1:38602] OPENED: (#00000020: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => http://192.168.43.15:8000/jms)
+2019-05-13 13:28:47,888 [New I/O worker #5] INFO  [wsn#21 192.168.43.1:38602] OPENED: (#00000021: kzg wsn, server, ws://192.168.43.15:8000/jms => wsn://192.168.43.15:8000/jms)
+2019-05-13 13:28:47,888 [New I/O worker #5] INFO  [http#20 192.168.43.1:38602] CLOSED: (#00000020: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => http://192.168.43.15:8000/jms)
+2019-05-13 13:28:47,913 [New I/O worker #5] INFO  [ws://192.168.43.15:8000/jms (ws://192.168.43.15:8000/jms) x-kaazing-handshake]
+  [http://192.168.43.15:8000/jms?.kl=Y (http://192.168.43.15:8000/jms?.kl=Y) ws/rfc6455]
+    [tcp://192.168.43.1:38602 (tcp://192.168.43.1:38602) http/1.1] - [192.168.43.15:8000] "GET /jms?.kl=Y HTTP/1.1 " "-"
+2019-05-13 13:28:47,914 [New I/O worker #5] INFO  [http#22 admin 192.168.43.1:38602] OPENED: (#00000022: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => httpx://192.168.43.15:8000/jms)
+2019-05-13 13:28:47,917 [New I/O worker #5] INFO  [wsn#23 admin 192.168.43.1:38602] OPENED: (#00000023: kzg wsn, server, ws://192.168.43.15:8000/jms => wsx://192.168.43.15:8000/jms)
+2019-05-13 13:28:47,917 [New I/O worker #5] INFO  [http#22 admin 192.168.43.1:38602] CLOSED: (#00000022: kzg http, server, http://192.168.43.15:8000/jms?.kl=Y => httpx://192.168.43.15:8000/jms)
+2019-05-13 13:28:54,719 [New I/O worker #3] INFO  [tcp#10 192.168.43.1:38593] CLOSED: (#00000010: kaazing tcp, server, /192.168.43.1:38593 => /192.168.43.15:8000)
+2019-05-13 13:29:04,122 [New I/O worker #4] INFO  [tcp#12 192.168.43.1:38594] CLOSED: (#00000012: kaazing tcp, server, /192.168.43.1:38594 => /192.168.43.15:8000)
+2019-05-13 13:29:04,122 [New I/O worker #4] INFO  [wsn#14 192.168.43.1:38594] EXCEPTION: java.io.IOException: Network connectivity has been lost or transport was closed at other end
+2019-05-13 13:29:04,123 [New I/O worker #4] INFO  [wsn#14 192.168.43.1:38594] CLOSED: (#00000014: kzg wsn, server, ws://192.168.43.15:8000/jms => wsn://192.168.43.15:8000/jms)
+2019-05-13 13:29:04,123 [New I/O worker #5] INFO  [tcp#19 192.168.43.1:38602] CLOSED: (#00000019: kaazing tcp, server, /192.168.43.1:38602 => /192.168.43.15:8000)
+2019-05-13 13:29:04,123 [New I/O worker #5] INFO  [wsn#21 192.168.43.1:38602] EXCEPTION: java.io.IOException: Network connectivity has been lost or transport was closed at other end
+2019-05-13 13:29:04,123 [New I/O worker #5] INFO  [wsn#21 192.168.43.1:38602] CLOSED: (#00000021: kzg wsn, server, ws://192.168.43.15:8000/jms => wsn://192.168.43.15:8000/jms)
+2019-05-13 13:29:04,123 [New I/O worker #4] INFO  [wsn#16 admin 192.168.43.1:38594] CLOSED: (#00000016: kzg wsn, server, ws://192.168.43.15:8000/jms => wsx://192.168.43.15:8000/jms)
+2019-05-13 13:29:04,123 [New I/O worker #5] INFO  [wsn#23 admin 192.168.43.1:38602] CLOSED: (#00000023: kzg wsn, server, ws://192.168.43.15:8000/jms => wsx://192.168.43.15:8000/jms)
+2019-05-13 14:05:21,461 [Thread-0] INFO  Stopping server
+2019-05-13 14:05:21,461 [Thread-0] INFO  Stopping services
+2019-05-13 14:05:21,461 [Thread-0] INFO    http://192.168.43.15:8000/
+2019-05-13 14:05:21,461 [Thread-0] INFO    ws://192.168.43.15:8000/amqp
+2019-05-13 14:05:21,461 [Thread-0] INFO    ws://192.168.43.15:8000/echo
+2019-05-13 14:05:21,461 [Thread-0] INFO    ws://192.168.43.15:8000/jms
+2019-05-13 14:05:21,461 [Thread-0] INFO  Stopped services
+2019-05-13 14:05:21,461 [Thread-0] INFO  Stopped server successfully in 0.085 secs at 2019-05-13 14:05:21
+2019-05-13 14:06:12,634 [main] INFO  Kaazing Gateway (5.8.0)
+2019-05-13 14:06:12,634 [main] INFO  Configuration file: C:\Users\Raph\Desktop\Vocaloyd\ReqAnalyzer\server\conf\gateway-config.xml
+2019-05-13 14:06:13,136 [main] INFO  Checking license information
+2019-05-13 14:06:13,189 [main] INFO    No valid Kaazing license found
+2019-05-13 14:06:13,189 [main] INFO  Using Kaazing developer license, maximum 100 connections
+2019-05-13 14:06:14,780 [main] INFO  Starting server
+2019-05-13 14:06:14,780 [main] INFO  Starting services
+2019-05-13 14:06:14,780 [main] INFO    http://192.168.43.15:8000/
+2019-05-13 14:06:14,780 [main] INFO    ws://192.168.43.15:8000/amqp
+2019-05-13 14:06:14,780 [main] INFO    ws://192.168.43.15:8000/echo
+2019-05-13 14:06:14,780 [main] INFO    ws://192.168.43.15:8000/jms
+2019-05-13 14:06:14,780 [main] INFO  Started services
+2019-05-13 14:06:14,780 [main] INFO  Started server successfully in 0.501 secs at 2019-05-13 14:06:14
+2019-05-13 14:06:15,259 [EagerCP_0-1] INFO  JMS Connection established using ConnectionFactory "org.apache.activemq.ActiveMQConnectionFactory@412f9bbb"
+2019-05-13 14:11:51,701 [Thread-0] INFO  Stopping server
+2019-05-13 14:11:51,701 [Thread-0] INFO  Stopping services
+2019-05-13 14:11:51,701 [Thread-0] INFO    http://192.168.43.15:8000/
+2019-05-13 14:11:51,701 [Thread-0] INFO    ws://192.168.43.15:8000/amqp
+2019-05-13 14:11:51,701 [Thread-0] INFO    ws://192.168.43.15:8000/echo
+2019-05-13 14:11:51,701 [Thread-0] INFO    ws://192.168.43.15:8000/jms
+2019-05-13 14:11:51,701 [Thread-0] INFO  Stopped services
+2019-05-13 14:11:51,701 [Thread-0] INFO  Stopped server successfully in 0.063 secs at 2019-05-13 14:11:51

@@ -261,7 +261,7 @@ class trackManagementI(trackManagement):
 
 class Chrono:
     stop = False    #Stops thread if switched to True
-    maxTime = 3600  #Max idle time on server (seconds)
+    maxTime = 600   #Max idle time on server (seconds)
     scanFreq = 300  #Frequency of client inactivity check (seconds)
 
     @staticmethod
