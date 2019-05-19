@@ -27,15 +27,13 @@ public class Command
     private ArrayList<String> playAlbumValues = new ArrayList<>(Arrays.asList("album"));
     private ArrayList<String> playArtistValues = new ArrayList<>(Arrays.asList("artist", "band", "chanteu", "group", "singer"));
     private ArrayList<String> playGenreValues = new ArrayList<>(Arrays.asList("genre", "style"));
-    private ArrayList<String> playDurationValues = new ArrayList<>(Arrays.asList("pendant", "for"));
     
     private ArrayList<ArrayList<String>> specificValues = new ArrayList<>(Arrays.asList
     (
         playTrackValues,
         playAlbumValues,
         playArtistValues,
-        playGenreValues,
-        playDurationValues
+        playGenreValues
     ));
     
     /**
