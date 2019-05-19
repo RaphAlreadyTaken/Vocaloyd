@@ -89,7 +89,7 @@ public class MusicService extends AsyncTask<Object, Void, HashMap<String, String
                     break;
 
                 case "unsub":
-                    System.out.println("Client " + port + " request : getInfos");
+                    System.out.println("Client " + port + " request : unsub");
                     clientManager.unsubscribe(VocaloydApp.getPort());
 
                 default:
